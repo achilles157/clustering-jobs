@@ -24,20 +24,57 @@ def main():
     # 3. Fungsi Pemetaan Fuzzy (Rescue Mapping)
     # Memetakan nama kecamatan/kawasan industri ke Kabupaten/Kota induknya
     cache = {
-        "Cikarang Pusat, Jawa Barat": ("Bekasi", 100),
-        "Cikarang, Jawa Barat": ("Bekasi", 100),
-        "Cikarang": ("Bekasi", 100),
+        "Bandung, Jawa Barat": ("Kota Bandung", 100),
+        "Bandung": ("Kota Bandung", 100),
+        "Kabupaten Bandung, Jawa Barat": ("Bandung", 100),
+        "Bogor, Jawa Barat": ("Kota Bogor", 100),
+        "Bogor": ("Kota Bogor", 100),
+        "Kabupaten Bogor, Jawa Barat": ("Bogor", 100),
+        "Bekasi, Jawa Barat": ("Kota Bekasi", 100),
+        "Bekasi": ("Kota Bekasi", 100),
+        "Kabupaten Bekasi, Jawa Barat": ("Bekasi", 100),
+        "Tangerang, Banten": ("Kota Tangerang", 100),
+        "Tangerang": ("Kota Tangerang", 100),
+        "Semarang, Jawa Tengah": ("Kota Semarang", 100),
+        "Semarang": ("Kota Semarang", 100),
+        "Surabaya, Jawa Timur": ("Kota Surabaya", 100),
+        "Surabaya": ("Kota Surabaya", 100),
+        "Malang, Jawa Timur": ("Kota Malang", 100),
+        "Malang": ("Kota Malang", 100),
+        "Yogyakarta, DI Yogyakarta": ("Kota Yogyakarta", 100),
+        "Yogyakarta": ("Kota Yogyakarta", 100),
+        "Cirebon, Jawa Barat": ("Kota Cirebon", 100),
+        "Cirebon": ("Kota Cirebon", 100),
+        "Sukabumi, Jawa Barat": ("Kota Sukabumi", 100),
+        "Sukabumi": ("Kota Sukabumi", 100),
+        "Tegal, Jawa Tengah": ("Kota Tegal", 100),
+        "Tegal": ("Kota Tegal", 100),
+        "Magelang, Jawa Tengah": ("Kota Magelang", 100),
+        "Magelang": ("Kota Magelang", 100),
+        "Tasikmalaya, Jawa Barat": ("Kota Tasikmalaya", 100),
+        "Tasikmalaya": ("Kota Tasikmalaya", 100),
+        "Madiun, Jawa Timur": ("Kota Madiun", 100),
+        "Madiun": ("Kota Madiun", 100),
+        "Pasuruan, Jawa Timur": ("Kota Pasuruan", 100),
+        "Pasuruan": ("Kota Pasuruan", 100),
+        "Mojokerto, Jawa Timur": ("Kota Mojokerto", 100),
+        "Mojokerto": ("Kota Mojokerto", 100),
+        "Kediri, Jawa Timur": ("Kota Kediri", 100),
+        "Kediri": ("Kota Kediri", 100),
+        "Cikarang Pusat, Jawa Barat": ("Kota Bekasi", 100),
+        "Cikarang, Jawa Barat": ("Kota Bekasi", 100),
+        "Cikarang": ("Kota Bekasi", 100),
         "Kebayoran Lama, Jakarta Raya": ("Kota Jakarta Selatan", 100),
         "Kebayoran Baru, Jakarta Raya": ("Kota Jakarta Selatan", 100),
         "Kemayoran, Jakarta Raya": ("Kota Jakarta Pusat", 100),
-        "Cikupa, Banten": ("Tangerang", 100),
-        "Ciawi, Jawa Barat": ("Bogor", 100),
+        "Cikupa, Banten": ("Kota Tangerang", 100),
+        "Ciawi, Jawa Barat": ("Kota Bogor", 100),
         "Serpong, Banten": ("Kota Tangerang Selatan", 100),
         "Bsd City, Banten": ("Kota Tangerang Selatan", 100),
-        "Cileungsi, Jawa Barat": ("Bogor", 100),
+        "Cileungsi, Jawa Barat": ("Kota Bogor", 100),
         "Kalideres, Jakarta Raya": ("Kota Jakarta Barat", 100),
         "Kelapa Gading, Jakarta Raya": ("Kota Jakarta Utara", 100),
-        "Gunung Putri, Jawa Barat": ("Bogor", 100),
+        "Gunung Putri, Jawa Barat": ("Kota Bogor", 100),
         "Purwokerto": ("Banyumas", 100),
         "Padalarang, Jawa Barat": ("Bandung Barat", 100),
         "Pulo Gadung, Jakarta Raya": ("Kota Jakarta Timur", 100),
@@ -96,18 +133,13 @@ def main():
         how='left'
     )
     
-    # 7. Penggabungan Data BPS
-    def bps_standardize(name):
-        return name.replace('Kota ', '').replace('Kab. ', '').replace('Kabupaten ', '').strip().lower()
-
-    df_bps['bps_match_key'] = df_bps['Kabupaten/Kota'].apply(bps_standardize)
-    final_df['js_match_key'] = final_df['matched_regency'].apply(bps_standardize)
-
+    # 7. Penggabungan Data BPS secara presisi
+    # Tidak lagi menghapus awalan 'Kota'/'Kabupaten' agar tidak tertimpa/hilang
     final_df = pd.merge(
         final_df,
         df_bps,
-        left_on='js_match_key',
-        right_on='bps_match_key',
+        left_on='matched_regency',
+        right_on='Kabupaten/Kota',
         how='left'
     )
 

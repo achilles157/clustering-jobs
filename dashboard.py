@@ -171,11 +171,12 @@ with m4:
     st.metric("Indeks Kompetitif", f"{comp_idx:.2f}/3.0", help="Tingkat kualifikasi rata-rata (1: Rendah, 3: Tinggi)")
 
 # --- TAB DASHBOARD ---
-tab1, tab2, tab3, tab4 = st.tabs([
+tab1, tab2, tab3, tab4, tab5 = st.tabs([
     "📍 Klaster Ekonomi", 
     "🔥 Heatmap Peluang", 
     "☁️ Konteks Keahlian", 
-    "📈 Statistik Efisiensi"
+    "📈 Statistik Efisiensi",
+    "📝 Laporan Eksekutif"
 ])
 
 # MODUL 1: MAP KLASTER SPASIAL
@@ -235,7 +236,7 @@ with tab2:
     if geojson:
         # Fallback to choropleth_mapbox because MapLibre (choropleth_map) strictly enforces 
         # polygon winding order, which often results in blank maps for standard GeoJSONs.
-        fig2 = px.choropleth_mapbox(
+        fig2 = px.choropleth_map(
             df,
             geojson=geojson,
             locations="matched_regency",
@@ -243,7 +244,7 @@ with tab2:
             color="opportunity_index",
             color_continuous_scale="RdYlGn",
             range_color=(df['opportunity_index'].min(), df['opportunity_index'].quantile(0.9)), 
-            mapbox_style="carto-darkmatter",
+            map_style="carto-darkmatter",
             zoom=6,
             center={"lat": city_info['Latitude'], "lon": city_info['Longitude']},
             opacity=0.7,
@@ -260,9 +261,9 @@ with tab2:
         """)
     else:
         st.warning("File batas GeoJSON tidak ditemukan. Menampilkan visualisasi alternatif...")
-        fig_alt = px.density_mapbox(
+        fig_alt = px.density_map(
             df, lat='Latitude', lon='Longitude', z='opportunity_index', 
-            radius=30, mapbox_style="carto-darkmatter", height=600,
+            radius=30, map_style="carto-darkmatter", height=600,
             color_continuous_scale="RdYlGn"
         )
         st.plotly_chart(fig_alt, width="stretch")
@@ -328,6 +329,46 @@ with tab4:
     * Plot sebelah kiri memvalidasi seberapa linier hubungan penciptaan loker terhadap beban demografi (angkatan kerja). Wilayah yang melesat ke atas dari *trendline* menunjukkan performa penciptaan kerja yang abnormal (positif).
     * Barchart Indeks Kompetitiif pada level *>=2.5* didominasi posisi manajerial elit. Skor *~1.0 - 1.5* mengindikasikan pasar kerja kerah biru / peranan operasional.
     """)
+
+# MODUL 5: LAPORAN EKSEKUTIF (SUMMARY)
+with tab5:
+    st.subheader(f"Laporan Analisis Wilayah: {selected_city}")
+    st.markdown("Ringkasan temuan otomatis yang ditarik dari hasil *Machine Learning* dan Indeks Peluang untuk mempermudah perumusan kesimpulan skripsi.")
+    
+    # Kalkulasi peringkat Nasional/Pulau Jawa
+    df_sorted = df.sort_values(by='opportunity_index', ascending=False).reset_index(drop=True)
+    rank = df_sorted[df_sorted['matched_regency'] == selected_city].index[0] + 1
+    total_regions = len(df_sorted)
+    
+    # Narasi otonom
+    hub_status = city_info.get('hub_type', 'Outlier')
+    
+    if rank <= 10:
+        conclusion = f"Wilayah ini masuk ke dalam **Top 10 (Peringkat {rank} dari {total_regions})** kawasan berekspansi tinggi. Direkomendasikan sebagai destinasi utama pencari kerja."
+    elif rank >= (total_regions - 20):
+        conclusion = f"Bisa dikatakan wilayah ini mengalami defisit gawat darurat (**Peringkat {rank} dari {total_regions}**). Lapangan formal sangat sedikit dibandingkan populasinya."
+    else:
+        conclusion = f"Menempati posisi menengah-stabil di **Peringkat {rank} dari {total_regions}**. Memiliki pasar kerja organik namun perputaran karyawannya standar."
+
+    col_L1, col_L2 = st.columns([2, 1])
+    
+    with col_L1:
+        st.markdown("#### Narasi Kesimpulan")
+        st.write(f"Secara makro-ekonomi, **{selected_city}** diidentifikasi oleh sistem *DBSCAN* sebagai **{h_type}** bertaraf {city_info['prosperity_status']}.")
+        st.write(f"Dengan Angkatan Kerja sebesar **{int(city_info['labor_force_num']):,}** orang dan ketersediaan **{int(city_info['job_volume'])}** spesifikasi pekerjaan lintas digital, rasio indeks peluang membujur di angka **{city_info['opportunity_index']:.5f}**.")
+        st.write(conclusion)
+        
+        if not pd.isna(skills):
+            st.write(f"Berdasarkan hasil lematisasi teks NLP (TF-IDF), talenta lokal dituntut untuk menguasai: *{skills}* untuk memenangkan daya saing di sini.")
+            
+    with col_L2:
+        st.markdown("#### Penilaian Kritis")
+        st.metric(label="Rekomendasi", value="Sangat Layak" if rank <=20 else "Netral" if rank <=60 else "Berisiko")
+        st.metric(label="Persaingan", value="Longgar" if rank <=20 else "Seimbang" if rank <=60 else "Sengit")
+        
+    st.divider()
+    st.markdown("#### Raw Data Profil")
+    st.dataframe(pd.DataFrame(city_info).T, use_container_width=True)
 
 # --- FOOTER ---
 st.divider()
