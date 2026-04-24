@@ -1,0 +1,120 @@
+matched_regency,job_volume,competitive_index,labor_force_num,Provinsi,Latitude,Longitude,top_skills,opportunity_index,prosperity_status,cluster_id,hub_type
+Administrasi Kepulauan Seribu,0.0,1.0,,Jawa,-5.6350469,106.5803541,,0.0,Zona Merah,0,Economic Hub
+Bandung,1646.0,1.3517618469015795,1930432.0,Jawa Barat,-6.9218457,107.6070833,"sales, marketing, manager, specialist, cook",0.0008526588867155,Lautan Peluang,-1,Isolated zone
+Bandung Barat,151.0,1.2980132450331126,1029791.0,Jawa Barat,-6.897754,107.4124294,"sales, padalarang, cook, sales representative, operator",0.0001466316951692,Lautan Peluang,0,Economic Hub
+Bangkalan,10.0,1.0,600535.0,Jawa Timur,-7.0463602,112.8961792,"sales, akuntansi, assistant sales, collecting, sales collecting",1.6651818794907873e-05,Zona Merah,0,Economic Hub
+Banjarnegara,39.0,1.2820512820512822,615877.0,Jawa Tengah,-7.3558733,109.6600728,"sales, sales kanvasing, kanvasing, account, sales promotor",6.332433261836373e-05,Zona Merah,0,Economic Hub
+Bantul,140.0,1.2642857142857142,614314.0,DI Yogyakarta,-7.8982543,110.3855534,"lowongan kerja, kerja, lowongan, sales, staf",0.0002278964829061,Lautan Peluang,0,Economic Hub
+Banyumas,136.0,1.338235294117647,0.0,Jawa Tengah,-7.4550716,109.1167465,"purwokerto, sales, marketing, lowongan kerja, lowongan",0.0,Zona Merah,0,Economic Hub
+Banyuwangi,80.0,1.2375,1036804.0,Jawa Timur,-8.3325711,114.141579,"sales, hotelier, hotelier hotelier, pastry, catering",7.71601961412186e-05,Lautan Peluang,0,Economic Hub
+Batang,19.0,1.7894736842105263,508642.0,Jawa Tengah,-7.0323546,109.867953,"hrd, business manager, manager, affair, general affair",3.735436711872004e-05,Zona Merah,0,Economic Hub
+Bekasi,454.0,1.5044052863436124,1628860.0,Jawa Barat,-6.2349858,106.9945444,"cikarang, manager, engineer, sales, data center",0.000278722542146,Lautan Peluang,-1,Isolated zone
+Blitar,40.0,1.175,773434.0,Jawa Timur,-8.0982442,112.1650769,"sales, micro, lending, officer, leader supervisor",5.171740575149269e-05,Zona Merah,0,Economic Hub
+Blora,20.0,1.1,574424.0,Jawa Tengah,-7.110613,111.4204319,"sales, hse, kendaraan, penerjemah, hse officer",3.481748673453755e-05,Zona Merah,0,Economic Hub
+Bogor,670.0,1.473134328358209,2839349.0,Jawa Barat,-6.5963564,106.7973188,"sales, manager, marketing, supervisor, hotelier",0.0002359695831685,Lautan Peluang,-1,Isolated zone
+Bojonegoro,32.0,1.28125,843465.0,Jawa Timur,-7.2278714,111.81462,"sales, marketing agency, cabang, agency, marketing",3.793874078948148e-05,Zona Merah,0,Economic Hub
+Bondowoso,8.0,1.5,491623.0,Jawa Timur,-7.9451279,113.882059,"academy, brain academy, brain, ruangguru, sales trainee",1.6272631671016206e-05,Zona Merah,0,Economic Hub
+Boyolali,73.0,1.36986301369863,671249.0,Jawa Tengah,-7.3872118,110.7038691,"express, sales, shopee express, kurir shopee, operator",0.0001087524897616,Lautan Peluang,0,Economic Hub
+Brebes,62.0,1.5483870967741935,1159389.0,Jawa Tengah,-7.0520711,108.888136,"sales, manager, gigi, sales wifi, leader",5.347644319551074e-05,Zona Merah,0,Economic Hub
+Ciamis,9.0,1.6666666666666667,666184.0,Jawa Barat,-7.3131593,108.4048938,"lead spx, spx express, spx, kab, express",1.3509781081503008e-05,Zona Merah,0,Economic Hub
+Cianjur,38.0,1.2894736842105263,1361142.0,Jawa Barat,-7.0539936,107.0692399,"sales, head, promotor, executive, sales promotor",2.791773378530675e-05,Zona Merah,0,Economic Hub
+Cilacap,48.0,1.1875,1071270.0,Jawa Tengah,-7.461671,108.8046146,"sales, executive, sales executive, bahasa inggris, inggris",4.480663138144445e-05,Zona Merah,0,Economic Hub
+Cirebon,216.0,1.2592592592592593,1278803.0,Jawa Barat,-6.7137044,108.5608483,"sales, marketing, supervisor, accounting, general",0.0001689079553301,Lautan Peluang,-1,Isolated zone
+Demak,73.0,1.2054794520547945,710241.0,Jawa Tengah,-6.9230952,110.6276667,"mandarin, engineer, sales, injection, process",0.0001027820134292,Lautan Peluang,0,Economic Hub
+Garut,51.0,1.3333333333333333,1397197.0,Jawa Barat,-7.2162774,107.9014912,"sales, mitra, sales canvasser, canvasser, sales promotion",3.650165295230379e-05,Zona Merah,0,Economic Hub
+Gresik,174.0,1.2816091954022988,735897.0,Jawa Timur,-5.7933465,112.6598223,"sales, accounting, marketing, staf, manager",0.0002364461330865,Lautan Peluang,-1,Isolated zone
+Grobogan,35.0,1.1714285714285717,918835.0,Jawa Tengah,-7.0964605,110.8948834,"sales, erp, merchandiser, general, taking",3.809171396387817e-05,Zona Merah,0,Economic Hub
+Gunungkidul,0.0,1.0,,Jawa,-7.9930377,110.5579309,,0.0,Zona Merah,0,Economic Hub
+Indramayu,48.0,1.2708333333333333,982894.0,Jawa Barat,-6.4418182,108.1764705,"sales, marketing, marketing agency, motoris, agency",4.883537797565149e-05,Zona Merah,0,Economic Hub
+Jember,90.0,1.2666666666666666,1584270.0,Jawa Timur,-8.1688563,113.7021772,"sales, plaza, sales supervisor, supervisor, account receivable",5.680849855138328e-05,Zona Merah,0,Economic Hub
+Jepara,54.0,1.2962962962962965,711519.0,Jawa Tengah,-6.5899148,110.6672987,"hotelier, sales, sales internet, furniture, payroll",7.589396769446776e-05,Lautan Peluang,0,Economic Hub
+Jombang,0.0,1.0,,Jawa,-7.561464,112.2413044,,0.0,Zona Merah,0,Economic Hub
+Karanganyar,85.0,1.3294117647058823,573449.0,Jawa Tengah,-7.6196965,111.0698003,"shopee express, kurir shopee, shopee, express, supervisor",0.0001482259102378,Lautan Peluang,0,Economic Hub
+Karawang,50.0,1.42,1296627.0,Jawa Barat,-6.2649114,107.4294213,"engineer, sales, production supervisor, mandarin, gigi",3.856159095869514e-05,Zona Merah,0,Economic Hub
+Kebumen,28.0,1.2142857142857142,853535.0,Jawa Tengah,-7.6439744,109.6077921,"sales, outlet geprekinaja, geprekinaja, motoris, outlet",3.280474731557581e-05,Zona Merah,0,Economic Hub
+Kediri,63.0,1.1428571428571428,938789.0,Jawa Timur,-7.8111057,112.0046051,"sales, pengajar, consultant, officer, store",6.710773134325178e-05,Lautan Peluang,0,Economic Hub
+Kendal,96.0,1.2916666666666667,647532.0,Jawa Tengah,-7.0190966,110.1374757,"operator, mandarin, supervisor, engineering, warehouse",0.0001482552213635,Lautan Peluang,0,Economic Hub
+Klaten,79.0,1.3164556962025316,789894.0,Jawa Tengah,-7.6732387,110.6284785,"sales, marketing, chief, bancassurance advisor, finance",0.0001000134195221,Lautan Peluang,0,Economic Hub
+Kota Bandung,0.0,1.0,,Jawa,-6.9218457,107.6070833,,0.0,Zona Merah,0,Economic Hub
+Kota Banjar,0.0,1.0,,Jawa,-7.3695648,108.5415225,,0.0,Zona Merah,0,Economic Hub
+Kota Batu,34.0,1.4411764705882353,142486.0,Jawa Timur,-7.8711667,112.5269482,"manager, attendant, sales, division, food",0.00023861993459,Lautan Peluang,0,Economic Hub
+Kota Bekasi,0.0,1.0,,Jawa,-6.2349858,106.9945444,,0.0,Zona Merah,0,Economic Hub
+Kota Blitar,0.0,1.0,,Jawa,-8.0982442,112.1650769,,0.0,Zona Merah,0,Economic Hub
+Kota Bogor,0.0,1.0,,Jawa,-6.5963564,106.7973188,,0.0,Zona Merah,0,Economic Hub
+Kota Cilegon,32.0,1.5625,208807.0,Banten,-6.017389,106.0537688,"shipping, engineer, manager, supervisor, technical",0.0001532515672367,Lautan Peluang,0,Economic Hub
+Kota Cimahi,74.0,1.2972972972972974,319239.0,Jawa Barat,-6.8731527,107.5423099,"lowongan kerja, kerja, lowongan, specialist, fulltime",0.0002318012523532,Lautan Peluang,0,Economic Hub
+Kota Cirebon,0.0,1.0,,Jawa,-6.7137044,108.5608483,,0.0,Zona Merah,0,Economic Hub
+Kota Depok,76.0,1.0921052631578947,1063021.0,Jawa Barat,-6.40719,106.8158371,"guru les, les, sales, les privat, privat",7.149435429779845e-05,Lautan Peluang,0,Economic Hub
+Kota Jakarta Barat,2433.0,1.603370324702014,1244249.0,DKI Jakarta,-6.161569,106.7438905,"sales, manager, engineer, senior, specialist",0.0019553963877005,Lautan Peluang,-1,Isolated zone
+Kota Jakarta Pusat,625.0,1.608,546914.0,DKI Jakarta,-6.18234,106.8428715,"manager, sales, finance, accounting, senior",0.0011427756466281,Lautan Peluang,-1,Isolated zone
+Kota Jakarta Selatan,1170.0,1.6025641025641026,1148303.0,DKI Jakarta,-6.2838694,106.8048297,"manager, sales, accounting, specialist, senior",0.0010188948387315,Lautan Peluang,-1,Isolated zone
+Kota Jakarta Timur,452.0,1.5265486725663715,1552037.0,DKI Jakarta,-6.2628908,106.8822289,"sales, manager, supervisor, east, accounting",0.0002912301704147,Lautan Peluang,-1,Isolated zone
+Kota Jakarta Utara,923.0,1.4929577464788732,951895.0,DKI Jakarta,-6.136197,106.9006902,"mandarin, manager, sales, mandarin speaker, specialist",0.0009696447612394,Lautan Peluang,-1,Isolated zone
+Kota Kediri,55.0,1.1636363636363636,938789.0,Jawa Timur,-7.8111057,112.0046051,"sales, wifi, business development, business, executive wifi",5.858611466474362e-05,Zona Merah,0,Economic Hub
+Kota Madiun,0.0,1.0,,Jawa,-7.6290837,111.5168819,,0.0,Zona Merah,0,Economic Hub
+Kota Magelang,0.0,1.0,,Jawa,-7.4770747,110.2182164,,0.0,Zona Merah,0,Economic Hub
+Kota Malang,0.0,1.0,,Jawa,-7.9771308,112.6340265,,0.0,Zona Merah,0,Economic Hub
+Kota Mojokerto,0.0,1.0,,Jawa,-7.4631537,112.4319852,,0.0,Zona Merah,0,Economic Hub
+Kota Pasuruan,0.0,1.0,,Jawa,-7.6399593,112.9070632,,0.0,Zona Merah,0,Economic Hub
+Kota Pekalongan,0.0,1.0,,Jawa,-6.8905065,109.6761489,,0.0,Zona Merah,0,Economic Hub
+Kota Probolinggo,0.0,1.0,,Jawa,-7.7441461,113.2158401,,0.0,Zona Merah,0,Economic Hub
+Kota Salatiga,63.0,1.1746031746031746,114516.0,Jawa Tengah,-7.3302642,110.4995353,"engineer, software, software engineer, graduate, sales",0.0005501414649481,Lautan Peluang,0,Economic Hub
+Kota Semarang,0.0,1.0,,Jawa,-6.9903988,110.4229104,,0.0,Zona Merah,0,Economic Hub
+Kota Serang,0.0,1.0,,Jawa,-6.1169662,106.1518079,,0.0,Zona Merah,0,Economic Hub
+Kota Sukabumi,0.0,1.0,,Jawa,-6.9199289,106.9265095,,0.0,Zona Merah,0,Economic Hub
+Kota Surabaya,1734.0,1.3540945790080738,1641429.0,Jawa Timur,-7.2462836,112.7377674,"sales, marketing, manager, accounting, supervisor",0.0010563965910191,Lautan Peluang,-1,Isolated zone
+Kota Surakarta,369.0,1.2466124661246611,301594.0,Jawa Tengah,-7.5692489,110.828448,"solo, sales, lowongan kerja, lowongan, kerja",0.0012234991412296,Lautan Peluang,1,Economic Hub
+Kota Tangerang,0.0,1.0,,Jawa,-6.1761924,106.6382161,,0.0,Zona Merah,0,Economic Hub
+Kota Tangerang Selatan,124.0,1.3951612903225807,674454.0,Banten,-6.3227016,106.7085737,"guru les, les, sales, les privat, privat",0.0001838524198833,Lautan Peluang,0,Economic Hub
+Kota Tasikmalaya,0.0,1.0,,Jawa,-7.3262484,108.2201154,,0.0,Zona Merah,0,Economic Hub
+Kota Tegal,0.0,1.0,,Jawa,-6.8674488,109.1378271,,0.0,Zona Merah,0,Economic Hub
+Kota Yogyakarta,1016.0,1.2568897637795275,218161.0,DI Yogyakarta,-7.801349,110.3647351,"sales, hotelier, hotelier hotelier, marketing, manager",0.0046571110326777,Lautan Peluang,-1,Isolated zone
+Kudus,62.0,1.3064516129032258,525814.0,Jawa Tengah,-6.7978494,110.8679109,"sales, head, dental, laboratory, executive",0.000117912417699,Lautan Peluang,0,Economic Hub
+Kulon Progo,8.0,1.25,282745.0,DI Yogyakarta,-7.8123076,110.1479828,"hotel, steward, partie, chef partie, sales",2.829404587172187e-05,Zona Merah,0,Economic Hub
+Kuningan,15.0,1.1333333333333333,658799.0,Jawa Barat,-6.9869841,108.5538158,"sales, reguler, sales merchandiser, sales promotion, merchandiser",2.2768704870529555e-05,Zona Merah,0,Economic Hub
+Lamongan,40.0,1.175,833612.0,Jawa Timur,-7.1229319,112.3281935,"cabang, sales, ahli gizi, gizi, ahli",4.798395416572698e-05,Zona Merah,0,Economic Hub
+Lebak,0.0,1.0,,Jawa,-6.6432471,106.1868837,,0.0,Zona Merah,0,Economic Hub
+Lumajang,15.0,1.1333333333333333,641835.0,Jawa Timur,-8.135205,113.2244162,"mitra kurir, mitra, kurir motor, lowongan kerja, motor",2.337049241627521e-05,Zona Merah,0,Economic Hub
+Madiun,63.0,1.3174603174603174,456531.0,Jawa Timur,-7.6290837,111.5168819,"sales, lowongan kerja, lowongan, kerja, marketing",0.0001379972006282,Lautan Peluang,0,Economic Hub
+Magelang,105.0,1.361904761904762,835589.0,Jawa Tengah,-7.4770747,110.2182164,"sales, store, executive, manager, marketing",0.0001256598638804,Lautan Peluang,0,Economic Hub
+Magetan,1.0,1.0,415305.0,Jawa Timur,-7.6542489,111.3360565,"outlet geprekinaja, geprekinaja, crew outlet, outlet, crew",2.4078689156162337e-06,Zona Merah,0,Economic Hub
+Majalengka,39.0,1.2307692307692308,777708.0,Jawa Barat,-6.8073627,108.278786,"sales, order sales, supervisor, executive, automation",5.014735607708806e-05,Zona Merah,0,Economic Hub
+Malang,4.0,1.0,1614304.0,Jawa Timur,-7.9771308,112.6340265,"technician, quality, logistik, hrd",2.4778480385354927e-06,Zona Merah,0,Economic Hub
+Mojokerto,42.0,1.3095238095238095,677257.0,Jawa Timur,-7.5413377,112.5094975,"sales, supervisor, japanese, mesin, accounting",6.201486289547395e-05,Zona Merah,0,Economic Hub
+Nganjuk,28.0,1.4285714285714286,663438.0,Jawa Timur,-7.6150161,111.9465075,"cabang, field, manager kepala, sales, penagihan",4.220439588929184e-05,Zona Merah,0,Economic Hub
+Ngawi,31.0,1.2258064516129032,535919.0,Jawa Timur,-7.4325315,111.3907058,"sales, agent partner, agent, partner, crew",5.784456233124782e-05,Zona Merah,0,Economic Hub
+Pacitan,0.0,1.0,,Jawa,-8.1017184,111.1446711,,0.0,Zona Merah,0,Economic Hub
+Pamekasan,0.0,1.0,,Jawa,-7.0708133,113.5003939,,0.0,Zona Merah,0,Economic Hub
+Pandeglang,6.0,1.1666666666666667,624625.0,Banten,-6.5473765,105.7994879,"sales taking, taking order, taking, order, operator forklift",9.605763458074844e-06,Zona Merah,0,Economic Hub
+Pangandaran,13.0,1.4615384615384617,274841.0,Jawa Barat,-7.6407968,108.5567288,"reguler, sales, qris, edc, sales akuisisi",4.730007531627377e-05,Zona Merah,0,Economic Hub
+Pasuruan,0.0,1.0,,Jawa,-7.6399593,112.9070632,,0.0,Zona Merah,0,Economic Hub
+Pati,49.0,1.163265306122449,850572.0,Jawa Tengah,-6.7534144,111.0399982,"sales, retail, akunting, marketing, restaurant",5.760829183184963e-05,Zona Merah,0,Economic Hub
+Pekalongan,2.0,1.0,609671.0,Jawa Tengah,-6.8905065,109.6761489,officer,3.280457820693456e-06,Zona Merah,0,Economic Hub
+Pemalang,44.0,1.3409090909090908,867489.0,Jawa Tengah,-7.0110802,109.3914037,"sales, engineering, manufacturing, shift, lead",5.07211042445495e-05,Zona Merah,0,Economic Hub
+Ponorogo,7.0,1.0,629741.0,Jawa Timur,-7.9712266,111.4988929,"elektronik, relationship executive, sales, laboratorium, analis",1.111568089103298e-05,Zona Merah,0,Economic Hub
+Probolinggo,29.0,1.4827586206896552,71718.0,Jawa Timur,-7.7441461,113.2158401,"sales, food, manager, wifi internet, wifi",0.0004043615270922,Lautan Peluang,0,Economic Hub
+Purbalingga,22.0,1.2272727272727273,612818.0,Jawa Tengah,-7.32733,109.3998987,"sales, executive sales, executive, store, lowongan kerja",3.589972879386702e-05,Zona Merah,0,Economic Hub
+Purwakarta,106.0,1.3584905660377358,533867.0,Jawa Barat,-6.5913665,107.4019784,"nurse, sales, mandarin, supervisor, manager",0.0001985513245808,Lautan Peluang,0,Economic Hub
+Purworejo,22.0,1.181818181818182,480466.0,Jawa Tengah,-7.7073021,109.9665117,"sales, relation officer, lapangan, relation, credit",4.578887996236987e-05,Zona Merah,0,Economic Hub
+Rembang,23.0,1.0869565217391304,403612.0,Jawa Tengah,-6.7698635,111.4556709,"merchant, sales, sales promotion, promotion, sales akuisisi",5.698542164256761e-05,Zona Merah,0,Economic Hub
+Sampang,0.0,1.0,,Jawa,-7.0578157,113.2540541,,0.0,Zona Merah,0,Economic Hub
+Semarang,1220.0,1.3237704918032789,691542.0,Jawa Tengah,-6.9903988,110.4229104,"sales, manager, supervisor, executive, marketing",0.0017641733980004,Lautan Peluang,-1,Isolated zone
+Serang,98.0,1.4183673469387754,873816.0,Banten,-6.1169662,106.1518079,"sales, properti, marketing, supervisor, warehouse",0.0001121517573493,Lautan Peluang,0,Economic Hub
+Sidoarjo,361.0,1.293628808864266,1209700.0,Jawa Timur,-7.4539769,112.6593869,"sales, ppic, manager, marketing, pabrik",0.0002984210961395,Lautan Peluang,1,Economic Hub
+Situbondo,23.0,1.391304347826087,447205.0,Jawa Timur,-7.7067843,114.0054142,"supervisor, mitra kurir, sous chef, sous, workshop",5.143055198398945e-05,Zona Merah,0,Economic Hub
+Sleman,422.0,1.1729857819905214,690157.0,DI Yogyakarta,-7.6894175,110.3812904,"kitchen, sales, cook, barista, marketing",0.0006114550747148,Lautan Peluang,1,Economic Hub
+Sragen,47.0,1.3617021276595744,603758.0,Jawa Tengah,-7.3924563,110.9530232,"kurir shopee, shopee express, shopee, express, kurir",7.784575939366435e-05,Lautan Peluang,0,Economic Hub
+Subang,85.0,1.4470588235294115,910531.0,Jawa Barat,-6.4983888,107.7346278,"engineer, sales, foreman, specialist, manager",9.335212090527396e-05,Lautan Peluang,0,Economic Hub
+Sukabumi,97.0,1.2783505154639174,1529554.0,Jawa Barat,-7.0764509,106.7346608,"sales, supervisor, dental, teknisi, dan",6.341717912541825e-05,Lautan Peluang,0,Economic Hub
+Sukoharjo,166.0,1.319277108433735,530316.0,Jawa Tengah,-7.6814995,110.8700287,"solo, sales, supervisor, express, production",0.0003130209158313,Lautan Peluang,0,Economic Hub
+Sumedang,24.0,1.3333333333333333,61612.0,Jawa Barat,-6.8098713,107.9817732,"guru bahasa, guru, sales, bahasa, drafter",0.000389534506265,Lautan Peluang,0,Economic Hub
+Sumenep,0.0,1.0,,Jawa,-6.9991798,113.8376708,,0.0,Zona Merah,0,Economic Hub
+Tangerang,533.0,1.399624765478424,1728942.0,Banten,-6.1761924,106.6382161,"sales, expo, manager, accounting, mandarin",0.0003082810181024,Lautan Peluang,-1,Isolated zone
+Tasikmalaya,84.0,1.369047619047619,1041495.0,Jawa Barat,-7.3262484,108.2201154,"kerja, lowongan kerja, lowongan, sales, marketing",8.065329166246598e-05,Lautan Peluang,0,Economic Hub
+Tegal,122.0,1.286885245901639,933146.0,Jawa Tengah,-6.8674488,109.1378271,"sales, supervisor, executive, promotor, sales promotor",0.0001307405272058,Lautan Peluang,0,Economic Hub
+Temanggung,22.0,1.4545454545454546,505419.0,Jawa Tengah,-7.2397576,110.1216648,"cabang, lowongan kerja, kerja, lowongan, sales",4.352824092485641e-05,Zona Merah,0,Economic Hub
+Trenggalek,7.0,1.0,470751.0,Jawa Timur,-8.1359348,111.6401983,"warehouse sales, relation officer, relation, hrd, warehouse",1.4869856888248775e-05,Zona Merah,0,Economic Hub
+Tuban,33.0,1.4848484848484849,722859.0,Jawa Timur,-6.9596385,111.8932266,"sales, promoter, sales promoter, business manager, marketing",4.565205662515096e-05,Zona Merah,0,Economic Hub
+Tulungagung,22.0,1.2272727272727273,675313.0,Jawa Timur,-8.0729035,111.8996408,"sales, store, mitra satria, satria kurir, satria",3.257748629154185e-05,Zona Merah,0,Economic Hub
+Wonogiri,24.0,1.0416666666666667,685334.0,Jawa Tengah,-7.9620507,110.9575733,"express, shopee express, kurir shopee, shopee, kurir",3.501942118733348e-05,Zona Merah,0,Economic Hub
+Wonosobo,16.0,1.75,548804.0,Jawa Tengah,-7.3998,109.9209645,"sales, hotelier, sales taking, taking order, taking",2.9154306455492306e-05,Zona Merah,0,Economic Hub
