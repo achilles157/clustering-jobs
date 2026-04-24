@@ -39,6 +39,7 @@ git init
 
 **Step 2: Add Files & Commit**
 This adds everything (including the data, as requested), ignoring files listed in `.gitignore`.
+*(Catatan Keamanan: File `.env` sudah dilindungi oleh `.gitignore` sehingga aman untuk tidak ter-upload.)*
 ```powershell
 git add .
 git commit -m "Initial commit for Thesis Project: Data, Pipeline & Dashboard"

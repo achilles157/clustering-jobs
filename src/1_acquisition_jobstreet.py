@@ -4,15 +4,21 @@ import json
 import time
 import random
 import os
+from dotenv import load_dotenv
+
+# Muat environment variables dari file .env
+load_dotenv()
 
 # --- SECURITY UPDATE ---
 # DILARANG MENGUNGGAH SCRIPT INI DENGAN COOKIE/TOKEN ASLI (HARDCODED) KE GITHUB!
 # Silakan isi variabel ini secara lokal, atau gunakan Environment Variables (.env)
-COOKIES = {
-    # 'sol_id': 'YOUR_SOL_ID_HERE',
-    # '_ga': 'YOUR_GA_COOKIE_HERE',
-    # Isi dengan lengkap sesuai hasil inspeksi browser Anda
-}
+COOKIES = {}
+cookie_env = os.getenv('JOBSTREET_COOKIES', '')
+if cookie_env:
+    for item in cookie_env.split(';'):
+        if '=' in item:
+            k, v = item.strip().split('=', 1)
+            COOKIES[k] = v
 
 TOKEN = os.getenv('JOBSTREET_BEARER_TOKEN', 'Bearer ISI_TOKEN_ANDA_DISINI')
 
