@@ -1,10 +1,6 @@
 streamlit
 pandas
 plotly
-folium
-streamlit-folium
 wordcloud
 matplotlib
-scipy
-scikit-learn
-hdbscan
+numpy
