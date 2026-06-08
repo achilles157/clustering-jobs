@@ -21,23 +21,23 @@ Proyek ini terdiri dari 6 tahap pengolahan data dan 1 tahap visualisasi (dashboa
 - **Logika**: Menggunakan **Fuzzy String Matching** (Levenshtein Distance) untuk memetakan nama lokasi di Jobstreet ke standar wilayah BPS.
 - **Output**: `integrated_job_market_java_v2.csv`.
 
-### **Tahap 4: NLP & Opportunity Indexing (`5_nlp_opportunity_index.py`)**
-- **Teknik NLP**: Menggunakan TF-IDF (Term Frequency-Inverse Document Frequency) dengan rentang Bigram (1,2) untuk mengekstrak kata kunci industri dominan di tiap daerah.
+### **Tahap 4: Opportunity Indexing (`5_nlp_opportunity_index.py`)**
+- **Tujuan**: Menghitung indeks peluang kerja relatif terhadap jumlah angkatan kerja aktif.
 - **Perhitungan Indeks**: 
   $$Opportunity Index = \frac{\text{Jumlah Lowongan}}{\text{Angkatan Kerja}}$$
 - **Output**: `java_job_market_final_analysis.csv`.
 
 ### **Tahap 5: Klastering Spasial (DBSCAN) (`6_spatial_clustering_dbscan.py`)**
 - **Tujuan**: Mengidentifikasi Hub Ekonomi (Economic Clusters) secara otonom.
-- **Parameter**: Menggunakan **Radius 50 KM** (`eps=0.45`) untuk mengelompokkan aglomerasi kota (contoh: Jabodetabek).
+- **Parameter**: Menggunakan parameter spasial terstandarisasi untuk mengelompokkan aglomerasi kota (contoh: Jabodetabek).
 
 ### **Tahap 6: Visualisasi Interaktif (Dashboard) (`dashboard.py`)**
-- **Tujuan**: Menyajikan hasil klastering, indeks kompetisi, dan analisis skill (TF-IDF) ke dalam antarmuka web interaktif untuk keperluan demonstrasi sidang skripsi.
-- **Teknologi**: Streamlit, Plotly (untuk peta interaktif dan grafik), WordCloud.
+- **Tujuan**: Menyajikan hasil klastering, indeks kompetisi, dan peta peluang ke dalam antarmuka web interaktif untuk keperluan demonstrasi sidang skripsi.
+- **Teknologi**: Streamlit, Plotly (untuk peta interaktif dan grafik).
 - **Modul Utama**: 
   - **Peta Spasial (DBSCAN)**: Visualisasi klaster wilayah berdasarkan densitas lowongan.
   - **Opportunity Heatmap**: Peta sebaran warna (choropleth) berdasarkan Indeks Peluang.
-  - **Skill Context (TF-IDF)**: Word cloud keterampilan dominan per daerah yang dipilih.
+  - **Statistik Efisiensi**: Evaluasi linear korelasi beban demografis terhadap volume loker.
 
 ---
 
@@ -47,7 +47,6 @@ Proyek ini terdiri dari 6 tahap pengolahan data dan 1 tahap visualisasi (dashboa
 | `job_volume` | Total lowongan kerja unik yang tersedia. | Jobstreet |
 | `labor_force_num` | Jumlah angkatan kerja (aktif). | BPS 2025 |
 | `opportunity_index` | Rasio peluang kerja terhadap pencari kerja. | Hasil Hitung |
-| `top_skills` | Kata kunci skill/industri paling dominan (Hasil TF-IDF). | NLP Pipeline |
 
 ## 🚀 Cara Menjalankan
 Pastikan library yang dibutuhkan sudah terinstal:

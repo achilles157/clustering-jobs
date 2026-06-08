@@ -29,10 +29,21 @@ def main():
     
     print(f"Mengambil koordinat untuk {len(cities)} wilayah...")
     for city in cities:
-        # Menambahkan konteks agar pencarian lebih akurat
-        search_query = f"{city}, Indonesia"
+        # Gunakan prefix 'Kabupaten' untuk wilayah kabupaten asli agar tidak menimpa kota
+        if not city.startswith("Kota") and not city.startswith("Kepulauan"):
+            search_query = f"Kabupaten {city}, Indonesia"
+        else:
+            search_query = f"{city}, Indonesia"
+            
         try:
             location = geocode(search_query)
+            
+            # Fallback tanpa prefix jika tidak ditemukan
+            if not location and "Kabupaten " in search_query:
+                print(f"[RETRY] {city}: Mencoba kembali tanpa prefix...")
+                fallback_query = f"{city}, Indonesia"
+                location = geocode(fallback_query)
+                
             if location:
                 results.append({
                     "City_Name": city,
@@ -46,9 +57,11 @@ def main():
             print(f"[ERROR] {city}: {str(e)}")
             time.sleep(2) # Backoff jika ada error jaringan
 
-    # 3. Simpan ke CSV
+    # 3. Simpan ke CSV di folder data
+    import os
+    os.makedirs('data', exist_ok=True)
     output_df = pd.DataFrame(results)
-    output_file = 'java_regency_coordinates.csv'
+    output_file = os.path.join('data', 'java_regency_coordinates.csv')
     output_df.to_csv(output_file, index=False)
     
     print(f"\nProses Selesai! Koordinat disimpan di: {output_file}")

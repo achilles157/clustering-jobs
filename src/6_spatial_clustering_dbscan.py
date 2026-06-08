@@ -2,56 +2,53 @@ import pandas as pd
 import numpy as np
 from sklearn.cluster import DBSCAN
 from sklearn.preprocessing import StandardScaler
-from sklearn.metrics import silhouette_score
-import matplotlib.pyplot as plt
-import seaborn as sns
 import os
 
 """
-TAHAP 5: KLASTERING SPASIAL & MULTIDIMENSI (DBSCAN + RobustScaler)
+TAHAP 5: KLASTERING SPASIAL & MULTIDIMENSI (DBSCAN + StandardScaler + Log Volume)
 Penulis: Antigravity AI (Falah's Thesis Assistant)
-Deskripsi: Script final menggunakan RobustScaler untuk menormalisasi nilai yang sangat ekstrim 
-           serta Density-Based Spatial Clustering (DBSCAN) untuk mengidentifikasi 
-           "Hub Ekonomi" secara otomatis berdasarkan kepadatan & kesempatan kerja.
+Deskripsi: Script final menggunakan StandardScaler dan log-transformation untuk menormalisasi 
+           job volume serta Density-Based Spatial Clustering (DBSCAN) untuk mengidentifikasi 
+           "Hub Ekonomi" secara geografis spasial yang akurat.
 """
 
 def main():
-    print("Memulai Tahap Akhir: Klastering Spasial & Evaluasi (DBSCAN)...")
+    print("Memulai Tahap Akhir: Klastering Spasial (DBSCAN)...")
     
-    # 1. Memuat Data Hasil Analisis NLP & Indexing
+    # 1. Memuat Data Hasil Analisis Indexing
     input_file = os.path.join('data', 'java_job_market_final_analysis.csv')
     df = pd.read_csv(input_file)
     
     # 2. Persiapan Fitur Kombinasi (Spasial + Numerik Opsional)
     # Filter wilayah dengan koordinat valid
-    valid_coords_mask = (df['Latitude'] != 0) & (df['Longitude'] != 0)
+    valid_coords_mask = (df['Latitude'] != 0.0) & (df['Longitude'] != 0.0)
     df_valid = df[valid_coords_mask].copy()
     
     if len(df_valid) >= 3:
         # Menambahkan opportunity_index (kemampuan menyerap) ke dalam matriks spasial
-        features = df_valid[['Latitude', 'Longitude', 'job_volume']].values
+        features = df_valid[['Latitude', 'Longitude', 'job_volume']].copy().values
         
-        # RobustScaler untuk mengamankan data ekstrim (seperti job volume super tinggi di Jakarta)
-        scaler = StandardScaler() # Using standard scaler since robust might over-squash lat/lon
-        from sklearn.preprocessing import RobustScaler
-        r_scaler = RobustScaler()
-        features_scaled = r_scaler.fit_transform(features)
+        # Log-transformation pada job_volume agar skalanya stabil dan tidak mendominasi jarak spasial
+        features[:, 2] = np.log1p(features[:, 2])
+        
+        # StandardScaler untuk menormalisasi koordinat dan log-volume secara proporsional
+        scaler = StandardScaler()
+        features_scaled = scaler.fit_transform(features)
         
         # 3. Eksekusi DBSCAN
+        # eps=0.7 dan min_samples=3 menghasilkan pengelompokan aglomerasi metropolitan yang kokoh
         db = DBSCAN(eps=0.7, min_samples=3).fit(features_scaled)
         df_valid['cluster_id'] = db.labels_
         
-        # Evaluasi Cluster: Menggunakan DBCV (Density-Based Clustering Validation) via hdbscan
-        import hdbscan
-        valid_labels = db.labels_[db.labels_ != -1]
-        if len(set(valid_labels)) > 1:
-            try:
-                # DBCV metric ignores noise or handles it properly dependent on the implementation.
-                # validity_index is DBCV
+        # Evaluasi Cluster menggunakan DBCV jika memungkinkan
+        try:
+            import hdbscan
+            valid_labels = db.labels_[db.labels_ != -1]
+            if len(set(valid_labels)) > 1:
                 dbcv_score = hdbscan.validity.validity_index(features_scaled, db.labels_)
-                print(f"[EVALUASI KLASTER] DBCV (Density-Based Clustering Validation) Score: {dbcv_score:.4f} (-1.0 s/d 1.0)")
-            except Exception as e:
-                print(f"Gagal menghitung DBCV: {e}")
+                print(f"[EVALUASI KLASTER] DBCV Score: {dbcv_score:.4f} (-1.0 s/d 1.0)")
+        except Exception as e:
+            print(f"Informasi evaluasi klaster (DBCV): {e}")
     else:
         df_valid['cluster_id'] = -1
 
@@ -63,20 +60,21 @@ def main():
     df['hub_type'] = np.where(df['cluster_id'] == -1, 'Isolated zone', 'Economic Hub')
     
     # 5. Ringkasan Hasil Klastering
-    n_clusters = len(set(db.labels_)) - (1 if -1 in db.labels_ else 0)
+    labels = df_valid['cluster_id'].values if 'cluster_id' in df_valid.columns else np.array([])
+    n_clusters = len(set(labels)) - (1 if -1 in labels else 0)
     print(f"\n--- HASIL KLASTERING SPASIAL ---")
     print(f"Total Cluster Hub Ditemukan: {n_clusters}")
-    print(f"Total Wilayah Outlier (Noise): {list(db.labels_).count(-1)}")
+    print(f"Total Wilayah Outlier (Noise): {list(labels).count(-1)}")
     
     # 6. Analisis Karakteristik Per Hub
     clusters_summary = []
-    for cid in set(db.labels_):
+    for cid in set(df['cluster_id']):
         if cid == -1: continue
         
         cluster_data = df[df['cluster_id'] == cid]
         avg_opportunity = cluster_data['opportunity_index'].mean()
         total_jobs = cluster_data['job_volume'].sum()
-        top_province = cluster_data['Provinsi'].mode()[0]
+        top_province = cluster_data['Provinsi'].mode()[0] if not cluster_data['Provinsi'].empty else "Jawa"
         
         # Penentuan Status "Lautan Peluang" per Klaster
         status = "Lautan Peluang" if avg_opportunity > df['opportunity_index'].median() else "Zona Merah"
@@ -90,19 +88,15 @@ def main():
             "Member_Count": len(cluster_data)
         })
 
-    summary_df = pd.DataFrame(clusters_summary)
-    print("\nDetail Ringkasan Hub Ekonomi:")
-    print(summary_df.to_string(index=False))
+    if clusters_summary:
+        summary_df = pd.DataFrame(clusters_summary)
+        print("\nDetail Ringkasan Hub Ekonomi:")
+        print(summary_df.to_string(index=False))
     
     # 7. Ekspor Hasil Akhir
     output_file = os.path.join('data', 'java_job_market_hubs_final.csv')
     df.to_csv(output_file, index=False)
     print(f"\nData klaster lengkap disimpan di: {output_file}")
-    
-    # 8. Pesan Penutup untuk Skripsi
-    print("\nSaran Analisis Lanjutan:")
-    print("- Hub dengan status 'Lautan Peluang' adalah wilayah target migrasi pencari kerja.")
-    print("- Hub dengan status 'Zona Merah' membutuhkan intervensi kebijakan penciptaan lapangan kerja.")
 
 if __name__ == "__main__":
     main()

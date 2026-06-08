@@ -11,9 +11,8 @@ This document serves as the complete, definitive guide to the pipeline executed 
 * **Socio-Economic Data:** Merged 6 separate provincial datasets from BPS (Badan Pusat Statistik) containing Labor Force numbers for 119 regencies in Java.
 * **Centroid Mapping:** Since job listings lack exact micro-coordinates, we appended the Lat/Lon centroid of the respective Regency (Kabupaten/Kota) to each job node.
 
-## 🧬 Phase 3: NLP & Market Engineering
+## 🧬 Phase 3: Market Engineering
 * **Opportunity Index:** Calculated the ratio of available jobs compared to the active labor force in each region to determine market saturation.
-* **TF-IDF NLP:** Processed the `skills` strings across all jobs per region to extract the dominant industrial skills (Bi-Grams).
 * **Fuzzy Matching:** Achieved an **88.8%** match rate connecting Jobstreet territory names to BPS official territory names using `rapidfuzz`.
 
 ## 📍 Phase 4: Spatial DBSCAN Clustering
@@ -24,7 +23,6 @@ This document serves as the complete, definitive guide to the pipeline executed 
 The culmination of the project is an interactive dashboard demonstrating the findings:
 1. **Interactive Spatial Map:** Visualizes the DBSCAN hubs and the opportunity index choropleth.
 2. **Scatter Correlation:** Maps the disparity between population size and job availability.
-3. **Dynamic Skill Context:** Generates WordClouds on-the-fly when a specific region is selected.
 
 ---
 

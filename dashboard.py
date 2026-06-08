@@ -2,7 +2,6 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 import plotly.graph_objects as go
-from wordcloud import WordCloud
 import matplotlib.pyplot as plt
 import json
 import os
@@ -171,10 +170,9 @@ with m4:
     st.metric("Indeks Kompetitif", f"{comp_idx:.2f}/3.0", help="Tingkat kualifikasi rata-rata (1: Rendah, 3: Tinggi)")
 
 # --- TAB DASHBOARD ---
-tab1, tab2, tab3, tab4, tab5 = st.tabs([
+tab1, tab2, tab4, tab5 = st.tabs([
     "📍 Klaster Ekonomi", 
     "🔥 Heatmap Peluang", 
-    "☁️ Konteks Keahlian", 
     "📈 Statistik Efisiensi",
     "📝 Laporan Eksekutif"
 ])
@@ -268,31 +266,7 @@ with tab2:
         )
         st.plotly_chart(fig_alt, width="stretch")
 
-# MODUL 3: WORD CLOUD KEAHLIAN
-with tab3:
-    st.subheader("3. Karakteristik Keahlian (NLP / TF-IDF)")
-    st.markdown(f"DNA Keahlian yang diekstrak dari judul pekerjaan di **{selected_city}** (Noise lokasi telah difilter).")
-    
-    skills = city_info['top_skills']
-    if pd.isna(skills) or str(skills).strip() == "":
-        st.warning("Tidak ditemukan kata kunci keahlian spesifik untuk wilayah ini.")
-    else:
-        # Buat WordCloud
-        wc = WordCloud(
-            width=1000, 
-            height=500, 
-            background_color="#0A1128", 
-            colormap="winter",
-            max_words=50
-        ).generate(skills.replace(",", " "))
-        
-        fig3, ax = plt.subplots(figsize=(12, 6))
-        ax.imshow(wc, interpolation='bilinear')
-        ax.axis('off')
-        fig3.set_facecolor('#0A1128')
-        st.pyplot(fig3)
-        
-        st.success(f"**Top Skills Found:** {skills}")
+# MODUL 3: WORD CLOUD KEAHLIAN DIHAPUS (TF-IDF Dihilangkan)
 
 # MODUL 4: PLOT KORELASI & KOMPETITIF
 with tab4:
@@ -357,9 +331,7 @@ with tab5:
         st.write(f"Secara makro-ekonomi, **{selected_city}** diidentifikasi oleh sistem *DBSCAN* sebagai **{h_type}** bertaraf {city_info['prosperity_status']}.")
         st.write(f"Dengan Angkatan Kerja sebesar **{int(city_info['labor_force_num']):,}** orang dan ketersediaan **{int(city_info['job_volume'])}** spesifikasi pekerjaan lintas digital, rasio indeks peluang membujur di angka **{city_info['opportunity_index']:.5f}**.")
         st.write(conclusion)
-        
-        if not pd.isna(skills):
-            st.write(f"Berdasarkan hasil lematisasi teks NLP (TF-IDF), talenta lokal dituntut untuk menguasai: *{skills}* untuk memenangkan daya saing di sini.")
+        pass
             
     with col_L2:
         st.markdown("#### Penilaian Kritis")
