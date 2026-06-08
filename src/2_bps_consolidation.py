@@ -82,7 +82,12 @@ def main():
                     return float("".join(parts))
         else:
             try:
-                return float(val_str)
+                val_float = float(val_str)
+                # Koreksi untuk nilai integer bulat kecil (seperti 133 untuk Kota Probolinggo)
+                # yang dibulatkan oleh Excel dari ribuan murni (133.000 -> 133)
+                if 0 < val_float < 5000:
+                    return val_float * 1000
+                return val_float
             except ValueError:
                 return 0
 

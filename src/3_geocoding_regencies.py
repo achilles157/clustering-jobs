@@ -29,8 +29,12 @@ def main():
     
     print(f"Mengambil koordinat untuk {len(cities)} wilayah...")
     for city in cities:
-        # Gunakan prefix 'Kabupaten' untuk wilayah kabupaten asli agar tidak menimpa kota
-        if not city.startswith("Kota") and not city.startswith("Kepulauan"):
+        # Override khusus untuk daerah dengan nama yang mirip di luar Jawa
+        if city == 'Batang':
+            search_query = "Kabupaten Batang, Jawa Tengah, Indonesia"
+        elif city == 'Kota Banjar':
+            search_query = "Kota Banjar, Jawa Barat, Indonesia"
+        elif not city.startswith("Kota") and not city.startswith("Kepulauan"):
             search_query = f"Kabupaten {city}, Indonesia"
         else:
             search_query = f"{city}, Indonesia"

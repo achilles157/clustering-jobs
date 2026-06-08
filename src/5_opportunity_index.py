@@ -116,7 +116,11 @@ def main():
     # Gunakan median dari wilayah yang memiliki lowongan kerja untuk pengelompokan
     mask_has_jobs = hub_stats['job_volume'] > 0
     med_opp = hub_stats[mask_has_jobs]['opportunity_index'].median() if any(mask_has_jobs) else 0.0
-    hub_stats['prosperity_status'] = np.where(hub_stats['opportunity_index'] >= med_opp, "Lautan Peluang", "Zona Merah")
+    hub_stats['prosperity_status'] = np.where(
+        (hub_stats['opportunity_index'] >= med_opp) & (hub_stats['job_volume'] > 5), 
+        "Lautan Peluang", 
+        "Zona Merah"
+    )
     
     # Pengisian data koordinat/provinsi sisa (jika ada yang terlewat)
     hub_stats['Latitude'] = hub_stats['Latitude'].fillna(0.0)

@@ -21,7 +21,7 @@ Proyek ini terdiri dari 6 tahap pengolahan data dan 1 tahap visualisasi (dashboa
 - **Logika**: Menggunakan **Fuzzy String Matching** (Levenshtein Distance) untuk memetakan nama lokasi di Jobstreet ke standar wilayah BPS.
 - **Output**: `integrated_job_market_java_v2.csv`.
 
-### **Tahap 4: Opportunity Indexing (`5_nlp_opportunity_index.py`)**
+### **Tahap 4: Opportunity Indexing (`5_opportunity_index.py`)**
 - **Tujuan**: Menghitung indeks peluang kerja relatif terhadap jumlah angkatan kerja aktif.
 - **Perhitungan Indeks**: 
   $$Opportunity Index = \frac{\text{Jumlah Lowongan}}{\text{Angkatan Kerja}}$$

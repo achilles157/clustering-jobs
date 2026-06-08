@@ -9900,7 +9900,7 @@ id,title,company,location,matched_regency,match_score,Latitude,Longitude,Provins
 91598437.0,FUNDING OFFICER (Treasury whealth Associate) Pembukaan Rekening,Trisa Mandiri Sejahtera,"Semarang, Jawa Tengah",Kota Semarang,100.0,-6.9903988,110.4229104,Jawa Tengah,938766.0,56228.0,994994.0,1370540.0
 91598380.0,Frrelance Sales Semarang,,"Semarang, Jawa Tengah",Kota Semarang,100.0,-6.9903988,110.4229104,Jawa Tengah,938766.0,56228.0,994994.0,1370540.0
 91583052.0,Sales Promotion Sosro Demak,Staffinc Group,"Kabupaten Demak, Jawa Tengah",Demak,90.0,-6.9230952,110.6276667,Jawa Tengah,677741.0,32500.0,710241.0,972383.0
-91583055.0,Sales Medisend - Kab. Kudus,Staffinc Group,"Kudus, Jawa Tengah",Kudus,100.0,-6.7978494,110.8679109,Jawa Tengah,508814.0,17.0,525814.0,694459.0
+91583055.0,Sales Medisend - Kab. Kudus,Staffinc Group,"Kudus, Jawa Tengah",Kudus,100.0,-6.7978494,110.8679109,Jawa Tengah,508814.0,17000.0,525814.0,694459.0
 91582922.0,"Data Entry, Admin",CV Cahaya Putra,"Semarang, Jawa Tengah",Kota Semarang,100.0,-6.9903988,110.4229104,Jawa Tengah,938766.0,56228.0,994994.0,1370540.0
 91582826.0,Maintenance Engineer Kab. Semarang,Staffinc Group,"Semarang, Jawa Tengah",Kota Semarang,100.0,-6.9903988,110.4229104,Jawa Tengah,938766.0,56228.0,994994.0,1370540.0
 91582421.0,Customer Service Voice - Semarang,Staffinc Group,"Semarang, Jawa Tengah",Kota Semarang,100.0,-6.9903988,110.4229104,Jawa Tengah,938766.0,56228.0,994994.0,1370540.0
@@ -9920,14 +9920,14 @@ id,title,company,location,matched_regency,match_score,Latitude,Longitude,Provins
 91575855.0,Account Executive (Cashier & Admin) - Semarang Placement,Mitra Manunggal Mahardika,"Semarang, Jawa Tengah",Kota Semarang,100.0,-6.9903988,110.4229104,Jawa Tengah,938766.0,56228.0,994994.0,1370540.0
 91575801.0,Admin Keuangan (Semarang),Rajawali Hiyoto,"Semarang Tengah, Jawa Tengah",Semarang,90.0,-7.2876561,110.4019427,Jawa Tengah,666472.0,25070.0,691542.0,866020.0
 91575770.0,Jewellery Executive (Sales) - Semarang Placement,Mitra Manunggal Mahardika,"Semarang, Jawa Tengah",Kota Semarang,100.0,-6.9903988,110.4229104,Jawa Tengah,938766.0,56228.0,994994.0,1370540.0
-91575448.0,Director of R&D,,"Kudus, Jawa Tengah",Kudus,100.0,-6.7978494,110.8679109,Jawa Tengah,508814.0,17.0,525814.0,694459.0
-91575076.0,Product Governance – Manager,,"Kudus, Jawa Tengah",Kudus,100.0,-6.7978494,110.8679109,Jawa Tengah,508814.0,17.0,525814.0,694459.0
+91575448.0,Director of R&D,,"Kudus, Jawa Tengah",Kudus,100.0,-6.7978494,110.8679109,Jawa Tengah,508814.0,17000.0,525814.0,694459.0
+91575076.0,Product Governance – Manager,,"Kudus, Jawa Tengah",Kudus,100.0,-6.7978494,110.8679109,Jawa Tengah,508814.0,17000.0,525814.0,694459.0
 91574875.0,Import Purchasing Admin,PT Baja Tirta Sentosa,"Semarang, Jawa Tengah",Kota Semarang,100.0,-6.9903988,110.4229104,Jawa Tengah,938766.0,56228.0,994994.0,1370540.0
-91574779.0,OEM Division Head,,"Kudus, Jawa Tengah",Kudus,100.0,-6.7978494,110.8679109,Jawa Tengah,508814.0,17.0,525814.0,694459.0
-91574377.0,Contract Division Head,,"Kudus, Jawa Tengah",Kudus,100.0,-6.7978494,110.8679109,Jawa Tengah,508814.0,17.0,525814.0,694459.0
+91574779.0,OEM Division Head,,"Kudus, Jawa Tengah",Kudus,100.0,-6.7978494,110.8679109,Jawa Tengah,508814.0,17000.0,525814.0,694459.0
+91574377.0,Contract Division Head,,"Kudus, Jawa Tengah",Kudus,100.0,-6.7978494,110.8679109,Jawa Tengah,508814.0,17000.0,525814.0,694459.0
 91574292.0,Leader Produksi,Arisamandiri Pratama,"Demak, Jawa Tengah",Demak,100.0,-6.9230952,110.6276667,Jawa Tengah,677741.0,32500.0,710241.0,972383.0
-91573943.0,DFM Systems & Architecture Manager,,"Kudus, Jawa Tengah",Kudus,100.0,-6.7978494,110.8679109,Jawa Tengah,508814.0,17.0,525814.0,694459.0
-91573460.0,Marketing,Cito Putra Utama,"Kudus Kota, Jawa Tengah",Kudus,90.0,-6.7978494,110.8679109,Jawa Tengah,508814.0,17.0,525814.0,694459.0
+91573943.0,DFM Systems & Architecture Manager,,"Kudus, Jawa Tengah",Kudus,100.0,-6.7978494,110.8679109,Jawa Tengah,508814.0,17000.0,525814.0,694459.0
+91573460.0,Marketing,Cito Putra Utama,"Kudus Kota, Jawa Tengah",Kudus,90.0,-6.7978494,110.8679109,Jawa Tengah,508814.0,17000.0,525814.0,694459.0
 91572828.0,Remote Recruiter (Freelance / Solo / Independent),,"Semarang, Jawa Tengah",Kota Semarang,100.0,-6.9903988,110.4229104,Jawa Tengah,938766.0,56228.0,994994.0,1370540.0
 91572223.0,Cook (Japanese & Nusantara),PT Selera Nikmat Nusantara,"Semarang, Jawa Tengah",Kota Semarang,100.0,-6.9903988,110.4229104,Jawa Tengah,938766.0,56228.0,994994.0,1370540.0
 91569658.0,HR and GA Manager,Indofood,"Semarang, Jawa Tengah",Kota Semarang,100.0,-6.9903988,110.4229104,Jawa Tengah,938766.0,56228.0,994994.0,1370540.0
@@ -9969,7 +9969,7 @@ id,title,company,location,matched_regency,match_score,Latitude,Longitude,Provins
 91555314.0,Branch Manager Area Jawa Tengah,PT Integra Kreasitama Solusindo,"Semarang, Jawa Tengah",Kota Semarang,100.0,-6.9903988,110.4229104,Jawa Tengah,938766.0,56228.0,994994.0,1370540.0
 91579419.0,STAF PENAGIHAN LAPANGAN FIF SEMARANG,,"Semarang, Jawa Tengah",Kota Semarang,100.0,-6.9903988,110.4229104,Jawa Tengah,938766.0,56228.0,994994.0,1370540.0
 91579426.0,MICROFINANCING PARTNERSHIP ACCOUNT OFFICER (FIFGROUP KOTA SEMARANG II),,"Semarang, Jawa Tengah",Kota Semarang,100.0,-6.9903988,110.4229104,Jawa Tengah,938766.0,56228.0,994994.0,1370540.0
-91579449.0,Sales Promotor Akulaku Paylater,Aeon Credit Service,"Kudus, Jawa Tengah",Kudus,100.0,-6.7978494,110.8679109,Jawa Tengah,508814.0,17.0,525814.0,694459.0
+91579449.0,Sales Promotor Akulaku Paylater,Aeon Credit Service,"Kudus, Jawa Tengah",Kudus,100.0,-6.7978494,110.8679109,Jawa Tengah,508814.0,17000.0,525814.0,694459.0
 91579375.0,HR Admin,Mandiri Daya Andalan,"Semarang, Jawa Tengah",Kota Semarang,100.0,-6.9903988,110.4229104,Jawa Tengah,938766.0,56228.0,994994.0,1370540.0
 91554845.0,Teknisi Elektrik,PT Auri Steel Metalindo,"Kendal, Jawa Tengah",Kendal,100.0,-7.0190965,110.1374757,Jawa Tengah,617731.0,29801.0,647532.0,846974.0
 91554825.0,Teknisi Mekanik,PT Auri Steel Metalindo,"Kendal, Jawa Tengah",Kendal,100.0,-7.0190965,110.1374757,Jawa Tengah,617731.0,29801.0,647532.0,846974.0
@@ -9981,7 +9981,7 @@ id,title,company,location,matched_regency,match_score,Latitude,Longitude,Provins
 91567104.0,Production Planning Control Staff,Victoria Care Indonesia,"Semarang, Jawa Tengah",Kota Semarang,100.0,-6.9903988,110.4229104,Jawa Tengah,938766.0,56228.0,994994.0,1370540.0
 91552658.0,HR Recruitmen & People Development,PT BPR Arto Moro,"Semarang, Jawa Tengah",Kota Semarang,100.0,-6.9903988,110.4229104,Jawa Tengah,938766.0,56228.0,994994.0,1370540.0
 91579540.0,Barista,,"Semarang, Jawa Tengah",Kota Semarang,100.0,-6.9903988,110.4229104,Jawa Tengah,938766.0,56228.0,994994.0,1370540.0
-91551712.0,Chef,Pura Group,"Kudus, Jawa Tengah",Kudus,100.0,-6.7978494,110.8679109,Jawa Tengah,508814.0,17.0,525814.0,694459.0
+91551712.0,Chef,Pura Group,"Kudus, Jawa Tengah",Kudus,100.0,-6.7978494,110.8679109,Jawa Tengah,508814.0,17000.0,525814.0,694459.0
 91551685.0,Asisten Tenaga Teknis Kefarmasian - Apotek Heka Tembalang,PT Tri Medika Tunas Mitra,"Semarang, Jawa Tengah",Kota Semarang,100.0,-6.9903988,110.4229104,Jawa Tengah,938766.0,56228.0,994994.0,1370540.0
 91551511.0,SALES REPRESENTATIVE,CV Triana Bintang,"Semarang, Jawa Tengah",Kota Semarang,100.0,-6.9903988,110.4229104,Jawa Tengah,938766.0,56228.0,994994.0,1370540.0
 91579349.0,Direct Sales,,"Semarang, Jawa Tengah",Kota Semarang,100.0,-6.9903988,110.4229104,Jawa Tengah,938766.0,56228.0,994994.0,1370540.0
@@ -10035,7 +10035,7 @@ id,title,company,location,matched_regency,match_score,Latitude,Longitude,Provins
 91535431.0,STAFF EXIM,PT. HAO SHENG INTERNATIONAL,"Semarang, Jawa Tengah",Kota Semarang,100.0,-6.9903988,110.4229104,Jawa Tengah,938766.0,56228.0,994994.0,1370540.0
 91534896.0,Supervisor Maintenance - Utility,Prym Intimates Indonesia,"Semarang, Jawa Tengah",Kota Semarang,100.0,-6.9903988,110.4229104,Jawa Tengah,938766.0,56228.0,994994.0,1370540.0
 91535216.0,CUSTOMER CARE PERBANKAN - SEMARANG,Mitracomm Ekasarana,"Semarang, Jawa Tengah",Kota Semarang,100.0,-6.9903988,110.4229104,Jawa Tengah,938766.0,56228.0,994994.0,1370540.0
-91534122.0,Head Purchasing,,"Kudus Kota, Jawa Tengah",Kudus,90.0,-6.7978494,110.8679109,Jawa Tengah,508814.0,17.0,525814.0,694459.0
+91534122.0,Head Purchasing,,"Kudus Kota, Jawa Tengah",Kudus,90.0,-6.7978494,110.8679109,Jawa Tengah,508814.0,17000.0,525814.0,694459.0
 91534706.0,Internship Desain Grafis,PT Digibook Sarana Promosi Indonesia,"Semarang, Jawa Tengah",Kota Semarang,100.0,-6.9903988,110.4229104,Jawa Tengah,938766.0,56228.0,994994.0,1370540.0
 91418453.0,Translator Mandarin,,"Kendal, Jawa Tengah",Kendal,100.0,-7.0190965,110.1374757,Jawa Tengah,617731.0,29801.0,647532.0,846974.0
 91534523.0,Sales Trainer (Jawa Tengah),PT.SELALU BAHAGIA SEJAHTERA,"Semarang, Jawa Tengah",Kota Semarang,100.0,-6.9903988,110.4229104,Jawa Tengah,938766.0,56228.0,994994.0,1370540.0
@@ -10090,14 +10090,14 @@ id,title,company,location,matched_regency,match_score,Latitude,Longitude,Provins
 91512452.0,TEKNIK KIMIA,PT Beauty Inovation Laboratories,"Semarang, Jawa Tengah",Kota Semarang,100.0,-6.9903988,110.4229104,Jawa Tengah,938766.0,56228.0,994994.0,1370540.0
 91512476.0,AUDITOR,Beacorp,"Semarang Barat, Jawa Tengah",Semarang,90.0,-7.2876561,110.4019427,Jawa Tengah,666472.0,25070.0,691542.0,866020.0
 91512280.0,Sales Bakery,Sinar Himalaya,"Semarang, Jawa Tengah",Kota Semarang,100.0,-6.9903988,110.4229104,Jawa Tengah,938766.0,56228.0,994994.0,1370540.0
-91512076.0,Product Consultant (SPG/SPB),Tirtakencana Tatawarna,"Kudus, Jawa Tengah",Kudus,100.0,-6.7978494,110.8679109,Jawa Tengah,508814.0,17.0,525814.0,694459.0
+91512076.0,Product Consultant (SPG/SPB),Tirtakencana Tatawarna,"Kudus, Jawa Tengah",Kudus,100.0,-6.7978494,110.8679109,Jawa Tengah,508814.0,17000.0,525814.0,694459.0
 91511784.0,STAF PAJAK,CV. DAVA JAYA PERKASA,"Semarang, Jawa Tengah",Kota Semarang,100.0,-6.9903988,110.4229104,Jawa Tengah,938766.0,56228.0,994994.0,1370540.0
 91511568.0,PURCHASING KONTRUKSI BESI DAN BANGUNAN,Pengiklan Anonim,"Semarang, Jawa Tengah",Kota Semarang,100.0,-6.9903988,110.4229104,Jawa Tengah,938766.0,56228.0,994994.0,1370540.0
 91511052.0,PERSONAL ASISTEN/SEKRETARIS,CV. DAVA JAYA PERKASA,"Semarang, Jawa Tengah",Kota Semarang,100.0,-6.9903988,110.4229104,Jawa Tengah,938766.0,56228.0,994994.0,1370540.0
-91511001.0,Staff General Affair,Albisindo Timber,"Kudus, Jawa Tengah",Kudus,100.0,-6.7978494,110.8679109,Jawa Tengah,508814.0,17.0,525814.0,694459.0
+91511001.0,Staff General Affair,Albisindo Timber,"Kudus, Jawa Tengah",Kudus,100.0,-6.7978494,110.8679109,Jawa Tengah,508814.0,17000.0,525814.0,694459.0
 91525618.0,SPG / SPB Outlet,,"Semarang, Jawa Tengah",Kota Semarang,100.0,-6.9903988,110.4229104,Jawa Tengah,938766.0,56228.0,994994.0,1370540.0
 91525743.0,Direct Sales WIFI Pati,,"Pati, Jawa Tengah",Pati,100.0,-6.7534144,111.0399982,Jawa Tengah,819027.0,31545.0,850572.0,1103432.0
-91525717.0,Direct Sales WIFI Kudus,,"Kudus, Jawa Tengah",Kudus,100.0,-6.7978494,110.8679109,Jawa Tengah,508814.0,17.0,525814.0,694459.0
+91525717.0,Direct Sales WIFI Kudus,,"Kudus, Jawa Tengah",Kudus,100.0,-6.7978494,110.8679109,Jawa Tengah,508814.0,17000.0,525814.0,694459.0
 91525721.0,Direct Sales WIFI Demak,,"Demak, Jawa Tengah",Demak,100.0,-6.9230952,110.6276667,Jawa Tengah,677741.0,32500.0,710241.0,972383.0
 91510627.0,Sales Executive,Dekkson,"Pati, Jawa Tengah",Pati,100.0,-6.7534144,111.0399982,Jawa Tengah,819027.0,31545.0,850572.0,1103432.0
 91525807.0,SALES LAPANGAN,Eka Mas Republik,"Semarang, Jawa Tengah",Kota Semarang,100.0,-6.9903988,110.4229104,Jawa Tengah,938766.0,56228.0,994994.0,1370540.0
@@ -10135,7 +10135,7 @@ id,title,company,location,matched_regency,match_score,Latitude,Longitude,Provins
 91497584.0,Staff Quality Assurance,Agrosari Farm,"Semarang, Jawa Tengah",Kota Semarang,100.0,-6.9903988,110.4229104,Jawa Tengah,938766.0,56228.0,994994.0,1370540.0
 91497671.0,Remedial Officer (Collection) - Demak (Jawa Tengah),PT Mitra Solusi Lelang,"Kabupaten Demak, Jawa Tengah",Demak,90.0,-6.9230952,110.6276667,Jawa Tengah,677741.0,32500.0,710241.0,972383.0
 91497507.0,Sales Officer - Demak (Jawa Tengah),PT Mitra Solusi Lelang,"Demak, Jawa Tengah",Demak,100.0,-6.9230952,110.6276667,Jawa Tengah,677741.0,32500.0,710241.0,972383.0
-91496502.0,Operator DTF (Training 2 - 4 Minggu di Surakarta),,"Kudus Kota, Jawa Tengah",Kudus,90.0,-6.7978494,110.8679109,Jawa Tengah,508814.0,17.0,525814.0,694459.0
+91496502.0,Operator DTF (Training 2 - 4 Minggu di Surakarta),,"Kudus Kota, Jawa Tengah",Kudus,90.0,-6.7978494,110.8679109,Jawa Tengah,508814.0,17000.0,525814.0,694459.0
 91496302.0,Supervisor Penjualan,PT Suka Sari Mitra Mandiri,"Semarang, Jawa Tengah",Kota Semarang,100.0,-6.9903988,110.4229104,Jawa Tengah,938766.0,56228.0,994994.0,1370540.0
 91496239.0,Admin Loket Purchasing Semarang,PT Sinar Indochem,"Semarang Barat, Jawa Tengah",Semarang,90.0,-7.2876561,110.4019427,Jawa Tengah,666472.0,25070.0,691542.0,866020.0
 91496237.0,Product Marketing,DES Information Technology,"Semarang, Jawa Tengah",Kota Semarang,100.0,-6.9903988,110.4229104,Jawa Tengah,938766.0,56228.0,994994.0,1370540.0
@@ -10150,13 +10150,13 @@ id,title,company,location,matched_regency,match_score,Latitude,Longitude,Provins
 91486960.0,Field Collection Staff (Semarang),PT Pantja Artha Niaga,"Semarang, Jawa Tengah",Kota Semarang,100.0,-6.9903988,110.4229104,Jawa Tengah,938766.0,56228.0,994994.0,1370540.0
 91486935.0,TRANSLATOR MANDARIN,PT Yuu Electrical Tech,"Semarang, Jawa Tengah",Kota Semarang,100.0,-6.9903988,110.4229104,Jawa Tengah,938766.0,56228.0,994994.0,1370540.0
 91486763.0,Daily worker FOH,Ahara Bhadranaya Indonesia,"Semarang, Jawa Tengah",Kota Semarang,100.0,-6.9903988,110.4229104,Jawa Tengah,938766.0,56228.0,994994.0,1370540.0
-91486703.0,Medical Representative (Kudus),Combiphar,"Kudus, Jawa Tengah",Kudus,100.0,-6.7978494,110.8679109,Jawa Tengah,508814.0,17.0,525814.0,694459.0
+91486703.0,Medical Representative (Kudus),Combiphar,"Kudus, Jawa Tengah",Kudus,100.0,-6.7978494,110.8679109,Jawa Tengah,508814.0,17000.0,525814.0,694459.0
 91486702.0,"Pengajar Matematika, Fisika, Kimia dan Biologi  (Edulab Semarang)",Edulab Indonesia,"Semarang, Jawa Tengah",Kota Semarang,100.0,-6.9903988,110.4229104,Jawa Tengah,938766.0,56228.0,994994.0,1370540.0
 91499690.0,Account Executive CBN area Jawa Tengah,Rajawali Anugrah Resources,"Semarang, Jawa Tengah",Kota Semarang,100.0,-6.9903988,110.4229104,Jawa Tengah,938766.0,56228.0,994994.0,1370540.0
 91486201.0,Software Tester,PT. Ezsy Deltamax Indonesia,"Semarang, Jawa Tengah",Kota Semarang,100.0,-6.9903988,110.4229104,Jawa Tengah,938766.0,56228.0,994994.0,1370540.0
 91499979.0,Sales Associate (Penempatan Levi's),,"Semarang, Jawa Tengah",Kota Semarang,100.0,-6.9903988,110.4229104,Jawa Tengah,938766.0,56228.0,994994.0,1370540.0
 91485786.0,Drafter,Nuclear Coating Fabric,"Semarang, Jawa Tengah",Kota Semarang,100.0,-6.9903988,110.4229104,Jawa Tengah,938766.0,56228.0,994994.0,1370540.0
-91485290.0,SALES KANVASING FMCG ARTA BOGA (KUDUS/PATI),PT Tangga Agency,"Kudus, Jawa Tengah",Kudus,100.0,-6.7978494,110.8679109,Jawa Tengah,508814.0,17.0,525814.0,694459.0
+91485290.0,SALES KANVASING FMCG ARTA BOGA (KUDUS/PATI),PT Tangga Agency,"Kudus, Jawa Tengah",Kudus,100.0,-6.7978494,110.8679109,Jawa Tengah,508814.0,17000.0,525814.0,694459.0
 91485122.0,Marketing Sales - Service and Body Repair,CV Jaya Auto Randugarut,"Semarang, Jawa Tengah",Kota Semarang,100.0,-6.9903988,110.4229104,Jawa Tengah,938766.0,56228.0,994994.0,1370540.0
 91484973.0,Sales Promotor OPPO Store Banyumanik,PT.SELALU BAHAGIA SEJAHTERA,"Banyumanik, Jawa Tengah",Banyuwangi,80.0,-8.3325711,114.141579,Jawa Timur,995971.0,40833.0,1036804.0,1406110.0
 91500007.0,CREW OUTLET GEPREKINAJA PALEBON SEMARANG,,"Semarang, Jawa Tengah",Kota Semarang,100.0,-6.9903988,110.4229104,Jawa Tengah,938766.0,56228.0,994994.0,1370540.0
@@ -10164,8 +10164,8 @@ id,title,company,location,matched_regency,match_score,Latitude,Longitude,Provins
 91484429.0,FINANCE OFFICER,Beacorp,"Semarang Barat, Jawa Tengah",Semarang,90.0,-7.2876561,110.4019427,Jawa Tengah,666472.0,25070.0,691542.0,866020.0
 91484074.0,SPV Keuangan,Beacorp,"Semarang Barat, Jawa Tengah",Semarang,90.0,-7.2876561,110.4019427,Jawa Tengah,666472.0,25070.0,691542.0,866020.0
 91483454.0,Teknik Maintenance,Pengiklan Anonim,"Kendal, Jawa Tengah",Kendal,100.0,-7.0190965,110.1374757,Jawa Tengah,617731.0,29801.0,647532.0,846974.0
-91483417.0,MARKETING KREDIT,BPR Mandiri Artha Abadi,"Kudus, Jawa Tengah",Kudus,100.0,-6.7978494,110.8679109,Jawa Tengah,508814.0,17.0,525814.0,694459.0
-91479406.0,Head of Surface Design & Finishing,,"Kudus, Jawa Tengah",Kudus,100.0,-6.7978494,110.8679109,Jawa Tengah,508814.0,17.0,525814.0,694459.0
+91483417.0,MARKETING KREDIT,BPR Mandiri Artha Abadi,"Kudus, Jawa Tengah",Kudus,100.0,-6.7978494,110.8679109,Jawa Tengah,508814.0,17000.0,525814.0,694459.0
+91479406.0,Head of Surface Design & Finishing,,"Kudus, Jawa Tengah",Kudus,100.0,-6.7978494,110.8679109,Jawa Tengah,508814.0,17000.0,525814.0,694459.0
 91482940.0,TEKNISI SEMARANG,AGA Prima Engineering,"Semarang, Jawa Tengah",Kota Semarang,100.0,-6.9903988,110.4229104,Jawa Tengah,938766.0,56228.0,994994.0,1370540.0
 91499849.0,Direct Sales Executive Semarang,,"Semarang, Jawa Tengah",Kota Semarang,100.0,-6.9903988,110.4229104,Jawa Tengah,938766.0,56228.0,994994.0,1370540.0
 91499808.0,Team Leader TITAN HOME (NEXA) SEMARANG,,"Semarang, Jawa Tengah",Kota Semarang,100.0,-6.9903988,110.4229104,Jawa Tengah,938766.0,56228.0,994994.0,1370540.0
@@ -10225,8 +10225,8 @@ id,title,company,location,matched_regency,match_score,Latitude,Longitude,Provins
 91470717.0,CRM Supervisor,,"Pati, Jawa Tengah",Pati,100.0,-6.7534144,111.0399982,Jawa Tengah,819027.0,31545.0,850572.0,1103432.0
 91463372.0,Technician Utility,Sriboga Flour Mill,"Semarang, Jawa Tengah",Kota Semarang,100.0,-6.9903988,110.4229104,Jawa Tengah,938766.0,56228.0,994994.0,1370540.0
 91463339.0,Mechanic Preventive Maintenance,Sriboga Flour Mill,"Semarang, Jawa Tengah",Kota Semarang,100.0,-6.9903988,110.4229104,Jawa Tengah,938766.0,56228.0,994994.0,1370540.0
-91462365.0,Legal And Complience Staff,Albisindo Timber,"Kudus, Jawa Tengah",Kudus,100.0,-6.7978494,110.8679109,Jawa Tengah,508814.0,17.0,525814.0,694459.0
-91470764.0,"Sales Medicine - Kabupaten Kudus, Jawa Tengah",,"Kudus, Jawa Tengah",Kudus,100.0,-6.7978494,110.8679109,Jawa Tengah,508814.0,17.0,525814.0,694459.0
+91462365.0,Legal And Complience Staff,Albisindo Timber,"Kudus, Jawa Tengah",Kudus,100.0,-6.7978494,110.8679109,Jawa Tengah,508814.0,17000.0,525814.0,694459.0
+91470764.0,"Sales Medicine - Kabupaten Kudus, Jawa Tengah",,"Kudus, Jawa Tengah",Kudus,100.0,-6.7978494,110.8679109,Jawa Tengah,508814.0,17000.0,525814.0,694459.0
 91461230.0,Staff Kios Jus & Kopi,,"Semarang, Jawa Tengah",Kota Semarang,100.0,-6.9903988,110.4229104,Jawa Tengah,938766.0,56228.0,994994.0,1370540.0
 91459622.0,SALES PENEMPATAN SEMARANG,Bina Global Transport,"Semarang, Jawa Tengah",Kota Semarang,100.0,-6.9903988,110.4229104,Jawa Tengah,938766.0,56228.0,994994.0,1370540.0
 91459323.0,Warehouse Helper,Prima Tunggal Mandiri,"Pati, Jawa Tengah",Pati,100.0,-6.7534144,111.0399982,Jawa Tengah,819027.0,31545.0,850572.0,1103432.0
@@ -10254,12 +10254,12 @@ id,title,company,location,matched_regency,match_score,Latitude,Longitude,Provins
 91451030.0,PUBLIC AREA,,"Semarang, Jawa Tengah",Kota Semarang,100.0,-6.9903988,110.4229104,Jawa Tengah,938766.0,56228.0,994994.0,1370540.0
 91450679.0,BARISTA,,"Semarang, Jawa Tengah",Kota Semarang,100.0,-6.9903988,110.4229104,Jawa Tengah,938766.0,56228.0,994994.0,1370540.0
 91451136.0,Supervisor Sales & Marketing,Nuclear Coating Fabric,"Semarang, Jawa Tengah",Kota Semarang,100.0,-6.9903988,110.4229104,Jawa Tengah,938766.0,56228.0,994994.0,1370540.0
-91457301.0,Sales Executive,Jala Lintas Media,"Kudus, Jawa Tengah",Kudus,100.0,-6.7978494,110.8679109,Jawa Tengah,508814.0,17.0,525814.0,694459.0
-91457330.0,Security,Jala Lintas Media,"Kudus, Jawa Tengah",Kudus,100.0,-6.7978494,110.8679109,Jawa Tengah,508814.0,17.0,525814.0,694459.0
+91457301.0,Sales Executive,Jala Lintas Media,"Kudus, Jawa Tengah",Kudus,100.0,-6.7978494,110.8679109,Jawa Tengah,508814.0,17000.0,525814.0,694459.0
+91457330.0,Security,Jala Lintas Media,"Kudus, Jawa Tengah",Kudus,100.0,-6.7978494,110.8679109,Jawa Tengah,508814.0,17000.0,525814.0,694459.0
 91450874.0,Supervisor Outlet,Nakamura Holistic Therapy,"Semarang, Jawa Tengah",Kota Semarang,100.0,-6.9903988,110.4229104,Jawa Tengah,938766.0,56228.0,994994.0,1370540.0
 91450727.0,Sales Staff (Open for FG) - Manufacturing - Semarang (B-129651),RGF HR Agent Recruitment,"Semarang, Jawa Tengah",Kota Semarang,100.0,-6.9903988,110.4229104,Jawa Tengah,938766.0,56228.0,994994.0,1370540.0
 91415432.0,Manager Aftersales,Uwinfly,"Semarang, Jawa Tengah",Kota Semarang,100.0,-6.9903988,110.4229104,Jawa Tengah,938766.0,56228.0,994994.0,1370540.0
-91450490.0,Staff Purchasing,PT. Aqualux Yita Abadi,"Kudus, Jawa Tengah",Kudus,100.0,-6.7978494,110.8679109,Jawa Tengah,508814.0,17.0,525814.0,694459.0
+91450490.0,Staff Purchasing,PT. Aqualux Yita Abadi,"Kudus, Jawa Tengah",Kudus,100.0,-6.7978494,110.8679109,Jawa Tengah,508814.0,17000.0,525814.0,694459.0
 91232034.0,Customer Care English,Mitracomm Ekasarana,"Semarang, Jawa Tengah",Kota Semarang,100.0,-6.9903988,110.4229104,Jawa Tengah,938766.0,56228.0,994994.0,1370540.0
 91450339.0,Sales Associate - Semarang City Area,PT Widjaja Anekatas Center,"Semarang, Jawa Tengah",Kota Semarang,100.0,-6.9903988,110.4229104,Jawa Tengah,938766.0,56228.0,994994.0,1370540.0
 91457389.0,Asisten Tenaga Teknis Kefarmasian - Semarang Thamrin,,"Semarang, Jawa Tengah",Kota Semarang,100.0,-6.9903988,110.4229104,Jawa Tengah,938766.0,56228.0,994994.0,1370540.0
@@ -10786,26 +10786,26 @@ id,title,company,location,matched_regency,match_score,Latitude,Longitude,Provins
 91374629.0,Lowongan Kerja Marketing Supervisor - Motor SPV Serang,KB Finansia Multi Finance,"Serang, Banten",Serang,100.0,-6.1057256,105.9884196,Banten,797489.0,76327.0,873816.0,1294842.0
 91374627.0,Lowongan Kerja Electrical Operator,Farmsco Feed Indonesia,"Serang, Banten",Serang,100.0,-6.1057256,105.9884196,Banten,797489.0,76327.0,873816.0,1294842.0
 91348914.0,Staff Accounting & Pajak,Focusindo Asia Pacific,"Serang, Banten",Serang,100.0,-6.1057256,105.9884196,Banten,797489.0,76327.0,873816.0,1294842.0
-91599525.0,Store Leader,Erablue Electronics,"Batang, Jawa Tengah",Batang,100.0,1.2803013,101.1956877,Jawa Tengah,482846.0,25796.0,508642.0,653735.0
-91598269.0,IT Network & Support,PT Jayamas Medica Industri,"Batang, Jawa Tengah",Batang,100.0,1.2803013,101.1956877,Jawa Tengah,482846.0,25796.0,508642.0,653735.0
-91561887.0,Finance Internship,PT. Wavin Manufacturing Indonesia,"Batang, Jawa Tengah",Batang,100.0,1.2803013,101.1956877,Jawa Tengah,482846.0,25796.0,508642.0,653735.0
-91558887.0,Territory Sales & Collecting Staff (Batang),Varia Usaha Fabrikasi,"Batang, Jawa Tengah",Batang,100.0,1.2803013,101.1956877,Jawa Tengah,482846.0,25796.0,508642.0,653735.0
-91579433.0,MARKETING KREDIT USAHA RAKYAT FIFGROUP KOTA BATANG,,"Batang, Jawa Tengah",Batang,100.0,1.2803013,101.1956877,Jawa Tengah,482846.0,25796.0,508642.0,653735.0
+91599525.0,Store Leader,Erablue Electronics,"Batang, Jawa Tengah",Batang,100.0,-6.9167,109.7333,Jawa Tengah,482846.0,25796.0,508642.0,653735.0
+91598269.0,IT Network & Support,PT Jayamas Medica Industri,"Batang, Jawa Tengah",Batang,100.0,-6.9167,109.7333,Jawa Tengah,482846.0,25796.0,508642.0,653735.0
+91561887.0,Finance Internship,PT. Wavin Manufacturing Indonesia,"Batang, Jawa Tengah",Batang,100.0,-6.9167,109.7333,Jawa Tengah,482846.0,25796.0,508642.0,653735.0
+91558887.0,Territory Sales & Collecting Staff (Batang),Varia Usaha Fabrikasi,"Batang, Jawa Tengah",Batang,100.0,-6.9167,109.7333,Jawa Tengah,482846.0,25796.0,508642.0,653735.0
+91579433.0,MARKETING KREDIT USAHA RAKYAT FIFGROUP KOTA BATANG,,"Batang, Jawa Tengah",Batang,100.0,-6.9167,109.7333,Jawa Tengah,482846.0,25796.0,508642.0,653735.0
 91535035.0,Production Leader,PT Longhi Technology Indonesia,"Kabupaten Kendal, Jawa Tengah",Kendal,90.0,-7.0190965,110.1374757,Jawa Tengah,617731.0,29801.0,647532.0,846974.0
-91533184.0,"SALES EXECUTIVE ( KEBUMEN, PURWOREJO, PEMALANG,PEKALONGAN,BATANG )",Dapu Cell Indonesia,"Kabupaten Batang, Jawa Tengah",Batang,90.0,1.2803013,101.1956877,Jawa Tengah,482846.0,25796.0,508642.0,653735.0
-91511985.0,Mechanic Head – Garment Industry,PT. TRAX SUMBIRI INDO,"Batang, Jawa Tengah",Batang,100.0,1.2803013,101.1956877,Jawa Tengah,482846.0,25796.0,508642.0,653735.0
-91510423.0,SALES STAFF (JAPANESE SPEAKER),Dream Plastic Indonesia,"Kabupaten Batang, Jawa Tengah",Batang,90.0,1.2803013,101.1956877,Jawa Tengah,482846.0,25796.0,508642.0,653735.0
-91508337.0,ELECTRICAL,PT Window Shutters Indonesia,"Kabupaten Batang, Jawa Tengah",Batang,90.0,1.2803013,101.1956877,Jawa Tengah,482846.0,25796.0,508642.0,653735.0
-91487068.0,HR Payroll,Dream Plastic Indonesia,"Kabupaten Batang, Jawa Tengah",Batang,90.0,1.2803013,101.1956877,Jawa Tengah,482846.0,25796.0,508642.0,653735.0
-91485951.0,MANAGER HRD,PT Sinar Pangan Sejahtera,"Batang, Jawa Tengah",Batang,100.0,1.2803013,101.1956877,Jawa Tengah,482846.0,25796.0,508642.0,653735.0
-91484073.0,Staf Transaksi,PT Pemalang Batang Tol Road,"Batang, Jawa Tengah",Batang,100.0,1.2803013,101.1956877,Jawa Tengah,482846.0,25796.0,508642.0,653735.0
-91482129.0,Accounting Staff,Simone Accessary Collection,"Batang, Jawa Tengah",Batang,100.0,1.2803013,101.1956877,Jawa Tengah,482846.0,25796.0,508642.0,653735.0
-91481508.0,HRD Manager dan HRD Staff,Simone Accessary Collection,"Batang, Jawa Tengah",Batang,100.0,1.2803013,101.1956877,Jawa Tengah,482846.0,25796.0,508642.0,653735.0
-91480283.0,General Affair Supervisor,PT Ace Medical Products Indonesia,"Batang, Jawa Tengah",Batang,100.0,1.2803013,101.1956877,Jawa Tengah,482846.0,25796.0,508642.0,653735.0
-91479872.0,QE Supervisor,PT Ace Medical Products Indonesia,"Batang, Jawa Tengah",Batang,100.0,1.2803013,101.1956877,Jawa Tengah,482846.0,25796.0,508642.0,653735.0
-91479504.0,General Affair Specialist,PT Ace Medical Products Indonesia,"Batang, Jawa Tengah",Batang,100.0,1.2803013,101.1956877,Jawa Tengah,482846.0,25796.0,508642.0,653735.0
-91461189.0,Team Leader (Business Manager) Batang,Amartha,"Batang, Jawa Tengah",Batang,100.0,1.2803013,101.1956877,Jawa Tengah,482846.0,25796.0,508642.0,653735.0
-91461977.0,Team Leader (Business Manager) Batang Jawa Tengah,Amartha,"Batang, Jawa Tengah",Batang,100.0,1.2803013,101.1956877,Jawa Tengah,482846.0,25796.0,508642.0,653735.0
+91533184.0,"SALES EXECUTIVE ( KEBUMEN, PURWOREJO, PEMALANG,PEKALONGAN,BATANG )",Dapu Cell Indonesia,"Kabupaten Batang, Jawa Tengah",Batang,90.0,-6.9167,109.7333,Jawa Tengah,482846.0,25796.0,508642.0,653735.0
+91511985.0,Mechanic Head – Garment Industry,PT. TRAX SUMBIRI INDO,"Batang, Jawa Tengah",Batang,100.0,-6.9167,109.7333,Jawa Tengah,482846.0,25796.0,508642.0,653735.0
+91510423.0,SALES STAFF (JAPANESE SPEAKER),Dream Plastic Indonesia,"Kabupaten Batang, Jawa Tengah",Batang,90.0,-6.9167,109.7333,Jawa Tengah,482846.0,25796.0,508642.0,653735.0
+91508337.0,ELECTRICAL,PT Window Shutters Indonesia,"Kabupaten Batang, Jawa Tengah",Batang,90.0,-6.9167,109.7333,Jawa Tengah,482846.0,25796.0,508642.0,653735.0
+91487068.0,HR Payroll,Dream Plastic Indonesia,"Kabupaten Batang, Jawa Tengah",Batang,90.0,-6.9167,109.7333,Jawa Tengah,482846.0,25796.0,508642.0,653735.0
+91485951.0,MANAGER HRD,PT Sinar Pangan Sejahtera,"Batang, Jawa Tengah",Batang,100.0,-6.9167,109.7333,Jawa Tengah,482846.0,25796.0,508642.0,653735.0
+91484073.0,Staf Transaksi,PT Pemalang Batang Tol Road,"Batang, Jawa Tengah",Batang,100.0,-6.9167,109.7333,Jawa Tengah,482846.0,25796.0,508642.0,653735.0
+91482129.0,Accounting Staff,Simone Accessary Collection,"Batang, Jawa Tengah",Batang,100.0,-6.9167,109.7333,Jawa Tengah,482846.0,25796.0,508642.0,653735.0
+91481508.0,HRD Manager dan HRD Staff,Simone Accessary Collection,"Batang, Jawa Tengah",Batang,100.0,-6.9167,109.7333,Jawa Tengah,482846.0,25796.0,508642.0,653735.0
+91480283.0,General Affair Supervisor,PT Ace Medical Products Indonesia,"Batang, Jawa Tengah",Batang,100.0,-6.9167,109.7333,Jawa Tengah,482846.0,25796.0,508642.0,653735.0
+91479872.0,QE Supervisor,PT Ace Medical Products Indonesia,"Batang, Jawa Tengah",Batang,100.0,-6.9167,109.7333,Jawa Tengah,482846.0,25796.0,508642.0,653735.0
+91479504.0,General Affair Specialist,PT Ace Medical Products Indonesia,"Batang, Jawa Tengah",Batang,100.0,-6.9167,109.7333,Jawa Tengah,482846.0,25796.0,508642.0,653735.0
+91461189.0,Team Leader (Business Manager) Batang,Amartha,"Batang, Jawa Tengah",Batang,100.0,-6.9167,109.7333,Jawa Tengah,482846.0,25796.0,508642.0,653735.0
+91461977.0,Team Leader (Business Manager) Batang Jawa Tengah,Amartha,"Batang, Jawa Tengah",Batang,100.0,-6.9167,109.7333,Jawa Tengah,482846.0,25796.0,508642.0,653735.0
 91448676.0,Business Acquisition Executive APOS Jawa Tengah,CPSSoft,"Semarang, Jawa Tengah",Kota Semarang,100.0,-6.9903988,110.4229104,Jawa Tengah,938766.0,56228.0,994994.0,1370540.0
 91448585.0,Business Acquisition Executive area Semarang,CPSSoft,"Semarang, Jawa Tengah",Kota Semarang,100.0,-6.9903988,110.4229104,Jawa Tengah,938766.0,56228.0,994994.0,1370540.0
 91448560.0,ADMIN ACCOUNTING,,"Semarang, Jawa Tengah",Kota Semarang,100.0,-6.9903988,110.4229104,Jawa Tengah,938766.0,56228.0,994994.0,1370540.0
@@ -10918,17 +10918,17 @@ id,title,company,location,matched_regency,match_score,Latitude,Longitude,Provins
 91588760.0,Digital Marketing Tiktok,,Jakarta Raya,Kota Jakarta Barat,85.5,-6.161569,106.7438905,DKI Jakarta,1169339.0,74910.0,1244249.0,1953009.0
 91594576.0,Data Platform,Indocyber Global Technology,Jakarta Raya,Kota Jakarta Barat,85.5,-6.161569,106.7438905,DKI Jakarta,1169339.0,74910.0,1244249.0,1953009.0
 91594598.0,System Administrator,Indocyber Global Technology,Jakarta Raya,Kota Jakarta Barat,85.5,-6.161569,106.7438905,DKI Jakarta,1169339.0,74910.0,1244249.0,1953009.0
-91448362.0,Sales Project,PT Intan Pariwara,"Kudus, Jawa Tengah",Kudus,100.0,-6.7978494,110.8679109,Jawa Tengah,508814.0,17.0,525814.0,694459.0
-91445849.0,Administration Staff (Kudus),Superior Porcelain Sukses,"Kudus, Jawa Tengah",Kudus,100.0,-6.7978494,110.8679109,Jawa Tengah,508814.0,17.0,525814.0,694459.0
+91448362.0,Sales Project,PT Intan Pariwara,"Kudus, Jawa Tengah",Kudus,100.0,-6.7978494,110.8679109,Jawa Tengah,508814.0,17000.0,525814.0,694459.0
+91445849.0,Administration Staff (Kudus),Superior Porcelain Sukses,"Kudus, Jawa Tengah",Kudus,100.0,-6.7978494,110.8679109,Jawa Tengah,508814.0,17000.0,525814.0,694459.0
 91457403.0,Tax Specialist,,"Pati, Jawa Tengah",Pati,100.0,-6.7534144,111.0399982,Jawa Tengah,819027.0,31545.0,850572.0,1103432.0
 91440255.0,Maintenance Electrical,Arisamandiri Pratama,"Demak, Jawa Tengah",Demak,100.0,-6.9230952,110.6276667,Jawa Tengah,677741.0,32500.0,710241.0,972383.0
 91436628.0,Helper Gudang,Sumber Baru Ban,"Pati, Jawa Tengah",Pati,100.0,-6.7534144,111.0399982,Jawa Tengah,819027.0,31545.0,850572.0,1103432.0
-91423814.0,Sales Taking Order Staff - Kudus,Cimory Group,"Kudus, Jawa Tengah",Kudus,100.0,-6.7978494,110.8679109,Jawa Tengah,508814.0,17.0,525814.0,694459.0
-91423140.0,Sales Alat Kesehatan,Pengiklan Anonim,"Kudus, Jawa Tengah",Kudus,100.0,-6.7978494,110.8679109,Jawa Tengah,508814.0,17.0,525814.0,694459.0
+91423814.0,Sales Taking Order Staff - Kudus,Cimory Group,"Kudus, Jawa Tengah",Kudus,100.0,-6.7978494,110.8679109,Jawa Tengah,508814.0,17000.0,525814.0,694459.0
+91423140.0,Sales Alat Kesehatan,Pengiklan Anonim,"Kudus, Jawa Tengah",Kudus,100.0,-6.7978494,110.8679109,Jawa Tengah,508814.0,17000.0,525814.0,694459.0
 91422341.0,General Affair Supervisor,PT. Viridi Group Manufaktur Indonesia,"Grobogan, Jawa Tengah",Grobogan,100.0,-7.0964605,110.8948834,Jawa Tengah,890205.0,28630.0,918835.0,1184323.0
 91416261.0,Retail Sales Executive,Adiwisesa Mandiri Bpi,"Kabupaten Pati, Jawa Tengah",Pati,90.0,-6.7534144,111.0399982,Jawa Tengah,819027.0,31545.0,850572.0,1103432.0
 91415492.0,Leader Warehouse,Arisamandiri Pratama,"Demak, Jawa Tengah",Demak,100.0,-6.9230952,110.6276667,Jawa Tengah,677741.0,32500.0,710241.0,972383.0
-91414228.0,Nurse (Kudus),Arya Noble,"Kudus, Jawa Tengah",Kudus,100.0,-6.7978494,110.8679109,Jawa Tengah,508814.0,17.0,525814.0,694459.0
+91414228.0,Nurse (Kudus),Arya Noble,"Kudus, Jawa Tengah",Kudus,100.0,-6.7978494,110.8679109,Jawa Tengah,508814.0,17000.0,525814.0,694459.0
 91432931.0,KURIR SHOPEE - BONANG DEMAK,,"Demak, Jawa Tengah",Demak,100.0,-6.9230952,110.6276667,Jawa Tengah,677741.0,32500.0,710241.0,972383.0
 91433211.0,KURIR SPX - AREA DEMAK KOTA,,"Demak, Jawa Tengah",Demak,100.0,-6.9230952,110.6276667,Jawa Tengah,677741.0,32500.0,710241.0,972383.0
 91410514.0,SALES AREA PATI,Catur Adhi Manunggal,"Pati, Jawa Tengah",Pati,100.0,-6.7534144,111.0399982,Jawa Tengah,819027.0,31545.0,850572.0,1103432.0
@@ -10939,11 +10939,11 @@ id,title,company,location,matched_regency,match_score,Latitude,Longitude,Provins
 91400167.0,Marketing,PT FHG TEKSTIL INDONESIA,"Demak, Jawa Tengah",Demak,100.0,-6.9230952,110.6276667,Jawa Tengah,677741.0,32500.0,710241.0,972383.0
 91400118.0,Back Office,Sinar Jernih Suksesindo,"Kabupaten Pati, Jawa Tengah",Pati,90.0,-6.7534144,111.0399982,Jawa Tengah,819027.0,31545.0,850572.0,1103432.0
 91398420.0,Admin Purchasing,Indodispense,"Semarang Timur, Jawa Tengah",Semarang,90.0,-7.2876561,110.4019427,Jawa Tengah,666472.0,25070.0,691542.0,866020.0
-91398169.0,PUBLIC AREA / HOUSEKEEPING,PT Deta Sukses Makmur ( Semarang ),"Kudus, Jawa Tengah",Kudus,100.0,-6.7978494,110.8679109,Jawa Tengah,508814.0,17.0,525814.0,694459.0
+91398169.0,PUBLIC AREA / HOUSEKEEPING,PT Deta Sukses Makmur ( Semarang ),"Kudus, Jawa Tengah",Kudus,100.0,-6.7978494,110.8679109,Jawa Tengah,508814.0,17000.0,525814.0,694459.0
 91389647.0,Perawat Hemodialisa,Masa Lestari Husada,"Demak, Jawa Tengah",Demak,100.0,-6.9230952,110.6276667,Jawa Tengah,677741.0,32500.0,710241.0,972383.0
 91389505.0,Process Engineer Assembly,Arisamandiri Pratama,"Demak, Jawa Tengah",Demak,100.0,-6.9230952,110.6276667,Jawa Tengah,677741.0,32500.0,710241.0,972383.0
 91387234.0,Marketing Pati,CV. Indokarya Persada,"Pati, Jawa Tengah",Pati,100.0,-6.7534144,111.0399982,Jawa Tengah,819027.0,31545.0,850572.0,1103432.0
-91387104.0,Marketing Kudus,CV. Indokarya Persada,"Kudus, Jawa Tengah",Kudus,100.0,-6.7978494,110.8679109,Jawa Tengah,508814.0,17.0,525814.0,694459.0
+91387104.0,Marketing Kudus,CV. Indokarya Persada,"Kudus, Jawa Tengah",Kudus,100.0,-6.7978494,110.8679109,Jawa Tengah,508814.0,17000.0,525814.0,694459.0
 91385595.0,Sales Retail Motoris (Demak),PT. Mantra Aji Logistik,"Demak, Jawa Tengah",Demak,100.0,-6.9230952,110.6276667,Jawa Tengah,677741.0,32500.0,710241.0,972383.0
 91384982.0,FRONTLINER,Najmina Beautycare,"Pati, Jawa Tengah",Pati,100.0,-6.7534144,111.0399982,Jawa Tengah,819027.0,31545.0,850572.0,1103432.0
 91384841.0,BEAUTICIAN,Najmina Beautycare,"Pati, Jawa Tengah",Pati,100.0,-6.7534144,111.0399982,Jawa Tengah,819027.0,31545.0,850572.0,1103432.0
@@ -10953,70 +10953,70 @@ id,title,company,location,matched_regency,match_score,Latitude,Longitude,Provins
 91373232.0,Mandarin Speaker,Uwinfly,"Semarang Tengah, Jawa Tengah",Semarang,90.0,-7.2876561,110.4019427,Jawa Tengah,666472.0,25070.0,691542.0,866020.0
 91371142.0,MERCHANDISER STAFF,Holi Group,"Grobogan, Jawa Tengah",Grobogan,100.0,-7.0964605,110.8948834,Jawa Tengah,890205.0,28630.0,918835.0,1184323.0
 91371080.0,Sales Associate / Sales Assistant,PT Putrateja Sempurna,"Semarang Tengah, Jawa Tengah",Semarang,90.0,-7.2876561,110.4019427,Jawa Tengah,666472.0,25070.0,691542.0,866020.0
-91370248.0,Perawat Klinik Kecantikan,Superskin Beauty Clinic,"Kudus, Jawa Tengah",Kudus,100.0,-6.7978494,110.8679109,Jawa Tengah,508814.0,17.0,525814.0,694459.0
+91370248.0,Perawat Klinik Kecantikan,Superskin Beauty Clinic,"Kudus, Jawa Tengah",Kudus,100.0,-6.7978494,110.8679109,Jawa Tengah,508814.0,17000.0,525814.0,694459.0
 91368824.0,Asisten Mandarin (Demak),Ming Sui Solusi Indonesia,"Demak, Jawa Tengah",Demak,100.0,-6.9230952,110.6276667,Jawa Tengah,677741.0,32500.0,710241.0,972383.0
 91342421.0,Full-Time Barista,,"Semarang Timur, Jawa Tengah",Semarang,90.0,-7.2876561,110.4019427,Jawa Tengah,666472.0,25070.0,691542.0,866020.0
 91342762.0,Part-Time Barista,,"Semarang Timur, Jawa Tengah",Semarang,90.0,-7.2876561,110.4019427,Jawa Tengah,666472.0,25070.0,691542.0,866020.0
 91343434.0,Full-Time Kitchen Staff,,"Semarang Timur, Jawa Tengah",Semarang,90.0,-7.2876561,110.4019427,Jawa Tengah,666472.0,25070.0,691542.0,866020.0
-91358776.0,Purchasing Officer,Pura Group,"Kudus, Jawa Tengah",Kudus,100.0,-6.7978494,110.8679109,Jawa Tengah,508814.0,17.0,525814.0,694459.0
-91358742.0,Sales Representatif,Anggana Catur Prima,"Kudus, Jawa Tengah",Kudus,100.0,-6.7978494,110.8679109,Jawa Tengah,508814.0,17.0,525814.0,694459.0
-91358652.0,Staff PPIC,Pura Group,"Kudus, Jawa Tengah",Kudus,100.0,-6.7978494,110.8679109,Jawa Tengah,508814.0,17.0,525814.0,694459.0
+91358776.0,Purchasing Officer,Pura Group,"Kudus, Jawa Tengah",Kudus,100.0,-6.7978494,110.8679109,Jawa Tengah,508814.0,17000.0,525814.0,694459.0
+91358742.0,Sales Representatif,Anggana Catur Prima,"Kudus, Jawa Tengah",Kudus,100.0,-6.7978494,110.8679109,Jawa Tengah,508814.0,17000.0,525814.0,694459.0
+91358652.0,Staff PPIC,Pura Group,"Kudus, Jawa Tengah",Kudus,100.0,-6.7978494,110.8679109,Jawa Tengah,508814.0,17000.0,525814.0,694459.0
 91357769.0,Kepala Gudang,Saprotan Utama,"Demak, Jawa Tengah",Demak,100.0,-6.9230952,110.6276667,Jawa Tengah,677741.0,32500.0,710241.0,972383.0
 91356607.0,Supervisor Mekanik Injection,Arisamandiri Pratama,"Demak, Jawa Tengah",Demak,100.0,-6.9230952,110.6276667,Jawa Tengah,677741.0,32500.0,710241.0,972383.0
-91354150.0,Petugas Lapangan area Kudus,Home Credit,"Kudus, Jawa Tengah",Kudus,100.0,-6.7978494,110.8679109,Jawa Tengah,508814.0,17.0,525814.0,694459.0
+91354150.0,Petugas Lapangan area Kudus,Home Credit,"Kudus, Jawa Tengah",Kudus,100.0,-6.7978494,110.8679109,Jawa Tengah,508814.0,17000.0,525814.0,694459.0
 91349971.0,Customer Service (Semarang),Mitra10,"Semarang Tengah, Jawa Tengah",Semarang,90.0,-7.2876561,110.4019427,Jawa Tengah,666472.0,25070.0,691542.0,866020.0
 91349474.0,Commercial Team Leader (Semarang),Mitra10,"Semarang Tengah, Jawa Tengah",Semarang,90.0,-7.2876561,110.4019427,Jawa Tengah,666472.0,25070.0,691542.0,866020.0
-91353984.0,MITRA KURIR SPX AREA KUDUS,,"Kudus, Jawa Tengah",Kudus,100.0,-6.7978494,110.8679109,Jawa Tengah,508814.0,17.0,525814.0,694459.0
+91353984.0,MITRA KURIR SPX AREA KUDUS,,"Kudus, Jawa Tengah",Kudus,100.0,-6.7978494,110.8679109,Jawa Tengah,508814.0,17000.0,525814.0,694459.0
 91354062.0,Branch Manager Brain Academy - Pati (Jend. Sudirman),Ruangguru,"Pati, Jawa Tengah",Pati,100.0,-6.7534144,111.0399982,Jawa Tengah,819027.0,31545.0,850572.0,1103432.0
 91346083.0,Quality Assurance,PT Bahana BuanaBox,"Demak, Jawa Tengah",Demak,100.0,-6.9230952,110.6276667,Jawa Tengah,677741.0,32500.0,710241.0,972383.0
-91353981.0,Customer Service Online,,"Kudus, Jawa Tengah",Kudus,100.0,-6.7978494,110.8679109,Jawa Tengah,508814.0,17.0,525814.0,694459.0
-91353988.0,Sales Executive,,"Kudus, Jawa Tengah",Kudus,100.0,-6.7978494,110.8679109,Jawa Tengah,508814.0,17.0,525814.0,694459.0
+91353981.0,Customer Service Online,,"Kudus, Jawa Tengah",Kudus,100.0,-6.7978494,110.8679109,Jawa Tengah,508814.0,17000.0,525814.0,694459.0
+91353988.0,Sales Executive,,"Kudus, Jawa Tengah",Kudus,100.0,-6.7978494,110.8679109,Jawa Tengah,508814.0,17000.0,525814.0,694459.0
 91343785.0,"HSE (Health, Safety, and Environment)",Sailun Manufacturing Indonesia,"Demak, Jawa Tengah",Demak,100.0,-6.9230952,110.6276667,Jawa Tengah,677741.0,32500.0,710241.0,972383.0
 91343452.0,Koordinator Gudang,Sumber Baru Ban,"Pati, Jawa Tengah",Pati,100.0,-6.7534144,111.0399982,Jawa Tengah,819027.0,31545.0,850572.0,1103432.0
 91342539.0,Supervisor Produksi (Cosmetics / Pharmacy Industry),PT AESTHETICS AND HEALTH BEAUTY,"Demak, Jawa Tengah",Demak,100.0,-6.9230952,110.6276667,Jawa Tengah,677741.0,32500.0,710241.0,972383.0
 91336144.0,Pramusaji,,"Pati, Jawa Tengah",Pati,100.0,-6.7534144,111.0399982,Jawa Tengah,819027.0,31545.0,850572.0,1103432.0
-91336127.0,Kasir,,"Kudus Kota, Jawa Tengah",Kudus,90.0,-6.7978494,110.8679109,Jawa Tengah,508814.0,17.0,525814.0,694459.0
+91336127.0,Kasir,,"Kudus Kota, Jawa Tengah",Kudus,90.0,-6.7978494,110.8679109,Jawa Tengah,508814.0,17000.0,525814.0,694459.0
 91336123.0,Produksi Roti,,"Kabupaten Pati, Jawa Tengah",Pati,90.0,-6.7534144,111.0399982,Jawa Tengah,819027.0,31545.0,850572.0,1103432.0
 91336154.0,Advokat Magang,,"Pati, Jawa Tengah",Pati,100.0,-6.7534144,111.0399982,Jawa Tengah,819027.0,31545.0,850572.0,1103432.0
 91341549.0,GA Permit Supervisor,Cimory Group,"Semarang Tengah, Jawa Tengah",Semarang,90.0,-7.2876561,110.4019427,Jawa Tengah,666472.0,25070.0,691542.0,866020.0
 91340543.0,translator Mandarin,PT BMC COSMETICS INDONESIA,"Demak, Jawa Tengah",Demak,100.0,-6.9230952,110.6276667,Jawa Tengah,677741.0,32500.0,710241.0,972383.0
-91339987.0,DIRECT SALES (KUDUS),PT Tangga Agency,"Kudus, Jawa Tengah",Kudus,100.0,-6.7978494,110.8679109,Jawa Tengah,508814.0,17.0,525814.0,694459.0
-91339927.0,Ahli Gizi MBG,Koperasi Simpan Pinjam dan Pembiayaan Syariah,"Kudus, Jawa Tengah",Kudus,100.0,-6.7978494,110.8679109,Jawa Tengah,508814.0,17.0,525814.0,694459.0
+91339987.0,DIRECT SALES (KUDUS),PT Tangga Agency,"Kudus, Jawa Tengah",Kudus,100.0,-6.7978494,110.8679109,Jawa Tengah,508814.0,17000.0,525814.0,694459.0
+91339927.0,Ahli Gizi MBG,Koperasi Simpan Pinjam dan Pembiayaan Syariah,"Kudus, Jawa Tengah",Kudus,100.0,-6.7978494,110.8679109,Jawa Tengah,508814.0,17000.0,525814.0,694459.0
 91338609.0,Staf Pembelian,Tunas Agro Persada,"Kabupaten Demak, Jawa Tengah",Demak,90.0,-6.9230952,110.6276667,Jawa Tengah,677741.0,32500.0,710241.0,972383.0
 91337500.0,Translator Korea,Pungkook Indonesia One,"Grobogan, Jawa Tengah",Grobogan,100.0,-7.0964605,110.8948834,Jawa Tengah,890205.0,28630.0,918835.0,1184323.0
 91331044.0,UNITY DEVELOPER,Pasangin Corporation,"Grobogan, Jawa Tengah",Grobogan,100.0,-7.0964605,110.8948834,Jawa Tengah,890205.0,28630.0,918835.0,1184323.0
-91333539.0,FIELD COLLECTION | FIF KUDUS,,"Kudus, Jawa Tengah",Kudus,100.0,-6.7978494,110.8679109,Jawa Tengah,508814.0,17.0,525814.0,694459.0
-91330354.0,Area Koordinator,PT Mora Perkasa Mandiri,"Kudus, Jawa Tengah",Kudus,100.0,-6.7978494,110.8679109,Jawa Tengah,508814.0,17.0,525814.0,694459.0
+91333539.0,FIELD COLLECTION | FIF KUDUS,,"Kudus, Jawa Tengah",Kudus,100.0,-6.7978494,110.8679109,Jawa Tengah,508814.0,17000.0,525814.0,694459.0
+91330354.0,Area Koordinator,PT Mora Perkasa Mandiri,"Kudus, Jawa Tengah",Kudus,100.0,-6.7978494,110.8679109,Jawa Tengah,508814.0,17000.0,525814.0,694459.0
 91330272.0,Area Koordinator,PT Mora Perkasa Mandiri,"Grobogan, Jawa Tengah",Grobogan,100.0,-7.0964605,110.8948834,Jawa Tengah,890205.0,28630.0,918835.0,1184323.0
 91330132.0,HRD Supervisor,Sumber Harapan,"Semarang Tengah, Jawa Tengah",Semarang,90.0,-7.2876561,110.4019427,Jawa Tengah,666472.0,25070.0,691542.0,866020.0
 91330034.0,TRANSLATOR MANDARIN,PT Wadou Creative Art Indonesia,"Semarang Tengah, Jawa Tengah",Semarang,90.0,-7.2876561,110.4019427,Jawa Tengah,666472.0,25070.0,691542.0,866020.0
 91324048.0,Audit Enviromental,PT FHG TEKSTIL INDONESIA,"Demak, Jawa Tengah",Demak,100.0,-6.9230952,110.6276667,Jawa Tengah,677741.0,32500.0,710241.0,972383.0
 91323871.0,Sales Retail Motoris - Pati,PT. Mantra Aji Logistik,"Pati, Jawa Tengah",Pati,100.0,-6.7534144,111.0399982,Jawa Tengah,819027.0,31545.0,850572.0,1103432.0
 91323751.0,Staff legal dan Payroll,Pinus Packindo,"Pati, Jawa Tengah",Pati,100.0,-6.7534144,111.0399982,Jawa Tengah,819027.0,31545.0,850572.0,1103432.0
-91500168.0,KUIR MOTOR SHOPEE EXPRESS MEGAWON HUB,,"Kudus, Jawa Tengah",Kudus,100.0,-6.7978494,110.8679109,Jawa Tengah,508814.0,17.0,525814.0,694459.0
-91314544.0,quality control,,"Kudus, Jawa Tengah",Kudus,100.0,-6.7978494,110.8679109,Jawa Tengah,508814.0,17.0,525814.0,694459.0
+91500168.0,KUIR MOTOR SHOPEE EXPRESS MEGAWON HUB,,"Kudus, Jawa Tengah",Kudus,100.0,-6.7978494,110.8679109,Jawa Tengah,508814.0,17000.0,525814.0,694459.0
+91314544.0,quality control,,"Kudus, Jawa Tengah",Kudus,100.0,-6.7978494,110.8679109,Jawa Tengah,508814.0,17000.0,525814.0,694459.0
 91313870.0,Engineer Injection Process,Arisamandiri Pratama,"Demak, Jawa Tengah",Demak,100.0,-6.9230952,110.6276667,Jawa Tengah,677741.0,32500.0,710241.0,972383.0
 91312710.0,Crew outlet,,"Tembalang, Jawa Tengah",Pemalang,82.35294117647058,-7.0110802,109.3914037,Jawa Tengah,810133.0,57356.0,867489.0,1205414.0
 91308324.0,Admin,,"Semarang Timur, Jawa Tengah",Semarang,90.0,-7.2876561,110.4019427,Jawa Tengah,666472.0,25070.0,691542.0,866020.0
 91312250.0,STAFF ACCOUNTING AND TAX,Sanfood Prima Makmur,"Kabupaten Demak, Jawa Tengah",Demak,90.0,-6.9230952,110.6276667,Jawa Tengah,677741.0,32500.0,710241.0,972383.0
-91310475.0,Sales,Royal Inti Mandiri Abadi,"Kudus, Jawa Tengah",Kudus,100.0,-6.7978494,110.8679109,Jawa Tengah,508814.0,17.0,525814.0,694459.0
+91310475.0,Sales,Royal Inti Mandiri Abadi,"Kudus, Jawa Tengah",Kudus,100.0,-6.7978494,110.8679109,Jawa Tengah,508814.0,17000.0,525814.0,694459.0
 91310376.0,Sales,Royal Inti Mandiri Abadi,"Pati, Jawa Tengah",Pati,100.0,-6.7534144,111.0399982,Jawa Tengah,819027.0,31545.0,850572.0,1103432.0
 91321525.0,FIELD COLLECTION | FIF DEMAK,,"Demak, Jawa Tengah",Demak,100.0,-6.9230952,110.6276667,Jawa Tengah,677741.0,32500.0,710241.0,972383.0
 91307036.0,BEAUTICIAN,Najmina Beautycare,"Grobogan, Jawa Tengah",Grobogan,100.0,-7.0964605,110.8948834,Jawa Tengah,890205.0,28630.0,918835.0,1184323.0
 91307019.0,QA Lab Staff,Joinease Manufaktur Indonesia,"Semarang Tengah, Jawa Tengah",Semarang,90.0,-7.2876561,110.4019427,Jawa Tengah,666472.0,25070.0,691542.0,866020.0
 91306544.0,PPIC Manager,Joinease Manufaktur Indonesia,"Semarang Tengah, Jawa Tengah",Semarang,90.0,-7.2876561,110.4019427,Jawa Tengah,666472.0,25070.0,691542.0,866020.0
-91321669.0,Sales Consultant,,"Kudus, Jawa Tengah",Kudus,100.0,-6.7978494,110.8679109,Jawa Tengah,508814.0,17.0,525814.0,694459.0
-91321659.0,ACCOUNT EXECUTIVE MYREP AREA KUDUS,Trijaya Maju Totalindo,"Kudus, Jawa Tengah",Kudus,100.0,-6.7978494,110.8679109,Jawa Tengah,508814.0,17.0,525814.0,694459.0
+91321669.0,Sales Consultant,,"Kudus, Jawa Tengah",Kudus,100.0,-6.7978494,110.8679109,Jawa Tengah,508814.0,17000.0,525814.0,694459.0
+91321659.0,ACCOUNT EXECUTIVE MYREP AREA KUDUS,Trijaya Maju Totalindo,"Kudus, Jawa Tengah",Kudus,100.0,-6.7978494,110.8679109,Jawa Tengah,508814.0,17000.0,525814.0,694459.0
 91321754.0,ACCOUNT EXECUTIVE MYREP AREA PATI,Trijaya Maju Totalindo,"Pati, Jawa Tengah",Pati,100.0,-6.7534144,111.0399982,Jawa Tengah,819027.0,31545.0,850572.0,1103432.0
 91302624.0,"Account Officer Mikro - Kab. Semarang, Salatiga, Kendal, Batang, Demak, Grobogan",Permodalan Nasional Madani,"Semarang Tengah, Jawa Tengah",Semarang,90.0,-7.2876561,110.4019427,Jawa Tengah,666472.0,25070.0,691542.0,866020.0
 90764334.0,Supervisor General Affairs,Buana Triarta,"Demak, Jawa Tengah",Demak,100.0,-6.9230952,110.6276667,Jawa Tengah,677741.0,32500.0,710241.0,972383.0
-91300186.0,Front End Developer Executive,PT Nojorono Tobacco International,"Kudus Kota, Jawa Tengah",Kudus,90.0,-6.7978494,110.8679109,Jawa Tengah,508814.0,17.0,525814.0,694459.0
+91300186.0,Front End Developer Executive,PT Nojorono Tobacco International,"Kudus Kota, Jawa Tengah",Kudus,90.0,-6.7978494,110.8679109,Jawa Tengah,508814.0,17000.0,525814.0,694459.0
 91295070.0,Direct Sales Internet - MyRepublic (Sinarmas),,"Pati, Jawa Tengah",Pati,100.0,-6.7534144,111.0399982,Jawa Tengah,819027.0,31545.0,850572.0,1103432.0
-91295191.0,Direct Sales Internet - MyRepublic (Sinarmas),,"Kudus, Jawa Tengah",Kudus,100.0,-6.7978494,110.8679109,Jawa Tengah,508814.0,17.0,525814.0,694459.0
+91295191.0,Direct Sales Internet - MyRepublic (Sinarmas),,"Kudus, Jawa Tengah",Kudus,100.0,-6.7978494,110.8679109,Jawa Tengah,508814.0,17000.0,525814.0,694459.0
 91295033.0,Direct Sales Internet - MyRepublic (Sinarmas),,"Demak, Jawa Tengah",Demak,100.0,-6.9230952,110.6276667,Jawa Tengah,677741.0,32500.0,710241.0,972383.0
-91287310.0,Sales Assistant (Kudus Area),Mitra Adiperkasa,"Kudus, Jawa Tengah",Kudus,100.0,-6.7978494,110.8679109,Jawa Tengah,508814.0,17.0,525814.0,694459.0
+91287310.0,Sales Assistant (Kudus Area),Mitra Adiperkasa,"Kudus, Jawa Tengah",Kudus,100.0,-6.7978494,110.8679109,Jawa Tengah,508814.0,17000.0,525814.0,694459.0
 91286388.0,SALES HOUSEWARE,Pengiklan Anonim,"Demak, Jawa Tengah",Demak,100.0,-6.9230952,110.6276667,Jawa Tengah,677741.0,32500.0,710241.0,972383.0
-91286041.0,Laboratory Analyst,PT Nojorono Tobacco International,"Kudus Kota, Jawa Tengah",Kudus,90.0,-6.7978494,110.8679109,Jawa Tengah,508814.0,17.0,525814.0,694459.0
+91286041.0,Laboratory Analyst,PT Nojorono Tobacco International,"Kudus Kota, Jawa Tengah",Kudus,90.0,-6.7978494,110.8679109,Jawa Tengah,508814.0,17000.0,525814.0,694459.0
 91285832.0,Staff Administrasi,Koperasi Simpan Pinjam dan Pembiayaan Syariah,"Grobogan, Jawa Tengah",Grobogan,100.0,-7.0964605,110.8948834,Jawa Tengah,890205.0,28630.0,918835.0,1184323.0
 91285628.0,Inventory Control Specialist,PT Mitra Kasih Perkasa,"Semarang Tengah, Jawa Tengah",Semarang,90.0,-7.2876561,110.4019427,Jawa Tengah,666472.0,25070.0,691542.0,866020.0
 91280884.0,Field Collection,Cahaya Research Indonesia,"Semarang Tengah, Jawa Tengah",Semarang,90.0,-7.2876561,110.4019427,Jawa Tengah,666472.0,25070.0,691542.0,866020.0
@@ -11026,19 +11026,19 @@ id,title,company,location,matched_regency,match_score,Latitude,Longitude,Provins
 91261110.0,Sales Officer Mobile - Pati (Jawa Tengah),PT Mitra Solusi Lelang,"Pati, Jawa Tengah",Pati,100.0,-6.7534144,111.0399982,Jawa Tengah,819027.0,31545.0,850572.0,1103432.0
 91256136.0,Barista Coffee,,"Grobogan, Jawa Tengah",Grobogan,100.0,-7.0964605,110.8948834,Jawa Tengah,890205.0,28630.0,918835.0,1184323.0
 91251619.0,RND ANYAM,Pt. Surya Bangkit Cemerlang,"Demak, Jawa Tengah",Demak,100.0,-6.9230952,110.6276667,Jawa Tengah,677741.0,32500.0,710241.0,972383.0
-91251372.0,Host Live Shopping,PT Arka Radhika Kreatif,"Kudus, Jawa Tengah",Kudus,100.0,-6.7978494,110.8679109,Jawa Tengah,508814.0,17.0,525814.0,694459.0
+91251372.0,Host Live Shopping,PT Arka Radhika Kreatif,"Kudus, Jawa Tengah",Kudus,100.0,-6.7978494,110.8679109,Jawa Tengah,508814.0,17000.0,525814.0,694459.0
 91250566.0,HR Staff,PT. Viridi Group Manufaktur Indonesia,"Grobogan, Jawa Tengah",Grobogan,100.0,-7.0964605,110.8948834,Jawa Tengah,890205.0,28630.0,918835.0,1184323.0
 91249298.0,Sales Lapangan Pati-Grobogan,Pennyu,"Pati, Jawa Tengah",Pati,100.0,-6.7534144,111.0399982,Jawa Tengah,819027.0,31545.0,850572.0,1103432.0
 91247336.0,Account Payable & Account Receivable Staff,PT FHG TEKSTIL INDONESIA,"Demak, Jawa Tengah",Demak,100.0,-6.9230952,110.6276667,Jawa Tengah,677741.0,32500.0,710241.0,972383.0
 91247246.0,Kepala Ekspedisi,Mensa Binasukses,"Semarang Tengah, Jawa Tengah",Semarang,90.0,-7.2876561,110.4019427,Jawa Tengah,666472.0,25070.0,691542.0,866020.0
 91247011.0,SUPERVISOR PROCESS ENGINEER COLORING,Arisamandiri Pratama,"Demak, Jawa Tengah",Demak,100.0,-6.9230952,110.6276667,Jawa Tengah,677741.0,32500.0,710241.0,972383.0
-91233942.0,Bancassurance Advisor Executive - Kudus,Sun Life,"Kudus, Jawa Tengah",Kudus,100.0,-6.7978494,110.8679109,Jawa Tengah,508814.0,17.0,525814.0,694459.0
+91233942.0,Bancassurance Advisor Executive - Kudus,Sun Life,"Kudus, Jawa Tengah",Kudus,100.0,-6.7978494,110.8679109,Jawa Tengah,508814.0,17000.0,525814.0,694459.0
 91233763.0,Remedial Officer,Mitra Utama Madani,"Semarang Tengah, Jawa Tengah",Semarang,90.0,-7.2876561,110.4019427,Jawa Tengah,666472.0,25070.0,691542.0,866020.0
-91232228.0,Laboratory Staff,Indoma,"Kudus, Jawa Tengah",Kudus,100.0,-6.7978494,110.8679109,Jawa Tengah,508814.0,17.0,525814.0,694459.0
+91232228.0,Laboratory Staff,Indoma,"Kudus, Jawa Tengah",Kudus,100.0,-6.7978494,110.8679109,Jawa Tengah,508814.0,17000.0,525814.0,694459.0
 91230724.0,Mandarin Translator,Donlim Technology Indonesia,"Demak, Jawa Tengah",Demak,100.0,-6.9230952,110.6276667,Jawa Tengah,677741.0,32500.0,710241.0,972383.0
-91230382.0,TEAM LEADER,PT Danarta Anugrah Divina,"Kudus, Jawa Tengah",Kudus,100.0,-6.7978494,110.8679109,Jawa Tengah,508814.0,17.0,525814.0,694459.0
+91230382.0,TEAM LEADER,PT Danarta Anugrah Divina,"Kudus, Jawa Tengah",Kudus,100.0,-6.7978494,110.8679109,Jawa Tengah,508814.0,17000.0,525814.0,694459.0
 91228952.0,Merchandiser,Pungkook Indonesia One,"Grobogan, Jawa Tengah",Grobogan,100.0,-7.0964605,110.8948834,Jawa Tengah,890205.0,28630.0,918835.0,1184323.0
-91225690.0,Pramuniaga,,"Kudus, Jawa Tengah",Kudus,100.0,-6.7978494,110.8679109,Jawa Tengah,508814.0,17.0,525814.0,694459.0
+91225690.0,Pramuniaga,,"Kudus, Jawa Tengah",Kudus,100.0,-6.7978494,110.8679109,Jawa Tengah,508814.0,17000.0,525814.0,694459.0
 91226354.0,Koordinator Gudang,Prima Tunggal Mandiri,"Pati, Jawa Tengah",Pati,100.0,-6.7534144,111.0399982,Jawa Tengah,819027.0,31545.0,850572.0,1103432.0
 91226149.0,Electrical  Maintenance Technician,Sailun Manufacturing Indonesia,"Demak, Jawa Tengah",Demak,100.0,-6.9230952,110.6276667,Jawa Tengah,677741.0,32500.0,710241.0,972383.0
 91226114.0,Mandarin Speaker (Manufacture Department and Warehouse),Sailun Manufacturing Indonesia,"Demak, Jawa Tengah",Demak,100.0,-6.9230952,110.6276667,Jawa Tengah,677741.0,32500.0,710241.0,972383.0
@@ -11047,7 +11047,7 @@ id,title,company,location,matched_regency,match_score,Latitude,Longitude,Provins
 91221278.0,Mandarin Sales Admin,Lesso Technology Indonesia,"Demak, Jawa Tengah",Demak,100.0,-6.9230952,110.6276667,Jawa Tengah,677741.0,32500.0,710241.0,972383.0
 91214921.0,Cleaning Service,,"Semarang Tengah, Jawa Tengah",Semarang,90.0,-7.2876561,110.4019427,Jawa Tengah,666472.0,25070.0,691542.0,866020.0
 91209717.0,Executive Assistant,ICCS Global Industries,"Semarang Tengah, Jawa Tengah",Semarang,90.0,-7.2876561,110.4019427,Jawa Tengah,666472.0,25070.0,691542.0,866020.0
-91201511.0,Admin Logistik dan Inventory,PT. Aqualux Yita Abadi,"Kudus, Jawa Tengah",Kudus,100.0,-6.7978494,110.8679109,Jawa Tengah,508814.0,17.0,525814.0,694459.0
+91201511.0,Admin Logistik dan Inventory,PT. Aqualux Yita Abadi,"Kudus, Jawa Tengah",Kudus,100.0,-6.7978494,110.8679109,Jawa Tengah,508814.0,17000.0,525814.0,694459.0
 91201061.0,Exim,PT FHG TEKSTIL INDONESIA,"Demak, Jawa Tengah",Demak,100.0,-6.9230952,110.6276667,Jawa Tengah,677741.0,32500.0,710241.0,972383.0
 91196088.0,Translator Mandarin (Quality Control),PT AESTHETICS AND HEALTH BEAUTY,"Kabupaten Demak, Jawa Tengah",Demak,90.0,-6.9230952,110.6276667,Jawa Tengah,677741.0,32500.0,710241.0,972383.0
 91191136.0,SALES PROMOTION MINUMAN ALKOHOL,PT Tangga Agency,"Kabupaten Pati, Jawa Tengah",Pati,90.0,-6.7534144,111.0399982,Jawa Tengah,819027.0,31545.0,850572.0,1103432.0
@@ -11057,7 +11057,7 @@ id,title,company,location,matched_regency,match_score,Latitude,Longitude,Provins
 91172478.0,Relationship Officer - Demak (Jawa Tengah),PT Mitra Solusi Lelang,"Demak, Jawa Tengah",Demak,100.0,-6.9230952,110.6276667,Jawa Tengah,677741.0,32500.0,710241.0,972383.0
 91172205.0,Finance Manager (Manufacture Company),PT. Viridi Group Manufaktur Indonesia,"Grobogan, Jawa Tengah",Grobogan,100.0,-7.0964605,110.8948834,Jawa Tengah,890205.0,28630.0,918835.0,1184323.0
 91172171.0,SOUS CHEF,,"Semarang Tengah, Jawa Tengah",Semarang,90.0,-7.2876561,110.4019427,Jawa Tengah,666472.0,25070.0,691542.0,866020.0
-91167912.0,Sales Driver (DS Kudus),Yakult,"Kudus, Jawa Tengah",Kudus,100.0,-6.7978494,110.8679109,Jawa Tengah,508814.0,17.0,525814.0,694459.0
+91167912.0,Sales Driver (DS Kudus),Yakult,"Kudus, Jawa Tengah",Kudus,100.0,-6.7978494,110.8679109,Jawa Tengah,508814.0,17000.0,525814.0,694459.0
 91166302.0,Sales Merchandiser - Pati,PT. Mantra Aji Logistik,"Pati, Jawa Tengah",Pati,100.0,-6.7534144,111.0399982,Jawa Tengah,819027.0,31545.0,850572.0,1103432.0
 91181101.0,PRAMUNIAGA MRANGGEN,,"Demak, Jawa Tengah",Demak,100.0,-6.9230952,110.6276667,Jawa Tengah,677741.0,32500.0,710241.0,972383.0
 91164428.0,Sales Promotion Girl / Boy SPB / SPG Sales Consultant Sales Advisor Promotor,PT Blackwhite Internasional Indonesia,"Grobogan, Jawa Tengah",Grobogan,100.0,-7.0964605,110.8948834,Jawa Tengah,890205.0,28630.0,918835.0,1184323.0
@@ -11068,7 +11068,7 @@ id,title,company,location,matched_regency,match_score,Latitude,Longitude,Provins
 91150457.0,Legal Assistant,Polygroup Holdings Limited,"Grobogan, Jawa Tengah",Grobogan,100.0,-7.0964605,110.8948834,Jawa Tengah,890205.0,28630.0,918835.0,1184323.0
 91145596.0,Merchendiser,PT FHG TEKSTIL INDONESIA,"Demak, Jawa Tengah",Demak,100.0,-6.9230952,110.6276667,Jawa Tengah,677741.0,32500.0,710241.0,972383.0
 91145071.0,Crew Kitchen,Esque Indonesia,"Semarang Timur, Jawa Tengah",Semarang,90.0,-7.2876561,110.4019427,Jawa Tengah,666472.0,25070.0,691542.0,866020.0
-91141367.0,Dental Nurse - Sozo Dental Kudus,Seven Retail Group,"Kudus, Jawa Tengah",Kudus,100.0,-6.7978494,110.8679109,Jawa Tengah,508814.0,17.0,525814.0,694459.0
+91141367.0,Dental Nurse - Sozo Dental Kudus,Seven Retail Group,"Kudus, Jawa Tengah",Kudus,100.0,-6.7978494,110.8679109,Jawa Tengah,508814.0,17000.0,525814.0,694459.0
 91138808.0,Front Office Hotel,Sumi Hotel,"Semarang Tengah, Jawa Tengah",Semarang,90.0,-7.2876561,110.4019427,Jawa Tengah,666472.0,25070.0,691542.0,866020.0
 91133564.0,Staff Purchasing (General Affair),PT AESTHETICS AND HEALTH BEAUTY,"Kabupaten Demak, Jawa Tengah",Demak,90.0,-6.9230952,110.6276667,Jawa Tengah,677741.0,32500.0,710241.0,972383.0
 91133294.0,Management Trainee,PT FHG TEKSTIL INDONESIA,"Demak, Jawa Tengah",Demak,100.0,-6.9230952,110.6276667,Jawa Tengah,677741.0,32500.0,710241.0,972383.0
@@ -11077,10 +11077,10 @@ id,title,company,location,matched_regency,match_score,Latitude,Longitude,Provins
 90594250.0,Penanggungjawab Klinik Infertil,Pengiklan Anonim,"Semarang Tengah, Jawa Tengah",Semarang,90.0,-7.2876561,110.4019427,Jawa Tengah,666472.0,25070.0,691542.0,866020.0
 90904629.0,SPG Promotor (Kab. Pati),,"Pati, Jawa Tengah",Pati,100.0,-6.7534144,111.0399982,Jawa Tengah,819027.0,31545.0,850572.0,1103432.0
 90819350.0,Lowongan Kerja Accounting Staff,SUMINDO,"Demak, Jawa Tengah",Demak,100.0,-6.9230952,110.6276667,Jawa Tengah,677741.0,32500.0,710241.0,972383.0
-91241911.0,SALES OFFICER NEW CAR,,"Kudus, Jawa Tengah",Kudus,100.0,-6.7978494,110.8679109,Jawa Tengah,508814.0,17.0,525814.0,694459.0
+91241911.0,SALES OFFICER NEW CAR,,"Kudus, Jawa Tengah",Kudus,100.0,-6.7978494,110.8679109,Jawa Tengah,508814.0,17000.0,525814.0,694459.0
 90464050.0,Sales TO,,"Pati, Jawa Tengah",Pati,100.0,-6.7534144,111.0399982,Jawa Tengah,819027.0,31545.0,850572.0,1103432.0
 88248435.0,Team Leader (Business Manager) - Pati,Amartha,"Pati, Jawa Tengah",Pati,100.0,-6.7534144,111.0399982,Jawa Tengah,819027.0,31545.0,850572.0,1103432.0
-88248424.0,Team Leader (Business Manager) - Kudus,Amartha,"Kudus, Jawa Tengah",Kudus,100.0,-6.7978494,110.8679109,Jawa Tengah,508814.0,17.0,525814.0,694459.0
+88248424.0,Team Leader (Business Manager) - Kudus,Amartha,"Kudus, Jawa Tengah",Kudus,100.0,-6.7978494,110.8679109,Jawa Tengah,508814.0,17000.0,525814.0,694459.0
 86064790.0,Lowongan Kerja Dokter Umum,,"Demak, Jawa Tengah",Demak,100.0,-6.9230952,110.6276667,Jawa Tengah,677741.0,32500.0,710241.0,972383.0
 91181011.0,Sales Executive,Fifgroup,"Majalengka, Jawa Barat",Majalengka,100.0,-6.8073627,108.278786,Jawa Barat,749551.0,28157.0,777708.0,1071906.0
 89173297.0,Admin Loker Hotelier,Fitra Hotel Majalengka,"Majalengka, Jawa Barat",Majalengka,100.0,-6.8073627,108.278786,Jawa Barat,749551.0,28157.0,777708.0,1071906.0

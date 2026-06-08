@@ -98,10 +98,29 @@ def load_data():
     df = pd.read_csv(file_path)
     # Pembersihan data & Penanganan NaN
     df['opportunity_index'] = pd.to_numeric(df['opportunity_index'], errors='coerce').replace([np.inf, -np.inf], 0).fillna(0)
-    df['competitive_index'] = pd.to_numeric(df.get('competitive_index', 0), errors='coerce').fillna(0)
-    df['labor_force_num'] = pd.to_numeric(df.get('labor_force_num', 0), errors='coerce').fillna(0)
-    df['job_volume'] = pd.to_numeric(df.get('job_volume', 0), errors='coerce').fillna(0)
+    df['competitive_index'] = pd.to_numeric(df['competitive_index'], errors='coerce').fillna(0)
+    df['labor_force_num'] = pd.to_numeric(df['labor_force_num'], errors='coerce').fillna(0)
+    df['job_volume'] = pd.to_numeric(df['job_volume'], errors='coerce').fillna(0)
     df['cluster_id'] = df['cluster_id'].astype(int) if 'cluster_id' in df.columns else -1
+    df['size_for_map'] = df['job_volume'] + 5
+    
+    # Klasifikasi detail untuk visualisasi peta yang lebih presisi
+    def classify_cluster(row):
+        cid = int(row['cluster_id'])
+        vol = int(row['job_volume'])
+        if cid == -1:
+            if vol >= 100:
+                return "Outlier: Metropolitan Giant (Pusat Mandiri)"
+            else:
+                return "Outlier: Isolated / Remote Zone (Terpencil/Sepi)"
+        elif cid == 0:
+            return "Cluster 0: Java Mainland Hub (Aglomerasi Utama)"
+        elif cid == 1:
+            return "Cluster 1: Madura Local Hub (Aglomerasi Madura)"
+        else:
+            return f"Cluster {cid}"
+            
+    df['cluster_display'] = df.apply(classify_cluster, axis=1)
     return df
 
 @st.cache_data
@@ -144,13 +163,11 @@ city_info = df[df['matched_regency'] == selected_city].iloc[0]
 st.sidebar.subheader("Konteks Wilayah")
 st.sidebar.write(f"**Provinsi:** {city_info['Provinsi']}")
 st.sidebar.write(f"**Status:** {city_info['prosperity_status']}")
-if 'hub_type' in city_info:
-    # Terjemahan tipe hub
-    h_type = "Hub Ekonomi" if city_info['hub_type'] == "Economic Hub" else "Zona Terisolasi"
-    st.sidebar.info(f"**Tipe Hub:** {h_type}")
+if 'cluster_display' in city_info:
+    st.sidebar.info(f"**Klasifikasi:** {city_info['cluster_display']}")
 
 st.sidebar.divider()
-st.sidebar.caption("v1.1 • Dimutakhirkan dengan Indeks Kompetitif")
+st.sidebar.caption("v1.2 • Dimutakhirkan dengan Klasifikasi Spasial Detail")
 
 # --- HEADER UTAMA ---
 st.title("Analisis Spasial Hub & Peluang Kerja")
@@ -188,17 +205,22 @@ with tab1:
         df, 
         lat="Latitude", 
         lon="Longitude", 
-        color=df["cluster_id"].astype(str),
-        size="job_volume",
+        color="cluster_display",
+        size="size_for_map",
         size_max=40,
         hover_name="matched_regency",
-        hover_data={"Latitude":False, "Longitude":False, "cluster_id":True, "job_volume":True},
+        hover_data={"Latitude":False, "Longitude":False, "cluster_display":True, "job_volume":True, "size_for_map":False},
         zoom=6,
         height=600,
-        color_discrete_sequence=px.colors.qualitative.Alphabet, 
+        color_discrete_map={
+            "Cluster 0: Java Mainland Hub (Aglomerasi Utama)": "#3A86FF",
+            "Cluster 1: Madura Local Hub (Aglomerasi Madura)": "#00F5D4",
+            "Outlier: Metropolitan Giant (Pusat Mandiri)": "#FF006E",
+            "Outlier: Isolated / Remote Zone (Terpencil/Sepi)": "#8E9AA6"
+        },
         map_style="carto-darkmatter",
         template="plotly_dark",
-        labels={"color": "ID Klaster"}
+        labels={"cluster_display": "Klasifikasi Wilayah"}
     )
     
     # Penanda lokasi terpilih
@@ -220,9 +242,11 @@ with tab1:
     
     st.info("""
     **💡 Catatan Analisis DBSCAN:** 
-    * Klaster dengan warna berbeda menunjukkan aglomerasi ekonomi (Hub) yang terbentuk secara natural dari kepadatan lowongan dan kesempatan kerja.
-    * Titik dengan ID '-1' adalah Noise (Outlier), mengindikasikan wilayah dengan pasar kerja yang berdiri sendiri atau belum membentuk hub berskala besar.
-    * Semakin besar radius lingkaran, semakin banyak volume lowongan absolut di wilayah tersebut.
+    * **Cluster 0 (Biru):** Aglomerasi pasar kerja utama daratan Pulau Jawa yang terhubung secara kontigu (bersambung).
+    * **Cluster 1 (Hijau Toska):** Aglomerasi pasar kerja lokal di Pulau Madura yang terpisah dari daratan utama.
+    * **Outlier: Metropolitan Giant (Pink Neon):** Pusat ekonomi mandiri dengan volume lowongan kerja sangat melimpah (≥ 100) yang menonjol secara ekstrem dibandingkan wilayah di sekitarnya.
+    * **Outlier: Isolated / Remote Zone (Abu-Abu):** Wilayah terpencil dengan volume lowongan rendah/nihil (< 100) yang tidak membentuk kelompok aglomerasi dengan tetangganya.
+    * Ukuran lingkaran menunjukkan volume lowongan absolut di wilayah tersebut (ditambah offset 5 agar wilayah 0 lowongan tetap terlihat di peta).
     """)
 
 # MODUL 2: HEATMAP PELUANG
@@ -273,7 +297,7 @@ with tab4:
     col_a, col_b = st.columns(2)
     
     with col_a:
-        st.subheader("4a. Efisiensi Pasar Kerja")
+        st.subheader("3a. Efisiensi Pasar Kerja")
         st.markdown("Evaluasi statistik ketersediaan kerja terhadap jumlah angkatan kerja.")
         fig4a = px.scatter(
             df, x="labor_force_num", y="job_volume",
@@ -286,7 +310,7 @@ with tab4:
         st.plotly_chart(fig4a, width="stretch")
 
     with col_b:
-        st.subheader("4b. Distribusi Indeks Kompetitif")
+        st.subheader("3b. Distribusi Indeks Kompetitif")
         st.markdown("Menunjukkan tingkat kualifikasi rata-rata per wilayah.")
         fig4b = px.bar(
             df.sort_values('competitive_index', ascending=False).head(15), 
@@ -301,7 +325,7 @@ with tab4:
     st.info("""
     **💡 Catatan Analisis Kuadran & Kualifikasi:** 
     * Plot sebelah kiri memvalidasi seberapa linier hubungan penciptaan loker terhadap beban demografi (angkatan kerja). Wilayah yang melesat ke atas dari *trendline* menunjukkan performa penciptaan kerja yang abnormal (positif).
-    * Barchart Indeks Kompetitiif pada level *>=2.5* didominasi posisi manajerial elit. Skor *~1.0 - 1.5* mengindikasikan pasar kerja kerah biru / peranan operasional.
+    * Barchart Indeks Kompetitif pada level *>=2.5* didominasi posisi manajerial elit. Skor *~1.0 - 1.5* mengindikasikan pasar kerja kerah biru / peranan operasional.
     """)
 
 # MODUL 5: LAPORAN EKSEKUTIF (SUMMARY)
@@ -328,7 +352,7 @@ with tab5:
     
     with col_L1:
         st.markdown("#### Narasi Kesimpulan")
-        st.write(f"Secara makro-ekonomi, **{selected_city}** diidentifikasi oleh sistem *DBSCAN* sebagai **{h_type}** bertaraf {city_info['prosperity_status']}.")
+        st.write(f"Secara makro-ekonomi, **{selected_city}** diidentifikasi oleh sistem *DBSCAN* sebagai **{city_info['cluster_display']}** bertaraf {city_info['prosperity_status']}.")
         st.write(f"Dengan Angkatan Kerja sebesar **{int(city_info['labor_force_num']):,}** orang dan ketersediaan **{int(city_info['job_volume'])}** spesifikasi pekerjaan lintas digital, rasio indeks peluang membujur di angka **{city_info['opportunity_index']:.5f}**.")
         st.write(conclusion)
         pass

@@ -1,13 +1,13 @@
 # Java Job Market Clustering Dashboard
 
-This repository contains Falah's thesis project for analyzing spatial job market clusters in Java using DBSCAN and NLP.
+This repository contains Falah's thesis project for analyzing spatial job market clusters in Java using DBSCAN and BPS socio-economic data.
 
 ## 📁 Project Structure
 
 - `dashboard.py`: Main interactive dashboard (Streamlit).
 - `requirements.txt`: Python package dependencies.
 - `data/`: Processed data and geographic boundaries.
-  - `java_job_market_hubs_final.csv`: Result of clustering and NLP.
+-   `java_job_market_hubs_final.csv`: Result of clustering and indexing.
   - `java_regencies.geojson`: Java kabupaten/kota boundaries.
   - `38 Provinsi Indonesia - Kabupaten.json`: Original national boundaries.
 - `src/`: Data processing and analysis scripts.
@@ -35,8 +35,7 @@ This repository contains Falah's thesis project for analyzing spatial job market
 
 1. **Economic Hubs**: Spatial clusters identified by DBSCAN.
 2. **Opportunity Heatmap**: Choropleth visualization of job accessibility.
-3. **Skill Context**: NLP-derived skill patterns per region.
-4. **Market Efficiency**: Statistical correlation between population and job volume.
+3. **Market Efficiency**: Statistical correlation between population and job volume.
 
 ---
 *Developed by Antigravity (Falah's AI Assistant)*
