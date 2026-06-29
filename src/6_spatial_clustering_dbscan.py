@@ -40,15 +40,29 @@ def main():
         db = DBSCAN(eps=0.7, min_samples=3).fit(features_scaled)
         df_valid['cluster_id'] = db.labels_
         
+        # Evaluasi Model (Silhouette & DBI - Eksklusi Noise -1)
+        try:
+            from sklearn.metrics import silhouette_score, davies_bouldin_score
+            mask_non_noise = db.labels_ != -1
+            unique_labels = set(db.labels_[mask_non_noise])
+            if len(unique_labels) > 1:
+                sil_score = silhouette_score(features_scaled[mask_non_noise], db.labels_[mask_non_noise])
+                dbi_score = davies_bouldin_score(features_scaled[mask_non_noise], db.labels_[mask_non_noise])
+                print(f"\n--- EVALUASI MODEL (Eksklusi Noise -1) ---")
+                print(f"Silhouette Score (Cohesion): {sil_score:.4f} (-1 s/d 1)")
+                print(f"Davies-Bouldin Index (DBI): {dbi_score:.4f} (Semakin kecil semakin baik)")
+        except Exception as e:
+            print(f"Gagal menghitung Silhouette/DBI: {e}")
+            
         # Evaluasi Cluster menggunakan DBCV jika memungkinkan
         try:
             import hdbscan
             valid_labels = db.labels_[db.labels_ != -1]
             if len(set(valid_labels)) > 1:
                 dbcv_score = hdbscan.validity.validity_index(features_scaled, db.labels_)
-                print(f"[EVALUASI KLASTER] DBCV Score: {dbcv_score:.4f} (-1.0 s/d 1.0)")
+                print(f"DBCV Score: {dbcv_score:.4f} (-1.0 s/d 1.0)")
         except Exception as e:
-            print(f"Informasi evaluasi klaster (DBCV): {e}")
+            pass
     else:
         df_valid['cluster_id'] = -1
 
