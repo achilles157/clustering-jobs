@@ -409,18 +409,43 @@ with tab5:
     st.subheader(f"Laporan Analisis Wilayah: {st.session_state.applied_city}")
     st.markdown("Ringkasan temuan otomatis yang ditarik dari hasil *Machine Learning* dan Indeks Peluang untuk mempermudah perumusan kesimpulan skripsi.")
     
-    # Kalkulasi peringkat Nasional/Pulau Jawa
-    df_sorted = df.sort_values(by='opportunity_index', ascending=False).reset_index(drop=True)
-    rank = df_sorted[df_sorted['matched_regency'] == st.session_state.applied_city].index[0] + 1
-    total_regions = len(df_sorted)
+    # Kalkulasi peringkat aktif (Eksklusi Wilayah dengan 0 Lowongan - Sesuai Logika 3)
+    df_active = df[df['job_volume'] > 0].copy()
+    df_active_sorted = df_active.sort_values(by='opportunity_index', ascending=False).reset_index(drop=True)
+    df_sorted = df.sort_values(by='opportunity_index', ascending=False).reset_index(drop=True) # Tetap digunakan untuk list tabel di bawah
     
+    has_jobs = int(city_info['job_volume']) > 0
     
-    if rank <= 10:
-        conclusion = f"Wilayah ini masuk ke dalam **Top 10 (Peringkat {rank} dari {total_regions})** kawasan berekspansi tinggi. Direkomendasikan sebagai destinasi utama pencari kerja."
-    elif rank >= (total_regions - 20):
-        conclusion = f"Bisa dikatakan wilayah ini mengalami defisit gawat darurat (**Peringkat {rank} dari {total_regions}**). Lapangan formal sangat sedikit dibandingkan populasinya."
+    if has_jobs:
+        rank = df_active_sorted[df_active_sorted['matched_regency'] == st.session_state.applied_city].index[0] + 1
+        total_active = len(df_active_sorted)
+        
+        # Validasi apakah wilayah masuk Zona Merah secara demografis/volume lowongan
+        is_zona_merah = city_info['prosperity_status'] == "Zona Merah"
+        
+        if is_zona_merah:
+            conclusion = f"Bisa dikatakan wilayah ini mengalami defisit lapangan kerja nyata (**Peringkat {rank} dari {total_active} wilayah aktif**). Meskipun secara indeks relatif berada di papan tengah, secara absolut pasar kerja formal sangat terbatas ({int(city_info['job_volume'])} posisi) untuk menampung populasinya."
+            recom_val = "Berisiko"
+            comp_val = "Sengit"
+        else:
+            if rank <= 10:
+                conclusion = f"Wilayah ini masuk ke dalam **Top 10 (Peringkat {rank} dari {total_active} wilayah aktif)** kawasan berekspansi tinggi. Direkomendasikan sebagai destinasi utama pencari kerja."
+                recom_val = "Sangat Layak"
+                comp_val = "Longgar"
+            elif rank >= (total_active - 15):
+                conclusion = f"Bisa dikatakan wilayah ini mengalami defisit gawat darurat (**Peringkat {rank} dari {total_active} wilayah aktif**). Lapangan formal sangat sedikit dibandingkan populasinya."
+                recom_val = "Berisiko"
+                comp_val = "Sengit"
+            else:
+                conclusion = f"Menempati posisi menengah-stabil di **Peringkat {rank} dari {total_active} wilayah aktif**. Memiliki pasar kerja organik namun perputaran karyawannya standar."
+                recom_val = "Netral"
+                comp_val = "Seimbang"
     else:
-        conclusion = f"Menempati posisi menengah-stabil di **Peringkat {rank} dari {total_regions}**. Memiliki pasar kerja organik namun perputaran karyawannya standar."
+        rank = "Tidak Terperingkat"
+        total_active = len(df_active_sorted)
+        conclusion = "Wilayah ini tidak memiliki lowongan kerja formal yang aktif (0 Lowongan), sehingga tidak masuk dalam pemeringkatan peluang kerja aktif. Wilayah ini mengalami defisit lapangan kerja mutlak."
+        recom_val = "Berisiko"
+        comp_val = "Sangat Sengit"
 
     col_L1, col_L2 = st.columns([2, 1])
     
@@ -432,8 +457,8 @@ with tab5:
             
     with col_L2:
         st.markdown("#### Penilaian Kritis")
-        st.metric(label="Rekomendasi", value="Sangat Layak" if rank <=20 else "Netral" if rank <=60 else "Berisiko")
-        st.metric(label="Persaingan", value="Longgar" if rank <=20 else "Seimbang" if rank <=60 else "Sengit")
+        st.metric(label="Rekomendasi", value=recom_val)
+        st.metric(label="Persaingan", value=comp_val)
         
     st.divider()
     st.markdown("#### Raw Data Profil")
