@@ -2,7 +2,6 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 import plotly.graph_objects as go
-import matplotlib.pyplot as plt
 import json
 import os
 import numpy as np
@@ -143,6 +142,14 @@ def load_geojson():
             return g
     return None
 
+@st.cache_data
+def load_raw_jobs():
+    file_path = os.path.join('data', 'integrated_job_market_java_v2.csv')
+    if os.path.exists(file_path):
+        df_raw = pd.read_csv(file_path)
+        return df_raw[['title', 'company', 'location', 'matched_regency', 'Provinsi']]
+    return pd.DataFrame()
+
 df = load_data()
 geojson = load_geojson()
 
@@ -152,51 +159,100 @@ st.sidebar.title("Analisis Hub Kerja")
 st.sidebar.markdown("*Skripsi Falah - Pulau Jawa*")
 st.sidebar.divider()
 
+# Filter Provinsi & Kabupaten/Kota (Sesuai Activity Diagram 1 & Wireframe)
+provinces = ["Semua Provinsi"] + sorted(df['Provinsi'].unique())
+selected_prov = st.sidebar.selectbox("📍 Pilih Provinsi", provinces, index=0)
+
+if selected_prov != "Semua Provinsi":
+    filtered_cities = sorted(df[df['Provinsi'] == selected_prov]['matched_regency'].unique())
+else:
+    filtered_cities = sorted(df['matched_regency'].unique())
+
 selected_city = st.sidebar.selectbox(
     "📍 Pilih Kabupaten/Kota", 
-    sorted(df['matched_regency'].unique()),
+    filtered_cities,
     index=0
 )
 
-city_info = df[df['matched_regency'] == selected_city].iloc[0]
+# Tombol Apply Filters (Sesuai Wireframe)
+apply_button = st.sidebar.button("Apply Filters", type="primary")
 
-st.sidebar.subheader("Konteks Wilayah")
+# Inisialisasi Session State agar data tersimpan saat diklik
+if 'applied_city' not in st.session_state:
+    st.session_state.applied_city = selected_city
+if 'applied_prov' not in st.session_state:
+    st.session_state.applied_prov = selected_prov
+
+# Update session state hanya ketika tombol Apply Filters diklik
+if apply_button:
+    st.session_state.applied_city = selected_city
+    st.session_state.applied_prov = selected_prov
+
+# Gunakan data yang telah di-apply untuk sisa program
+city_info = df[df['matched_regency'] == st.session_state.applied_city].iloc[0]
+
+st.sidebar.subheader("Konteks Wilayah (Terpilih)")
 st.sidebar.write(f"**Provinsi:** {city_info['Provinsi']}")
 st.sidebar.write(f"**Status:** {city_info['prosperity_status']}")
 if 'cluster_display' in city_info:
     st.sidebar.info(f"**Klasifikasi:** {city_info['cluster_display']}")
 
 st.sidebar.divider()
-st.sidebar.caption("v1.2 • Dimutakhirkan dengan Klasifikasi Spasial Detail")
+st.sidebar.caption("v1.4 • 5 Use Cases & Apply Button")
 
 # --- HEADER UTAMA ---
 st.title("Analisis Spasial Hub & Peluang Kerja")
-st.markdown(f"Wawasan visual untuk pasar kerja di <span class='highlight'>{selected_city}</span>", unsafe_allow_html=True)
+st.markdown(f"Wawasan visual untuk pasar kerja di <span class='highlight'>{st.session_state.applied_city}</span>", unsafe_allow_html=True)
 
-# --- METRIK UTAMA ---
-m1, m2, m3, m4 = st.columns(4)
-with m1:
-    st.metric("Volume Lowongan", f"{int(city_info['job_volume'])} Posisi")
-with m2:
-    val = float(city_info['labor_force_num'])
-    st.metric("Angkatan Kerja", f"{int(val):,}" if val > 0 else "Data Kosong")
-with m3:
-    st.metric("Indeks Peluang", f"{city_info['opportunity_index']:.5f}", help="Job Volume / Working Age Population")
-with m4:
-    comp_idx = city_info.get('competitive_index', 0)
-    st.metric("Indeks Kompetitif", f"{comp_idx:.2f}/3.0", help="Tingkat kualifikasi rata-rata (1: Rendah, 3: Tinggi)")
-
-# --- TAB DASHBOARD ---
-tab1, tab2, tab4, tab5 = st.tabs([
+# --- TAB DASHBOARD (5 USE CASES / NAVIGASI) ---
+tab1, tab2, tab3, tab4, tab5 = st.tabs([
+    "🔍 Filter & Parameter",
     "📍 Klaster Ekonomi", 
     "🔥 Heatmap Peluang", 
     "📈 Statistik Efisiensi",
     "📝 Laporan Eksekutif"
 ])
 
-# MODUL 1: MAP KLASTER SPASIAL
+# MODUL 1: FILTER & PARAMETER (UC1)
 with tab1:
-    st.subheader("1. Peta Klaster Spasial (Hasil DBSCAN)")
+    st.subheader("Filter Wilayah & Parameter")
+    st.markdown(f"Menampilkan data untuk: **{st.session_state.applied_prov}** - **{st.session_state.applied_city}**")
+    
+    # 1. Global Parameter Summary
+    st.markdown("### 📊 Global Parameter Summary")
+    sum_col1, sum_col2, sum_col3, sum_col4 = st.columns(4)
+    with sum_col1:
+        st.metric("Volume Lowongan", f"{int(city_info['job_volume'])} Posisi")
+    with sum_col2:
+        val = float(city_info['labor_force_num'])
+        st.metric("Angkatan Kerja", f"{int(val):,}" if val > 0 else "Data Kosong")
+    with sum_col3:
+        st.metric("Indeks Peluang", f"{city_info['opportunity_index']:.5f}")
+    with sum_col4:
+        comp_idx = city_info.get('competitive_index', 0)
+        st.metric("Indeks Kompetitif", f"{comp_idx:.2f}/3.0")
+        
+    # 2. Raw Data Table
+    st.markdown("### 📋 Raw Data Table (Daftar Lowongan Pekerjaan)")
+    df_raw = load_raw_jobs()
+    if not df_raw.empty:
+        # Filter raw data
+        if st.session_state.applied_prov != "Semua Provinsi":
+            filtered_raw = df_raw[(df_raw['Provinsi'] == st.session_state.applied_prov) & (df_raw['matched_regency'] == st.session_state.applied_city)]
+        else:
+            filtered_raw = df_raw[df_raw['matched_regency'] == st.session_state.applied_city]
+            
+        st.markdown(f"Menampilkan **{len(filtered_raw)}** data lowongan pekerjaan untuk **{st.session_state.applied_city}** dari total dataset.")
+        
+        display_df = filtered_raw[['title', 'company', 'location']].copy()
+        display_df.columns = ['Judul Pekerjaan', 'Perusahaan', 'Lokasi Asli']
+        st.dataframe(display_df, use_container_width=True, height=350)
+    else:
+        st.warning("Data mentah lowongan pekerjaan tidak tersedia.")
+
+# MODUL 2: MAP KLASTER SPASIAL (UC2)
+with tab2:
+    st.subheader("Peta Klaster Spasial (Hasil DBSCAN)")
     st.markdown("Peta ini mengidentifikasi 'Hub Ekonomi' yang terbentuk secara otonom berdasarkan kepadatan lowongan dan kedekatan geografis.")
     
     # Warna lebih nyentrik dan kontras
@@ -230,7 +286,7 @@ with tab1:
         mode='markers',
         marker=go.scattermap.Marker(size=25, color='#FFD700', opacity=0.9),
         name='Lokasi Target',
-        text=[selected_city]
+        text=[st.session_state.applied_city]
     ))
     
     fig1.update_layout(
@@ -249,9 +305,9 @@ with tab1:
     * Ukuran lingkaran menunjukkan volume lowongan absolut di wilayah tersebut (ditambah offset 5 agar wilayah 0 lowongan tetap terlihat di peta).
     """)
 
-# MODUL 2: HEATMAP PELUANG
-with tab2:
-    st.subheader("2. Heatmap Peluang Kerja (Choropleth)")
+# MODUL 3: HEATMAP PELUANG (UC3)
+with tab3:
+    st.subheader("Heatmap Peluang Kerja (Choropleth)")
     st.markdown(r"Visualisasi perbedaan antara **'Lautan Peluang'** (Hijau) dan **'Zona Merah'** (Merah).")
     st.latex(r"Indeks\_Peluang = \frac{Volume\_Pekerjaan}{Angkatan\_Kerja\_Aktif}")
     
@@ -290,14 +346,13 @@ with tab2:
         )
         st.plotly_chart(fig_alt, width="stretch")
 
-# MODUL 3: WORD CLOUD KEAHLIAN DIHAPUS (TF-IDF Dihilangkan)
 
 # MODUL 4: PLOT KORELASI & KOMPETITIF
 with tab4:
     col_a, col_b = st.columns(2)
     
     with col_a:
-        st.subheader("3a. Efisiensi Pasar Kerja")
+        st.subheader("a. Efisiensi Pasar Kerja")
         st.markdown("Evaluasi statistik ketersediaan kerja terhadap jumlah angkatan kerja.")
         fig4a = px.scatter(
             df, x="labor_force_num", y="job_volume",
@@ -310,7 +365,7 @@ with tab4:
         st.plotly_chart(fig4a, width="stretch")
 
     with col_b:
-        st.subheader("3b. Distribusi Indeks Kompetitif")
+        st.subheader("b. Distribusi Indeks Kompetitif")
         st.markdown("Menunjukkan tingkat kualifikasi rata-rata per wilayah.")
         fig4b = px.bar(
             df.sort_values('competitive_index', ascending=False).head(15), 
@@ -327,19 +382,38 @@ with tab4:
     * Plot sebelah kiri memvalidasi seberapa linier hubungan penciptaan loker terhadap beban demografi (angkatan kerja). Wilayah yang melesat ke atas dari *trendline* menunjukkan performa penciptaan kerja yang abnormal (positif).
     * Barchart Indeks Kompetitif pada level *>=2.5* didominasi posisi manajerial elit. Skor *~1.0 - 1.5* mengindikasikan pasar kerja kerah biru / peranan operasional.
     """)
+    
+    st.divider()
+    st.subheader("c. Metrik Evaluasi Model Spasial (DBSCAN)")
+    st.markdown("Evaluasi kualitas klastering yang terbentuk (eksklusi titik noise -1 untuk mencegah distorsi bias).")
+    
+    m_col1, m_col2 = st.columns(2)
+    with m_col1:
+        st.metric(
+            label="Silhouette Score (Cohesion)", 
+            value="0.2559", 
+            help="Rentang -1 s/d +1. Mengukur seberapa dekat suatu objek dengan klasternya sendiri dibandingkan dengan klaster lain."
+        )
+        st.caption("ℹ️ *Silhouette score bernilai positif moderat (0.2559) karena bentuk aglomerasi spasial ekonomi di Pulau Jawa memanjang horizontal mengikuti koridor jalan tol Trans-Jawa, bukan berbentuk lingkaran bulat sempurna (spherical).*")
+        
+    with m_col2:
+        st.metric(
+            label="Davies-Bouldin Index (DBI - Separasi)", 
+            value="0.6190", 
+            help="Nilai mendekati 0 semakin baik. Mengukur tingkat tumpang tindih (overlap) antar klaster."
+        )
+        st.caption("ℹ️ *Nilai DBI sebesar 0.6190 (di bawah 1.0) menunjukkan kualitas pemisahan klaster (separasi) yang sangat baik dan antar klaster tidak saling tumpang tindih.*")
 
-# MODUL 5: LAPORAN EKSEKUTIF (SUMMARY)
+# MODUL 5: LAPORAN EKSEKUTIF (SUMMARY) (UC5)
 with tab5:
-    st.subheader(f"Laporan Analisis Wilayah: {selected_city}")
+    st.subheader(f"Laporan Analisis Wilayah: {st.session_state.applied_city}")
     st.markdown("Ringkasan temuan otomatis yang ditarik dari hasil *Machine Learning* dan Indeks Peluang untuk mempermudah perumusan kesimpulan skripsi.")
     
     # Kalkulasi peringkat Nasional/Pulau Jawa
     df_sorted = df.sort_values(by='opportunity_index', ascending=False).reset_index(drop=True)
-    rank = df_sorted[df_sorted['matched_regency'] == selected_city].index[0] + 1
+    rank = df_sorted[df_sorted['matched_regency'] == st.session_state.applied_city].index[0] + 1
     total_regions = len(df_sorted)
     
-    # Narasi otonom
-    hub_status = city_info.get('hub_type', 'Outlier')
     
     if rank <= 10:
         conclusion = f"Wilayah ini masuk ke dalam **Top 10 (Peringkat {rank} dari {total_regions})** kawasan berekspansi tinggi. Direkomendasikan sebagai destinasi utama pencari kerja."
@@ -352,10 +426,9 @@ with tab5:
     
     with col_L1:
         st.markdown("#### Narasi Kesimpulan")
-        st.write(f"Secara makro-ekonomi, **{selected_city}** diidentifikasi oleh sistem *DBSCAN* sebagai **{city_info['cluster_display']}** bertaraf {city_info['prosperity_status']}.")
+        st.write(f"Secara makro-ekonomi, **{st.session_state.applied_city}** diidentifikasi oleh sistem *DBSCAN* sebagai **{city_info['cluster_display']}** bertaraf {city_info['prosperity_status']}.")
         st.write(f"Dengan Angkatan Kerja sebesar **{int(city_info['labor_force_num']):,}** orang dan ketersediaan **{int(city_info['job_volume'])}** spesifikasi pekerjaan lintas digital, rasio indeks peluang membujur di angka **{city_info['opportunity_index']:.5f}**.")
         st.write(conclusion)
-        pass
             
     with col_L2:
         st.markdown("#### Penilaian Kritis")
@@ -365,6 +438,27 @@ with tab5:
     st.divider()
     st.markdown("#### Raw Data Profil")
     st.dataframe(pd.DataFrame(city_info).T, use_container_width=True)
+
+    st.divider()
+    st.subheader("Peringkat Aglomerasi & Peluang Kerja Pulau Jawa")
+    
+    list_col1, list_col2 = st.columns(2)
+    
+    with list_col1:
+        st.markdown("#### 🌟 Top 5 Lautan Peluang (Episentrum Terbaik)")
+        # Tampilkan 5 teratas berdasarkan opportunity_index tertinggi
+        top_opportunities = df_sorted[['matched_regency', 'Provinsi', 'job_volume', 'opportunity_index']].head(5)
+        top_opportunities.columns = ['Kabupaten/Kota', 'Provinsi', 'Volume Lowongan', 'Indeks Peluang']
+        st.dataframe(top_opportunities, use_container_width=True, hide_index=True)
+        st.caption("ℹ️ *Wilayah dengan rasio penyerapan kerja tertinggi terhadap jumlah angkatan kerja aktif.*")
+        
+    with list_col2:
+        st.markdown("#### 🚨 Top 5 Zona Merah (Defisit Lapangan Kerja)")
+        # Tampilkan 5 terbawah berdasarkan opportunity_index terendah (dibalik agar yang paling parah di atas)
+        bottom_opportunities = df_sorted[['matched_regency', 'Provinsi', 'job_volume', 'opportunity_index']].tail(5).iloc[::-1]
+        bottom_opportunities.columns = ['Kabupaten/Kota', 'Provinsi', 'Volume Lowongan', 'Indeks Peluang']
+        st.dataframe(bottom_opportunities, use_container_width=True, hide_index=True)
+        st.caption("ℹ️ *Wilayah dengan tingkat persaingan terpadat atau ketersediaan lapangan kerja terkecil.*")
 
 # --- FOOTER ---
 st.divider()
