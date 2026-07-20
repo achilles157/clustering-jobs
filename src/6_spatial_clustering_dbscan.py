@@ -31,19 +31,22 @@ def main():
     df_valid = df[valid_coords_mask].copy()
     
     if len(df_valid) >= 3:
-        # Menambahkan opportunity_index (kemampuan menyerap) ke dalam matriks spasial
-        features = df_valid[['Latitude', 'Longitude', 'job_volume']].copy().values
+        # Fitur clustering: HANYA koordinat spasial (Latitude, Longitude).
+        # job_volume sengaja tidak diikutsertakan sebagai fitur karena akan mendistorsi
+        # jarak Euclidean di ruang fitur — kota besar seperti Surabaya/Bandung justru
+        # akan menjadi noise karena nilai log(volume)-nya jauh di atas median.
+        # job_volume tetap tersedia sebagai atribut deskriptif untuk karakterisasi klaster.
+        features = df_valid[['Latitude', 'Longitude']].copy().values
         
-        # Log-transformation pada job_volume agar skalanya stabil dan tidak mendominasi jarak spasial
-        features[:, 2] = np.log1p(features[:, 2])
-        
-        # StandardScaler untuk menormalisasi koordinat dan log-volume secara proporsional
+        # StandardScaler menormalisasi koordinat agar derajat lat/lon sebanding satu sama lain
         scaler = StandardScaler()
         features_scaled = scaler.fit_transform(features)
         
         # 3. Eksekusi DBSCAN
-        # eps=0.7 dan min_samples=3 menghasilkan pengelompokan aglomerasi metropolitan yang kokoh
-        db = DBSCAN(eps=0.7, min_samples=3).fit(features_scaled)
+        # eps=0.40, min_samples=3 dipilih dari grid search k-distance.
+        # eps=0.40 cukup ketat untuk memisahkan aglomerasi Jabodetabek (Cluster 1)
+        # dari koridor mainland Jawa (Cluster 0), tanpa menarik outlier sejati masuk klaster.
+        db = DBSCAN(eps=0.40, min_samples=3).fit(features_scaled)
         df_valid['cluster_id'] = db.labels_
         
         # Evaluasi Model (Silhouette & DBI - Eksklusi Noise -1)
