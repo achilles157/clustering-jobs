@@ -20,8 +20,14 @@ def main():
     df = pd.read_csv(input_file)
     
     # 2. Persiapan Fitur Kombinasi (Spasial + Numerik Opsional)
-    # Filter wilayah dengan koordinat valid
-    valid_coords_mask = (df['Latitude'] != 0.0) & (df['Longitude'] != 0.0)
+    # Filter wilayah dengan koordinat valid DAN memiliki minimal 1 lowongan kerja.
+    # Wilayah tanpa lowongan (job_volume=0) dikecualikan dari DBSCAN agar tidak
+    # membentuk klaster semu berdasarkan kedekatan geografis semata (contoh: Madura).
+    valid_coords_mask = (
+        (df['Latitude'] != 0.0) &
+        (df['Longitude'] != 0.0) &
+        (df['job_volume'] > 0)
+    )
     df_valid = df[valid_coords_mask].copy()
     
     if len(df_valid) >= 3:
