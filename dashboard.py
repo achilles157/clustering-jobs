@@ -115,7 +115,7 @@ def load_data():
         elif cid == 0:
             return "Cluster 0: Java Mainland Hub (Aglomerasi Utama)"
         elif cid == 1:
-            return "Cluster 1: Madura Local Hub (Aglomerasi Madura)"
+            return "Cluster 1: Jabodetabek & Koridor Barat (Aglomerasi Metropolitan)"
         else:
             return f"Cluster {cid}"
             
@@ -270,7 +270,7 @@ with tab2:
         height=600,
         color_discrete_map={
             "Cluster 0: Java Mainland Hub (Aglomerasi Utama)": "#3A86FF",
-            "Cluster 1: Madura Local Hub (Aglomerasi Madura)": "#00F5D4",
+            "Cluster 1: Jabodetabek & Koridor Barat (Aglomerasi Metropolitan)": "#00F5D4",
             "Outlier: Metropolitan Giant (Pusat Mandiri)": "#FF006E",
             "Outlier: Isolated / Remote Zone (Terpencil/Sepi)": "#8E9AA6"
         },
@@ -298,8 +298,8 @@ with tab2:
     
     st.info("""
     **💡 Catatan Analisis DBSCAN:** 
-    * **Cluster 0 (Biru):** Aglomerasi pasar kerja utama daratan Pulau Jawa yang terhubung secara kontigu (bersambung).
-    * **Cluster 1 (Hijau Toska):** Aglomerasi pasar kerja lokal di Pulau Madura yang terpisah dari daratan utama.
+    * **Cluster 0 (Biru):** Aglomerasi pasar kerja koridor mainland Pulau Jawa yang terhubung secara kontigu — mencakup pusat regional seperti Surabaya, Bandung, Semarang, GKS, dan Solo.
+    * **Cluster 1 (Hijau Toska):** Aglomerasi metropolitan Jabodetabek beserta koridor industri Banten–Jawa Barat bagian barat (Serang, Karawang, Cilegon, dll) dengan densitas lowongan tertinggi.
     * **Outlier: Metropolitan Giant (Pink Neon):** Pusat ekonomi mandiri dengan volume lowongan kerja sangat melimpah (≥ 100) yang menonjol secara ekstrem dibandingkan wilayah di sekitarnya.
     * **Outlier: Isolated / Remote Zone (Abu-Abu):** Wilayah terpencil dengan volume lowongan rendah/nihil (< 100) yang tidak membentuk kelompok aglomerasi dengan tetangganya.
     * Ukuran lingkaran menunjukkan volume lowongan absolut di wilayah tersebut (ditambah offset 5 agar wilayah 0 lowongan tetap terlihat di peta).
