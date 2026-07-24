@@ -45,6 +45,18 @@ else:
 ''' + '\n'.join('    ' + line for line in geocode_raw.splitlines()) + '''
 
     main()
+
+# ── Patch koordinat manual ──────────────────────────────────────────────────
+# Nominatim mengembalikan centroid administratif Kabupaten Gresik yang
+# mencakup Pulau Bawean (-5.793, 112.659) — 150km di utara Jawa, di laut.
+# Koordinat dikoreksi ke pusat kota Gresik di daratan agar DBSCAN tidak
+# membuangnya sebagai noise karena jauh dari tetangga di Jawa.
+_df_coords = pd.read_csv(COORD_PATH)
+_before = _df_coords.loc[_df_coords['City_Name'] == 'Gresik', ['Latitude','Longitude']].values
+_df_coords.loc[_df_coords['City_Name'] == 'Gresik', 'Latitude']  = -7.1560
+_df_coords.loc[_df_coords['City_Name'] == 'Gresik', 'Longitude'] = 112.6511
+_df_coords.to_csv(COORD_PATH, index=False)
+print(f"[PATCH] Gresik: {_before[0]} -> (-7.156, 112.651) — pusat kota, bukan Pulau Bawean")
 '''
 
 # ── visualisasi ──────────────────────────────────────────────────────────────
@@ -268,8 +280,8 @@ ax3.grid(axis='y', alpha=0.3)
 ax4 = fig.add_subplot(gs[1, 1])
 ax4.axis('off')
 metrics = [
-    ('Silhouette Score',    '0.4722', '[-1, 1] lebih tinggi = lebih baik',  '#4CAF50'),
-    ('Davies-Bouldin Index','0.5136', 'lebih rendah = lebih baik',           '#4CAF50'),
+    ('Silhouette Score',    '0.4737', '[-1, 1] lebih tinggi = lebih baik',  '#4CAF50'),
+    ('Davies-Bouldin Index','0.5126', 'lebih rendah = lebih baik',           '#4CAF50'),
     ('Total Cluster',       '2',      'Mainland Java + Jabodetabek',         '#2196F3'),
     ('Total Wilayah',       '119',    'Kabupaten/Kota Pulau Jawa',           '#2196F3'),
     ('Noise / Isolated',    '28',     'job_volume = 0 atau outlier geografis','#888888'),
@@ -413,8 +425,8 @@ cells = [
         "| Top 20 opportunity index | `viz_opportunity_index.png` |\n"
         "| Ringkasan klaster & metrik | `viz_cluster_summary.png` |\n\n"
         "**Metrik Evaluasi DBSCAN (eps=0.40, min_samples=3):**\n"
-        "- Silhouette Score: **0.4722**\n"
-        "- Davies-Bouldin Index: **0.5136**"
+        "- Silhouette Score: **0.4737**\n"
+        "- Davies-Bouldin Index: **0.5126**"
     ),
 ]
 
