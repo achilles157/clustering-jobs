@@ -287,7 +287,18 @@ with tab2:
     fig1.update_layout(
         margin={"r":0,"t":40,"l":0,"b":0},
         paper_bgcolor='rgba(0,0,0,0)',
-        plot_bgcolor='rgba(0,0,0,0)'
+        plot_bgcolor='rgba(0,0,0,0)',
+        legend=dict(
+            orientation="h",
+            yanchor="top",
+            y=-0.02,
+            xanchor="center",
+            x=0.5,
+            bgcolor="rgba(10,17,40,0.85)",
+            bordercolor="rgba(255,255,255,0.15)",
+            borderwidth=1,
+            font=dict(size=12)
+        )
     )
     st.plotly_chart(fig1, width="stretch")
     
