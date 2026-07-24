@@ -198,7 +198,7 @@ if 'cluster_display' in city_info:
     st.sidebar.info(f"**Klasifikasi:** {city_info['cluster_display']}")
 
 st.sidebar.divider()
-st.sidebar.caption("v1.4 • 5 Use Cases & Apply Button")
+    st.sidebar.caption("v1.5 • DBSCAN Pure Spatial (eps=0.40)")
 
 # --- HEADER UTAMA ---
 st.title("Analisis Spasial Hub & Peluang Kerja")
@@ -296,6 +296,18 @@ with tab2:
     )
     st.plotly_chart(fig1, width="stretch")
     
+    # Ringkasan komposisi cluster
+    c0 = df[df['cluster_id'] == 0]
+    c1 = df[df['cluster_id'] == 1]
+    cn = df[df['cluster_id'] == -1]
+    comp_col1, comp_col2, comp_col3 = st.columns(3)
+    with comp_col1:
+        st.metric("Cluster 0 — Mainland Java", f"{len(c0)} wilayah", f"{int(c0['job_volume'].sum()):,} lowongan")
+    with comp_col2:
+        st.metric("Cluster 1 — Jabodetabek", f"{len(c1)} wilayah", f"{int(c1['job_volume'].sum()):,} lowongan")
+    with comp_col3:
+        st.metric("Isolated Zone (Noise)", f"{len(cn)} wilayah", f"{int(cn['job_volume'].sum()):,} lowongan")
+    
     st.info("""
     **💡 Catatan Analisis DBSCAN:** 
     * **Cluster 0 (Biru):** Aglomerasi pasar kerja koridor mainland Pulau Jawa yang terhubung secara kontigu — mencakup pusat regional seperti Surabaya, Bandung, Semarang, GKS, dan Solo.
@@ -391,18 +403,18 @@ with tab4:
     with m_col1:
         st.metric(
             label="Silhouette Score (Cohesion)", 
-            value="0.2559", 
+            value="0.4722", 
             help="Rentang -1 s/d +1. Mengukur seberapa dekat suatu objek dengan klasternya sendiri dibandingkan dengan klaster lain."
         )
-        st.caption("ℹ️ *Silhouette score bernilai positif moderat (0.2559) karena bentuk aglomerasi spasial ekonomi di Pulau Jawa memanjang horizontal mengikuti koridor jalan tol Trans-Jawa, bukan berbentuk lingkaran bulat sempurna (spherical).*")
+        st.caption("ℹ️ *Silhouette score 0.4722 (moderat-baik) mencerminkan bahwa aglomerasi spasial Pulau Jawa memanjang horizontal mengikuti koridor Trans-Jawa, bukan berbentuk spherical — DBSCAN lebih tepat untuk pola ini dibanding K-Means.*")
         
     with m_col2:
         st.metric(
             label="Davies-Bouldin Index (DBI - Separasi)", 
-            value="0.6190", 
+            value="0.5136", 
             help="Nilai mendekati 0 semakin baik. Mengukur tingkat tumpang tindih (overlap) antar klaster."
         )
-        st.caption("ℹ️ *Nilai DBI sebesar 0.6190 (di bawah 1.0) menunjukkan kualitas pemisahan klaster (separasi) yang sangat baik dan antar klaster tidak saling tumpang tindih.*")
+        st.caption("ℹ️ *Nilai DBI 0.5136 (di bawah 1.0) menunjukkan pemisahan antar klaster yang baik — Cluster 0 (Mainland) dan Cluster 1 (Jabodetabek) tidak saling tumpang tindih secara spasial.*")
 
 # MODUL 5: LAPORAN EKSEKUTIF (SUMMARY) (UC5)
 with tab5:
@@ -489,6 +501,6 @@ with tab5:
 st.divider()
 f_col1, f_col2 = st.columns([2,1])
 with f_col1:
-    st.caption("Sumber Data: BPS Sosioekonomi 2024 & Gabungan Portal Kerja (JobStreet/Glints).")
+    st.caption("Sumber Data: BPS Sosioekonomi 2025 & Jobstreet Indonesia (via GraphQL API).")
 with f_col2:
     st.caption("© 2026 Proyek Skripsi Falah. Teknologi oleh Antigravity AI.")
