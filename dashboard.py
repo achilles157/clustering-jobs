@@ -84,6 +84,47 @@ st.markdown("""
         color: #FFFFFF;
         border: 1px solid #00A6FB;
     }
+
+    /* Mobile Responsive */
+    @media (max-width: 768px) {
+        /* Sidebar lebih compact di mobile */
+        [data-testid="stSidebar"] {
+            min-width: 100% !important;
+            width: 100% !important;
+        }
+
+        /* Metric cards stack vertikal */
+        [data-testid="column"] {
+            min-width: 100% !important;
+            flex: 1 1 100% !important;
+        }
+
+        /* Font title lebih kecil */
+        h1 { font-size: 1.4rem !important; }
+        h2 { font-size: 1.2rem !important; }
+        h3 { font-size: 1.0rem !important; }
+
+        /* Metric value lebih kecil */
+        [data-testid="stMetricValue"] {
+            font-size: 1.5rem !important;
+        }
+
+        /* Tab label wrap */
+        .stTabs [data-baseweb="tab"] {
+            padding: 0 12px !important;
+            font-size: 0.8rem !important;
+        }
+
+        /* Plotly chart full width */
+        [data-testid="stPlotlyChart"] {
+            width: 100% !important;
+        }
+
+        /* Dataframe scroll horizontal */
+        [data-testid="stDataFrame"] {
+            overflow-x: auto !important;
+        }
+    }
 </style>
 """, unsafe_allow_html=True)
 
@@ -294,10 +335,10 @@ with tab2:
             y=-0.02,
             xanchor="center",
             x=0.5,
-            bgcolor="rgba(10,17,40,0.85)",
-            bordercolor="rgba(255,255,255,0.15)",
+            bgcolor="rgba(255,255,255,0.08)",
+            bordercolor="rgba(255,255,255,0.25)",
             borderwidth=1,
-            font=dict(size=12)
+            font=dict(size=12, color="#FFFFFF")
         )
     )
     st.plotly_chart(fig1, width="stretch")
