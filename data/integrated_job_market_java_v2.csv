@@ -5089,7 +5089,7 @@ id,title,company,location,matched_regency,match_score,Latitude,Longitude,Provins
 91599660.0,Area Sales Promotion Supervisor  - Jawa Timur,CitraDimensi Arthali,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91599590.0,General Affair,AADK,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91591919.0,ADMIN SPECIALIST,Speeds Indonesia,"Sidoarjo, Jawa Timur",Sidoarjo,100.0,-7.4539769,112.6593869,Jawa Timur,1140151.0,69549.0,1209700.0,1739861.0
-91599426.0,Billing Jr. Officer (Gresik),Varia Usaha Fabrikasi,"Gresik, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91599426.0,Billing Jr. Officer (Gresik),Varia Usaha Fabrikasi,"Gresik, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
 91599390.0,Teknisi Service,PT Jatmiko Cipta Karya,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91599324.0,Staff Accounting,Anugerah Bahagia Inti Niaga,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91599121.0,Cook/ Cook Helper,,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
@@ -5139,9 +5139,9 @@ id,title,company,location,matched_regency,match_score,Latitude,Longitude,Provins
 91598300.0,Cook Helper,Kartiko Heritage Restaurant,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91594186.0,Sopir Pribadi,Suri mutiara jaya,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91593966.0,Customer Service  Officer,Innovative Learning Center,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
-91593961.0,Manager Marketing,PT Technofroze Indra Jaya,"Gresik, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
-91593766.0,Sales and Marekting Project,PT Technofroze Indra Jaya,"Gresik, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
-91593586.0,Fire Salesperson,ODG Indonesia,"Gresik, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91593961.0,Manager Marketing,PT Technofroze Indra Jaya,"Gresik, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91593766.0,Sales and Marekting Project,PT Technofroze Indra Jaya,"Gresik, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91593586.0,Fire Salesperson,ODG Indonesia,"Gresik, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
 91593385.0,Kitchen Crew,PT Masuya Sejati,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91593294.0,Accounting,PT Masuya Sejati,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91593169.0,Sales Executive - Based in Surabaya,Astrindo Senayasa,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
@@ -5156,7 +5156,7 @@ id,title,company,location,matched_regency,match_score,Latitude,Longitude,Provins
 91591700.0,Admin Penjualan Cabang Lamongan,Sentralsari Primasentosa,"Lamongan, Jawa Timur",Lamongan,100.0,-7.1229318,112.3281935,Jawa Timur,797879.0,35733.0,833612.0,1114894.0
 91591408.0,Magang Admin Data Entry (Magang/PKL untuk SMK/Sarjana),PT. Djaja Indonesia Liputan,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91591363.0,AR and Collection Staff,PT Subur Mega Perkasa,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
-91591252.0,Warehouse Staff,,"Gresik, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91591252.0,Warehouse Staff,,"Gresik, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
 91591169.0,Staff Permit,Central Proteina Prima,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91591108.0,Content Creator,Madame Chang Surabaya,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91590948.0,Purchasing Catering,Pak 'D' Company,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
@@ -5165,7 +5165,7 @@ id,title,company,location,matched_regency,match_score,Latitude,Longitude,Provins
 91590405.0,Sales Consultant (Mazda Adityawarman Surabaya),Eurokars Group,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91590131.0,AFTERSALES MANAGER,Pengiklan Anonim,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91590010.0,Staff Pelaksana Proyek,Tirta Kusuma,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
-91589256.0,SALES CANVASSING,PT. Dunia Jus Indonesia,"Gresik, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91589256.0,SALES CANVASSING,PT. Dunia Jus Indonesia,"Gresik, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
 91588990.0,SALES CANVASSING,PT. Dunia Jus Indonesia,"Sidoarjo, Jawa Timur",Sidoarjo,100.0,-7.4539769,112.6593869,Jawa Timur,1140151.0,69549.0,1209700.0,1739861.0
 91588922.0,SALES CANVASSING,PT. Dunia Jus Indonesia,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91587492.0,Desainer Grafis Internship,,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
@@ -5175,7 +5175,7 @@ id,title,company,location,matched_regency,match_score,Latitude,Longitude,Provins
 91588438.0,Staff HR IRGA,Transcon Indonesia,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91588434.0,Senior Product Consultant/Senior Sales - Surabaya (English Must),Xiaomi,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91588415.0,Social Media Specialist,PT Media Inovasi Indonesia,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
-91588369.0,STAF ACCOUNTING,Pengiklan Anonim,"Gresik, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91588369.0,STAF ACCOUNTING,Pengiklan Anonim,"Gresik, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
 91588274.0,STAF ACCOUNTING,Pengiklan Anonim,"Sidoarjo, Jawa Timur",Sidoarjo,100.0,-7.4539769,112.6593869,Jawa Timur,1140151.0,69549.0,1209700.0,1739861.0
 91588204.0,Accounting,Universal Energy Pratama,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91598446.0,Warehouse Technology Specialist,,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
@@ -5183,7 +5183,7 @@ id,title,company,location,matched_regency,match_score,Latitude,Longitude,Provins
 91588138.0,STAF ACCOUNTING,Pengiklan Anonim,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91598347.0,Sales Lapangan My Republic ( Surabaya ),,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91598354.0,Sales Lapangan My Republic ( Sidoarjo ),,"Sidoarjo, Jawa Timur",Sidoarjo,100.0,-7.4539769,112.6593869,Jawa Timur,1140151.0,69549.0,1209700.0,1739861.0
-91598359.0,Sales Marketing My Republic ( Gresik ),,"Gresik, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91598359.0,Sales Marketing My Republic ( Gresik ),,"Gresik, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
 91598370.0,Sales Lapangan My Republic ( Bangkalan ),,"Bangkalan, Jawa Timur",Bangkalan,100.0,-7.0463602,112.8961792,Jawa Timur,568657.0,31878.0,600535.0,871085.0
 91598383.0,Sales Lapangan My Republic ( Lamongan ),,"Lamongan, Jawa Timur",Lamongan,100.0,-7.1229318,112.3281935,Jawa Timur,797879.0,35733.0,833612.0,1114894.0
 91587871.0,"1. GURU KELAS, 2. GURU BIMBINGAN & KONSELING (BK)",Sekolah Pembangunan Jaya,"Gedangan, Jawa Timur",Sidoarjo,100.0,-7.4539769,112.6593869,Jawa Timur,1140151.0,69549.0,1209700.0,1739861.0
@@ -5193,17 +5193,17 @@ id,title,company,location,matched_regency,match_score,Latitude,Longitude,Provins
 91587472.0,Staff Distribusi / Pengiriman,KOBIN TILES,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91587151.0,Training & Culture Specialist,Miracle Aesthetic Clinic,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91587113.0,Security,PT Lavilla Kreatif Perkasa,"Manyar, Jawa Timur",Karanganyar,81.81818181818181,-7.6196965,111.0698003,Jawa Tengah,554741.0,18708.0,573449.0,766520.0
-91586810.0,STAFF LEGAL,Modern Jayaland,"Gresik, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
-91586994.0,Accounting & Tax,CV Kharisma Nusantara,"Gresik, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91586810.0,STAFF LEGAL,Modern Jayaland,"Gresik, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91586994.0,Accounting & Tax,CV Kharisma Nusantara,"Gresik, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
 91586735.0,Trainer Freelance Akuntansi Excel Kota Surabaya,Flashcom Indonesia,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91586695.0,MC Live Streaming,SOP Media Indonesia,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91586646.0,Finance Controller,Assa Rent,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91586482.0,HRD Staff,Pengiklan Anonim,"Sidoarjo, Jawa Timur",Sidoarjo,100.0,-7.4539769,112.6593869,Jawa Timur,1140151.0,69549.0,1209700.0,1739861.0
 91586275.0,Sales,Pabrik Kertas Indonesia,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91598331.0,Barista (Crew Outlet),,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
-91586032.0,Export Operations & Documentation Officer,PT Haswin Hijau Perkasa,"Gresik, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91586032.0,Export Operations & Documentation Officer,PT Haswin Hijau Perkasa,"Gresik, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
 91585997.0,SALES PLASTIC,PT. NICHIEPLAST,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
-91585659.0,Upholstery & Cushion Furniture,Katwara,"Gresik, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91585659.0,Upholstery & Cushion Furniture,Katwara,"Gresik, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
 91585521.0,Crew Store Barista,,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91585472.0,SENIOR STAF OPERASIONAL KEAGENAN,SAMASI,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91585455.0,PROGRAMMER,Agri Makmur Pertiwi Cabang Surabaya,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
@@ -5226,7 +5226,7 @@ id,title,company,location,matched_regency,match_score,Latitude,Longitude,Provins
 91580922.0,Crew Store HAUS Sidoarjo Part Time,Staffinc Group,"Sidoarjo, Jawa Timur",Sidoarjo,100.0,-7.4539769,112.6593869,Jawa Timur,1140151.0,69549.0,1209700.0,1739861.0
 91598486.0,TENAGA K3,,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91580414.0,DRIVER DIREKSI,PT Hongsheng International,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
-91580316.0,PROJECT ENGINEER,DGW Group,"Gresik, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91580316.0,PROJECT ENGINEER,DGW Group,"Gresik, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
 91580275.0,Kepala Produksi,PT Tricipta Agung Sejahtera,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91580195.0,Staff Finance - AP,PT Alam Mulya,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91580097.0,Central Kitchen,AADK,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
@@ -5243,12 +5243,12 @@ id,title,company,location,matched_regency,match_score,Latitude,Longitude,Provins
 91577828.0,Operator Forklift,Sinar Panelindo Utama,"Sidoarjo, Jawa Timur",Sidoarjo,100.0,-7.4539769,112.6593869,Jawa Timur,1140151.0,69549.0,1209700.0,1739861.0
 91575567.0,Crew Outlet,,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91598468.0,Crew Store dan Promosi,,"Lamongan, Jawa Timur",Lamongan,100.0,-7.1229318,112.3281935,Jawa Timur,797879.0,35733.0,833612.0,1114894.0
-91598485.0,Crew Store dan Promosi,,"Gresik, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91598485.0,Crew Store dan Promosi,,"Gresik, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
 91577632.0,SALES PROPERTY,PT Mandiri Sukses Sejahtera,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91598488.0,Crew Store dan Promosi,,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91577540.0,Kasir,,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
-91577137.0,TUKANG CAT/PAINTER KAROSERI (GRESIK),Urip Sejati Sources,"Gresik, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
-91577034.0,TUKANG LAS KAROSERI DAN BODY REPAIR (GRESIK),Urip Sejati Sources,"Gresik, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91577137.0,TUKANG CAT/PAINTER KAROSERI (GRESIK),Urip Sejati Sources,"Gresik, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91577034.0,TUKANG LAS KAROSERI DAN BODY REPAIR (GRESIK),Urip Sejati Sources,"Gresik, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
 91598302.0,Crew Outlet,,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91598335.0,Sales Executive,,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91598346.0,Konsultan,,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
@@ -5296,13 +5296,13 @@ id,title,company,location,matched_regency,match_score,Latitude,Longitude,Provins
 91565694.0,Operator Electric Rubber-Tired Gantry (RTG),,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91565594.0,Sales  Gadget Distribution - Surabaya,Global Digital Niaga,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91565571.0,Kepala Gudang (Mandarin Speaker),Momoyo,"Sidoarjo, Jawa Timur",Sidoarjo,100.0,-7.4539769,112.6593869,Jawa Timur,1140151.0,69549.0,1209700.0,1739861.0
-91565088.0,Kenek,Winn Gas,"Gresik, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91565088.0,Kenek,Winn Gas,"Gresik, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
 91564995.0,Admin Marketplace,PT. GUDELAKE FOOD INDONESIA,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91568472.0,Digital Marketing Specialist,,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91564769.0,Surveyor R&D Lokasi,Warna Warni Media,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91564639.0,DevOps Engineer,PT Inovasi Adiwarna Raya,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91564570.0,Visa Specialist & Travel Document Staff,PT. Gemilang Tata Wisata,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
-91564592.0,Helper Implant,Pengiklan Anonim,"Gresik, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91564592.0,Helper Implant,Pengiklan Anonim,"Gresik, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
 91564586.0,HSE & Civil Staff,Hardaya Widya Graha,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91564510.0,Project Engineer,Wahana Rizky Gumilang,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91564402.0,Sales Penempatan Freezer (SPF),Prima Artha Samastha,"Sidoarjo, Jawa Timur",Sidoarjo,100.0,-7.4539769,112.6593869,Jawa Timur,1140151.0,69549.0,1209700.0,1739861.0
@@ -5325,7 +5325,7 @@ id,title,company,location,matched_regency,match_score,Latitude,Longitude,Provins
 91563088.0,Sales Engineer Digital Printing,Nano Sng,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91562910.0,SOPIR TRUCK,PT Graha Mitra Gita Lestarindo,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91562890.0,Accounting,Tedmonnindo Pratamasemesta,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
-91562730.0,Staff Penjualan Toko,CV. Bisa Kulak Jatim,"Driyorejo, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91562730.0,Staff Penjualan Toko,CV. Bisa Kulak Jatim,"Driyorejo, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
 91562675.0,Staff restoran Korea Yeokjeon Grandma Beer (Waiters/Kitchen),,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91562579.0,CREW OUTLET CHEON SURABAYA,Cheon Indonesia,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91562304.0,PURCHASING,Bentang Persada,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
@@ -5362,8 +5362,8 @@ id,title,company,location,matched_regency,match_score,Latitude,Longitude,Provins
 91558527.0,Staff Project Management Office,PT Wijaya Inti Nusa Sentosa,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91558602.0,Sales & Marketing Manager  (Based in Indonesia),JSK Group of Companies,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91558513.0,Magang Kerja,Steel Pipe Industry of Indonesia,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
-91558443.0,Telemarketing,PT Pelita Mekar Semesta,"Gresik, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
-91558431.0,Sales Retail Gresik,Mowilex Indonesia,"Gresik, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91558443.0,Telemarketing,PT Pelita Mekar Semesta,"Gresik, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91558431.0,Sales Retail Gresik,Mowilex Indonesia,"Gresik, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
 91558061.0,Admin office,PT KONVEKSI KARYA MUDA,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91557999.0,Customer Service,PT KONVEKSI KARYA MUDA,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91557223.0,Tim Produksi Kue Tradisional,PT Varaya Kuliner Indonesia,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
@@ -5375,7 +5375,7 @@ id,title,company,location,matched_regency,match_score,Latitude,Longitude,Provins
 91555346.0,Finance & Tax Supervisor,PT Ragam Citra Harmoni,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91555395.0,DESIGN INTERIOR & PROJECT STAFF,Mapan Group,"Waru, Jawa Timur",Sidoarjo,100.0,-7.4539769,112.6593869,Jawa Timur,1140151.0,69549.0,1209700.0,1739861.0
 91555268.0,Content Creator (Leader),Putra Adhi Perkasa,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
-91579462.0,Account Executive,,"Gresik, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91579462.0,Account Executive,,"Gresik, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
 91555128.0,Branch Manager Area Jawa Timur,PT Integra Kreasitama Solusindo,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91555103.0,Pramuniaga Toko Emas - Surabaya,Pengiklan Anonim,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91555089.0,INTERIOR DESIGN STAFF,Mapan Group,"Sidoarjo, Jawa Timur",Sidoarjo,100.0,-7.4539769,112.6593869,Jawa Timur,1140151.0,69549.0,1209700.0,1739861.0
@@ -5393,13 +5393,13 @@ id,title,company,location,matched_regency,match_score,Latitude,Longitude,Provins
 91554631.0,Spv HRGA,Emitraco Transportasi Mandiri,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91554510.0,Service & Kitchen Supervisor,Mapan Group,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91553969.0,E-Commerce Specialist,BerryMan Shop,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
-91553811.0,Supply Chain Officer,OCS,"Gresik, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91553811.0,Supply Chain Officer,OCS,"Gresik, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
 91553774.0,Pelaksana Bangunan,PT Gracindo Bangun Utama,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91553674.0,Sales Product Representative,PT Hydro Wave Filtration,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91553431.0,Social Media Specialist,Toko Bokor Mas,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91553225.0,Exim Staff,Sreeya,"Sidoarjo, Jawa Timur",Sidoarjo,100.0,-7.4539769,112.6593869,Jawa Timur,1140151.0,69549.0,1209700.0,1739861.0
 91552932.0,Sales Lapangan,PT TRICOPLA,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
-91552698.0,Inventory Control Staff (PPIC),DGW Group,"Gresik, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91552698.0,Inventory Control Staff (PPIC),DGW Group,"Gresik, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
 91552440.0,Art Production Specialist,PT Sari Kimia Unggul,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91549818.0,Pelaksana Lapangan,,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91552311.0,Sales Promotion,Koperasi Kana,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
@@ -5447,11 +5447,11 @@ id,title,company,location,matched_regency,match_score,Latitude,Longitude,Provins
 91544592.0,Internal Audit Supervisor,,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91544025.0,Sales Executive,Majoo Teknologi Indonesia,"Sidoarjo, Jawa Timur",Sidoarjo,100.0,-7.4539769,112.6593869,Jawa Timur,1140151.0,69549.0,1209700.0,1739861.0
 91544024.0,Sales Executive,Majoo Teknologi Indonesia,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
-91542351.0,Production Trainee,,"Driyorejo, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91542351.0,Production Trainee,,"Driyorejo, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
 91553313.0,CREW OUTLET GEPREKINAJA KEDINDING LOR SURABAYA,,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
-91553352.0,CREW OUTLET GEPREKINAJA JL. MOH HUSNI GRESIK,,"Gresik, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91553352.0,CREW OUTLET GEPREKINAJA JL. MOH HUSNI GRESIK,,"Gresik, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
 91542019.0,Host live,,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
-91542023.0,Distribution Administration,Garudafood Putra Putri Jaya,"Driyorejo, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91542023.0,Distribution Administration,Garudafood Putra Putri Jaya,"Driyorejo, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
 91541369.0,PROJECT MANAGER PHOTO AGENCY,,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91541397.0,Social Media Intern,Tanrise Property,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91541031.0,Research And Development Product,PT Olah Kuliner Nusantara,"Sidoarjo, Jawa Timur",Sidoarjo,100.0,-7.4539769,112.6593869,Jawa Timur,1140151.0,69549.0,1209700.0,1739861.0
@@ -5477,7 +5477,7 @@ id,title,company,location,matched_regency,match_score,Latitude,Longitude,Provins
 91538868.0,CUSTOMS COMPLIANCE STAFF,Lintas Niaga Jaya,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91538768.0,Head of Digital Marketing (Conversion Ads & Organic),Sentri Fortuna Sejahtera,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91538727.0,Creative Director,Sentri Fortuna Sejahtera,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
-91538672.0,MARKETING EXPORT SENIOR STAFF,Langgeng Jaya Plastindo,"Gresik, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91538672.0,MARKETING EXPORT SENIOR STAFF,Langgeng Jaya Plastindo,"Gresik, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
 91538676.0,Creative Project Manager,Sentri Fortuna Sejahtera,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91538500.0,Area Sales Manager B2B & Partnership (Surabaya),Pengiklan Anonim,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91538419.0,Operations Manager (Penempatan di Kota Surabaya),Denko Group,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
@@ -5494,7 +5494,7 @@ id,title,company,location,matched_regency,match_score,Latitude,Longitude,Provins
 91537305.0,Finance Accounting & Tax Manager,Havanna Family Reflexology,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91553168.0,SALES MARKETING,Bumi Daya Plaza,"Lamongan, Jawa Timur",Lamongan,100.0,-7.1229318,112.3281935,Jawa Timur,797879.0,35733.0,833612.0,1114894.0
 91537100.0,MESSENGER - SURABAYA,Revass Utama Medika,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
-91537057.0,FINANCIAL PLANT CONTROLLER,Etex Building Performance Indonesia,"Gresik, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91537057.0,FINANCIAL PLANT CONTROLLER,Etex Building Performance Indonesia,"Gresik, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
 91536994.0,Operator Komputer,,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91536950.0,Entertain Chef - Junior Level,Surya Pratista Hutama,"Sidoarjo, Jawa Timur",Sidoarjo,100.0,-7.4539769,112.6593869,Jawa Timur,1140151.0,69549.0,1209700.0,1739861.0
 91553236.0,FINANCIAL ADVISOR (JOMBANG),,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
@@ -5504,9 +5504,9 @@ id,title,company,location,matched_regency,match_score,Latitude,Longitude,Provins
 91535918.0,MAGANG ADMIN HUMAS - INTERN ADMIN SUPPORT,Sentra Vidya Utama,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91536268.0,SALES ASURANSI BANCASSURANCE AREA SURABAYA,Manulife,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91536172.0,Picker,Mitracomm Ekasarana,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
-91536086.0,SALES DOCUMENT (MANDARIN SPEAKER),Xinyi Glass Indonesia,"Gresik, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91536086.0,SALES DOCUMENT (MANDARIN SPEAKER),Xinyi Glass Indonesia,"Gresik, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
 91512478.0,Banquet Head Chef,Sedoso Inggil Pesona Kreasi,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
-91535538.0,Commercial Admin,Syensqo,"Gresik, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91535538.0,Commercial Admin,Syensqo,"Gresik, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
 91535059.0,Senior Sales Freight Forwarding,Samudera Caraka Jasa,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91535041.0,Captain Resto,PT Andare Prima Interasa,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91535014.0,staff accounting,PT Gmg Teknologi Elektronik Indonesia,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
@@ -5515,7 +5515,7 @@ id,title,company,location,matched_regency,match_score,Latitude,Longitude,Provins
 91306955.0,Area Sales Representatives (Surabaya),Indomak Kitacipta Karya,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91471812.0,Customer Service Officer,Mowilex Indonesia,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91533676.0,SALES EXECUTIVE,Giant Transporter Indonesia,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
-91533439.0,ADMIN ONLINE,KING PACK,"Gresik, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91533439.0,ADMIN ONLINE,KING PACK,"Gresik, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
 91533253.0,Business Operations & Management Associate,Turnkeyid,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91532895.0,SPV Finance Accounting & Tax,Sega Agro Perdana,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91532651.0,"SALES EXECUTIV ( LAMONGAN, TUBAN, BOJONEGORO,)",Dapu Cell Indonesia,"Lamongan, Jawa Timur",Lamongan,100.0,-7.1229318,112.3281935,Jawa Timur,797879.0,35733.0,833612.0,1114894.0
@@ -5528,7 +5528,7 @@ id,title,company,location,matched_regency,match_score,Latitude,Longitude,Provins
 91529885.0,STAFF TAX,PT. Citra Sentral Jagat,"Manyar, Jawa Timur",Karanganyar,81.81818181818181,-7.6196965,111.0698003,Jawa Tengah,554741.0,18708.0,573449.0,766520.0
 91529787.0,PEMBANTU,Le Ding Ding Surabaya,"Sidoarjo, Jawa Timur",Sidoarjo,100.0,-7.4539769,112.6593869,Jawa Timur,1140151.0,69549.0,1209700.0,1739861.0
 91529730.0,Live Streamer,Armando Murni,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
-91529678.0,Sales,PT Inovasi Intec Persada,"Gresik, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91529678.0,Sales,PT Inovasi Intec Persada,"Gresik, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
 91529617.0,Sales Area,PT Baja Tirta Sentosa,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91553256.0,Senior Sales B2B,Erajaya,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91529430.0,Admin Operasional Transport,PT Tirtamas Coldstorindo Logistik,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
@@ -5536,27 +5536,27 @@ id,title,company,location,matched_regency,match_score,Latitude,Longitude,Provins
 91529405.0,Telemarketing / Marketing Communication,,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91529248.0,Host Live Streaming,PT Bumi Cipta Kreatif,"Sidoarjo, Jawa Timur",Sidoarjo,100.0,-7.4539769,112.6593869,Jawa Timur,1140151.0,69549.0,1209700.0,1739861.0
 91529016.0,Mekanik Otomotif Senior,Pengiklan Anonim,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
-91529019.0,PIC PACKAGING,Indo Jaya Putra,"Gresik, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
-91529018.0,Translator (Bahasa Indonesia & Mandarin),,"Gresik, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
-91529011.0,Financial Service Consultant (Bancassurance) - Gresik,PT Prudential Sharia Life Assurance,"Gresik, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91529019.0,PIC PACKAGING,Indo Jaya Putra,"Gresik, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91529018.0,Translator (Bahasa Indonesia & Mandarin),,"Gresik, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91529011.0,Financial Service Consultant (Bancassurance) - Gresik,PT Prudential Sharia Life Assurance,"Gresik, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
 91528993.0,Supervisor F&B,Hikmah Sejahtera,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
-91528992.0,ADMIN,PT Inovasi Intec Persada,"Gresik, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91528992.0,ADMIN,PT Inovasi Intec Persada,"Gresik, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
 91528961.0,Chef de Partie,Pengiklan Anonim,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91528946.0,Software Quality Assurance (Senior),PT Tirtamas Coldstorindo Logistik,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91528830.0,Sales Retail Staff,PT TechnicoFlor Indonesia,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91528924.0,Presales Engineer - Technology Solutions,GSI CCTV,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
-91528895.0,Sales Engineer (Surabaya),Geoservices,"Gresik, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91528895.0,Sales Engineer (Surabaya),Geoservices,"Gresik, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
 91528761.0,Crew Gudang - Pabrik Frozen Food (Sidoarjo),Mapan Group,"Waru, Jawa Timur",Sidoarjo,100.0,-7.4539769,112.6593869,Jawa Timur,1140151.0,69549.0,1209700.0,1739861.0
 91528537.0,"Area Sales Supervisor Palembang, Semarang & Surabaya",PT Wajah Rejuvenasi Perempuan Indonesia,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91528452.0,PIC (Accounting Staff),,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91528283.0,Fleet Management / Control Tower,PT Tirtamas Coldstorindo Logistik,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91528258.0,Account Officer (Placement Jakarta & Surabaya),PT. Indomobil Edukasi Utama,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
-91528066.0,Sales,PT Mulia Satu Group,"Driyorejo, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91528066.0,Sales,PT Mulia Satu Group,"Driyorejo, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
 91527878.0,Creative Content Designer,Jasuindo Tiga Perkasa,"Sidoarjo, Jawa Timur",Sidoarjo,100.0,-7.4539769,112.6593869,Jawa Timur,1140151.0,69549.0,1209700.0,1739861.0
 91553736.0,Marketing Communication,,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91527635.0,Area Sales Manager (SURABAYA),Anugerah Tangkas Transportindo,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91527297.0,Sales Representatives (Beauty Care) - Surabaya,Akasha Wira International,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
-91527114.0,Sales Promotor OPPO Store Gresik,PT.SELALU BAHAGIA SEJAHTERA,"Gresik, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91527114.0,Sales Promotor OPPO Store Gresik,PT.SELALU BAHAGIA SEJAHTERA,"Gresik, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
 91525093.0,Accounting Staff,Surabaya Mekabox,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91526923.0,SALES CONSULTANT,PT Daya Sukses Sejati,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91526895.0,Ahli Gizi MBG,YAYASAN YAYASAN POTENSI INSAN BERDAYA,"Sidoarjo, Jawa Timur",Sidoarjo,100.0,-7.4539769,112.6593869,Jawa Timur,1140151.0,69549.0,1209700.0,1739861.0
@@ -5572,9 +5572,9 @@ id,title,company,location,matched_regency,match_score,Latitude,Longitude,Provins
 91524901.0,Admin Warehouse,J&T Cargo,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91525267.0,Kepala Produksi,Astra Honda,"Sidoarjo, Jawa Timur",Sidoarjo,100.0,-7.4539769,112.6593869,Jawa Timur,1140151.0,69549.0,1209700.0,1739861.0
 91525130.0,STAF KONSULTAN PAJAK,PT Indo Bismar,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
-91525114.0,Sales Taking Order,KING PACK,"Gresik, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91525114.0,Sales Taking Order,KING PACK,"Gresik, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
 91525110.0,Senior Sales Executive,PT Wohing Overtek Presisi,"Sidoarjo, Jawa Timur",Sidoarjo,100.0,-7.4539769,112.6593869,Jawa Timur,1140151.0,69549.0,1209700.0,1739861.0
-91524528.0,Sales B2B dan Telemarketing,PT. JAPA WASA POLIMER,"Gresik, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91524528.0,Sales B2B dan Telemarketing,PT. JAPA WASA POLIMER,"Gresik, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
 91524437.0,Desain Grafis,,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91553673.0,SPV MERCHANT,Maha Sentral Sejati,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91523900.0,TAX & ACCOUNTING SENIOR,Bumindo Sakti,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
@@ -5585,20 +5585,20 @@ id,title,company,location,matched_regency,match_score,Latitude,Longitude,Provins
 91523418.0,Staf Akunting dan Tax,PT Hutomo Raharjo Prasojo,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91523301.0,Marketplace Admin,Ming Jaya Sejahtera,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91523120.0,DRIVER PRIBADI,Kimia Constructions Indonesia,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
-91522921.0,Tenaga teknis kefarmasian,Apotek Nusantara Cerme,"Gresik, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91522921.0,Tenaga teknis kefarmasian,Apotek Nusantara Cerme,"Gresik, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
 91522856.0,Aftersales Service,PT Sinko Prima Alloy,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91522728.0,AFFILIATE SPECIALIST,BASRA Corporation,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91522655.0,Pricing Analyst (Mandarin Speaker),Pengiklan Anonim,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91522646.0,Business Development Manager (Surabaya),BSA Logistics Indonesia,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91522549.0,Procurement Staff,Transcon Indonesia,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
-91522360.0,Sales Executive,Dharma Satya Nusantara,"Gresik, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
-91522226.0,Admin Warehouse,Indraco,"Driyorejo, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91522360.0,Sales Executive,Dharma Satya Nusantara,"Gresik, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91522226.0,Admin Warehouse,Indraco,"Driyorejo, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
 91521830.0,Admin Accounting,PT. Cakratek Buana,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91521528.0,Sales Atap UPVC,Suryasukses Group,"Sidoarjo, Jawa Timur",Sidoarjo,100.0,-7.4539769,112.6593869,Jawa Timur,1140151.0,69549.0,1209700.0,1739861.0
 91518884.0,Sales Project,Fanos Asia,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91518367.0,Project Manager,,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91518209.0,Finance Staff,Indofood,"Sidoarjo, Jawa Timur",Sidoarjo,100.0,-7.4539769,112.6593869,Jawa Timur,1140151.0,69549.0,1209700.0,1739861.0
-91517971.0,TAX ACCOUNTING  ( ACCOUNTING PAJAK ),Refli Skin Clinic,"Driyorejo, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91517971.0,TAX ACCOUNTING  ( ACCOUNTING PAJAK ),Refli Skin Clinic,"Driyorejo, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
 91553343.0,Customer Service,Sinergi Performa Cipta,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91553365.0,Direct Sales Representatif Merchant,Maha Sentral Sejati,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91515951.0,ERP Functional Consultant ( Surabaya ),Sbg Business Solutions,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
@@ -5643,11 +5643,11 @@ id,title,company,location,matched_regency,match_score,Latitude,Longitude,Provins
 91511714.0,TECHNICIAN (ELECTRIC / MECHANIC),ESA Sampoerna Group,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91511609.0,Studio Coordinator,,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91502119.0,Staff Marketing International,Istana Cipta Sembada,"Waru, Jawa Timur",Sidoarjo,100.0,-7.4539769,112.6593869,Jawa Timur,1140151.0,69549.0,1209700.0,1739861.0
-91508143.0,PENERJEMAH MANDARIN,PT. SUKSES MITRA INDO,"Gresik, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91508143.0,PENERJEMAH MANDARIN,PT. SUKSES MITRA INDO,"Gresik, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
 91511682.0,Junior Production Research Associate,Bayer,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91511497.0,DRIVER TRUCK B1 (PABRIK PLASTIK) SIDOARJO,Suksesindo,"Gedangan, Jawa Timur",Sidoarjo,100.0,-7.4539769,112.6593869,Jawa Timur,1140151.0,69549.0,1209700.0,1739861.0
 91511344.0,Operator Mesin Produksi (Industri Kertas),SENTOSA INDOPAPER PRIMA,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
-91511295.0,UH ENGINEERING/SIPIL,Keramik Diamond Industries,"Gresik, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91511295.0,UH ENGINEERING/SIPIL,Keramik Diamond Industries,"Gresik, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
 91525609.0,Sales Promotor,OPPO,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91510612.0,Digital Marketing Supervisor,Depaul Jewelry,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91510563.0,Admin Sosial Media,United Shipping Indonesia,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
@@ -5655,13 +5655,13 @@ id,title,company,location,matched_regency,match_score,Latitude,Longitude,Provins
 91510270.0,Account Officer SME (Sales),Moladin,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91510268.0,Cook (Toko Kopi Tuku Margorejo),MAKA,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91510166.0,Sales Marketing,Pengiklan Anonim,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
-91509989.0,"Purchasing, Pembelian, Admin Operasional",Refli Skin Clinic,"Driyorejo, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
-91509927.0,Proposal Engineer,Asuka Engineering Indonesia,"Gresik, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91509989.0,"Purchasing, Pembelian, Admin Operasional",Refli Skin Clinic,"Driyorejo, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91509927.0,Proposal Engineer,Asuka Engineering Indonesia,"Gresik, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
 91497608.0,"Kepala Unit ULaMM - Wilayah Surabaya, Sidoarjo, Pasuruan",Permodalan Nasional Madani,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91525727.0,ADMIN ACCOUNTING,,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91187510.0,SPV Brand Marketing Online,Bintang Kencana Anugrah,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
-91525734.0,Crew Konter HP,,"Gresik, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
-91525761.0,PROMOTOR HP,,"Gresik, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91525734.0,Crew Konter HP,,"Gresik, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91525761.0,PROMOTOR HP,,"Gresik, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
 91509497.0,STAFF KEAGENAN KAPAL,PT.RIMASA,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91509470.0,MEKANIK TRUCK dan FORKLIFT (Penempatan: Surabaya/Gresik),Urip Sejati Sources,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91508793.0,Marketing Support,Pengiklan Anonim,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
@@ -5671,7 +5671,7 @@ id,title,company,location,matched_regency,match_score,Latitude,Longitude,Provins
 91508785.0,Sales Promotion (Jatim),Mallesso Investment Abadi,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91508670.0,CONTENT CREATOR / MULTIMEDIA,Karya Anugerah,"Sidoarjo, Jawa Timur",Sidoarjo,100.0,-7.4539769,112.6593869,Jawa Timur,1140151.0,69549.0,1209700.0,1739861.0
 91579548.0,Guru Mandarin,,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
-91508542.0,JUNIOR MEKANIK,Urip Sejati Sources,"Gresik, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91508542.0,JUNIOR MEKANIK,Urip Sejati Sources,"Gresik, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
 91525661.0,FREELANCE SALES CANVASSING,,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91508253.0,Sales (Sidoarjo),Rider,"Sidoarjo, Jawa Timur",Sidoarjo,100.0,-7.4539769,112.6593869,Jawa Timur,1140151.0,69549.0,1209700.0,1739861.0
 91525873.0,Sales Executive,,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
@@ -5683,19 +5683,19 @@ id,title,company,location,matched_regency,match_score,Latitude,Longitude,Provins
 91507509.0,Content Creator - Surabaya,Duta Generasi Mandiri,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91507315.0,"Perawat Perinatologi, PICU, NICU",Ciputra Nusantara,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91507106.0,"Cook Helper Central Kitchen (Hot/ Cold, Ex Catering/ Banquet OK)",Greenly Lifestyle Indonesia,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
-91507071.0,Supervisor HRGA,Behaestex,"Gresik, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91507071.0,Supervisor HRGA,Behaestex,"Gresik, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
 91525776.0,SALES COUNTER,,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91506687.0,HRD,PT Arodian Molis Indonesia,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91506480.0,FINANCE & ACCOUNTING STAFF,Lintas Niaga Jaya,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91506315.0,ACCOUNTING,,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91506067.0,KASIR,,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91505824.0,Telemarketing,,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
-91505668.0,STAFF IMPORT & PURCHASING,PT Adela Grup Nusantara,"Driyorejo, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91505668.0,STAFF IMPORT & PURCHASING,PT Adela Grup Nusantara,"Driyorejo, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
 91505724.0,Kepala Toko,,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91525579.0,Marketing,,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91505192.0,Sales Executive - Spareparts,Azlogistic Dot Com,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91504466.0,PURCHASING ASSISTANT MANAGER,Trilliun,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
-91504405.0,Staff PPIC,Kumala Kirana Industry,"Gresik, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91504405.0,Staff PPIC,Kumala Kirana Industry,"Gresik, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
 91504399.0,Junior Arsitek,Sinar bhakti luhur,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91504136.0,Teachers and Supporting School Staff,PT Anak Bahagia Cerdas,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91501962.0,Asst. Manager Marketing (Sidoarjo),MGM Bosco,"Sidoarjo, Jawa Timur",Sidoarjo,100.0,-7.4539769,112.6593869,Jawa Timur,1140151.0,69549.0,1209700.0,1739861.0
@@ -5714,12 +5714,12 @@ id,title,company,location,matched_regency,match_score,Latitude,Longitude,Provins
 91502082.0,Telesales Staff,PT Sukses Printnusa Indonesia,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91502048.0,Accounting SPV,Pengiklan Anonim,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91525760.0,Sales Design Advisor Surabaya,Dekoruma,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
-91501890.0,Staff Laboratorium,PT Lavilla Kreatif Perkasa,"Gresik, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91501890.0,Staff Laboratorium,PT Lavilla Kreatif Perkasa,"Gresik, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
 91501708.0,Sales Executive,PT PELITA GUNATAMA PERSADA,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91525893.0,Content Creator,,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91501652.0,KOL Specialist,Fordive,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91473661.0,SPV FINANCE ACCOUNTING,PT Gas Putra Semangat Abadi,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
-91501403.0,HRD Manager,Indraco,"Driyorejo, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91501403.0,HRD Manager,Indraco,"Driyorejo, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
 91501238.0,Staff Keuangan,Indonesia Bakery Family,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91500982.0,Design & Decoration Project Manager,Orchid Florist & Decoration,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91500924.0,General Maintenance,Kozystay,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
@@ -5774,7 +5774,7 @@ id,title,company,location,matched_regency,match_score,Latitude,Longitude,Provins
 91487074.0,Finance,PT SAMA SAMA UNTUNG,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91487046.0,NAILART,Myosotis Hairstylist,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91487040.0,"Beauty Therapist / Beautician Eyelash Extension, Nailart, Facial",Elizabeth Beauty Art,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
-91486921.0,Logistic Operation (East Java),J&T Cargo,"Gresik, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91486921.0,Logistic Operation (East Java),J&T Cargo,"Gresik, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
 91500017.0,Cook Surabaya,,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91486573.0,Landscape Supervisor,Eastern Logistics,"Lamongan, Jawa Timur",Lamongan,100.0,-7.1229318,112.3281935,Jawa Timur,797879.0,35733.0,833612.0,1114894.0
 91486639.0,Social Media Manager,Wahyu Golden Indonesia,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
@@ -5796,7 +5796,7 @@ id,title,company,location,matched_regency,match_score,Latitude,Longitude,Provins
 91484576.0,Estimator (Freelance),PT Media Bersama Sukses,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91484549.0,Business Development Supervisor,Kebab Turki Baba Rafi,"Sidoarjo, Jawa Timur",Sidoarjo,100.0,-7.4539769,112.6593869,Jawa Timur,1140151.0,69549.0,1209700.0,1739861.0
 91484482.0,DevOps Intern (Mahasiswa Aktif),Salam Pacific Indonesia Lines,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
-91483993.0,Staf Akunting,Behaestex,"Gresik, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91483993.0,Staf Akunting,Behaestex,"Gresik, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
 91484015.0,Beautician Therapist (Surabaya),Euromedica Group,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91413574.0,Staff Kasir,,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91483971.0,Human Resource (Freelance),PT Media Bersama Sukses,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
@@ -5817,7 +5817,7 @@ id,title,company,location,matched_regency,match_score,Latitude,Longitude,Provins
 91482852.0,CUSTOMER SERVICE IMPORT,Pengiklan Anonim,"Sidoarjo, Jawa Timur",Sidoarjo,100.0,-7.4539769,112.6593869,Jawa Timur,1140151.0,69549.0,1209700.0,1739861.0
 91482833.0,Admin Finance Intern,Borwita Citra Prima,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91482609.0,STAFF PURCHASING,PT Hokky Sumber Makmur,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
-91482607.0,Supervisor Accounting,,"Driyorejo, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91482607.0,Supervisor Accounting,,"Driyorejo, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
 91482539.0,Order Taker (Non-FnB),Kozystay,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91482532.0,STAFF FINANCE,PT Hokky Sumber Makmur,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91482376.0,Analisa Kredit,BASRA Corporation,"Sidoarjo, Jawa Timur",Sidoarjo,100.0,-7.4539769,112.6593869,Jawa Timur,1140151.0,69549.0,1209700.0,1739861.0
@@ -5827,11 +5827,11 @@ id,title,company,location,matched_regency,match_score,Latitude,Longitude,Provins
 91481700.0,SPV Sales & Marketing Local,Indal Aluminium Industry,"Sidoarjo, Jawa Timur",Sidoarjo,100.0,-7.4539769,112.6593869,Jawa Timur,1140151.0,69549.0,1209700.0,1739861.0
 91481683.0,Admin Accounting,Pengiklan Anonim,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91481603.0,BARISTA (SURABAYA),PT Tigersonindo Surya Bermuda,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
-91481419.0,Staff Laborat,Indal Aluminium Industry,"Gresik, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91481419.0,Staff Laborat,Indal Aluminium Industry,"Gresik, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
 91481318.0,EVENT ACTIVATION SPV [PROMOTION],BASRA Corporation,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
-91519166.0,Sales Executive,Mandiri Daya Andalan,"Gresik, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91519166.0,Sales Executive,Mandiri Daya Andalan,"Gresik, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
 91480730.0,Branch Manager - Aestehtic Clinic (Lippo Plaza Sidoarjo),Euromedica Group,"Sidoarjo, Jawa Timur",Sidoarjo,100.0,-7.4539769,112.6593869,Jawa Timur,1140151.0,69549.0,1209700.0,1739861.0
-91480701.0,Branch Manager (Aesthetic Clinic) - Gress Mall,Euromedica Group,"Gresik, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91480701.0,Branch Manager (Aesthetic Clinic) - Gress Mall,Euromedica Group,"Gresik, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
 91480691.0,Renovation Project Manager (Fit Out),NCS Consultant Indonesia,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91480623.0,Staf Marketing Analyst,Pengiklan Anonim,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91480456.0,Sales & Marketing (Babat Alas),PT Hokiku Berjaya Unggul Bersama,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
@@ -5844,9 +5844,9 @@ id,title,company,location,matched_regency,match_score,Latitude,Longitude,Provins
 91479480.0,Finance Accounting & Tax Manager (FAT),PT RONTHKARD SPINETION INDONESIA,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91479498.0,Sales B2B/B2G - Integra Teknologi Solusi,Sentra Vidya Utama,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91479469.0,Content Creator Spesialist,PT Solusi Mudah Satu Mitra Bersama,"Sidoarjo, Jawa Timur",Sidoarjo,100.0,-7.4539769,112.6593869,Jawa Timur,1140151.0,69549.0,1209700.0,1739861.0
-91479427.0,Staf Internal Audit,Behaestex,"Gresik, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91479427.0,Staf Internal Audit,Behaestex,"Gresik, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
 91479313.0,Bartender,Resto Goela Aren,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
-91479207.0,maintenance,Zensei Indonesia,"Driyorejo, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91479207.0,maintenance,Zensei Indonesia,"Driyorejo, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
 91479006.0,Sales Counter,,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91478333.0,Elementary Math Teacher,Insan Muda Berprestasi,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91459403.0,Marketing Communication (Marcom) Specialist,Anare Clinic,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
@@ -5872,7 +5872,7 @@ id,title,company,location,matched_regency,match_score,Latitude,Longitude,Provins
 91474335.0,Process Engineer,PT Gusse Strategic Indonesia,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91500205.0,Sales Executive,,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91473958.0,STAFF ENGINEERING,PT Mandiri Sukses Sejahtera,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
-91473676.0,Telemarketing,,"Gresik, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91473676.0,Telemarketing,,"Gresik, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
 91473660.0,"(Senior) Relationship Officer, Surabaya",,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91473647.0,Field Trainer (F&B),Maison Féerie,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91458657.0,Dapur Produksi,,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
@@ -5888,25 +5888,25 @@ id,title,company,location,matched_regency,match_score,Latitude,Longitude,Provins
 91472404.0,Cashier,,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91499925.0,Kurir Motor,,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91499960.0,Kurir Motor,,"Sidoarjo, Jawa Timur",Sidoarjo,100.0,-7.4539769,112.6593869,Jawa Timur,1140151.0,69549.0,1209700.0,1739861.0
-91499968.0,Kurir Motor,,"Gresik, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91499968.0,Kurir Motor,,"Gresik, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
 91471964.0,ADMIN SALES (MANDARIN SPEAKER),QMPP (QINGDA MASPION PAPER PRODUCTS),"Sidoarjo, Jawa Timur",Sidoarjo,100.0,-7.4539769,112.6593869,Jawa Timur,1140151.0,69549.0,1209700.0,1739861.0
 91471904.0,Junior Accounting Consultant,,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91471502.0,Toyota Technician General & Body (Timor-Leste),Bensons Jaya Makmur,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91471915.0,Marketing Communication Supervisor,Tiberman,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91471855.0,Medical Development Manager,Miracle Aesthetic Clinic,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
-91471720.0,Marketing Executive,PT Royal Kedung Asem,"Gresik, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91471720.0,Marketing Executive,PT Royal Kedung Asem,"Gresik, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
 91471643.0,Staff Sourcing Mahir Bahasa Inggris,PT. Golden Surya Mandiri.,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91471470.0,Product Specialist,Doran Sukses Indonesia,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91471386.0,Sales,PT. Golden Surya Mandiri.,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91471196.0,Driver Logistik (Penempatan Surabaya),PT Winson Singa Logistik,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91471156.0,Staff Administrasi,Matahati Autism Clinic Centre,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91471101.0,Internal Audit,Armada Mix Group,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
-91471060.0,Staf Accounting,Syensqo,"Gresik, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
-91470877.0,Customer Service,Dunia Gadai,"Gresik, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91471060.0,Staf Accounting,Syensqo,"Gresik, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91470877.0,Customer Service,Dunia Gadai,"Gresik, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
 91469329.0,vidiograver,PT. AIRBFT INDONESIA INDUSTRI,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 90955327.0,Elite Sales Project,CV Green Mile Indonesia,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91469902.0,SPV SALES JATIM,Catur Adhi Manunggal,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
-91469845.0,Supervisor Warehouse Finish Good,Kumala Kirana Industry,"Gresik, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91469845.0,Supervisor Warehouse Finish Good,Kumala Kirana Industry,"Gresik, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
 91469786.0,Marketing &  Activation Manager,Asia Prima Konjac,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91468864.0,Pengawas Proyek,,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91469269.0,CONTEN CEATOR PROFESIONAL,PT. AIRBFT INDONESIA INDUSTRI,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
@@ -5923,7 +5923,7 @@ id,title,company,location,matched_regency,match_score,Latitude,Longitude,Provins
 91468149.0,Staff Akuntansi,Workplant,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91438333.0,Staff HRD,Lisa Concrete Indonesia,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91467280.0,Product Specialist (Surabaya),Sinar Mutiara Cakrabuana,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
-91447294.0,Marketing Inhouse,,"Gresik, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91447294.0,Marketing Inhouse,,"Gresik, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
 91466264.0,ECONOMIC TEACHER,Intan Education Foundation,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91464605.0,admin keuangan,,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91464431.0,Finance & Accounting Staff,PT. Mitra Utama Plastindo,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
@@ -5934,12 +5934,12 @@ id,title,company,location,matched_regency,match_score,Latitude,Longitude,Provins
 91464144.0,Mitra Kurir Motor - Kab Lamongan,Tri Adi Bersama,"Lamongan, Jawa Timur",Lamongan,100.0,-7.1229318,112.3281935,Jawa Timur,797879.0,35733.0,833612.0,1114894.0
 91464134.0,Mitra Kurir Motor - Kab. Bangkalan,Tri Adi Bersama,"Kabupaten Bangkalan, Jawa Timur",Bangkalan,90.0,-7.0463602,112.8961792,Jawa Timur,568657.0,31878.0,600535.0,871085.0
 91464114.0,Staf administrasi di lembaga kursus bahasa Mandarin.,PT. Zhen Hao Pusat Bahasa,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
-91463787.0,Finance & Accounting Staff,,"Gresik, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91463787.0,Finance & Accounting Staff,,"Gresik, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
 91221763.0,Senior Analytics Engineer,Sentra Vidya Utama,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91458499.0,CONTENT CREATOR & VIDEO EDITOR,PT Olah Kuliner Nusantara,"Sidoarjo, Jawa Timur",Sidoarjo,100.0,-7.4539769,112.6593869,Jawa Timur,1140151.0,69549.0,1209700.0,1739861.0
 91463125.0,Internship Public Relations & Community Specialist,,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91470848.0,Sales Agent Wifi  - Internet Service Provider,,"Lamongan, Jawa Timur",Lamongan,100.0,-7.1229318,112.3281935,Jawa Timur,797879.0,35733.0,833612.0,1114894.0
-91470875.0,Sales Agent Wifi  - Internet Service Provider,,"Gresik, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91470875.0,Sales Agent Wifi  - Internet Service Provider,,"Gresik, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
 91470880.0,Sales Agent Wifi  - Internet Service Provider,,"Sidoarjo, Jawa Timur",Sidoarjo,100.0,-7.4539769,112.6593869,Jawa Timur,1140151.0,69549.0,1209700.0,1739861.0
 91470735.0,Sales Agent Wifi  - Internet Service Provider,,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91463049.0,Teknisi Service Lift Elevator & Escalator Area Surabaya,Maxwell Natanindo Global,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
@@ -5955,12 +5955,12 @@ id,title,company,location,matched_regency,match_score,Latitude,Longitude,Provins
 91460578.0,Sales Engineer,PT Epsea Machinery Equipment Indonesia,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91460132.0,Key Account Specialist,PT. Selaras Lawang Sewu,"Sidoarjo, Jawa Timur",Sidoarjo,100.0,-7.4539769,112.6593869,Jawa Timur,1140151.0,69549.0,1209700.0,1739861.0
 91461980.0,Tenaga Produksi,,"Sidoarjo, Jawa Timur",Sidoarjo,100.0,-7.4539769,112.6593869,Jawa Timur,1140151.0,69549.0,1209700.0,1739861.0
-91459766.0,MARKETING MANAGER,PT Berkat Jaya Development,"Gresik, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91459766.0,MARKETING MANAGER,PT Berkat Jaya Development,"Gresik, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
 91459728.0,Server,,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91459717.0,Cost Control,Sedoso Inggil Pesona Kreasi,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91459600.0,ASSISTANT GENERAL MANAGER - Operations & Finance (Level Supervisor),Artha Adipersada,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91459578.0,Affiliate Specialist,pt.nusantara alami group,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
-91459340.0,Admin Data Entry,PT Sinaran Harindo Pratama,"Gresik, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91459340.0,Admin Data Entry,PT Sinaran Harindo Pratama,"Gresik, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
 91459313.0,Customer Service,Dunia Gadai,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91462016.0,Plating Controller,,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91459130.0,Operational Manager (Warehouse),PT Sejahtera Globalindo Utama,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
@@ -5986,7 +5986,7 @@ id,title,company,location,matched_regency,match_score,Latitude,Longitude,Provins
 91458309.0,Administrasi Payroll,Bambang Djaja,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91458256.0,Warehouse Packer,PT Hydro Wave Filtration,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91458210.0,AREA SALES  MANAGER,Ikan Dorang,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
-91458252.0,Admin Project / Project Control,PT. AHMAD PUTRA INDO KARYA,"Gresik, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91458252.0,Admin Project / Project Control,PT. AHMAD PUTRA INDO KARYA,"Gresik, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
 91458220.0,E-Commers Specialist,PT. HRDKU REKSA TALENTA,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91458217.0,SPV Sales,,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91458204.0,IT Technical Support / Engineer,Eikon Technology,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
@@ -12602,13 +12602,13 @@ id,title,company,location,matched_regency,match_score,Latitude,Longitude,Provins
 91205256.0,Senior Barista / Shift Leader,Never Ending Story Coffee,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91602354.0,Driver,PT Packstra Super Optimal,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91602085.0,Marketing Digital,Orion Indonesia,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
-91602661.0,Kasir,,"Gresik, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91602661.0,Kasir,,"Gresik, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
 91602596.0,CREW OUTLET GEPREKINAJA SIMOREJO SARI SURABAYA,,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91602598.0,Crew Outlet,,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91602599.0,Kitchen Crew,,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91602632.0,Store Leader,,"Sidoarjo, Jawa Timur",Sidoarjo,100.0,-7.4539769,112.6593869,Jawa Timur,1140151.0,69549.0,1209700.0,1739861.0
 91602603.0,Crew Outlet,,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
-91602671.0,Crew Konter HP,,"Gresik, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91602671.0,Crew Konter HP,,"Gresik, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
 91602650.0,Housekeeping,,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91451162.0,PIC GUDANG,Speeds Indonesia,"Sidoarjo, Jawa Timur",Sidoarjo,100.0,-7.4539769,112.6593869,Jawa Timur,1140151.0,69549.0,1209700.0,1739861.0
 91457088.0,CONTENT CREATOR,Speeds Indonesia,"Sidoarjo, Jawa Timur",Sidoarjo,100.0,-7.4539769,112.6593869,Jawa Timur,1140151.0,69549.0,1209700.0,1739861.0
@@ -12629,7 +12629,7 @@ id,title,company,location,matched_regency,match_score,Latitude,Longitude,Provins
 91451311.0,Beautician,,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91451192.0,Marketing Executive,PT Mitraindo Adi Perkasa,"Sidoarjo, Jawa Timur",Sidoarjo,100.0,-7.4539769,112.6593869,Jawa Timur,1140151.0,69549.0,1209700.0,1739861.0
 91451212.0,Account Executive,Nuclear Coating Fabric,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
-91451151.0,Staf GA,Behaestex,"Gresik, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91451151.0,Staf GA,Behaestex,"Gresik, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
 91451012.0,Bidan Markom,PT Menara Abadi Sofindo,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91450888.0,District Sales Manager,JAPFA Food,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91450555.0,Sales Supervisor,RELX (Singapore) Pte Ltd,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
@@ -12656,7 +12656,7 @@ id,title,company,location,matched_regency,match_score,Latitude,Longitude,Provins
 91449311.0,Sales Executive Chemical - Jawa Tengah/Jawa Timur,Colorindo Chemtra,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91449078.0,Sales Project (URGENT),DPS Power Genset,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91448972.0,Cook Helper,Sedoso Inggil Pesona Kreasi,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
-91457347.0,STAR (Sales Trainee Academy by Ruangguru) Gresik - Usam Sadar,Ruangguru,"Gresik, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91457347.0,STAR (Sales Trainee Academy by Ruangguru) Gresik - Usam Sadar,Ruangguru,"Gresik, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
 91448871.0,Automation Engineer,Fillomatic Global Industries,"Sidoarjo, Jawa Timur",Sidoarjo,100.0,-7.4539769,112.6593869,Jawa Timur,1140151.0,69549.0,1209700.0,1739861.0
 91444852.0,Sales Associates,,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91457323.0,Purchasing Head,,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
@@ -12692,12 +12692,12 @@ id,title,company,location,matched_regency,match_score,Latitude,Longitude,Provins
 91446373.0,Staff Gudang,PT. Berkat Sejahtera Globalindo,"Sidoarjo, Jawa Timur",Sidoarjo,100.0,-7.4539769,112.6593869,Jawa Timur,1140151.0,69549.0,1209700.0,1739861.0
 91446308.0,Marketing / Sales (Cabang Surabaya),Putra Mutiara Jaya,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91446220.0,Organization Development & Performance Management,Mapan Group,"Waru, Jawa Timur",Sidoarjo,100.0,-7.4539769,112.6593869,Jawa Timur,1140151.0,69549.0,1209700.0,1739861.0
-91446263.0,Production Admin,PT sumbermasplast,"Gresik, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91446263.0,Production Admin,PT sumbermasplast,"Gresik, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
 91446242.0,Teknisi  (Cabang Surabaya),Putra Mutiara Jaya,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91446157.0,Staff PPIC,PT. Berkat Sejahtera Globalindo,"Sidoarjo, Jawa Timur",Sidoarjo,100.0,-7.4539769,112.6593869,Jawa Timur,1140151.0,69549.0,1209700.0,1739861.0
 91446154.0,DESIGN STAFF,QMPP (QINGDA MASPION PAPER PRODUCTS),"Sidoarjo, Jawa Timur",Sidoarjo,100.0,-7.4539769,112.6593869,Jawa Timur,1140151.0,69549.0,1209700.0,1739861.0
 91445977.0,Staff Admin,PT. Berkat Sejahtera Globalindo,"Sidoarjo, Jawa Timur",Sidoarjo,100.0,-7.4539769,112.6593869,Jawa Timur,1140151.0,69549.0,1209700.0,1739861.0
-91445971.0,TEKNISI BENGKEL,Urip Sejati Sources,"Gresik, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91445971.0,TEKNISI BENGKEL,Urip Sejati Sources,"Gresik, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
 91445838.0,MEKANIK & TEKNISI MESIN JAHIT COMPUTER,PT Hongsheng International,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91316481.0,Team Sales Keliling,,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91445566.0,"Bagian Umum (OB, Kurir, Picker)",GSI CCTV,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
@@ -12749,7 +12749,7 @@ id,title,company,location,matched_regency,match_score,Latitude,Longitude,Provins
 91437957.0,Area Sales Supervisor Surabaya,Feel Buy Indonesia,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91437950.0,3D Designer,AGE Creative,"Waru, Jawa Timur",Sidoarjo,100.0,-7.4539769,112.6593869,Jawa Timur,1140151.0,69549.0,1209700.0,1739861.0
 91437715.0,Server,PT. Tangan Kita Berkarya,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
-91437629.0,Sales/Marketing Inhouse (Property),Primehills Estate,"Gresik, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91437629.0,Sales/Marketing Inhouse (Property),Primehills Estate,"Gresik, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
 91457344.0,Vaporista,,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91437462.0,Admin Warehouse,GSI CCTV,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91457424.0,Sales Acquisition (SA) MDM Surabaya,Mitra Utama Madani,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
@@ -12761,11 +12761,11 @@ id,title,company,location,matched_regency,match_score,Latitude,Longitude,Provins
 91436411.0,Teknisi Lampu Mobil (Kendaraan),,"Sidoarjo, Jawa Timur",Sidoarjo,100.0,-7.4539769,112.6593869,Jawa Timur,1140151.0,69549.0,1209700.0,1739861.0
 91436153.0,Freelance Microsoft Excel Kota Surabaya,Flashcom Indonesia,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91436021.0,Digital Marketing Officer,PT IDE Bangsa Mahardika,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
-91408561.0,Foreman,,"Gresik, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91408561.0,Foreman,,"Gresik, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
 91435611.0,Driver Kanvas (Lamongan),PT Sinergi Nusantara Sentosa,"Lamongan, Jawa Timur",Lamongan,100.0,-7.1229318,112.3281935,Jawa Timur,797879.0,35733.0,833612.0,1114894.0
 91435554.0,Site Enginner Interior & Struktur,PT Hokky Sumber Makmur,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91457307.0,Server,Vidya Artha Tama,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
-91457328.0,Crew Outlet,Kebab Bosman,"Gresik, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91457328.0,Crew Outlet,Kebab Bosman,"Gresik, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
 91457356.0,Crew Outlet,Kebab Bosman,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91435308.0,Staff Keuangan,,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91434893.0,Ahli Gizi Dapur MBG,Kebab Turki Baba Rafi,"Lamongan, Jawa Timur",Lamongan,100.0,-7.1229318,112.3281935,Jawa Timur,797879.0,35733.0,833612.0,1114894.0
@@ -12808,7 +12808,7 @@ id,title,company,location,matched_regency,match_score,Latitude,Longitude,Provins
 91423988.0,Graphic Desainer,SYB Official,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91423908.0,Ekspor Staff,PT Korin Buana Antarnusa (Surabaya),"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91423892.0,Sales (Supervisor/Manager) Area Surabaya,SATEX Group,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
-91423829.0,Staf Kemitraan,Behaestex,"Gresik, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91423829.0,Staf Kemitraan,Behaestex,"Gresik, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
 91423774.0,Customer Relation Officer Leader,Beon Intermedia,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91423689.0,HR Industrial Relation,Jakamitra Indonesia,"Lamongan, Jawa Timur",Lamongan,100.0,-7.1229318,112.3281935,Jawa Timur,797879.0,35733.0,833612.0,1114894.0
 91423719.0,DRAFTER HVAC & MEP,Pilar Ekatama,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
@@ -12819,7 +12819,7 @@ id,title,company,location,matched_regency,match_score,Latitude,Longitude,Provins
 91423072.0,Surveyor Konstruksi,Immanuel Muliajaya Constructions,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91426771.0,Supervisor Customer Relation Officer - WFO Surabaya,Beon Intermedia,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91422811.0,HR Business Partner,Jakamitra Indonesia,"Lamongan, Jawa Timur",Lamongan,100.0,-7.1229318,112.3281935,Jawa Timur,797879.0,35733.0,833612.0,1114894.0
-91420457.0,Sales,,"Gresik, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91420457.0,Sales,,"Gresik, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
 91422700.0,Internship Finance Accounting,PT Java Vapor Indonesia,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91422673.0,Corporate Business Agency Development,Prudential Group,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91422674.0,Marketing Engineer Lift Surabaya,Jaya Kencana,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
@@ -12835,7 +12835,7 @@ id,title,company,location,matched_regency,match_score,Latitude,Longitude,Provins
 91421948.0,Agency Manager Builder,Tokio Marine Insurance Indonesia,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91421950.0,SPV ACCOUNTING FINANCE TAX,PT PRIGEN TIMUR BERKAH,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91421829.0,Teknisi Videotron,Warna Warni Media,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
-91421787.0,Safety Officer Pelabuhan (Gresik),Varia Usaha Fabrikasi,"Gresik, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91421787.0,Safety Officer Pelabuhan (Gresik),Varia Usaha Fabrikasi,"Gresik, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
 91421794.0,FULL STACK DEVELOPER,Busana Apparel,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91421770.0,Operator DTF (Training di Surakarta),,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91421362.0,Manager,Samudra Mahkota Beach,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
@@ -12859,7 +12859,7 @@ id,title,company,location,matched_regency,match_score,Latitude,Longitude,Provins
 91420131.0,Sales Distribusi,GSI CCTV,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91418684.0,Karyawan Counter Makanan,,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91420080.0,Sales Motoris Team Leader,PT Perkakas Sumber Karya,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
-91420026.0,Admin,PT Technofroze Indra Jaya,"Gresik, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91420026.0,Admin,PT Technofroze Indra Jaya,"Gresik, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
 91419968.0,Marketing,METRO TARA,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91419917.0,HSE Staff,Bambang Djaja,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91427528.0,SAISBY Sales Staff,Samudera Indonesia,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
@@ -12869,20 +12869,20 @@ id,title,company,location,matched_regency,match_score,Latitude,Longitude,Provins
 91414933.0,Designer,,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91394940.0,Karyawan laundry,,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91419333.0,Beauty Advisor for ELEMIS Surabaya,Asia Bandar Alam,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
-91419300.0,Admin & Digital Marketing,PT Technofroze Indra Jaya,"Gresik, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91419300.0,Admin & Digital Marketing,PT Technofroze Indra Jaya,"Gresik, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
 91432937.0,Sales Motoris (Sidoarjo),,"Sidoarjo, Jawa Timur",Sidoarjo,100.0,-7.4539769,112.6593869,Jawa Timur,1140151.0,69549.0,1209700.0,1739861.0
 91419056.0,Document Export/Import,PT Das Cargo Surabaya,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91419050.0,Area Sales Manager,PT Nusantara Jaya Raya Mujur,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91419045.0,Promotor Event (Freelance),PT Inovasi Teknologi Kosmetika,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91419015.0,Accounting,PT Das Cargo Surabaya,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
-91418888.0,Staff HRGA,PT Technofroze Indra Jaya,"Gresik, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91418888.0,Staff HRGA,PT Technofroze Indra Jaya,"Gresik, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
 91418820.0,Sales Executive,PT Mega Citra Bestari,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91418801.0,Sales Executive,PT Nusantara Jaya Raya Mujur,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
-91418739.0,Budgeting & Estimator,PT Technofroze Indra Jaya,"Gresik, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91418739.0,Budgeting & Estimator,PT Technofroze Indra Jaya,"Gresik, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
 91418649.0,Sales Marketing,Masmedia Buana Pustaka,"Sidoarjo, Jawa Timur",Sidoarjo,100.0,-7.4539769,112.6593869,Jawa Timur,1140151.0,69549.0,1209700.0,1739861.0
 91278330.0,MARKETING KULINER,,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91418500.0,SALES ENGINEER (SURABAYA),Yontomo Sukses Abadi,"Sidoarjo, Jawa Timur",Sidoarjo,100.0,-7.4539769,112.6593869,Jawa Timur,1140151.0,69549.0,1209700.0,1739861.0
-91418417.0,KEPALA PABRIK,PT Technofroze Indra Jaya,"Gresik, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91418417.0,KEPALA PABRIK,PT Technofroze Indra Jaya,"Gresik, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
 91416824.0,Seketaris (internship),Citra Nusantara Energy,"Sidoarjo, Jawa Timur",Sidoarjo,100.0,-7.4539769,112.6593869,Jawa Timur,1140151.0,69549.0,1209700.0,1739861.0
 91132686.0,Document Export,Aman World Logistics,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91416630.0,Sales Staff - Surabaya Area,Trivindo Sukses Mandiri,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
@@ -12927,7 +12927,7 @@ id,title,company,location,matched_regency,match_score,Latitude,Longitude,Provins
 91412363.0,B2B Sales Supervisor,Erajaya,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91412166.0,Production Supervisor,Pengiklan Anonim,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91412086.0,Database Administrator (Surabaya),Cellcius Indoperkasa,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
-91411824.0,Area New Retail Manager,Xiaomi,"Gresik, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91411824.0,Area New Retail Manager,Xiaomi,"Gresik, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
 91411721.0,Supervisor Sales TO,Bangun Indopralon Sukses,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91411448.0,Business Development ( Maklon Kosmetik / B2B ),Dreamlab Kosmetik,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91411522.0,Medical Store Attendant Penempatan Surabaya,Sekarguna Medicals,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
@@ -12943,7 +12943,7 @@ id,title,company,location,matched_regency,match_score,Latitude,Longitude,Provins
 91409782.0,Sales Executive Surabaya,Piranti Nusantara Technology,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91409776.0,3D Generalist & Motion Designer,Moondini Studio,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91409673.0,Staff Finance,Moondini Studio,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
-91409373.0,Content Creator,Wahana Lentera Raya,"Driyorejo, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91409373.0,Content Creator,Wahana Lentera Raya,"Driyorejo, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
 91409277.0,Server,,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91409201.0,PROJECT SUPERVISOR,PT Mandiri Sukses Sejahtera,"Sidoarjo, Jawa Timur",Sidoarjo,100.0,-7.4539769,112.6593869,Jawa Timur,1140151.0,69549.0,1209700.0,1739861.0
 91409180.0,Sales Solidwork Surabaya,Utama Logic Techno,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
@@ -12956,7 +12956,7 @@ id,title,company,location,matched_regency,match_score,Latitude,Longitude,Provins
 91407423.0,Field Collection Leads - Surabaya,Home Credit,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91393628.0,Staff Finance Accounting,,"Sidoarjo, Jawa Timur",Sidoarjo,100.0,-7.4539769,112.6593869,Jawa Timur,1140151.0,69549.0,1209700.0,1739861.0
 91414924.0,Social Media Specialist,,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
-91402838.0,CREDIT MARKETING OFFICER,Mandiri Andalan Utama,"Gresik, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91402838.0,CREDIT MARKETING OFFICER,Mandiri Andalan Utama,"Gresik, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
 91402800.0,Supervisor Restoran,,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91402663.0,Field Collection (Staf Penagihan) - Cabang Lamongan,BFI Finance Indonesia,"Lamongan, Jawa Timur",Lamongan,100.0,-7.1229318,112.3281935,Jawa Timur,797879.0,35733.0,833612.0,1114894.0
 91402519.0,Guru Fisika SMA,Insan Muda Berprestasi,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
@@ -12976,12 +12976,12 @@ id,title,company,location,matched_regency,match_score,Latitude,Longitude,Provins
 91399916.0,Host Live Streaming,Whittaker,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91399879.0,Operator Teknisi Umum,Pengiklan Anonim,"Sidoarjo, Jawa Timur",Sidoarjo,100.0,-7.4539769,112.6593869,Jawa Timur,1140151.0,69549.0,1209700.0,1739861.0
 91399761.0,FINANCE ACCOUNTING & TAX SUPERVISOR,,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
-91408466.0,SUPERVISOR DIRECT SALES,Maha Sentral Sejati,"Gresik, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91408466.0,SUPERVISOR DIRECT SALES,Maha Sentral Sejati,"Gresik, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
 91399747.0,Manajer Penjualan,Jayaland,"Gedangan, Jawa Timur",Sidoarjo,100.0,-7.4539769,112.6593869,Jawa Timur,1140151.0,69549.0,1209700.0,1739861.0
 91399707.0,STAFF ADMIN MARKETING,Transporindo Agung Sejahtera,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91397747.0,Frontliner/Customer Servis,,"Tegalsari, Jawa Timur",Tegal,90.0,-7.0564433,109.1315766,Jawa Tengah,862126.0,71020.0,933146.0,1295882.0
 91399559.0,SOCIAL MEDIA SPECIALIST & CONTENT CREATOR,Pengiklan Anonim,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
-91408230.0,Staff Administrasi Sales,,"Gresik, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91408230.0,Staff Administrasi Sales,,"Gresik, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
 91399658.0,ADMIN SPAREPART DAN PURCHASING,Transporindo Agung Sejahtera,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91399610.0,Sales Horeca (Surabaya),Surya Pratista Hutama,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91399517.0,ACCOUNTING,,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
@@ -13020,22 +13020,22 @@ id,title,company,location,matched_regency,match_score,Latitude,Longitude,Provins
 91396243.0,Driver,PT Pusaka Nuri Utama,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91396368.0,IT Support & Teknisi (Retail Resto F&B),Mapan Group,"Waru, Jawa Timur",Sidoarjo,100.0,-7.4539769,112.6593869,Jawa Timur,1140151.0,69549.0,1209700.0,1739861.0
 91396291.0,IT Operation Specialist (Lamongan),Pengiklan Anonim,"Lamongan, Jawa Timur",Lamongan,100.0,-7.1229318,112.3281935,Jawa Timur,797879.0,35733.0,833612.0,1114894.0
-91396219.0,Mandor Produksi,PT. Cipta Makmur Pertiwi,"Gresik, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91396219.0,Mandor Produksi,PT. Cipta Makmur Pertiwi,"Gresik, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
 91396181.0,Cleaning Service Cleaner & Support,Surya Megah Expertindo,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91396080.0,"Staff FAT Surabaya (Finance, Accounting, Tax)",Topsel Raharja Indonesia,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91395998.0,Admin Finance,PT. HERBIVOR SATU NUSA,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91395725.0,Account Manager (IT) - Surabaya,Hipernet Indodata,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91395610.0,Data Analyst,PT Nusantara Jaya Raya Mujur,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91395596.0,Dokter Estetika,Cantik Putih Indonesia,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
-91395543.0,Operator Produksi,PT Petrowidada,"Gresik, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91395543.0,Operator Produksi,PT Petrowidada,"Gresik, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
 91395537.0,Assistant Manager Sales Marketing,Subaindo Cahaya Polintraco,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91395455.0,ADMIN FINANCE,Surya Megah Expertindo,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
-91395463.0,General Affairs,PT Petrowidada,"Gresik, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91395463.0,General Affairs,PT Petrowidada,"Gresik, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
 91395211.0,Event & Campaign Project Manager,,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91395191.0,SALES Horeca/GT/MT (Frozen Food),Mapan Group,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91394789.0,Pelaksana Bangunan,CV Sumber Alam Perkasa,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91390823.0,Content Creator,,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
-91394604.0,SALES ASURANSI BANCASSURANCE AREA GRESIK,Manulife,"Gresik, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91394604.0,SALES ASURANSI BANCASSURANCE AREA GRESIK,Manulife,"Gresik, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
 91394533.0,Supply Chain Supervisor,PT Nusantara Jaya Raya Mujur,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91394304.0,sekretaris pribadi,PT EFIRST ARUNIKA SOLUSI,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91394160.0,Digital Marketing Spesialist,PT Menara Abadi Sofindo,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
@@ -13065,19 +13065,19 @@ id,title,company,location,matched_regency,match_score,Latitude,Longitude,Provins
 91390451.0,Site Engineer Project HVAC,Pilar Ekatama,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91390437.0,Teller Junior (Sidoarjo),WOM Finance,"Sidoarjo, Jawa Timur",Sidoarjo,100.0,-7.4539769,112.6593869,Jawa Timur,1140151.0,69549.0,1209700.0,1739861.0
 91390322.0,WAREHOUSE STAFF (SURABAYA),PT Restomart Cipta Usaha,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
-91390217.0,Finance Senior Staff - Manufacture - Gresik - WFO - (ID:699066),PERSOL,"Gresik, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91390217.0,Finance Senior Staff - Manufacture - Gresik - WFO - (ID:699066),PERSOL,"Gresik, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
 91390086.0,Cook Helper,,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91390076.0,Asisten sales manager Retail GT,PT Surya Triniti Jaya,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91408249.0,Account Executive,,"Sidoarjo, Jawa Timur",Sidoarjo,100.0,-7.4539769,112.6593869,Jawa Timur,1140151.0,69549.0,1209700.0,1739861.0
 91389830.0,Supervisor Accounting,Titani Food,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
-91389793.0,Manajer HRD,Titani Food,"Driyorejo, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91389793.0,Manajer HRD,Titani Food,"Driyorejo, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
 91389545.0,INTERNAL AUDIT,Wutama Group,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91389480.0,QA Commercial Supervisor,Salam Pacific Indonesia Lines,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91389405.0,PERSONAL ASISTEN,Wutama Group,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91389334.0,Sales Administrasi,PT Griya Depo Nusantara,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91389313.0,FINANCE STAFF,Wutama Group,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
-91372387.0,Staff Sales Marketing,PT.Narindo Sukses Sejahtera,"Gresik, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
-91389039.0,Maintenance Furniture,Katwara,"Gresik, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91372387.0,Staff Sales Marketing,PT.Narindo Sukses Sejahtera,"Gresik, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91389039.0,Maintenance Furniture,Katwara,"Gresik, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
 91388846.0,Sales Bangunan,PT Griya Depo Nusantara,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91388789.0,Admin Online Shop,PT. Ling Ekspress Abadi,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91408235.0,PROMOTOR AGENTS,,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
@@ -13109,7 +13109,7 @@ id,title,company,location,matched_regency,match_score,Latitude,Longitude,Provins
 91385376.0,Account Executive (Sales),Netmarks Indonesia,"Sidoarjo, Jawa Timur",Sidoarjo,100.0,-7.4539769,112.6593869,Jawa Timur,1140151.0,69549.0,1209700.0,1739861.0
 91385257.0,Collector,PT Bhineka Inovasi Global,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91385111.0,Driver Serabutan,Fenross Book Co,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
-91312734.0,Warehouse Supervisor,Indraco,"Driyorejo, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91312734.0,Warehouse Supervisor,Indraco,"Driyorejo, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
 91384636.0,sales executive,Hotel Grand Surabaya,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91384294.0,Legal Staff,PT. Graha Bahagia Utama,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91384449.0,TEKNISI FORKLIFT (SURABAYA),Urip Sejati Sources,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
@@ -13136,12 +13136,12 @@ id,title,company,location,matched_regency,match_score,Latitude,Longitude,Provins
 91381264.0,Head Chef  (Surabaya),Expat. Roasters Indonesia,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91378667.0,PHP Programmer ( Surabaya ),Sbg Business Solutions,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91377632.0,Accounting,Insan Muda Berprestasi,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
-91377512.0,Customer Relationship Officer - Elektronik (CRO Gresik),KB Finansia Multi Finance,"Gresik, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91377512.0,Customer Relationship Officer - Elektronik (CRO Gresik),KB Finansia Multi Finance,"Gresik, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
 91376904.0,Assistant Manager Marketing,Cipta Mandiri,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91376660.0,interior design,tukangmebel.sby,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91199029.0,Production Supervisor,Omya,"Lamongan, Jawa Timur",Lamongan,100.0,-7.1229318,112.3281935,Jawa Timur,797879.0,35733.0,833612.0,1114894.0
 91375678.0,Social Media Manager/Virtual Assistant,AN.Told,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
-91375546.0,"PT. Indospring, Tbk",Indospring,"Gresik, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91375546.0,"PT. Indospring, Tbk",Indospring,"Gresik, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
 91375516.0,ADMIN SALES,PT Deta Sukses Makmur ( Semarang ),"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91375360.0,ADMIN GUDANG,PT Deta Sukses Makmur ( Semarang ),"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91374970.0,Internal Audit,PT. Selaras Husada,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
@@ -13160,14 +13160,14 @@ id,title,company,location,matched_regency,match_score,Latitude,Longitude,Provins
 91373622.0,Crew Leader Kitchen,Jasa Ayah Corp.,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91373591.0,FnB Crew,Jasa Ayah Corp.,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91373515.0,Drafter/CAD,Quality Works,"Lamongan, Jawa Timur",Lamongan,100.0,-7.1229318,112.3281935,Jawa Timur,797879.0,35733.0,833612.0,1114894.0
-91373510.0,Internal Marketing,Pengiklan Anonim,"Gresik, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91373510.0,Internal Marketing,Pengiklan Anonim,"Gresik, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
 91373490.0,Driver Operasional,Grogol Sarana Transjaya,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91373484.0,Koki Sushi/Gimbab,,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91373460.0,PERAWAT MAYAPADA HOSPITAL SURABAYA,Mayapada Healthcare,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91373441.0,Koki Chinese Food,,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
-91373435.0,PROJECT MANAGER (GRESIK),AKR Land Development,"Gresik, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
-91373321.0,SALES SPECIALIST - WAREHOUSE & INDUSTRIAL (GRESIK),AKR Land Development,"Gresik, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
-91373187.0,LEGAL & PERMIT HEAD (GRESIK),AKR Land Development,"Gresik, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91373435.0,PROJECT MANAGER (GRESIK),AKR Land Development,"Gresik, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91373321.0,SALES SPECIALIST - WAREHOUSE & INDUSTRIAL (GRESIK),AKR Land Development,"Gresik, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91373187.0,LEGAL & PERMIT HEAD (GRESIK),AKR Land Development,"Gresik, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
 91373135.0,Head HRD,Grogol Sarana Transjaya,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91373026.0,Mandarin Industrial Engineer,Insera Sena,"Sidoarjo, Jawa Timur",Sidoarjo,100.0,-7.4539769,112.6593869,Jawa Timur,1140151.0,69549.0,1209700.0,1739861.0
 91372938.0,Digital Marketing,PT Sejahtera Globalindo Utama,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
@@ -13181,7 +13181,7 @@ id,title,company,location,matched_regency,match_score,Latitude,Longitude,Provins
 91371644.0,Staff Purchasing,Wahana Lentera Raya,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91371482.0,OPERASIONAL LAPANGAN EXPORT IMPORT/ DOMESTIK,Bintang Indonesia Gempita,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91281654.0,Security,,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
-91371414.0,Distribution Center Coordinator,,"Gresik, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91371414.0,Distribution Center Coordinator,,"Gresik, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
 91287726.0,Sales Engineering Supervisor,Dwi Surya Abadi Kharisma,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91371143.0,Sales Merchandiser Minimarket &NKA,Ikan Dorang,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91371067.0,Digital Marketing,Sinar Panelindo Utama,"Sidoarjo, Jawa Timur",Sidoarjo,100.0,-7.4539769,112.6593869,Jawa Timur,1140151.0,69549.0,1209700.0,1739861.0
@@ -13211,7 +13211,7 @@ id,title,company,location,matched_regency,match_score,Latitude,Longitude,Provins
 91368850.0,SALES,PT. GUDELAKE FOOD INDONESIA,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91368449.0,Staff Administrasi,Suksesindo,"Waru, Jawa Timur",Sidoarjo,100.0,-7.4539769,112.6593869,Jawa Timur,1140151.0,69549.0,1209700.0,1739861.0
 91368388.0,Kasir,,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
-91368275.0,MEKANIK MAINTENANCE PERALATAN (GRESIK),Benteng Api Refractorindo,"Gresik, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91368275.0,MEKANIK MAINTENANCE PERALATAN (GRESIK),Benteng Api Refractorindo,"Gresik, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
 91368186.0,Project Coordinator,,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91368129.0,Koordinator Development  Program [Batch 14],BASRA Corporation,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91368128.0,Kepala Cabang Dealer Roda Dua,PT Cuan Selalu Kaya,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
@@ -13243,7 +13243,7 @@ id,title,company,location,matched_regency,match_score,Latitude,Longitude,Provins
 91375385.0,Management Trainee Human Capital Specialist Regional Jawa Timur,BFI Finance Indonesia,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91363748.0,HRGA,PT. Global Alta Pratama,"Sidoarjo, Jawa Timur",Sidoarjo,100.0,-7.4539769,112.6593869,Jawa Timur,1140151.0,69549.0,1209700.0,1739861.0
 91363407.0,TEAM MEDICAL (CLAIM AND CALL CENTER),Amanah Healthcare Facility Solutions,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
-91363296.0,ASISTEN MEKANIK  OTOMOTIF,Urip Sejati Sources,"Gresik, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91363296.0,ASISTEN MEKANIK  OTOMOTIF,Urip Sejati Sources,"Gresik, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
 91363081.0,STAFF GUDANG BARANG JADI & LOGISTIK,Pengiklan Anonim,"Sidoarjo, Jawa Timur",Sidoarjo,100.0,-7.4539769,112.6593869,Jawa Timur,1140151.0,69549.0,1209700.0,1739861.0
 91363046.0,Junior Barista,Fusia Group,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91380303.0,Graphic Designer,,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
@@ -13253,9 +13253,9 @@ id,title,company,location,matched_regency,match_score,Latitude,Longitude,Provins
 91380435.0,Sales Wifi MyRepublic Surabaya,Eka Mas Republik,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91362755.0,SALES MARKETING,PT Kharisma Suma Jaya Sakti,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91362670.0,Area Sales Supervisor SURABAYA (Ethical),Galenium Pharmasia Laboratories,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
-91362502.0,R&D Drafter Furniture,Katwara,"Gresik, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91362502.0,R&D Drafter Furniture,Katwara,"Gresik, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
 91359656.0,PACKER STAFF,,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
-91362467.0,Senior Payroll Executive,EcoOils,"Gresik, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91362467.0,Senior Payroll Executive,EcoOils,"Gresik, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
 91362428.0,Operator Mesin Digital Printing,PT Sukses Printnusa Indonesia,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91362415.0,Asisten,,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91362280.0,Staff Accounting Pajak,Niki Mapan,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
@@ -13264,7 +13264,7 @@ id,title,company,location,matched_regency,match_score,Latitude,Longitude,Provins
 91362033.0,Personal Trainer,X Team Gym,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91362005.0,Software Engineer Specialist Phyton,Steel Pipe Industry of Indonesia,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91361982.0,Sales Representative,Surya Prima Natura,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
-91361955.0,Business Development Executive - Recycle / Masterbatch Resin,PT Pelita Mekar Semesta,"Gresik, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91361955.0,Business Development Executive - Recycle / Masterbatch Resin,PT Pelita Mekar Semesta,"Gresik, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
 91361909.0,Frontliner,X Team Gym,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91305135.0,Administrasi,,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91361664.0,Baker ( Staff Produksi ),Lovin Bread,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
@@ -13273,7 +13273,7 @@ id,title,company,location,matched_regency,match_score,Latitude,Longitude,Provins
 91361526.0,credit marketing,,"Sidoarjo, Jawa Timur",Sidoarjo,100.0,-7.4539769,112.6593869,Jawa Timur,1140151.0,69549.0,1209700.0,1739861.0
 91361519.0,Werehouse Staf-Kurir,Mega Bintang CCTV,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91361475.0,Crew Outlet,Lovin Bread,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
-91361459.0,Business Development Executive - B2B,PT Pelita Mekar Semesta,"Gresik, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91361459.0,Business Development Executive - B2B,PT Pelita Mekar Semesta,"Gresik, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
 91360914.0,Maintenance Supervisor (Bakery),Maison Féerie,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91361230.0,TEKNISI MESIN PACKING,Pengiklan Anonim,"Sidoarjo, Jawa Timur",Sidoarjo,100.0,-7.4539769,112.6593869,Jawa Timur,1140151.0,69549.0,1209700.0,1739861.0
 91361109.0,Staff Akuntansi/Keuangan,Optima Prima Metal Sinergi,"Bangkalan, Jawa Timur",Bangkalan,100.0,-7.0463602,112.8961792,Jawa Timur,568657.0,31878.0,600535.0,871085.0
@@ -13290,7 +13290,7 @@ id,title,company,location,matched_regency,match_score,Latitude,Longitude,Provins
 91359865.0,Sales Administrator,FKS Group,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91380268.0,Kurir,Trans Dana Profitri,"Sidoarjo, Jawa Timur",Sidoarjo,100.0,-7.4539769,112.6593869,Jawa Timur,1140151.0,69549.0,1209700.0,1739861.0
 91359557.0,TEKNISI,PT Indobake Mitra Perkasa,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
-91359526.0,Kepala Bagian Finance,Behaestex,"Gresik, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91359526.0,Kepala Bagian Finance,Behaestex,"Gresik, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
 91358891.0,Area Sales & Promotion Supervisor (Pet Food),Bridge Petcare,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91345747.0,SPV Internal Audit,Fuboru Group,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91346301.0,SPV R&D,Fuboru Group,"Sidoarjo, Jawa Timur",Sidoarjo,100.0,-7.4539769,112.6593869,Jawa Timur,1140151.0,69549.0,1209700.0,1739861.0
@@ -13302,7 +13302,7 @@ id,title,company,location,matched_regency,match_score,Latitude,Longitude,Provins
 91358388.0,Staf Akuntansi,PT Indo lautan Makmur,"Sidoarjo, Jawa Timur",Sidoarjo,100.0,-7.4539769,112.6593869,Jawa Timur,1140151.0,69549.0,1209700.0,1739861.0
 91358404.0,Supervisor Finance Tax & Accounting,PT Karya Teknologi Indonesia,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91358382.0,Human Resource Staff,,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
-91358321.0,AREA COORDINATOR,CV. Bisa Kulak Jatim,"Gresik, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91358321.0,AREA COORDINATOR,CV. Bisa Kulak Jatim,"Gresik, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
 91358314.0,Human Capital Officer,Pengiklan Anonim,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91358288.0,Area Sales Supervisor - (Jawa Timur),PT internusa terus jaya (Kleaner Indonesia),"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91358266.0,HRBP ( HR Business Partner ),CV Melimpah Anugerah Sentosa Abadi,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
@@ -13323,7 +13323,7 @@ id,title,company,location,matched_regency,match_score,Latitude,Longitude,Provins
 91355607.0,konsultan pajak,PT EFIRST ARUNIKA SOLUSI,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91305750.0,Manager Finance and Accounting,PT Sukses Perkasa Forestama,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91352806.0,Clinic Inventory (Surabaya),Pengiklan Anonim,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
-91351193.0,Business Development Lead (Field Sales & Logistics),Fajar Mulia Transindo,"Gresik, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91351193.0,Business Development Lead (Field Sales & Logistics),Fajar Mulia Transindo,"Gresik, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
 91354243.0,Dishwasher,Kartiko Heritage Restaurant,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91350767.0,Sales Promoter Leader,Dwi Cermat Indonesia,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91354303.0,RIDER MCD SURABAYA,,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
@@ -13358,7 +13358,7 @@ id,title,company,location,matched_regency,match_score,Latitude,Longitude,Provins
 91347237.0,SPV Accounting & Finance,Aflah Azaria,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91347162.0,Supply Chain Manager (Demand Planner),Siantar Top,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91347105.0,Sales Executive,Pengiklan Anonim,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
-91347094.0,Purchasing Staff (Mandarin Speaker),Tri Ratna Diesel Indonesia,"Gresik, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91347094.0,Purchasing Staff (Mandarin Speaker),Tri Ratna Diesel Indonesia,"Gresik, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
 91347085.0,Marketing Klinik Intibios Surabaya,PT Intibios Persada Sejahtera,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91347080.0,CONTENT CREATOR,Cortiger Sportswear,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91347003.0,"Medical Representative (Surabaya, Jakarta, Balikpapan)",Transfarma Medica Indah,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
@@ -13369,18 +13369,18 @@ id,title,company,location,matched_regency,match_score,Latitude,Longitude,Provins
 91345203.0,Sales,,"Sidoarjo, Jawa Timur",Sidoarjo,100.0,-7.4539769,112.6593869,Jawa Timur,1140151.0,69549.0,1209700.0,1739861.0
 91346436.0,Admin,PT Jaya Teknik Sejahtera,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91210137.0,Business Development,Sempoa SIP,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
-91346307.0,Staf Sipil,Behaestex,"Gresik, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91346307.0,Staf Sipil,Behaestex,"Gresik, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
 91345605.0,sales proyek,,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91346105.0,Driver,Kami Group,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91346077.0,Staff Internal Audit,Fuboru Group,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91345875.0,QUALITY CONTROL,QMPP (QINGDA MASPION PAPER PRODUCTS),"Sidoarjo, Jawa Timur",Sidoarjo,100.0,-7.4539769,112.6593869,Jawa Timur,1140151.0,69549.0,1209700.0,1739861.0
 91345758.0,CONTENT & SOCIAL MEDIA OFFICER,Surabaya Grammar School,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
-91354051.0,Staff Produksi,,"Gresik, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91354051.0,Staff Produksi,,"Gresik, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
 91345632.0,Admin,,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91345792.0,OPERATOR MESIN PRINTING FLEXO,QMPP (QINGDA MASPION PAPER PRODUCTS),"Sidoarjo, Jawa Timur",Sidoarjo,100.0,-7.4539769,112.6593869,Jawa Timur,1140151.0,69549.0,1209700.0,1739861.0
 91345789.0,HELPER SERABUTAN (PABRIK PLASTIK) SIDOARJO,Suksesindo,"Gedangan, Jawa Timur",Sidoarjo,100.0,-7.4539769,112.6593869,Jawa Timur,1140151.0,69549.0,1209700.0,1739861.0
 91354178.0,Terapis Kesehatan,Nakamura Holistic Therapy,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
-91345709.0,Supervisor Lab,Pengiklan Anonim,"Gresik, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91345709.0,Supervisor Lab,Pengiklan Anonim,"Gresik, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
 91345681.0,FA & Adm GM,,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91345617.0,Staff Accounting,SPS Corporate,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91344963.0,Asisten Apoteker,,"Waru, Jawa Timur",Sidoarjo,100.0,-7.4539769,112.6593869,Jawa Timur,1140151.0,69549.0,1209700.0,1739861.0
@@ -13389,12 +13389,12 @@ id,title,company,location,matched_regency,match_score,Latitude,Longitude,Provins
 91345519.0,Finance & Accounting Staff,Evarindo Mega Makmur,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91345536.0,"Sales Engineer (Jakarta, Bandung, Surabaya & Semarang)",Citra Airindo Abadi,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91345561.0,Personal Assistent for Property Director,,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
-91343215.0,Cost Control Staff,,"Gresik, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91343215.0,Cost Control Staff,,"Gresik, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
 91345262.0,Admin Gudang,Pengiklan Anonim,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91345200.0,ADMIN PRODUKSI (PABRIK PLASTIK),Suksesindo,"Gedangan, Jawa Timur",Sidoarjo,100.0,-7.4539769,112.6593869,Jawa Timur,1140151.0,69549.0,1209700.0,1739861.0
 91345196.0,Preschool Parent-Liaison Executive (School Admin),,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91345188.0,Crew Operational,PT. JFood Group Indonesia,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
-91345159.0,Admin Gudang (Proyek),Behaestex,"Gresik, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91345159.0,Admin Gudang (Proyek),Behaestex,"Gresik, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
 91345125.0,Bancassurance Specialist Surabaya,IFG Life Insurance,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91345101.0,Bancassurance Specialist,IFG Life Insurance,"Sidoarjo, Jawa Timur",Sidoarjo,100.0,-7.4539769,112.6593869,Jawa Timur,1140151.0,69549.0,1209700.0,1739861.0
 91345064.0,Mandarin Pre-School Teacher,,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
@@ -13402,13 +13402,13 @@ id,title,company,location,matched_regency,match_score,Latitude,Longitude,Provins
 91344974.0,Sales Canvasser (Jawa Timur),,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91344942.0,Import Purchasing Manager,Indal Aluminium Industry,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91344935.0,Welder,PT Sumber Tiga Jaya,"Sidoarjo, Jawa Timur",Sidoarjo,100.0,-7.4539769,112.6593869,Jawa Timur,1140151.0,69549.0,1209700.0,1739861.0
-91344895.0,Brand Manager,Behaestex,"Gresik, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91344895.0,Brand Manager,Behaestex,"Gresik, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
 91344886.0,Early Childhood Educator based in Surabaya,,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91344841.0,Management Trainee bidang Sales & Marketing Batch 2,Kencana Maju Bersama,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91354291.0,Marketing Bahan Bangunan,,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91344746.0,Sales & Service Officer (Surabaya & Malang),Bank Danamon,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91344736.0,KEPALA OPERASIONAL EKSPEDISI MUATAN KAPAL LAUT,Transporindo Agung Sejahtera,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
-91344710.0,ANALISIS SISTEM,Behaestex,"Gresik, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91344710.0,ANALISIS SISTEM,Behaestex,"Gresik, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
 91260963.0,Waiter,,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91344696.0,Senior Accounting,Warna Warni Media,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91344659.0,Accounting Staff,Warna Warni Media,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
@@ -13417,7 +13417,7 @@ id,title,company,location,matched_regency,match_score,Latitude,Longitude,Provins
 91343626.0,Teknisi Lampu Mobil (Kendaraan),,"Sidoarjo, Jawa Timur",Sidoarjo,100.0,-7.4539769,112.6593869,Jawa Timur,1140151.0,69549.0,1209700.0,1739861.0
 91344086.0,Assistant (Mandarin Speaker) - Surabaya,PT. JFood Group Indonesia,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91344019.0,Supervisor Outlet,Jendela Kuliner Bersama,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
-91343929.0,Apoteker Penanggung Jawab,Rizky Artha Abadi,"Gresik, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91343929.0,Apoteker Penanggung Jawab,Rizky Artha Abadi,"Gresik, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
 91343809.0,Manager,Jendela Kuliner Bersama,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91343805.0,IT SUPPORT,Intan Education Foundation,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91343801.0,"SALES LEADER / AREA SALES MANAGER (JAKARTA, BANDUNG, SEMARANG, SOLO, SURABAYA)",Citra Airindo Abadi,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
@@ -13425,7 +13425,7 @@ id,title,company,location,matched_regency,match_score,Latitude,Longitude,Provins
 91343737.0,SALES MARKETING,Intan Education Foundation,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91343708.0,KINDERGARTEN TEACHER,Intan Education Foundation,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91343699.0,Supply Chain Manager,Implora Sukses Abadi,"Sidoarjo, Jawa Timur",Sidoarjo,100.0,-7.4539769,112.6593869,Jawa Timur,1140151.0,69549.0,1209700.0,1739861.0
-91339889.0,Department Head Mechanical &  Piping,Asuka Engineering Indonesia,"Gresik, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91339889.0,Department Head Mechanical &  Piping,Asuka Engineering Indonesia,"Gresik, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
 91343679.0,Education Consultant/Student Advisor (Sparks English - SBY),Seven Retail Group,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91343678.0,LIBRARY,Intan Education Foundation,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91343647.0,PRIMARY TEACHER,Intan Education Foundation,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
@@ -13435,12 +13435,12 @@ id,title,company,location,matched_regency,match_score,Latitude,Longitude,Provins
 91343333.0,VIDEOGRAPHER,,"Sidoarjo, Jawa Timur",Sidoarjo,100.0,-7.4539769,112.6593869,Jawa Timur,1140151.0,69549.0,1209700.0,1739861.0
 91343319.0,SALES EXECUTIVE (INGREDIENTS),Hero Makmur Primatama,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91278596.0,Digital Marketing Strategist,Sinar Cemaramas Abadi,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
-91343211.0,Sales Akuisisi Amarthalink (Agent Partner) - Gresik,Amartha,"Gresik, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91343211.0,Sales Akuisisi Amarthalink (Agent Partner) - Gresik,Amartha,"Gresik, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
 91343070.0,AREA MANAGER JAWA TIMUR,Roi Surya Prima Farma,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91343203.0,Surveyor KMB - Motor (SURVEYOR SIDOARJO),KB Finansia Multi Finance,"Sidoarjo, Jawa Timur",Sidoarjo,100.0,-7.4539769,112.6593869,Jawa Timur,1140151.0,69549.0,1209700.0,1739861.0
-91343194.0,Field Collector KMB - (FC Gresik),KB Finansia Multi Finance,"Gresik, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91343194.0,Field Collector KMB - (FC Gresik),KB Finansia Multi Finance,"Gresik, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
 91343191.0,Marketing Supervisor - Motor (SPV SIDOARJO),KB Finansia Multi Finance,"Sidoarjo, Jawa Timur",Sidoarjo,100.0,-7.4539769,112.6593869,Jawa Timur,1140151.0,69549.0,1209700.0,1739861.0
-91343018.0,Operational Agency Jr Officer,Varia Usaha Fabrikasi,"Gresik, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91343018.0,Operational Agency Jr Officer,Varia Usaha Fabrikasi,"Gresik, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
 91342830.0,HR & ASISTEN DIREKTUR (MANDARIN SPEAKER),QMPP (QINGDA MASPION PAPER PRODUCTS),"Sidoarjo, Jawa Timur",Sidoarjo,100.0,-7.4539769,112.6593869,Jawa Timur,1140151.0,69549.0,1209700.0,1739861.0
 91342779.0,Nutritionist,Pak 'D' Company,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91342640.0,Customer Service,,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
@@ -13456,13 +13456,13 @@ id,title,company,location,matched_regency,match_score,Latitude,Longitude,Provins
 91341822.0,Production Executive Assistant,PT Sumber Telaga Bukitmas,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91341802.0,Packing Online,,"Waru, Jawa Timur",Sidoarjo,100.0,-7.4539769,112.6593869,Jawa Timur,1140151.0,69549.0,1209700.0,1739861.0
 91341624.0,CREATIVE STRATEGIST,,"Sidoarjo, Jawa Timur",Sidoarjo,100.0,-7.4539769,112.6593869,Jawa Timur,1140151.0,69549.0,1209700.0,1739861.0
-91341547.0,Social Media Coordinator,PT Mitraco Citraniaga Pusaka,"Gresik, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91341547.0,Social Media Coordinator,PT Mitraco Citraniaga Pusaka,"Gresik, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
 91341535.0,Admin Operasional Logistik,PT. HERBIVOR SATU NUSA,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91341504.0,LOGISTIK MANAGER,Chemarome Indonesia,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91337334.0,Business Development Sales,CV Tekindo Jaya,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91341335.0,SOZO - Dokter Estetika (Surabaya),Seven Retail Group,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91341321.0,Cleaning service,,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
-91341247.0,Clerk Admin Operations,ChemStationAsia,"Gresik, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91341247.0,Clerk Admin Operations,ChemStationAsia,"Gresik, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
 91341231.0,Waiter,Fusia Group,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91340793.0,staff penagihan,Rajawali Dwiputra Indonesia,"Waru, Jawa Timur",Sidoarjo,100.0,-7.4539769,112.6593869,Jawa Timur,1140151.0,69549.0,1209700.0,1739861.0
 91341085.0,mekanik otomotif,Grand Elephant,"Sidoarjo, Jawa Timur",Sidoarjo,100.0,-7.4539769,112.6593869,Jawa Timur,1140151.0,69549.0,1209700.0,1739861.0
@@ -13483,7 +13483,7 @@ id,title,company,location,matched_regency,match_score,Latitude,Longitude,Provins
 91340366.0,HRD Performance,Sinergia Worldwide Education,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91340290.0,"Marketing (Fulltime, Surabaya)",Sinergia Worldwide Education,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91340268.0,Sales Engineer,LimaLima Dynamics,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
-91340191.0,Chinese Translator,,"Gresik, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91340191.0,Chinese Translator,,"Gresik, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
 91340201.0,ARSITEK/DESAIN INTERIOR,PT Hokky Sumber Makmur,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91340166.0,Event & Publicity Executive,Sentral Supel Perkasa,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91340135.0,Sales Modern Trade,Serenity Tile,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
@@ -13491,7 +13491,7 @@ id,title,company,location,matched_regency,match_score,Latitude,Longitude,Provins
 91340055.0,Admin Online Store,,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91339685.0,FLEET KOORDINATOR,Saranabhakti Timur,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91340008.0,Marketing & Business Development Mandarin Speaking (Construction),China Construction Yangtze River Indonesia,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
-91339986.0,Operations Director (Shipping Company),Bintangdelapan Group,"Gresik, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91339986.0,Operations Director (Shipping Company),Bintangdelapan Group,"Gresik, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
 91339906.0,Customer Service - XL Smart Center Surabaya,Duta Generasi Mandiri,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91339542.0,ADMIN MARKETING,Pengiklan Anonim,"Sidoarjo, Jawa Timur",Sidoarjo,100.0,-7.4539769,112.6593869,Jawa Timur,1140151.0,69549.0,1209700.0,1739861.0
 91339050.0,Purchasing Intern (Magang),Industrial Robotic Automation,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
@@ -13511,7 +13511,7 @@ id,title,company,location,matched_regency,match_score,Latitude,Longitude,Provins
 91337599.0,Procurement Staff,Tiberman,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91337448.0,Warehouse Staff,Tirtakencana Tatawarna,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91354256.0,Sales & Operasional,,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
-91327069.0,barista,,"Gresik, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91327069.0,barista,,"Gresik, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
 91335871.0,Sales Toko,,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91335743.0,Waiter / Waitress,Reins Marindo Indonesia,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91335720.0,Supervisor Produksi Tube Packaging Plastic,Dwi Satrya Utama,"Sidoarjo, Jawa Timur",Sidoarjo,100.0,-7.4539769,112.6593869,Jawa Timur,1140151.0,69549.0,1209700.0,1739861.0
@@ -13533,8 +13533,8 @@ id,title,company,location,matched_regency,match_score,Latitude,Longitude,Provins
 91333962.0,Staff Quality Control,Prima Jaya Mandiri Makmur,"Sidoarjo, Jawa Timur",Sidoarjo,100.0,-7.4539769,112.6593869,Jawa Timur,1140151.0,69549.0,1209700.0,1739861.0
 91333917.0,SALES PROMOTION OPTIK / ASRO,Optik Winsee,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91333011.0,Agent Executive - (AE SIDOARJO),KB Finansia Multi Finance,"Sidoarjo, Jawa Timur",Sidoarjo,100.0,-7.4539769,112.6593869,Jawa Timur,1140151.0,69549.0,1209700.0,1739861.0
-91332866.0,Finance Staff,PT. JINDE GRUP INDONESIA,"Gresik, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
-91332839.0,Teknisi Lapangan FTTH,PT. JINDE GRUP INDONESIA,"Gresik, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91332866.0,Finance Staff,PT. JINDE GRUP INDONESIA,"Gresik, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91332839.0,Teknisi Lapangan FTTH,PT. JINDE GRUP INDONESIA,"Gresik, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
 91332568.0,Account Manager,Pengiklan Anonim,"Sidoarjo, Jawa Timur",Sidoarjo,100.0,-7.4539769,112.6593869,Jawa Timur,1140151.0,69549.0,1209700.0,1739861.0
 91332545.0,Verificator (Surveyor) - Cabang Lamongan,BFI Finance Indonesia,"Lamongan, Jawa Timur",Lamongan,100.0,-7.1229318,112.3281935,Jawa Timur,797879.0,35733.0,833612.0,1114894.0
 91332533.0,Marketing Agency - Cabang Lamongan,BFI Finance Indonesia,"Lamongan, Jawa Timur",Lamongan,100.0,-7.1229318,112.3281935,Jawa Timur,797879.0,35733.0,833612.0,1114894.0
@@ -13548,7 +13548,7 @@ id,title,company,location,matched_regency,match_score,Latitude,Longitude,Provins
 91331834.0,Perawat Aesthetic,,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91331763.0,PPIC,Mapan Berjaya Sejahtera,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91331757.0,operator cnc miling,Mapan Berjaya Sejahtera,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
-91331739.0,Pekerja borongan,Spunbond Wahana Promosindo,"Gresik, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91331739.0,Pekerja borongan,Spunbond Wahana Promosindo,"Gresik, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
 91331733.0,HOST LIVE,Speeds Indonesia,"Sidoarjo, Jawa Timur",Sidoarjo,100.0,-7.4539769,112.6593869,Jawa Timur,1140151.0,69549.0,1209700.0,1739861.0
 91331693.0,Cook,,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91331660.0,Graphic Designer,Rbeauty Skincare,"Sidoarjo, Jawa Timur",Sidoarjo,100.0,-7.4539769,112.6593869,Jawa Timur,1140151.0,69549.0,1209700.0,1739861.0
@@ -13570,7 +13570,7 @@ id,title,company,location,matched_regency,match_score,Latitude,Longitude,Provins
 91330892.0,Electrical Engineering Staff,Marvel Indonesia Pratama,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91330788.0,DATA ANALYS,CV Daffi Maju Jaya Barokah,"Lamongan, Jawa Timur",Lamongan,100.0,-7.1229318,112.3281935,Jawa Timur,797879.0,35733.0,833612.0,1114894.0
 91330725.0,PPIC Engineer,PT Sutandi Jaya Sejahtera,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
-91330679.0,Staff WMM,Arwana Citramulia,"Gresik, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91330679.0,Staff WMM,Arwana Citramulia,"Gresik, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
 91330678.0,Nailist,Fanku Beauty,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91284646.0,HELPER GUDANG,CV Sinar Utama Tekindo,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91330515.0,Departement Secretary,Hasta Karya Perdana,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
@@ -13618,7 +13618,7 @@ id,title,company,location,matched_regency,match_score,Latitude,Longitude,Provins
 91323211.0,Sales Supervisor (SPV),Pengiklan Anonim,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91323131.0,Finance Supervisor,Pengiklan Anonim,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91323117.0,Plant Manager,Pengiklan Anonim,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
-91322767.0,OPERATOR PRODUKSI,Sentra Pangan Utama,"Gresik, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91322767.0,OPERATOR PRODUKSI,Sentra Pangan Utama,"Gresik, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
 91200416.0,shopkeeper / kasir,,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91313808.0,Operator Home Cleaning,Fixx Laundry,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91329564.0,Sales Executive,,"Sidoarjo, Jawa Timur",Sidoarjo,100.0,-7.4539769,112.6593869,Jawa Timur,1140151.0,69549.0,1209700.0,1739861.0
@@ -13662,7 +13662,7 @@ id,title,company,location,matched_regency,match_score,Latitude,Longitude,Provins
 91313760.0,Building Support (Estate),Suncity Group,"Sidoarjo, Jawa Timur",Sidoarjo,100.0,-7.4539769,112.6593869,Jawa Timur,1140151.0,69549.0,1209700.0,1739861.0
 91313698.0,Accounts Payable & Tax (PPh 21 & PPh 23),Wangta Agung,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91313568.0,Staf Finance dan Accounting,Centralteknindo Abadiperkasa,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
-91279449.0,Admin Accounting,,"Gresik, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91279449.0,Admin Accounting,,"Gresik, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
 91313269.0,Staff PPIC,Delifru,"Lamongan, Jawa Timur",Lamongan,100.0,-7.1229318,112.3281935,Jawa Timur,797879.0,35733.0,833612.0,1114894.0
 91313234.0,WAREHOUSE LOGISTIC SUPERVISOR,Revass Utama Medika,"Sidoarjo, Jawa Timur",Sidoarjo,100.0,-7.4539769,112.6593869,Jawa Timur,1140151.0,69549.0,1209700.0,1739861.0
 91311315.0,SALES EXECUTIVE CHEMICAL,,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
@@ -13675,7 +13675,7 @@ id,title,company,location,matched_regency,match_score,Latitude,Longitude,Provins
 91312955.0,Admin Pembelian (Data Entry - Accurate),Armada Mix Group,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91193112.0,Customer Service - Freight Forwarding (Surabaya Office),Phoenix International,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91312386.0,DESIGNER GRAFIS (APPAREL),Cortiger Sportswear,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
-91312431.0,National Sales Manager,Indraco,"Driyorejo, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91312431.0,National Sales Manager,Indraco,"Driyorejo, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
 91312368.0,Manufacturing Operational Controller,Sariguna Primatirta,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91312297.0,Staff QA Packing,Central Proteina Prima,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91312025.0,Audit Internal,Topsel Raharja Indonesia,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
@@ -13693,17 +13693,17 @@ id,title,company,location,matched_regency,match_score,Latitude,Longitude,Provins
 91321676.0,MARKETING GENERALIS PERBANKAN AREA LAMONGAN,Bumi Daya Plaza,"Lamongan, Jawa Timur",Lamongan,100.0,-7.1229318,112.3281935,Jawa Timur,797879.0,35733.0,833612.0,1114894.0
 91310942.0,Cook Helper,Suksesindo,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91310909.0,customer  service,PT QMOVE TECHNOLOGY INDONESIA,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
-91310606.0,Finance & Accounting,PT Aaron Innovation Indonesia,"Driyorejo, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
-91310487.0,Creative Content Conseptor,PT Aaron Innovation Indonesia,"Driyorejo, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91310606.0,Finance & Accounting,PT Aaron Innovation Indonesia,"Driyorejo, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91310487.0,Creative Content Conseptor,PT Aaron Innovation Indonesia,"Driyorejo, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
 91310471.0,Cook,Suksesindo,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91310380.0,"Relationship Manager, Farmer (Surabaya)",,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91310141.0,Security,iSmile Dental Care,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
-91310015.0,Production Admin,Syensqo,"Gresik, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91310015.0,Production Admin,Syensqo,"Gresik, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
 91309946.0,Sales Promotion (SPG/SPB),,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91309810.0,MAGANG SMK TEKNIK KOMPUTER JARINGAN (SURABAYA),Urip Sejati Sources,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
-91309782.0,Production Operator,Syensqo,"Gresik, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91309782.0,Production Operator,Syensqo,"Gresik, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
 91309760.0,Area Sales Manager (Sidoarjo),Panca Budi Pratama,"Sidoarjo, Jawa Timur",Sidoarjo,100.0,-7.4539769,112.6593869,Jawa Timur,1140151.0,69549.0,1209700.0,1739861.0
-91309752.0,Host Live,PT Aaron Innovation Indonesia,"Driyorejo, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91309752.0,Host Live,PT Aaron Innovation Indonesia,"Driyorejo, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
 91309415.0,SEKRETARIS,Suksesindo,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91309083.0,Customer Relationship Executive - Sidoarjo,BFI Finance Indonesia,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91309072.0,Agency Relation Executive (Car Product) - Sidoarjo Waru,BFI Finance Indonesia,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
@@ -13712,15 +13712,15 @@ id,title,company,location,matched_regency,match_score,Latitude,Longitude,Provins
 91317126.0,Medical Scientific Liaison (Breast Cancer) - Surabaya (Contract-based),AstraZeneca,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91307444.0,Sales Promotor (Penempatan Sidoarjo),Jaya Bersama Saputra Perkasa,"Sidoarjo, Jawa Timur",Sidoarjo,100.0,-7.4539769,112.6593869,Jawa Timur,1140151.0,69549.0,1209700.0,1739861.0
 91307379.0,LIVE STREAMING HOST,PT. GUDELAKE FOOD INDONESIA,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
-91300319.0,Sales,Ika Raya Sentausa,"Gresik, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91300319.0,Sales,Ika Raya Sentausa,"Gresik, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
 91307108.0,Penerjemah Mandarin,PT. GUDELAKE FOOD INDONESIA,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91307080.0,SEKRETARIS,PT Uniserv Indonesia,"Sidoarjo, Jawa Timur",Sidoarjo,100.0,-7.4539769,112.6593869,Jawa Timur,1140151.0,69549.0,1209700.0,1739861.0
 91306903.0,Admin CRM,citra sarana solusi,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91306699.0,Driver Kanvas (Surabaya Barat),PT Sinergi Nusantara Sentosa,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91306621.0,Sales Motoris (Surabaya Barat),PT Sinergi Nusantara Sentosa,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
-91306507.0,Project Engineer,Pengiklan Anonim,"Gresik, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91306507.0,Project Engineer,Pengiklan Anonim,"Gresik, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
 91306446.0,Admin Online E-commerce,citra sarana solusi,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
-91306385.0,General Affair Staff,Pengiklan Anonim,"Gresik, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91306385.0,General Affair Staff,Pengiklan Anonim,"Gresik, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
 91306246.0,Admin Fleet (Pengatur dan Pengawas Kendaraan),Suksesindo,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91306127.0,HRD Officer,PT Uniserv Indonesia,"Sidoarjo, Jawa Timur",Sidoarjo,100.0,-7.4539769,112.6593869,Jawa Timur,1140151.0,69549.0,1209700.0,1739861.0
 91305626.0,CLEANING SERVICE,Adi Surya Sempurna,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
@@ -13732,11 +13732,11 @@ id,title,company,location,matched_regency,match_score,Latitude,Longitude,Provins
 91305465.0,Senior Mekanik Dump Truck,Suksesindo,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91305276.0,Farmasi,Kalindojava Manufactured,"Sidoarjo, Jawa Timur",Sidoarjo,100.0,-7.4539769,112.6593869,Jawa Timur,1140151.0,69549.0,1209700.0,1739861.0
 91305327.0,Senior Staf Pajak,Grogol Sarana Transjaya,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
-91304850.0,Factory Manager,Pengiklan Anonim,"Gresik, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
-91304839.0,Warehouse Admin,Syensqo,"Gresik, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91304850.0,Factory Manager,Pengiklan Anonim,"Gresik, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91304839.0,Warehouse Admin,Syensqo,"Gresik, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
 91304757.0,Translator Mandarin,Speeds Indonesia,"Sidoarjo, Jawa Timur",Sidoarjo,100.0,-7.4539769,112.6593869,Jawa Timur,1140151.0,69549.0,1209700.0,1739861.0
 91321759.0,Sales Wifi - Lamongan,,"Lamongan, Jawa Timur",Lamongan,100.0,-7.1229318,112.3281935,Jawa Timur,797879.0,35733.0,833612.0,1114894.0
-91304718.0,Sales Engineer,Pengiklan Anonim,"Gresik, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91304718.0,Sales Engineer,Pengiklan Anonim,"Gresik, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
 91304507.0,Staff Purchasing,PT Asia Pramulia,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91321802.0,ACCOUNT EXECITIVE MYREP AREA LAMONGAN,Trijaya Maju Totalindo,"Lamongan, Jawa Timur",Lamongan,100.0,-7.1229318,112.3281935,Jawa Timur,797879.0,35733.0,833612.0,1114894.0
 91304045.0,Talent/Model Ber-usia,pt.nusantara alami group,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
@@ -13747,7 +13747,7 @@ id,title,company,location,matched_regency,match_score,Latitude,Longitude,Provins
 91303535.0,Project Manager (Renovation),,"Sidoarjo, Jawa Timur",Sidoarjo,100.0,-7.4539769,112.6593869,Jawa Timur,1140151.0,69549.0,1209700.0,1739861.0
 91303218.0,Sales Team Leader (Ahmad Yani Surabaya),Mitra10,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91303024.0,SUPERVISOR PURCHASING,Pilar Ekatama,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
-91302552.0,MANAGEMENT TRAINEE,Surabaya Mekabox,"Driyorejo, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91302552.0,MANAGEMENT TRAINEE,Surabaya Mekabox,"Driyorejo, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
 91302652.0,Kasir (Ahmad Yani Surabaya),Mitra10,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91292753.0,Barista kopi,,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91301970.0,Teknisi Maintenance,Bentang Persada,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
@@ -13848,7 +13848,7 @@ id,title,company,location,matched_regency,match_score,Latitude,Longitude,Provins
 91283853.0,Account Officer Surabaya,Hino Finance Indonesia,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91236471.0,Banking Account Executive (IHH Healthcare SG - Surabaya Office),,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91283734.0,Canvasser (Placement: Surabaya),PT Lippo Life Assurance (Jakarta),"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
-91283509.0,Cook Helper / Crew Cloud Kitchen (GRESIK),Greenly Lifestyle Indonesia,"Gresik, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91283509.0,Cook Helper / Crew Cloud Kitchen (GRESIK),Greenly Lifestyle Indonesia,"Gresik, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
 91283367.0,"MAINTENANCE MECHANICAL ELECTRICAL SUPERVISOR, FOREMAN  DAN OPERATOR",PT Sumber Organik,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91283241.0,Legal Secretary,Pengiklan Anonim,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91283230.0,Executive - Sales (Logistic/Freight Forwading),EFL Global,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
@@ -13875,7 +13875,7 @@ id,title,company,location,matched_regency,match_score,Latitude,Longitude,Provins
 91280883.0,VSD ENGINEER,Angkasa Buanaa,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91280586.0,accounting staff,,"Sidoarjo, Jawa Timur",Sidoarjo,100.0,-7.4539769,112.6593869,Jawa Timur,1140151.0,69549.0,1209700.0,1739861.0
 91280766.0,ADMINISTRASI,Napoleon Light Industries,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
-91197174.0,Supervisor Maintenance - Gresik,Weha Agro Sejahtera,"Gresik, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91197174.0,Supervisor Maintenance - Gresik,Weha Agro Sejahtera,"Gresik, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
 91280098.0,SPV Teknik Sipil,,"Sidoarjo, Jawa Timur",Sidoarjo,100.0,-7.4539769,112.6593869,Jawa Timur,1140151.0,69549.0,1209700.0,1739861.0
 91280399.0,Kepala Gudang,PT Indofa Utama Multi Core,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91295078.0,Field Sales,PT Ratna Asia,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
@@ -13901,7 +13901,7 @@ id,title,company,location,matched_regency,match_score,Latitude,Longitude,Provins
 91277980.0,Customer Service,Bank IBK Indonesia,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91277899.0,Sales B2B GSM Sidoarjo (Grafika Sentosa Mandiri),Grafika Sentosa Mandiri (Sidoarjo),"Sidoarjo, Jawa Timur",Sidoarjo,100.0,-7.4539769,112.6593869,Jawa Timur,1140151.0,69549.0,1209700.0,1739861.0
 91277868.0,Staff GraphicDesign & Event,Waringin Group,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
-91277759.0,Sales Executive,PT Puri Wira Mahkota,"Gresik, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91277759.0,Sales Executive,PT Puri Wira Mahkota,"Gresik, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
 91277728.0,Sales B2B Surabaya,Johnson Health Tech,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91277637.0,TikTok Content Editor,,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91277559.0,Online Sales,PT Pop Jasa Indonesia,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
@@ -13920,7 +13920,7 @@ id,title,company,location,matched_regency,match_score,Latitude,Longitude,Provins
 91276559.0,ACCOUNTANT SPECIALIST,Cosmo Technology,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91276455.0,Management Trainee Program,Tatamulia Nusantara Indah,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91273649.0,"BANCASSURANCE, FINANCIAL SERVICES CONSULTANT (SURABAYA)",Prudential Group,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
-91276078.0,Finance and Accounting Manager,Magnet Integra Solutions,"Gresik, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91276078.0,Finance and Accounting Manager,Magnet Integra Solutions,"Gresik, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
 91276254.0,Quality Assurance,Wahana Rizky Gumilang,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91276262.0,Auditor,Mikatasa Agung,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91276168.0,Wardrobe Staff,SOP Media Indonesia,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
@@ -13933,7 +13933,7 @@ id,title,company,location,matched_regency,match_score,Latitude,Longitude,Provins
 91275896.0,Estimator,PT. Karya Manunggal Sejahtera Selalu,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91275832.0,Asisten Apoteker,,"Waru, Jawa Timur",Sidoarjo,100.0,-7.4539769,112.6593869,Jawa Timur,1140151.0,69549.0,1209700.0,1739861.0
 91264689.0,General Affair,,"Lamongan, Jawa Timur",Lamongan,100.0,-7.1229318,112.3281935,Jawa Timur,797879.0,35733.0,833612.0,1114894.0
-91275776.0,QUALITY CONTROL,Xinyi Glass Indonesia,"Gresik, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91275776.0,QUALITY CONTROL,Xinyi Glass Indonesia,"Gresik, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
 91275618.0,Senior Supervisor Legal,Platinum Ceramics Industry,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91275604.0,Spv Landscape,Bhakti Tamara,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91275300.0,Landscaping,Jakamitra Indonesia,"Lamongan, Jawa Timur",Lamongan,100.0,-7.1229318,112.3281935,Jawa Timur,797879.0,35733.0,833612.0,1114894.0
@@ -13944,10 +13944,10 @@ id,title,company,location,matched_regency,match_score,Latitude,Longitude,Provins
 91274623.0,Accounting Analyst,PT. Selaras Husada,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91274443.0,Admin Umum,CV Melimpah Anugerah Sentosa Abadi,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91274185.0,Mekanik (Area Surabaya),Agung Transport Solutions,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
-91274156.0,PPIC Manufacture Cat,CV Melimpah Anugerah Sentosa Abadi,"Gresik, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91274156.0,PPIC Manufacture Cat,CV Melimpah Anugerah Sentosa Abadi,"Gresik, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
 91274063.0,MARKETING PROPERTY,Waringin Group,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
-91273914.0,LOW VOLT ELECTRICAL,Xinyi Glass Indonesia,"Gresik, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
-91273820.0,UTILITY CREW,Xinyi Glass Indonesia,"Gresik, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91273914.0,LOW VOLT ELECTRICAL,Xinyi Glass Indonesia,"Gresik, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91273820.0,UTILITY CREW,Xinyi Glass Indonesia,"Gresik, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
 91271837.0,Kitchen helper,,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91273478.0,Online Sales Administrator,Prima Kita Group,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91273413.0,Key Account Manager – Food & Personal Care,PT BAC (Bensa Adhi Cipta),"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
@@ -13965,13 +13965,13 @@ id,title,company,location,matched_regency,match_score,Latitude,Longitude,Provins
 91264656.0,Supervisor,,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91263874.0,Host Live Streamer,SYB Official,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91263822.0,Store Manager,Pendekar Bodoh,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
-91263651.0,Translator Mandarin,Pengiklan Anonim,"Gresik, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91263651.0,Translator Mandarin,Pengiklan Anonim,"Gresik, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
 91263561.0,Sales Assistant (Surabaya Area),Mitra Adiperkasa,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91263464.0,Admin Payroll,Emitraco Transportasi Mandiri,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91263063.0,Sales Executive,Bhakti Tamara,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91262616.0,Sales Merchandiser Surabaya,PT Menara Abadi Sofindo,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
-91262394.0,Marketing - bahasa Mandarin,Pengiklan Anonim,"Gresik, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
-91268418.0,Network Operation - Gresik,SwaPro,"Gresik, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91262394.0,Marketing - bahasa Mandarin,Pengiklan Anonim,"Gresik, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91268418.0,Network Operation - Gresik,SwaPro,"Gresik, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
 91268433.0,Network Operation - Sidoarjo,SwaPro,"Sidoarjo, Jawa Timur",Sidoarjo,100.0,-7.4539769,112.6593869,Jawa Timur,1140151.0,69549.0,1209700.0,1739861.0
 91262179.0,Sales Office Engineering  Workshop Sheet Metal laser cutting bending machining ),CV Maju Kawan Technindo,"Sidoarjo, Jawa Timur",Sidoarjo,100.0,-7.4539769,112.6593869,Jawa Timur,1140151.0,69549.0,1209700.0,1739861.0
 91262098.0,PPIC untuk Workshop Sheet Metal ( Laser cuting/Bending/Machining),CV Maju Kawan Technindo,"Sidoarjo, Jawa Timur",Sidoarjo,100.0,-7.4539769,112.6593869,Jawa Timur,1140151.0,69549.0,1209700.0,1739861.0
@@ -13985,7 +13985,7 @@ id,title,company,location,matched_regency,match_score,Latitude,Longitude,Provins
 91260998.0,PRODUCT BUYER IMPORT ( Home Living / Lifestyle Product ),BerryMan Shop,"Sidoarjo, Jawa Timur",Sidoarjo,100.0,-7.4539769,112.6593869,Jawa Timur,1140151.0,69549.0,1209700.0,1739861.0
 91260971.0,Marketing,PT Mukti Citra Jaya,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91268371.0,Admin Tiktok,,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
-91260920.0,Ilustrator 2D & 3D,PT Mitraco Citraniaga Pusaka,"Gresik, Jawa Timur",Gresik,100.0,-5.7933465,112.6598223,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
+91260920.0,Ilustrator 2D & 3D,PT Mitraco Citraniaga Pusaka,"Gresik, Jawa Timur",Gresik,100.0,-7.156,112.6511,Jawa Timur,695657.0,40240.0,735897.0,1082377.0
 91260814.0,Secretary (Mandarin Speaker),GPI Logistics,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91098174.0,Admin Keuangan,,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
 91096466.0,Marketing,,"Surabaya, Jawa Timur",Kota Surabaya,100.0,-7.2462836,112.7377674,Jawa Timur,1561997.0,79432.0,1641429.0,2325271.0
