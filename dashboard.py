@@ -106,12 +106,8 @@ def load_data():
     # Klasifikasi detail untuk visualisasi peta yang lebih presisi
     def classify_cluster(row):
         cid = int(row['cluster_id'])
-        vol = int(row['job_volume'])
         if cid == -1:
-            if vol >= 100:
-                return "Outlier: Metropolitan Giant (Pusat Mandiri)"
-            else:
-                return "Outlier: Isolated / Remote Zone (Terpencil/Sepi)"
+            return "Cluster -1: Isolated Red Zone (Terpencil/Sepi)"
         elif cid == 0:
             return "Cluster 0: Java Mainland Hub (Aglomerasi Utama)"
         elif cid == 1:
@@ -271,8 +267,7 @@ with tab2:
         color_discrete_map={
             "Cluster 0: Java Mainland Hub (Aglomerasi Utama)": "#3A86FF",
             "Cluster 1: Jabodetabek & Koridor Barat (Aglomerasi Metropolitan)": "#00F5D4",
-            "Outlier: Metropolitan Giant (Pusat Mandiri)": "#FF006E",
-            "Outlier: Isolated / Remote Zone (Terpencil/Sepi)": "#8E9AA6"
+            "Cluster -1: Isolated Red Zone (Terpencil/Sepi)": "#8E9AA6"
         },
         map_style="carto-darkmatter",
         template="plotly_dark",
@@ -312,8 +307,7 @@ with tab2:
     **💡 Catatan Analisis DBSCAN:** 
     * **Cluster 0 (Biru):** Aglomerasi pasar kerja koridor mainland Pulau Jawa yang terhubung secara kontigu — mencakup pusat regional seperti Surabaya, Bandung, Semarang, GKS, dan Solo.
     * **Cluster 1 (Hijau Toska):** Aglomerasi metropolitan Jabodetabek beserta koridor industri Banten–Jawa Barat bagian barat (Serang, Karawang, Cilegon, dll) dengan densitas lowongan tertinggi.
-    * **Outlier: Metropolitan Giant (Pink Neon):** Pusat ekonomi mandiri dengan volume lowongan kerja sangat melimpah (≥ 100) yang menonjol secara ekstrem dibandingkan wilayah di sekitarnya.
-    * **Outlier: Isolated / Remote Zone (Abu-Abu):** Wilayah terpencil dengan volume lowongan rendah/nihil (< 100) yang tidak membentuk kelompok aglomerasi dengan tetangganya.
+    * **Cluster -1 (Abu-Abu):** Isolated Red Zone — wilayah terpencil dengan volume lowongan rendah/nihil yang tidak membentuk kelompok aglomerasi dengan tetangganya (contoh: Madura, Pacitan, Lebak).
     * Ukuran lingkaran menunjukkan volume lowongan absolut di wilayah tersebut (ditambah offset 5 agar wilayah 0 lowongan tetap terlihat di peta).
     """)
 
