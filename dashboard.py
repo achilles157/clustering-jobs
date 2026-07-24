@@ -198,7 +198,7 @@ if 'cluster_display' in city_info:
     st.sidebar.info(f"**Klasifikasi:** {city_info['cluster_display']}")
 
 st.sidebar.divider()
-    st.sidebar.caption("v1.5 • DBSCAN Pure Spatial (eps=0.40)")
+st.sidebar.caption("v1.5 • DBSCAN Pure Spatial (eps=0.40)")
 
 # --- HEADER UTAMA ---
 st.title("Analisis Spasial Hub & Peluang Kerja")
