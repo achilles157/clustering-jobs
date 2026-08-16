@@ -8,7 +8,7 @@ import numpy as np
 
 # Set Page Config
 st.set_page_config(
-    page_title="Analisis Hub Kerja Jawa | Thesis Dashboard",
+    page_title="Persebaran Peluang Kerja Jawa | Thesis Dashboard",
     page_icon="🏙️",
     layout="wide",
     initial_sidebar_state="expanded"
@@ -238,7 +238,7 @@ st.sidebar.divider()
 st.sidebar.caption("v1.5 • DBSCAN Pure Spatial (eps=0.40)")
 
 # --- HEADER UTAMA ---
-st.title("Analisis Spasial Hub & Peluang Kerja")
+st.title("Persebaran Peluang Kerja di Pulau Jawa")
 st.markdown(f"Wawasan visual untuk pasar kerja di <span class='highlight'>{st.session_state.applied_city}</span>", unsafe_allow_html=True)
 
 # --- TAB DASHBOARD (5 USE CASES / NAVIGASI) ---
@@ -335,8 +335,8 @@ with tab2:
             y=-0.02,
             xanchor="center",
             x=0.5,
-            bgcolor="rgba(255,255,255,0.08)",
-            bordercolor="rgba(255,255,255,0.25)",
+            bgcolor="rgba(10, 17, 40, 0.9)",
+            bordercolor="rgba(255, 255, 255, 0.35)",
             borderwidth=1,
             font=dict(size=12, color="#FFFFFF")
         )
@@ -357,9 +357,9 @@ with tab2:
     
     st.info("""
     **💡 Catatan Analisis DBSCAN:** 
-    * **Cluster 0 (Biru):** Aglomerasi pasar kerja koridor mainland Pulau Jawa yang terhubung secara kontigu — mencakup pusat regional seperti Surabaya, Bandung, Semarang, GKS, dan Solo.
+    * **Cluster 0 (Biru):** Aglomerasi pasar kerja koridor mainland Pulau Jawa yang terhubung secara kontigu — mencakup pusat regional seperti Surabaya, Bandung, Semarang, Yogyakarta, dan Solo.
     * **Cluster 1 (Hijau Toska):** Aglomerasi metropolitan Jabodetabek beserta koridor industri Banten–Jawa Barat bagian barat (Serang, Karawang, Cilegon, dll) dengan densitas lowongan tertinggi.
-    * **Cluster -1 (Abu-Abu):** Isolated Red Zone — wilayah terpencil dengan volume lowongan rendah/nihil yang tidak membentuk kelompok aglomerasi dengan tetangganya (contoh: Madura, Pacitan, Lebak).
+    * **Cluster -1 (Abu-Abu):** Isolated Red Zone — wilayah terpencil dengan volume lowongan rendah/nihil yang tidak membentuk kelompok aglomerasi dengan tetangganya (contoh: Pacitan, Lebak, Sampang, dan Sumenep).
     * Ukuran lingkaran menunjukkan volume lowongan absolut di wilayah tersebut (ditambah offset 5 agar wilayah 0 lowongan tetap terlihat di peta).
     """)
 
@@ -549,4 +549,4 @@ f_col1, f_col2 = st.columns([2,1])
 with f_col1:
     st.caption("Sumber Data: BPS Sosioekonomi 2025 & Jobstreet Indonesia (via GraphQL API).")
 with f_col2:
-    st.caption("© 2026 Proyek Skripsi Falah. Teknologi oleh Antigravity AI.")
+    st.caption("© 2026 Proyek Skripsi Falah.")

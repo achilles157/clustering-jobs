@@ -13,11 +13,11 @@ This document serves as the complete, definitive guide to the pipeline executed 
 
 ## 🧬 Phase 3: Market Engineering
 * **Opportunity Index:** Calculated the ratio of available jobs compared to the active labor force in each region to determine market saturation.
-* **Fuzzy Matching:** Achieved an **88.8%** match rate connecting Jobstreet territory names to BPS official territory names using `rapidfuzz`.
+* **Fuzzy Matching:** Achieved a **91.8%** match rate (18,182 of 19,812 listings) connecting Jobstreet territory names to BPS official territory names using `rapidfuzz` (threshold ≥ 80).
 
 ## 📍 Phase 4: Spatial DBSCAN Clustering
-* **Algorithm:** Applied `DBSCAN` with `eps=0.45` (approx 50KM radius) across the coordinate space of Java.
-* **Result:** Successfully detected organic "Economic Hubs" (e.g., the massive Jabodetabek agglomeration and the Surabaya-Malang corridor) purely based on job density, ignoring artificial province borders.
+* **Algorithm:** Applied `DBSCAN` with `eps=0.40` and `min_samples=3` on StandardScaler-normalized coordinates (Latitude/Longitude) of Java.
+* **Result:** Successfully detected organic "Economic Hubs" (e.g., the massive Jabodetabek agglomeration and the Surabaya–Kabupaten Malang corridor) purely based on job density, ignoring artificial province borders.
 
 ## 📊 Phase 5: Streamlit Dashboard
 The culmination of the project is an interactive dashboard demonstrating the findings:

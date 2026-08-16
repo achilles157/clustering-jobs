@@ -1,7 +1,11 @@
-streamlit
+streamlit>=1.46
 pandas
-plotly
+plotly>=5.26
 matplotlib
 numpy
 statsmodels
 scipy
+scikit-learn
+rapidfuzz
+requests
+curl_cffi
