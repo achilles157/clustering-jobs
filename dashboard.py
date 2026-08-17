@@ -140,6 +140,11 @@ def load_data():
     df['opportunity_index'] = pd.to_numeric(df['opportunity_index'], errors='coerce').replace([np.inf, -np.inf], 0).fillna(0)
     df['competitive_index'] = pd.to_numeric(df['competitive_index'], errors='coerce').fillna(0)
     df['labor_force_num'] = pd.to_numeric(df['labor_force_num'], errors='coerce').fillna(0)
+    for _c in ['unemployment_num', 'tpt']:
+        if _c not in df.columns:
+            df[_c] = 0.0
+    df['unemployment_num'] = pd.to_numeric(df['unemployment_num'], errors='coerce').fillna(0)
+    df['tpt'] = pd.to_numeric(df['tpt'], errors='coerce').fillna(0)
     df['job_volume'] = pd.to_numeric(df['job_volume'], errors='coerce').fillna(0)
     df['cluster_id'] = df['cluster_id'].astype(int) if 'cluster_id' in df.columns else -1
     df['size_for_map'] = df['job_volume'] + 5
@@ -231,11 +236,13 @@ city_info = df[df['matched_regency'] == st.session_state.applied_city].iloc[0]
 st.sidebar.subheader("Konteks Wilayah (Terpilih)")
 st.sidebar.write(f"**Provinsi:** {city_info['Provinsi']}")
 st.sidebar.write(f"**Status:** {city_info['prosperity_status']}")
+st.sidebar.write(f"**Pengangguran Terbuka:** {int(city_info['unemployment_num']):,}")
+st.sidebar.write(f"**TPT:** {city_info['tpt']:.2f}%")
 if 'cluster_display' in city_info:
     st.sidebar.info(f"**Klasifikasi:** {city_info['cluster_display']}")
 
 st.sidebar.divider()
-st.sidebar.caption("v1.5 • DBSCAN Pure Spatial (eps=0.40)")
+st.sidebar.caption("v2.0 • DBSCAN Pure Spatial (eps=0.40) • Opsi C (÷Pengangguran)")
 
 # --- HEADER UTAMA ---
 st.title("Persebaran Peluang Kerja di Pulau Jawa")
@@ -261,8 +268,8 @@ with tab1:
     with sum_col1:
         st.metric("Volume Lowongan", f"{int(city_info['job_volume'])} Posisi")
     with sum_col2:
-        val = float(city_info['labor_force_num'])
-        st.metric("Angkatan Kerja", f"{int(val):,}" if val > 0 else "Data Kosong")
+        val = float(city_info['unemployment_num'])
+        st.metric("Pengangguran Terbuka", f"{int(val):,}" if val > 0 else "Data Kosong")
     with sum_col3:
         st.metric("Indeks Peluang", f"{city_info['opportunity_index']:.5f}")
     with sum_col4:
@@ -359,7 +366,7 @@ with tab2:
     **💡 Catatan Analisis DBSCAN:** 
     * **Cluster 0 (Biru):** Aglomerasi pasar kerja koridor mainland Pulau Jawa yang terhubung secara kontigu — mencakup pusat regional seperti Surabaya, Bandung, Semarang, Yogyakarta, dan Solo.
     * **Cluster 1 (Hijau Toska):** Aglomerasi metropolitan Jabodetabek beserta koridor industri Banten–Jawa Barat bagian barat (Serang, Karawang, Cilegon, dll) dengan densitas lowongan tertinggi.
-    * **Cluster -1 (Abu-Abu):** Isolated Red Zone — wilayah terpencil dengan volume lowongan rendah/nihil yang tidak membentuk kelompok aglomerasi dengan tetangganya (contoh: Pacitan, Lebak, Sampang, dan Sumenep).
+    * **Cluster -1 (Abu-Abu):** Isolated Red Zone — wilayah terpencil dengan volume lowongan rendah/nihil yang tidak membentuk kelompok aglomerasi dengan tetangganya (contoh: Kepulauan Seribu, Kota Banjar, Kota Pekalongan, dan Sumenep).
     * Ukuran lingkaran menunjukkan volume lowongan absolut di wilayah tersebut (ditambah offset 5 agar wilayah 0 lowongan tetap terlihat di peta).
     """)
 
@@ -367,7 +374,7 @@ with tab2:
 with tab3:
     st.subheader("Heatmap Peluang Kerja (Choropleth)")
     st.markdown(r"Visualisasi perbedaan antara **'Lautan Peluang'** (Hijau) dan **'Zona Merah'** (Merah).")
-    st.latex(r"Indeks\_Peluang = \frac{Volume\_Pekerjaan}{Angkatan\_Kerja\_Aktif}")
+    st.latex(r"Indeks\_Peluang = \frac{Volume\_Lowongan}{Pengangguran\_Terbuka}")
     
     if geojson:
         # Fallback to choropleth_mapbox because MapLibre (choropleth_map) strictly enforces 
@@ -392,8 +399,8 @@ with tab3:
         
         st.info("""
         **💡 Panduan Intepretasi Heatmap (Choropleth):**
-        * **Hijau (Lautan Peluang):** Wilayah berpotensi dengan porsi lowongan yang tinggi per satuan angkatan kerja nyata. Sangat direkomendasikan bagi talenta pencari kerja (suplai kerja lokal belum memenuhi demand).
-        * **Merah (Zona Merah):** Wilayah padat persaingan dimana volume kesempatan kerja relatif tipis berbanding dengan membludaknya jumlah angkatan kerja (indikasi kejenuhan). 
+        * **Hijau (Lautan Peluang):** Wilayah dengan rasio lowongan per penganggur terbuka yang tinggi — peluang kerja tersedia lebih banyak relatif terhadap pencari kerja aktif. Direkomendasikan bagi talenta pencari kerja.
+        * **Merah (Zona Merah):** Wilayah dengan rasio lowongan per penganggur terbuka yang rendah — volume kesempatan kerja tipis dibanding jumlah penganggur yang benar-benar membutuhkan kerja (indikasi kejenuhan). 
         """)
     else:
         st.warning("File batas GeoJSON tidak ditemukan. Menampilkan visualisasi alternatif...")
@@ -411,13 +418,13 @@ with tab4:
     
     with col_a:
         st.subheader("a. Efisiensi Pasar Kerja")
-        st.markdown("Evaluasi statistik ketersediaan kerja terhadap jumlah angkatan kerja.")
+        st.markdown("Evaluasi statistik ketersediaan lowongan terhadap jumlah penganggur terbuka.")
         fig4a = px.scatter(
-            df, x="labor_force_num", y="job_volume",
+            df, x="unemployment_num", y="job_volume",
             trendline="ols", trendline_color_override="#00A6FB",
             hover_name="matched_regency", color="opportunity_index",
             color_continuous_scale="Viridis",
-            labels={"labor_force_num": "Angkatan Kerja (BPS)", "job_volume": "Volume Lowongan"},
+            labels={"unemployment_num": "Pengangguran Terbuka (BPS)", "job_volume": "Volume Lowongan"},
             template="plotly_dark", height=500
         )
         st.plotly_chart(fig4a, width="stretch")
@@ -437,7 +444,7 @@ with tab4:
     
     st.info("""
     **💡 Catatan Analisis Kuadran & Kualifikasi:** 
-    * Plot sebelah kiri memvalidasi seberapa linier hubungan penciptaan loker terhadap beban demografi (angkatan kerja). Wilayah yang melesat ke atas dari *trendline* menunjukkan performa penciptaan kerja yang abnormal (positif).
+    * Plot sebelah kiri memvalidasi seberapa linier penciptaan lowongan terhadap jumlah penganggur terbuka (beban pencari kerja). Wilayah yang melesat ke atas dari *trendline* menunjukkan performa penciptaan kerja yang abnormal (positif).
     * Barchart Indeks Kompetitif pada level *>=2.5* didominasi posisi manajerial elit. Skor *~1.0 - 1.5* mengindikasikan pasar kerja kerah biru / peranan operasional.
     """)
     
@@ -449,18 +456,18 @@ with tab4:
     with m_col1:
         st.metric(
             label="Silhouette Score (Cohesion)", 
-            value="0.4737", 
+            value="0.4774", 
             help="Rentang -1 s/d +1. Mengukur seberapa dekat suatu objek dengan klasternya sendiri dibandingkan dengan klaster lain."
         )
-        st.caption("ℹ️ *Silhouette score 0.4737 (moderat-baik) mencerminkan bahwa aglomerasi spasial Pulau Jawa memanjang horizontal mengikuti koridor Trans-Jawa, bukan berbentuk spherical — DBSCAN lebih tepat untuk pola ini dibanding K-Means.*")
+        st.caption("ℹ️ *Silhouette score 0.4774 (moderat-baik) mencerminkan bahwa aglomerasi spasial Pulau Jawa memanjang horizontal mengikuti koridor Trans-Jawa, bukan berbentuk spherical — DBSCAN lebih tepat untuk pola ini dibanding K-Means.*")
         
     with m_col2:
         st.metric(
             label="Davies-Bouldin Index (DBI - Separasi)", 
-            value="0.5126", 
+            value="0.5227", 
             help="Nilai mendekati 0 semakin baik. Mengukur tingkat tumpang tindih (overlap) antar klaster."
         )
-        st.caption("ℹ️ *Nilai DBI 0.5126 (di bawah 1.0) menunjukkan pemisahan antar klaster yang baik — Cluster 0 (Mainland) dan Cluster 1 (Jabodetabek) tidak saling tumpang tindih secara spasial.*")
+        st.caption("ℹ️ *Nilai DBI 0.5227 (di bawah 1.0) menunjukkan pemisahan antar klaster yang baik — Cluster 0 (Mainland) dan Cluster 1 (Jabodetabek) tidak saling tumpang tindih secara spasial.*")
 
 # MODUL 5: LAPORAN EKSEKUTIF (SUMMARY) (UC5)
 with tab5:
@@ -482,7 +489,7 @@ with tab5:
         is_zona_merah = city_info['prosperity_status'] == "Zona Merah"
         
         if is_zona_merah:
-            conclusion = f"Bisa dikatakan wilayah ini mengalami defisit lapangan kerja nyata (**Peringkat {rank} dari {total_active} wilayah aktif**). Meskipun secara indeks relatif berada di papan tengah, secara absolut pasar kerja formal sangat terbatas ({int(city_info['job_volume'])} posisi) untuk menampung populasinya."
+            conclusion = f"Bisa dikatakan wilayah ini mengalami defisit lapangan kerja nyata (**Peringkat {rank} dari {total_active} wilayah aktif**). Meskipun secara indeks relatif berada di papan tengah, secara absolut pasar kerja formal sangat terbatas ({int(city_info['job_volume'])} posisi) untuk menampung penganggur terbukanya."
             recom_val = "Berisiko"
             comp_val = "Sengit"
         else:
@@ -491,7 +498,7 @@ with tab5:
                 recom_val = "Sangat Layak"
                 comp_val = "Longgar"
             elif rank >= (total_active - 15):
-                conclusion = f"Bisa dikatakan wilayah ini mengalami defisit gawat darurat (**Peringkat {rank} dari {total_active} wilayah aktif**). Lapangan formal sangat sedikit dibandingkan populasinya."
+                conclusion = f"Bisa dikatakan wilayah ini mengalami defisit gawat darurat (**Peringkat {rank} dari {total_active} wilayah aktif**). Lapangan formal sangat sedikit dibandingkan penganggur terbukanya."
                 recom_val = "Berisiko"
                 comp_val = "Sengit"
             else:
@@ -510,7 +517,7 @@ with tab5:
     with col_L1:
         st.markdown("#### Narasi Kesimpulan")
         st.write(f"Secara makro-ekonomi, **{st.session_state.applied_city}** diidentifikasi oleh sistem *DBSCAN* sebagai **{city_info['cluster_display']}** bertaraf {city_info['prosperity_status']}.")
-        st.write(f"Dengan Angkatan Kerja sebesar **{int(city_info['labor_force_num']):,}** orang dan ketersediaan **{int(city_info['job_volume'])}** spesifikasi pekerjaan lintas digital, rasio indeks peluang membujur di angka **{city_info['opportunity_index']:.5f}**.")
+        st.write(f"Dengan Pengangguran Terbuka sebesar **{int(city_info['unemployment_num']):,}** orang dan ketersediaan **{int(city_info['job_volume'])}** spesifikasi pekerjaan lintas digital, rasio indeks peluang membujur di angka **{city_info['opportunity_index']:.5f}** (TPT {city_info['tpt']:.2f}%).")
         st.write(conclusion)
             
     with col_L2:
@@ -533,7 +540,7 @@ with tab5:
         top_opportunities = df_sorted[['matched_regency', 'Provinsi', 'job_volume', 'opportunity_index']].head(5)
         top_opportunities.columns = ['Kabupaten/Kota', 'Provinsi', 'Volume Lowongan', 'Indeks Peluang']
         st.dataframe(top_opportunities, use_container_width=True, hide_index=True)
-        st.caption("ℹ️ *Wilayah dengan rasio penyerapan kerja tertinggi terhadap jumlah angkatan kerja aktif.*")
+        st.caption("ℹ️ *Wilayah dengan rasio lowongan tertinggi terhadap jumlah penganggur terbuka.*")
         
     with list_col2:
         st.markdown("#### 🚨 Top 5 Zona Merah (Defisit Lapangan Kerja)")
@@ -547,6 +554,6 @@ with tab5:
 st.divider()
 f_col1, f_col2 = st.columns([2,1])
 with f_col1:
-    st.caption("Sumber Data: BPS Sosioekonomi 2025 & Jobstreet Indonesia (via GraphQL API).")
+    st.caption("Sumber Data: BPS Sosioekonomi 2025, Jobstreet & Glints Indonesia (via GraphQL API).")
 with f_col2:
     st.caption("© 2026 Proyek Skripsi Falah.")

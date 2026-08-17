@@ -3,17 +3,17 @@
 This document serves as the complete, definitive guide to the pipeline executed in this project, from data acquisition to the final interactive dashboard.
 
 ## 🚀 Phase 1: Data Acquisition
-* **Target:** Scraped real-world job posting data from Jobstreet Indonesia.
-* **Mechanism:** Bypassed WAF protections using `curl_cffi` to query the undocumented `JobSearchV6` GraphQL endpoint.
-* **Output:** Gathered over 19,000 raw job listings.
+* **Target:** Scraped real-world job postings from Jobstreet Indonesia + Glints Indonesia + Kalibrr Indonesia.
+* **Mechanism:** Queried the **public** `JobSearchV6` GraphQL endpoint of Jobstreet (no auth/cookie required), the Glints `searchJobsV3` GraphQL API, and the Kalibrr `/kjs/job_board/search` JSON API (cookie `kb` + `kb-csrf` header) via `curl_cffi`.
+* **Output:** ~50,000 raw Jobstreet listings (national, filtered to Java at integration) + ~1,500 Glints listings (Java, on-site) + ~1,000 Kalibrr listings (Indonesia, on-site).
 
 ## 🧩 Phase 2: BPS Integration & Geocoding
 * **Socio-Economic Data:** Merged 6 separate provincial datasets from BPS (Badan Pusat Statistik) containing Labor Force numbers for 119 regencies in Java.
 * **Centroid Mapping:** Since job listings lack exact micro-coordinates, we appended the Lat/Lon centroid of the respective Regency (Kabupaten/Kota) to each job node.
 
 ## 🧬 Phase 3: Market Engineering
-* **Opportunity Index:** Calculated the ratio of available jobs compared to the active labor force in each region to determine market saturation.
-* **Fuzzy Matching:** Achieved a **91.8%** match rate (18,182 of 19,812 listings) connecting Jobstreet territory names to BPS official territory names using `rapidfuzz` (threshold ≥ 80).
+* **Opportunity Index (Opsi C):** `opportunity_index = observed vacancies ÷ open unemployment` (BPS "Angkatan Kerja Pengangguran - Jumlah"). TPT (unemployment ÷ labor force × 100) is kept as a context metric — the index measures job availability relative to those who actually need work.
+* **Fuzzy Matching:** Jobstreet location strings are fuzzy-matched (with a rescue cache) to BPS territory names using `rapidfuzz` (threshold ≥ 80); a non-Java province filter removes non-Java listings before matching. Glints jobs are mapped via nearest-regency centroid (lat/lon). Cross-platform duplicates are dropped on (company, title, regency).
 
 ## 📍 Phase 4: Spatial DBSCAN Clustering
 * **Algorithm:** Applied `DBSCAN` with `eps=0.40` and `min_samples=3` on StandardScaler-normalized coordinates (Latitude/Longitude) of Java.

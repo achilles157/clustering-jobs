@@ -44,3 +44,18 @@ Thumbs.db
 # Project specific
 *.log
 .ipynb_checkpoints/
+
+# Secrets (jangan commit cookie/session)
+data/glints_cookies.json
+data/glints_cookie_raw.txt
+data/jobstreet_cookie_raw.txt
+data/jobstreet_cookies.json
+data/kalibrr_cookies.json
+data/kalibrr_cookie_raw.txt
+
+# Data hasil scraping (bukan kode)
+data/jobstreet_results_v2.csv
+data/jobstreet_results_v2_checkpoint.json
+data/glints_jobs_v2_raw.jsonl
+data/glints_jobs_v2.csv
+data/kalibrr_jobs_v2.csv
