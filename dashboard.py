@@ -129,11 +129,22 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # --- LOADING DATA ---
+DATA_HUBS = os.path.join('data', 'java_job_market_hubs_final.csv')
+DATA_ANALYSIS = os.path.join('data', 'java_job_market_final_analysis.csv')
+DATA_RAW = os.path.join('data', 'integrated_job_market_java_v2.csv')
+
+
+def _file_mtime(*paths):
+    """Kunci cache-busting: mtime file pertama yang ada (agar data baru otomatis ter-refresh)."""
+    for p in paths:
+        if os.path.exists(p):
+            return os.path.getmtime(p)
+    return 0.0
+
+
 @st.cache_data
-def load_data():
-    file_path = os.path.join('data', 'java_job_market_hubs_final.csv')
-    if not os.path.exists(file_path):
-        file_path = os.path.join('data', 'java_job_market_final_analysis.csv')
+def load_data(_mtime):
+    file_path = DATA_HUBS if os.path.exists(DATA_HUBS) else DATA_ANALYSIS
     
     df = pd.read_csv(file_path)
     # Pembersihan data & Penanganan NaN
@@ -185,14 +196,13 @@ def load_geojson():
     return None
 
 @st.cache_data
-def load_raw_jobs():
-    file_path = os.path.join('data', 'integrated_job_market_java_v2.csv')
-    if os.path.exists(file_path):
-        df_raw = pd.read_csv(file_path)
+def load_raw_jobs(_mtime):
+    if os.path.exists(DATA_RAW):
+        df_raw = pd.read_csv(DATA_RAW)
         return df_raw[['title', 'company', 'location', 'matched_regency', 'Provinsi']]
     return pd.DataFrame()
 
-df = load_data()
+df = load_data(_file_mtime(DATA_HUBS, DATA_ANALYSIS))
 geojson = load_geojson()
 
 # --- SIDEBAR ---
@@ -278,7 +288,7 @@ with tab1:
         
     # 2. Raw Data Table
     st.markdown("### 📋 Raw Data Table (Daftar Lowongan Pekerjaan)")
-    df_raw = load_raw_jobs()
+    df_raw = load_raw_jobs(_file_mtime(DATA_RAW))
     if not df_raw.empty:
         # Filter raw data
         if st.session_state.applied_prov != "Semua Provinsi":
