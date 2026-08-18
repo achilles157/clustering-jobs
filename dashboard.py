@@ -168,7 +168,7 @@ def load_data(_mtime):
         elif cid == 0:
             return "Cluster 0: Java Mainland Hub (Aglomerasi Utama)"
         elif cid == 1:
-            return "Cluster 1: Jabodetabek & Koridor Barat (Aglomerasi Metropolitan)"
+            return "Cluster 1: Jabodetabek, Banten & Koridor Utara Jawa Barat (Aglomerasi Metropolitan)"
         else:
             return f"Cluster {cid}"
             
@@ -324,7 +324,7 @@ with tab2:
         height=600,
         color_discrete_map={
             "Cluster 0: Java Mainland Hub (Aglomerasi Utama)": "#3A86FF",
-            "Cluster 1: Jabodetabek & Koridor Barat (Aglomerasi Metropolitan)": "#00F5D4",
+            "Cluster 1: Jabodetabek, Banten & Koridor Utara Jawa Barat (Aglomerasi Metropolitan)": "#00F5D4",
             "Cluster -1: Isolated Red Zone (Terpencil/Sepi)": "#8E9AA6"
         },
         map_style="carto-darkmatter",
@@ -368,14 +368,14 @@ with tab2:
     with comp_col1:
         st.metric("Cluster 0 — Mainland Java", f"{len(c0)} wilayah", f"{int(c0['job_volume'].sum()):,} lowongan")
     with comp_col2:
-        st.metric("Cluster 1 — Jabodetabek", f"{len(c1)} wilayah", f"{int(c1['job_volume'].sum()):,} lowongan")
+        st.metric("Cluster 1 — Jabodetabek & Koridor Utara", f"{len(c1)} wilayah", f"{int(c1['job_volume'].sum()):,} lowongan")
     with comp_col3:
         st.metric("Isolated Zone (Noise)", f"{len(cn)} wilayah", f"{int(cn['job_volume'].sum()):,} lowongan")
     
     st.info("""
     **💡 Catatan Analisis DBSCAN:** 
     * **Cluster 0 (Biru):** Aglomerasi pasar kerja koridor mainland Pulau Jawa yang terhubung secara kontigu — mencakup pusat regional seperti Surabaya, Bandung, Semarang, Yogyakarta, dan Solo.
-    * **Cluster 1 (Hijau Toska):** Aglomerasi metropolitan Jabodetabek beserta koridor industri Banten–Jawa Barat bagian barat (Serang, Karawang, Cilegon, dll) dengan densitas lowongan tertinggi.
+    * **Cluster 1 (Hijau Toska):** Aglomerasi metropolitan Jabodetabek beserta koridor Banten (Serang, Kota Serang, Cilegon, Pandeglang, Lebak) dan koridor utara Jawa Barat (Karawang, Purwakarta, Subang, Indramayu) dengan densitas lowongan tertinggi.
     * **Cluster -1 (Abu-Abu):** Isolated Red Zone — wilayah terpencil dengan volume lowongan rendah/nihil yang tidak membentuk kelompok aglomerasi dengan tetangganya (contoh: Kepulauan Seribu, Kota Banjar, Kota Pekalongan, dan Sumenep).
     * Ukuran lingkaran menunjukkan volume lowongan absolut di wilayah tersebut (ditambah offset 5 agar wilayah 0 lowongan tetap terlihat di peta).
     """)
@@ -477,7 +477,7 @@ with tab4:
             value="0.5227", 
             help="Nilai mendekati 0 semakin baik. Mengukur tingkat tumpang tindih (overlap) antar klaster."
         )
-        st.caption("ℹ️ *Nilai DBI 0.5227 (di bawah 1.0) menunjukkan pemisahan antar klaster yang baik — Cluster 0 (Mainland) dan Cluster 1 (Jabodetabek) tidak saling tumpang tindih secara spasial.*")
+        st.caption("ℹ️ *Nilai DBI 0.5227 (di bawah 1.0) menunjukkan pemisahan antar klaster yang baik — Cluster 0 (Mainland) dan Cluster 1 (Jabodetabek & Koridor) tidak saling tumpang tindih secara spasial.*")
 
 # MODUL 5: LAPORAN EKSEKUTIF (SUMMARY) (UC5)
 with tab5:

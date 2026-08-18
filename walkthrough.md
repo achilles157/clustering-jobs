@@ -17,7 +17,7 @@ This document serves as the complete, definitive guide to the pipeline executed 
 
 ## 📍 Phase 4: Spatial DBSCAN Clustering
 * **Algorithm:** Applied `DBSCAN` with `eps=0.40` and `min_samples=3` on StandardScaler-normalized coordinates (Latitude/Longitude) of Java.
-* **Result:** Successfully detected organic "Economic Hubs" (e.g., the massive Jabodetabek agglomeration and the Surabaya–Kabupaten Malang corridor) purely based on job density, ignoring artificial province borders.
+* **Result:** Successfully detected organic "Economic Hubs" (e.g., the Jabodetabek–Banten–Koridor Utara agglomeration and the Trans-Java mainland corridor covering Surabaya, Bandung, Semarang, and Yogyakarta) purely based on job density, ignoring artificial province borders.
 
 ## 📊 Phase 5: Streamlit Dashboard
 The culmination of the project is an interactive dashboard demonstrating the findings:
