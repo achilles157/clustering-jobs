@@ -246,8 +246,9 @@ city_info = df[df['matched_regency'] == st.session_state.applied_city].iloc[0]
 st.sidebar.subheader("Konteks Wilayah (Terpilih)")
 st.sidebar.write(f"**Provinsi:** {city_info['Provinsi']}")
 st.sidebar.write(f"**Status:** {city_info['prosperity_status']}")
-st.sidebar.write(f"**Pengangguran Terbuka:** {int(city_info['unemployment_num']):,}")
-st.sidebar.write(f"**TPT:** {city_info['tpt']:.2f}%")
+st.sidebar.write(f"**Pengangguran Terbuka:** {int(city_info['unemployment_num']):,} orang")
+st.sidebar.write(f"**TPT (Tingkat Pengangguran Terbuka):** {city_info['tpt']:.2f}%")
+st.sidebar.caption("ℹ️ 'Lautan Peluang' = lowongan melimpah dibanding penganggur · 'Zona Merah' = lowongan tipis (pasar jenuh).")
 if 'cluster_display' in city_info:
     st.sidebar.info(f"**Klasifikasi:** {city_info['cluster_display']}")
 
@@ -276,15 +277,21 @@ with tab1:
     st.markdown("### 📊 Global Parameter Summary")
     sum_col1, sum_col2, sum_col3, sum_col4 = st.columns(4)
     with sum_col1:
-        st.metric("Volume Lowongan", f"{int(city_info['job_volume'])} Posisi")
+        st.metric("Volume Lowongan", f"{int(city_info['job_volume'])} Posisi",
+                  help="Jumlah posisi lowongan aktif yang terdeteksi di wilayah ini (sumber: Jobstreet, Glints, Kalibrr).")
     with sum_col2:
         val = float(city_info['unemployment_num'])
-        st.metric("Pengangguran Terbuka", f"{int(val):,}" if val > 0 else "Data Kosong")
+        st.metric("Pengangguran Terbuka", f"{int(val):,}" if val > 0 else "Data Kosong",
+                  help="Jumlah penduduk yang aktif mencari kerja tetapi belum bekerja (data BPS 2025).")
     with sum_col3:
-        st.metric("Indeks Peluang", f"{city_info['opportunity_index']:.5f}")
+        st.metric("Indeks Peluang", f"{city_info['opportunity_index']:.5f}",
+                  help="Rasio lowongan ÷ penganggur terbuka. Contoh 0,10 = tersedia ±10 lowongan per 100 penganggur.")
     with sum_col4:
         comp_idx = city_info.get('competitive_index', 0)
-        st.metric("Indeks Kompetitif", f"{comp_idx:.2f}/3.0")
+        st.metric("Indeks Kompetitif", f"{comp_idx:.2f}/3.0",
+                  help="Tingkat kualifikasi yang diminta. Skor 2,5+ = posisi manajerial/elit; 1,0–1,5 = kerah biru/operasional.")
+    
+    st.caption("💡 *Cara baca — **Indeks Peluang 0,10 ≈ 10 lowongan per 100 penganggur** (makin besar makin 'longgar'). **Indeks Kompetitif** makin tinggi berarti kualifikasi yang diminta makin spesialis.*")
         
     # 2. Raw Data Table
     st.markdown("### 📋 Raw Data Table (Daftar Lowongan Pekerjaan)")
@@ -532,8 +539,10 @@ with tab5:
             
     with col_L2:
         st.markdown("#### Penilaian Kritis")
-        st.metric(label="Rekomendasi", value=recom_val)
-        st.metric(label="Persaingan", value=comp_val)
+        st.metric(label="Rekomendasi", value=recom_val,
+                  help="Sangat Layak = destinasi utama pencari kerja · Netral = stabil · Berisiko = defisit lapangan kerja.")
+        st.metric(label="Persaingan", value=comp_val,
+                  help="Longgar = peluang > pencari · Seimbang = normal · Sengit = banyak pencari berebut sedikit lowongan.")
         
     st.divider()
     st.markdown("#### Raw Data Profil")
