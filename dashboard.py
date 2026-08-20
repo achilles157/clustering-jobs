@@ -8,7 +8,7 @@ import numpy as np
 
 # Set Page Config
 st.set_page_config(
-    page_title="Persebaran Peluang Kerja Jawa | Thesis Dashboard",
+    page_title="Persebaran Peluang Karir Jawa | Thesis Dashboard",
     page_icon="🏙️",
     layout="wide",
     initial_sidebar_state="expanded"
@@ -256,7 +256,7 @@ st.sidebar.divider()
 st.sidebar.caption("v2.0 • DBSCAN Pure Spatial (eps=0.40) • Opsi C (÷Pengangguran)")
 
 # --- HEADER UTAMA ---
-st.title("Persebaran Peluang Kerja di Pulau Jawa")
+st.title("Persebaran Peluang Karir di Pulau Jawa")
 st.markdown(f"Wawasan visual untuk pasar kerja di <span class='highlight'>{st.session_state.applied_city}</span>", unsafe_allow_html=True)
 
 # --- TAB DASHBOARD (5 USE CASES / NAVIGASI) ---
@@ -389,7 +389,7 @@ with tab2:
 
 # MODUL 3: HEATMAP PELUANG (UC3)
 with tab3:
-    st.subheader("Heatmap Peluang Kerja (Choropleth)")
+    st.subheader("Heatmap Peluang Karir (Choropleth)")
     st.markdown(r"Visualisasi perbedaan antara **'Lautan Peluang'** (Hijau) dan **'Zona Merah'** (Merah).")
     st.latex(r"Indeks\_Peluang = \frac{Volume\_Lowongan}{Pengangguran\_Terbuka}")
     
@@ -416,7 +416,7 @@ with tab3:
         
         st.info("""
         **💡 Panduan Intepretasi Heatmap (Choropleth):**
-        * **Hijau (Lautan Peluang):** Wilayah dengan rasio lowongan per penganggur terbuka yang tinggi — peluang kerja tersedia lebih banyak relatif terhadap pencari kerja aktif. Direkomendasikan bagi talenta pencari kerja.
+        * **Hijau (Lautan Peluang):** Wilayah dengan rasio lowongan per penganggur terbuka yang tinggi — peluang karir tersedia lebih banyak relatif terhadap pencari kerja aktif. Direkomendasikan bagi talenta pencari kerja.
         * **Merah (Zona Merah):** Wilayah dengan rasio lowongan per penganggur terbuka yang rendah — volume kesempatan kerja tipis dibanding jumlah penganggur yang benar-benar membutuhkan kerja (indikasi kejenuhan). 
         """)
     else:
@@ -525,7 +525,7 @@ with tab5:
     else:
         rank = "Tidak Terperingkat"
         total_active = len(df_active_sorted)
-        conclusion = "Wilayah ini tidak memiliki lowongan kerja formal yang aktif (0 Lowongan), sehingga tidak masuk dalam pemeringkatan peluang kerja aktif. Wilayah ini mengalami defisit lapangan kerja mutlak."
+        conclusion = "Wilayah ini tidak memiliki lowongan kerja formal yang aktif (0 Lowongan), sehingga tidak masuk dalam pemeringkatan peluang karir aktif. Wilayah ini mengalami defisit lapangan kerja mutlak."
         recom_val = "Berisiko"
         comp_val = "Sangat Sengit"
 
@@ -549,7 +549,7 @@ with tab5:
     st.dataframe(pd.DataFrame(city_info).T, use_container_width=True)
 
     st.divider()
-    st.subheader("Peringkat Aglomerasi & Peluang Kerja Pulau Jawa")
+    st.subheader("Peringkat Aglomerasi & Peluang Karir Pulau Jawa")
     
     list_col1, list_col2 = st.columns(2)
     
