@@ -2,123 +2,106 @@ import pandas as pd
 import numpy as np
 from sklearn.cluster import DBSCAN
 from sklearn.preprocessing import MinMaxScaler
+from sklearn.neighbors import NearestNeighbors
+from sklearn.metrics import silhouette_score, davies_bouldin_score
 import os
 
 """
-TAHAP 5: KLASTERING SPASIAL & MULTIDIMENSI (DBSCAN + MinMax Normalization)
-Penulis: Falah Fahrurozi (Skripsi UNINDRA)
-Deskripsi: Script menggunakan Min-Max Normalization untuk menormalisasi tiga variabel
-           (Latitude, Longitude, Opportunity Index) ke rentang [0,1], kemudian
-           Density-Based Spatial Clustering (DBSCAN) untuk mengidentifikasi
-           hub ekonomi berdasarkan kepadatan spasio-ekonomi.
+TAHAP 5: KLASTERING SPASIAL & MULTIDIMENSI
+Penulis     : Falah Fahrurozi (Skripsi UNINDRA)
+Normalisasi : Min-Max Normalization (Latitude, Longitude, Opportunity Index)
+Kalibrasi   : eps dipilih otomatis — sweep mencari 2 cluster dengan Silhouette terbaik
 """
 
 def main():
     print("Memulai Tahap Akhir: Klastering Spasial (DBSCAN)...")
-    
-    # 1. Memuat Data Hasil Analisis Indexing
+
     input_file = os.path.join('data', 'java_job_market_final_analysis.csv')
     df = pd.read_csv(input_file)
-    
-    # 2. Persiapan Fitur Kombinasi (Spasial + Numerik Opsional)
-    # Filter wilayah dengan koordinat valid DAN memiliki minimal 1 lowongan kerja.
-    # Wilayah tanpa lowongan (job_volume=0) dikecualikan dari DBSCAN agar tidak
-    # membentuk klaster semu berdasarkan kedekatan geografis semata (contoh: Madura).
+
     valid_coords_mask = (
-        (df['Latitude'] != 0.0) &
+        (df['Latitude']  != 0.0) &
         (df['Longitude'] != 0.0) &
         (df['job_volume'] > 0)
     )
     df_valid = df[valid_coords_mask].copy()
-    
+
     if len(df_valid) >= 3:
-        # Fitur clustering: koordinat spasial (Latitude, Longitude) + Opportunity Index.
-        # Ketiga variabel dinormalisasi ke [0,1] menggunakan Min-Max Normalization agar
-        # skala derajat koordinat (ratusan) tidak mendominasi Opportunity Index (desimal kecil).
-        # Min-Max Normalization: x_norm = (x - x_min) / (x_max - x_min)
+        # Fitur: Latitude, Longitude, Opportunity Index  |  Min-Max ke [0,1]
         features = df_valid[['Latitude', 'Longitude', 'opportunity_index']].copy().values
-        
         scaler = MinMaxScaler()
         features_scaled = scaler.fit_transform(features)
-        
-        # 3. Eksekusi DBSCAN
-        # eps=0.40, min_samples=3 dipilih dari grid search k-distance.
-        # eps=0.40 cukup ketat untuk memisahkan aglomerasi Jabodetabek (Cluster 1)
-        # dari koridor mainland Jawa (Cluster 0), tanpa menarik outlier sejati masuk klaster.
-        db = DBSCAN(eps=0.40, min_samples=3).fit(features_scaled)
+
+        # ── Auto-kalibrasi eps ──────────────────────────────────────────────
+        best_eps = 0.40
+        best_sil = -1.0
+        TARGET_CLUSTERS = 2
+
+        print("\n--- AUTO-KALIBRASI EPS (MinMax 3D: Lat, Lon, OI) ---")
+        for eps_c in np.arange(0.25, 0.85, 0.05):
+            eps_c = round(float(eps_c), 2)
+            tmp_labels = DBSCAN(eps=eps_c, min_samples=3).fit(features_scaled).labels_
+            n_c  = len(set(tmp_labels)) - (1 if -1 in tmp_labels else 0)
+            mask = tmp_labels != -1
+            if n_c == TARGET_CLUSTERS and mask.sum() > 1:
+                sil = silhouette_score(features_scaled[mask], tmp_labels[mask])
+                print(f"  eps={eps_c:.2f} -> {n_c} cluster | Silhouette={sil:.4f}  OK")
+                if sil > best_sil:
+                    best_sil, best_eps = sil, eps_c
+            else:
+                print(f"  eps={eps_c:.2f} -> {n_c} cluster  --")
+
+        print(f"\n-> EPS terpilih: {best_eps}  (Silhouette={best_sil:.4f})")
+
+        # ── Eksekusi DBSCAN final ───────────────────────────────────────────
+        db = DBSCAN(eps=best_eps, min_samples=3).fit(features_scaled)
         df_valid['cluster_id'] = db.labels_
-        
-        # Evaluasi Model (Silhouette & DBI - Eksklusi Noise -1)
+
         try:
-            from sklearn.metrics import silhouette_score, davies_bouldin_score
-            mask_non_noise = db.labels_ != -1
-            unique_labels = set(db.labels_[mask_non_noise])
-            if len(unique_labels) > 1:
-                sil_score = silhouette_score(features_scaled[mask_non_noise], db.labels_[mask_non_noise])
-                dbi_score = davies_bouldin_score(features_scaled[mask_non_noise], db.labels_[mask_non_noise])
-                print(f"\n--- EVALUASI MODEL (Eksklusi Noise -1) ---")
-                print(f"Silhouette Score (Cohesion): {sil_score:.4f} (-1 s/d 1)")
-                print(f"Davies-Bouldin Index (DBI): {dbi_score:.4f} (Semakin kecil semakin baik)")
+            mask_nn = db.labels_ != -1
+            if len(set(db.labels_[mask_nn])) > 1:
+                sil_f = silhouette_score(features_scaled[mask_nn], db.labels_[mask_nn])
+                dbi_f = davies_bouldin_score(features_scaled[mask_nn], db.labels_[mask_nn])
+                print(f"\n--- EVALUASI MODEL FINAL ---")
+                print(f"Silhouette Score : {sil_f:.4f}")
+                print(f"Davies-Bouldin   : {dbi_f:.4f}")
         except Exception as e:
-            print(f"Gagal menghitung Silhouette/DBI: {e}")
-            
-        # Evaluasi Cluster menggunakan DBCV jika memungkinkan
-        try:
-            import hdbscan
-            valid_labels = db.labels_[db.labels_ != -1]
-            if len(set(valid_labels)) > 1:
-                dbcv_score = hdbscan.validity.validity_index(features_scaled, db.labels_)
-                print(f"DBCV Score: {dbcv_score:.4f} (-1.0 s/d 1.0)")
-        except Exception as e:
-            pass
+            print(f"Gagal menghitung metrik: {e}")
     else:
         df_valid['cluster_id'] = -1
 
-    # Gabungkan kembali dengan data original (wilayah tanpa koordinat mendapat ID -1)
     df = pd.merge(df, df_valid[['matched_regency', 'cluster_id']], on='matched_regency', how='left')
     df['cluster_id'] = df['cluster_id'].fillna(-1).astype(int)
-    
-    # 4. Pelabelan Klaster (Hub Status)
-    df['hub_type'] = np.where(df['cluster_id'] == -1, 'Isolated zone', 'Economic Hub')
-    
-    # 5. Ringkasan Hasil Klastering
-    labels = df_valid['cluster_id'].values if 'cluster_id' in df_valid.columns else np.array([])
+    df['hub_type']   = np.where(df['cluster_id'] == -1, 'Isolated zone', 'Economic Hub')
+
+    labels     = df_valid['cluster_id'].values if 'cluster_id' in df_valid.columns else np.array([])
     n_clusters = len(set(labels)) - (1 if -1 in labels else 0)
     print(f"\n--- HASIL KLASTERING SPASIAL ---")
-    print(f"Total Cluster Hub Ditemukan: {n_clusters}")
-    print(f"Total Wilayah Outlier (Noise): {list(labels).count(-1)}")
-    
-    # 6. Analisis Karakteristik Per Hub
+    print(f"Total Cluster Hub Ditemukan : {n_clusters}")
+    print(f"Total Wilayah Outlier/Noise : {int((labels == -1).sum())}")
+
     clusters_summary = []
-    for cid in set(df['cluster_id']):
+    for cid in sorted(set(df['cluster_id'])):
         if cid == -1: continue
-        
-        cluster_data = df[df['cluster_id'] == cid]
-        avg_opportunity = cluster_data['opportunity_index'].mean()
-        total_jobs = cluster_data['job_volume'].sum()
-        top_province = cluster_data['Provinsi'].mode()[0] if not cluster_data['Provinsi'].empty else "Jawa"
-        
-        # Penentuan Status "Lautan Peluang" per Klaster
-        status = "Lautan Peluang" if avg_opportunity > df['opportunity_index'].median() else "Zona Merah"
-        
+        cd = df[df['cluster_id'] == cid]
+        status = "Lautan Peluang" if cd['opportunity_index'].mean() > df['opportunity_index'].median() else "Zona Merah"
         clusters_summary.append({
-            "Cluster_ID": cid,
-            "Hub_Region": top_province,
-            "Total_Jobs": total_jobs,
-            "Avg_Opportunity": round(avg_opportunity, 5),
-            "Status": status,
-            "Member_Count": len(cluster_data)
+            "Cluster_ID"  : cid,
+            "Hub_Region"  : cd['Provinsi'].mode()[0] if not cd['Provinsi'].empty else "Jawa",
+            "Total_Jobs"  : int(cd['job_volume'].sum()),
+            "Avg_OI"      : round(cd['opportunity_index'].mean(), 5),
+            "Status"      : status,
+            "Member_Count": len(cd)
         })
 
     if clusters_summary:
-        summary_df = pd.DataFrame(clusters_summary)
+        import pandas as _pd
         print("\nDetail Ringkasan Hub Ekonomi:")
-        print(summary_df.to_string(index=False))
-    
-    # 7. Ekspor Hasil Akhir
+        print(_pd.DataFrame(clusters_summary).to_string(index=False))
+
     output_file = os.path.join('data', 'java_job_market_hubs_final.csv')
     df.to_csv(output_file, index=False)
-    print(f"\nData klaster lengkap disimpan di: {output_file}")
+    print(f"\nData klaster disimpan: {output_file}")
 
 if __name__ == "__main__":
     main()
