@@ -1,15 +1,16 @@
 import pandas as pd
 import numpy as np
 from sklearn.cluster import DBSCAN
-from sklearn.preprocessing import StandardScaler
+from sklearn.preprocessing import MinMaxScaler
 import os
 
 """
-TAHAP 5: KLASTERING SPASIAL & MULTIDIMENSI (DBSCAN + StandardScaler + Log Volume)
-Penulis: Antigravity AI (Falah's Thesis Assistant)
-Deskripsi: Script final menggunakan StandardScaler dan log-transformation untuk menormalisasi 
-           job volume serta Density-Based Spatial Clustering (DBSCAN) untuk mengidentifikasi 
-           "Hub Ekonomi" secara geografis spasial yang akurat.
+TAHAP 5: KLASTERING SPASIAL & MULTIDIMENSI (DBSCAN + MinMax Normalization)
+Penulis: Falah Fahrurozi (Skripsi UNINDRA)
+Deskripsi: Script menggunakan Min-Max Normalization untuk menormalisasi tiga variabel
+           (Latitude, Longitude, Opportunity Index) ke rentang [0,1], kemudian
+           Density-Based Spatial Clustering (DBSCAN) untuk mengidentifikasi
+           hub ekonomi berdasarkan kepadatan spasio-ekonomi.
 """
 
 def main():
@@ -31,15 +32,13 @@ def main():
     df_valid = df[valid_coords_mask].copy()
     
     if len(df_valid) >= 3:
-        # Fitur clustering: HANYA koordinat spasial (Latitude, Longitude).
-        # job_volume sengaja tidak diikutsertakan sebagai fitur karena akan mendistorsi
-        # jarak Euclidean di ruang fitur — kota besar seperti Surabaya/Bandung justru
-        # akan menjadi noise karena nilai log(volume)-nya jauh di atas median.
-        # job_volume tetap tersedia sebagai atribut deskriptif untuk karakterisasi klaster.
-        features = df_valid[['Latitude', 'Longitude']].copy().values
+        # Fitur clustering: koordinat spasial (Latitude, Longitude) + Opportunity Index.
+        # Ketiga variabel dinormalisasi ke [0,1] menggunakan Min-Max Normalization agar
+        # skala derajat koordinat (ratusan) tidak mendominasi Opportunity Index (desimal kecil).
+        # Min-Max Normalization: x_norm = (x - x_min) / (x_max - x_min)
+        features = df_valid[['Latitude', 'Longitude', 'opportunity_index']].copy().values
         
-        # StandardScaler menormalisasi koordinat agar derajat lat/lon sebanding satu sama lain
-        scaler = StandardScaler()
+        scaler = MinMaxScaler()
         features_scaled = scaler.fit_transform(features)
         
         # 3. Eksekusi DBSCAN
