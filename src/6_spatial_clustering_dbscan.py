@@ -8,12 +8,12 @@ import os
 """
 TAHAP 5: KLASTERING SPASIAL & MULTIDIMENSI (DBSCAN + MinMax Normalization)
 Penulis: Falah Fahrurozi (Skripsi UNINDRA)
-Deskripsi: Script menggunakan Min-Max Normalization untuk menormalisasi tiga variabel
-           (Latitude, Longitude, Opportunity Index) ke rentang [0,1], kemudian
-           Density-Based Spatial Clustering (DBSCAN) untuk mengidentifikasi
-           hub ekonomi berdasarkan kepadatan spasio-ekonomi.
-Kalibrasi : eps dipilih otomatis via sweep 0.03-0.24 (ruang 3D MinMax sangat kompak:
-           p75 jarak antar titik = 0.26, sehingga eps >= 0.25 menyatukan semua titik).
+Deskripsi: Script menggunakan Min-Max Normalization untuk menormalisasi dua variabel
+           spasial (Latitude, Longitude) ke rentang [0,1], kemudian Density-Based
+           Spatial Clustering (DBSCAN) untuk mengidentifikasi aglomerasi geografis
+           pasar kerja. Indeks Peluang (OI) digunakan sebagai variabel analisis
+           pasca-klasterisasi, bukan sebagai fitur pembentuk klaster.
+Kalibrasi : eps dipilih otomatis via sweep 0.03-0.24 (ruang 2D MinMax).
 """
 
 def main():
@@ -32,22 +32,22 @@ def main():
     df_valid = df[valid_coords_mask].copy()
 
     if len(df_valid) >= 3:
-        # Fitur clustering: koordinat spasial (Latitude, Longitude) + Opportunity Index.
-        # Ketiga variabel dinormalisasi ke [0,1] menggunakan Min-Max Normalization agar
-        # skala derajat koordinat (ratusan) tidak mendominasi Opportunity Index (desimal kecil).
+        # Fitur clustering: koordinat spasial (Latitude, Longitude) saja.
+        # Dinormalisasi ke [0,1] menggunakan Min-Max Normalization.
         # Min-Max Normalization: x_norm = (x - x_min) / (x_max - x_min)
-        features = df_valid[['Latitude', 'Longitude', 'opportunity_index']].copy().values
+        # OI digunakan sebagai variabel analisis pasca-klaster (heatmap, ranking),
+        # bukan sebagai fitur DBSCAN — memasukkan OI menyebabkan kota dengan OI
+        # tinggi (Jakarta, Yogyakarta) menjadi noise karena outlier di dimensi OI.
+        features = df_valid[['Latitude', 'Longitude']].copy().values
         scaler = MinMaxScaler()
         features_scaled = scaler.fit_transform(features)
 
         # 3. Auto-kalibrasi eps via sweep 0.03-0.24
-        # Di ruang 3D MinMax dengan 116 titik Jawa, 75% pasang titik berjarak < 0.26,
-        # sehingga eps >= 0.25 sudah menyatukan semua titik menjadi 1 cluster raksasa.
-        # Sweep ini mencari eps yang menghasilkan tepat 2 cluster dengan Silhouette terbaik.
-        best_eps, best_sil = 0.10, -1.0
+        # Ruang 2D MinMax (Lat/Lon) — sweep mencari eps dengan 2 cluster & Silhouette terbaik.
+        best_eps, best_sil = 0.08, -1.0
         TARGET_CLUSTERS = 2
 
-        print("\n--- AUTO-KALIBRASI EPS (MinMax 3D, sweep 0.03-0.24) ---")
+        print("\n--- AUTO-KALIBRASI EPS (MinMax 2D, sweep 0.03-0.24) ---")
         for eps_c in np.arange(0.03, 0.25, 0.01):
             eps_c = round(float(eps_c), 2)
             tmp   = DBSCAN(eps=eps_c, min_samples=3).fit(features_scaled).labels_
