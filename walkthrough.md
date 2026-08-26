@@ -16,7 +16,7 @@ This document serves as the complete, definitive guide to the pipeline executed 
 * **Fuzzy Matching:** Jobstreet location strings are fuzzy-matched (with a rescue cache) to BPS territory names using `rapidfuzz` (threshold ≥ 80); a non-Java province filter removes non-Java listings before matching. Glints jobs are mapped via nearest-regency centroid (lat/lon). Cross-platform duplicates are dropped on (company, title, regency).
 
 ## 📍 Phase 4: Spatial DBSCAN Clustering
-* **Algorithm:** Applied `DBSCAN` with `eps=0.40` and `min_samples=3` on StandardScaler-normalized coordinates (Latitude/Longitude) of Java.
+* **Algorithm:** Applied `DBSCAN` with `eps=0.08` and `min_samples=3` on StandardScaler-normalized coordinates (Latitude/Longitude) of Java.
 * **Result:** Successfully detected organic "Economic Hubs" (e.g., the Jabodetabek–Banten–Koridor Utara agglomeration and the Trans-Java mainland corridor covering Surabaya, Bandung, Semarang, and Yogyakarta) purely based on job density, ignoring artificial province borders.
 
 ## 📊 Phase 5: Streamlit Dashboard

@@ -184,7 +184,7 @@ class _ReportPDF(_FPDF):
         self.set_font("Helvetica", "I", 7.5)
         self.set_text_color(150, 150, 150)
         self.cell(0, 5,
-            _s(f"Halaman {self.page_no()} | Sil=0.4696 | DBI=0.5243 | "
+            _s(f"Halaman {self.page_no()} | Sil=0.4649 | DBI=0.5294 | "
                "Data: BPS 2025 + Jobstreet / Glints / Kalibrr | "
                "(c) 2026 Falah Fahrurozi"),
             align="C")
@@ -346,8 +346,8 @@ def _gen_pdf_klaster(_df):
     p = _ReportPDF("Laporan Komparasi Klaster DBSCAN - Pulau Jawa", "RKK-001")
     p.add_page()
     p.section("Parameter & Metrik Evaluasi Model")
-    p.metric_row([("Silhouette Score", "0.4696"),
-                  ("Davies-Bouldin Index", "0.5243"),
+    p.metric_row([("Silhouette Score", "0.4649"),
+                  ("Davies-Bouldin Index", "0.5294"),
                   ("eps (DBSCAN)", "0.08")])
     for _cid, _lbl in [
         (0,  "Cluster 0: Java Mainland Hub"),
@@ -372,10 +372,10 @@ def _gen_pdf_klaster(_df):
     p.legend([
         ("Silhouette Score",
          "Mengukur kemiripan anggota dalam satu klaster vs klaster lain. Rentang -1 sd 1. "
-         "Nilai 0.4696 = moderat-baik; wajar untuk pola koridor linier Pulau Jawa."),
+         "Nilai 0.4649 = moderat-baik; wajar untuk pola koridor linier Pulau Jawa."),
         ("Davies-Bouldin Index",
          "Mengukur rasio jarak dalam-klaster terhadap antar-klaster. Semakin kecil semakin baik. "
-         "Nilai 0.5243 berarti klaster cukup kompak dan terpisah."),
+         "Nilai 0.5294 berarti klaster cukup kompak dan terpisah."),
         ("eps (epsilon)",
          "Jarak maksimum (derajat koordinat) agar dua titik dianggap bertetangga. "
          "eps=0.08 setara sekitar 8-9 km. Dipilih berdasarkan Elbow Method kurva k-NN."),
@@ -436,8 +436,8 @@ def _gen_pdf_ringkasan(_df):
                   ("Wilayah Aktif",  len(_act)),
                   ("Total Lowongan", f"{int(_df['job_volume'].sum()):,}")])
     p.metric_row([("Total Penganggur",    f"{int(_df['unemployment_num'].sum()):,}"),
-                  ("Silhouette Score",    "0.4696"),
-                  ("Davies-Bouldin Idx",  "0.5243")])
+                  ("Silhouette Score",    "0.4649"),
+                  ("Davies-Bouldin Idx",  "0.5294")])
     p.section("Komposisi Klaster")
     rows = []
     for _cid, _lbl in [
@@ -487,10 +487,10 @@ def _gen_pdf_ringkasan(_df):
          "Formula: OI = Volume_Lowongan / Pengangguran_Terbuka_BPS. "
          "Nilai tinggi = peluang besar per penganggur. Nilai rendah = persaingan ketat."),
         ("Silhouette Score",
-         "Kualitas klasterisasi DBSCAN. Nilai 0.4696 = moderat-baik. "
+         "Kualitas klasterisasi DBSCAN. Nilai 0.4649 = moderat-baik. "
          "Skala: 1.0 = sempurna, 0 = overlap, negatif = salah pengelompokan."),
         ("Davies-Bouldin Idx",
-         "Kualitas pemisahan klaster. Nilai 0.5243 = klaster cukup kompak. "
+         "Kualitas pemisahan klaster. Nilai 0.5294 = klaster cukup kompak. "
          "Semakin kecil nilainya semakin baik."),
         ("Klaster 0",
          "93 wilayah daratan Jawa membentuk koridor spasial dari Banten hingga Banyuwangi."),
@@ -739,9 +739,9 @@ with tab2:
     st.plotly_chart(fig1, width="stretch")
     
     # Ringkasan komposisi cluster
-    c0 = df[df['cluster_id'] == 0]
-    c1 = df[df['cluster_id'] == 1]
-    cn = df[df['cluster_id'] == -1]
+    c0 = df[(df['cluster_id'] == 0) & (df['job_volume'] > 0)]   # 93 wilayah (ekskl. zero-vol)
+    c1 = df[df['cluster_id'] == 1]                                # 22 wilayah
+    cn = df[(df['cluster_id'] == -1) | (df['job_volume'] == 0)]   # 4 wilayah (1 noise + 3 zero-vol)
     comp_col1, comp_col2, comp_col3 = st.columns(3)
     with comp_col1:
         st.metric("Cluster 0 — Mainland Java", f"{len(c0)} wilayah", f"{int(c0['job_volume'].sum()):,} lowongan")
@@ -844,18 +844,18 @@ with tab4:
     with m_col1:
         st.metric(
             label="Silhouette Score (Cohesion)", 
-            value="0.4696", 
+            value="0.4649", 
             help="Rentang -1 s/d +1. Mengukur seberapa dekat suatu objek dengan klasternya sendiri dibandingkan dengan klaster lain."
         )
-        st.caption("ℹ️ *Silhouette score 0.4696 (moderat-baik) mencerminkan bahwa aglomerasi spasial Pulau Jawa memanjang horizontal mengikuti koridor Trans-Jawa, bukan berbentuk spherical — DBSCAN lebih tepat untuk pola ini dibanding K-Means.*")
+        st.caption("ℹ️ *Silhouette score 0.4649 (moderat-baik) mencerminkan bahwa aglomerasi spasial Pulau Jawa memanjang horizontal mengikuti koridor Trans-Jawa, bukan berbentuk spherical — DBSCAN lebih tepat untuk pola ini dibanding K-Means.*")
         
     with m_col2:
         st.metric(
             label="Davies-Bouldin Index (DBI - Separasi)", 
-            value="0.5243", 
+            value="0.5294", 
             help="Nilai mendekati 0 semakin baik. Mengukur tingkat tumpang tindih (overlap) antar klaster."
         )
-        st.caption("ℹ️ *Nilai DBI 0.5243 (di bawah 1.0) menunjukkan pemisahan antar klaster yang baik — Cluster 0 (Mainland) dan Cluster 1 (Jabodetabek & Koridor) tidak saling tumpang tindih secara spasial.*")
+        st.caption("ℹ️ *Nilai DBI 0.5294 (di bawah 1.0) menunjukkan pemisahan antar klaster yang baik — Cluster 0 (Mainland) dan Cluster 1 (Jabodetabek & Koridor) tidak saling tumpang tindih secara spasial.*")
 
 # MODUL 5: LAPORAN EKSEKUTIF (SUMMARY) (UC5)
 with tab5:

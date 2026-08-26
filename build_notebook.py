@@ -143,7 +143,7 @@ for cid, group in df_plot[df_plot['cluster_id'] != -1].groupby('cluster_id'):
 # ── Judul & label sumbu ──────────────────────────────────────────────────────
 ax.set_title(
     'Aglomerasi Geospasial Hub Ekonomi Pulau Jawa (DBSCAN)\\n'
-    'eps=0.40 | min_samples=3 | Fitur: Latitude & Longitude',
+    'eps=0.08 | min_samples=3 | Fitur: Latitude & Longitude',
     fontsize=14, fontweight='bold', pad=14
 )
 ax.set_xlabel('Longitude', fontsize=10)
@@ -280,11 +280,11 @@ ax3.grid(axis='y', alpha=0.3)
 ax4 = fig.add_subplot(gs[1, 1])
 ax4.axis('off')
 metrics = [
-    ('Silhouette Score',    '0.4737', '[-1, 1] lebih tinggi = lebih baik',  '#4CAF50'),
-    ('Davies-Bouldin Index','0.5126', 'lebih rendah = lebih baik',           '#4CAF50'),
+    ('Silhouette Score',    '0.4649', '[-1, 1] lebih tinggi = lebih baik',  '#4CAF50'),
+    ('Davies-Bouldin Index','0.5294', 'lebih rendah = lebih baik',           '#4CAF50'),
     ('Total Cluster',       '2',      'Mainland Java + Jabodetabek',         '#2196F3'),
     ('Total Wilayah',       '119',    'Kabupaten/Kota Pulau Jawa',           '#2196F3'),
-    ('Noise / Isolated',    '28',     'job_volume = 0 atau outlier geografis','#888888'),
+    ('Noise / Isolated',    '4',     'job_volume = 0 atau outlier geografis','#888888'),
     ('eps  (DBSCAN)',        '0.40',   'scaled Euclidean distance',           '#FF9800'),
     ('min_samples',         '3',      'minimum tetangga inti',               '#FF9800'),
 ]
@@ -392,7 +392,7 @@ cells = [
         "(kota besar seperti Surabaya menjadi noise)\n"
         "- Wilayah dengan `job_volume = 0` dikecualikan sebelum DBSCAN untuk menghindari klaster semu "
         "(seperti Madura yang dense secara geografis tapi tidak punya lowongan)\n"
-        "- `eps=0.40`, `min_samples=3` dipilih dari grid search k-distance plot\n\n"
+        "- `eps=0.08`, `min_samples=3` dipilih dari grid search k-distance plot\n\n"
         "**Hasil yang diharapkan:**\n"
         "- **Cluster 0** — Koridor mainland Jawa (Surabaya, Bandung, Semarang, GKS, dll)\n"
         "- **Cluster 1** — Aglomerasi Jabodetabek & koridor barat (Serang, Karawang, Cilegon, dll)\n"
@@ -424,9 +424,9 @@ cells = [
         "| Peta klaster spasial | `viz_cluster_map.png` |\n"
         "| Top 20 opportunity index | `viz_opportunity_index.png` |\n"
         "| Ringkasan klaster & metrik | `viz_cluster_summary.png` |\n\n"
-        "**Metrik Evaluasi DBSCAN (eps=0.40, min_samples=3):**\n"
-        "- Silhouette Score: **0.4737**\n"
-        "- Davies-Bouldin Index: **0.5126**"
+        "**Metrik Evaluasi DBSCAN (eps=0.08, min_samples=3):**\n"
+        "- Silhouette Score: **0.4649**\n"
+        "- Davies-Bouldin Index: **0.5294**"
     ),
 ]
 
@@ -446,3 +446,4 @@ with open(out, 'w', encoding='utf-8') as f:
     json.dump(nb, f, ensure_ascii=False, indent=2)
 
 print(f"OK: {out} ditulis ({len(cells)} cells)")
+
