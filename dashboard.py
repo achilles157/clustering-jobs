@@ -252,12 +252,17 @@ class _ReportPDF(_FPDF):
                   new_x="LMARGIN", new_y="NEXT", fill=True, border="TB")
         self.ln(1)
         for term, definition in items:
+            # Term — baris sendiri supaya tidak ada clash dengan multi_cell
             self.set_font("Helvetica", "B", 8)
             self.set_text_color(30, 30, 30)
-            self.cell(50, 5.5, _s(term + " :"), border=0)
+            self.set_x(self.l_margin)
+            self.multi_cell(0, 5.5, _s(term + " :"))
+            # Definition — indented, baris baru
+            self.set_x(self.l_margin + 5)
             self.set_font("Helvetica", "", 8)
             self.set_text_color(70, 70, 70)
-            self.multi_cell(0, 5.5, _s(definition))
+            self.multi_cell(165, 5, _s(definition))
+            self.ln(1)
         self.ln(2)
 
 
