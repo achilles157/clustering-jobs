@@ -9,3 +9,4 @@ scikit-learn
 rapidfuzz
 requests
 curl_cffi
+fpdf2
