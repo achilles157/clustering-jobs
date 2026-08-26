@@ -569,6 +569,226 @@ with tab5:
         st.dataframe(bottom_opportunities, use_container_width=True, hide_index=True)
         st.caption("ℹ️ *Wilayah dengan tingkat persaingan terpadat atau ketersediaan lapangan kerja terkecil.*")
 
+    # ─────────────────────────────────────────────────────────────────────
+    # MODUL 5b: CETAK LAPORAN (5 JENIS)
+    # ─────────────────────────────────────────────────────────────────────
+    st.divider()
+    st.subheader("🖨️ Cetak / Unduh Laporan")
+    st.markdown(
+        "Pilih jenis laporan lalu klik **Unduh** untuk mengunduh file HTML. "
+        "Buka di browser → **Ctrl+P** → *Save as PDF* untuk mencetak."
+    )
+
+    _REPORT_OPTIONS = {
+        "📋 Laporan Profil Wilayah Terpilih": "wilayah",
+        "🌟 Laporan Top 10 Peluang Karir Terbaik": "top10",
+        "📊 Laporan Komparasi Klaster DBSCAN": "klaster",
+        "🚨 Laporan Zona Merah & Defisit Lapangan Kerja": "zonamerah",
+        "🗺️  Laporan Ringkasan Analisis Pulau Jawa": "ringkasan",
+    }
+    _sel_report = st.selectbox("Jenis Laporan", list(_REPORT_OPTIONS.keys()), key="report_type_select")
+    _rtype = _REPORT_OPTIONS[_sel_report]
+
+    # ── Template helpers ──────────────────────────────────────────────────
+    def _html_head(title):
+        return f"""<!DOCTYPE html><html lang=\"id\"><head><meta charset=\"UTF-8\">
+<title>{title}</title>
+<style>
+body{{font-family:Arial,sans-serif;margin:36px;color:#212121;font-size:13px;}}
+h1{{color:#1565C0;font-size:1.35rem;border-bottom:3px solid #1565C0;padding-bottom:8px;margin-bottom:6px;}}
+h2{{color:#1976D2;font-size:1.05rem;margin:22px 0 8px;}}
+p{{line-height:1.65;margin:6px 0;}}
+table{{width:100%;border-collapse:collapse;margin:10px 0;font-size:0.86rem;}}
+th{{background:#1565C0;color:#fff;padding:7px 10px;text-align:left;}}
+td{{padding:6px 10px;border-bottom:1px solid #ddd;}}
+tr:nth-child(even){{background:#f4f6ff;}}
+.badge{{display:inline-block;padding:2px 9px;border-radius:12px;font-size:0.75rem;font-weight:600;}}
+.b0{{background:#E3F2FD;color:#1565C0;}} .b1{{background:#E8F5E9;color:#2E7D32;}}
+.bn{{background:#EEEEEE;color:#616161;}} .bred{{background:#FFEBEE;color:#C62828;}}
+.mg{{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:10px 0;}}
+.m{{background:#f4f6ff;border:1px solid #ddd;border-radius:7px;padding:11px;text-align:center;}}
+.mv{{font-size:1.45rem;font-weight:700;color:#1565C0;}}
+.ml{{font-size:0.75rem;color:#757575;margin-top:3px;}}
+.foot{{margin-top:36px;font-size:0.72rem;color:#9E9E9E;border-top:1px solid #eee;padding-top:10px;}}
+@media print{{body{{margin:14px;}}button{{display:none;}}}}
+</style></head><body>"""
+
+    def _html_foot():
+        import datetime
+        now = datetime.datetime.now().strftime("%Y-%m-%d %H:%M")
+        return (f'<div class="foot">Laporan dibuat: {now} &nbsp;·&nbsp; '
+                'Proyek Skripsi Falah Fahrurozi &nbsp;·&nbsp; '
+                'Data: BPS Sosioekonomi 2025 + Jobstreet / Glints / Kalibrr &nbsp;·&nbsp; '
+                'Metode: DBSCAN Spasial 2D (Lat/Lon) · eps=0.08 · Sil=0.4696 · DBI=0.5243'
+                '</div></body></html>')
+
+    # ── Generator 1: Profil Wilayah Terpilih ─────────────────────────────
+    def _gen_wilayah(_df, _ci, _city, _rank, _total_active, _concl, _recom, _comp):
+        h = _html_head(f"Laporan Profil Wilayah — {_city}")
+        h += f"<h1>Laporan Profil Wilayah: {_city}</h1>"
+        h += "<p>Analisis berbasis Machine Learning (DBSCAN Spasial) dan Indeks Peluang Karir.</p>"
+        h += (f'<div class="mg">'
+              f'<div class="m"><div class="mv">{int(_ci["job_volume"])}</div><div class="ml">Volume Lowongan</div></div>'
+              f'<div class="m"><div class="mv">{int(_ci["unemployment_num"]):,}</div><div class="ml">Pengangguran Terbuka</div></div>'
+              f'<div class="m"><div class="mv">{_ci["opportunity_index"]:.5f}</div><div class="ml">Indeks Peluang</div></div>'
+              f'<div class="m"><div class="mv">{_ci["tpt"]:.2f}%</div><div class="ml">TPT</div></div>'
+              f'<div class="m"><div class="mv">{"#"+str(_rank) if isinstance(_rank,int) else _rank}</div><div class="ml">Peringkat dari {_total_active} aktif</div></div>'
+              f'<div class="m"><div class="mv">{_recom}</div><div class="ml">Rekomendasi</div></div>'
+              f'</div>')
+        h += "<h2>Identifikasi Klaster DBSCAN</h2>"
+        h += (f"<p><strong>Klaster:</strong> {_ci['cluster_display']}<br>"
+              f"<strong>Status:</strong> {_ci['prosperity_status']}<br>"
+              f"<strong>Provinsi:</strong> {_ci['Provinsi']}</p>")
+        h += "<h2>Narasi Kesimpulan</h2>"
+        h += f"<p>{_concl}</p>"
+        h += ("<h2>Penilaian Kritis</h2>"
+              "<table><tr><th>Aspek</th><th>Nilai</th></tr>"
+              f"<tr><td>Rekomendasi</td><td>{_recom}</td></tr>"
+              f"<tr><td>Persaingan</td><td>{_comp}</td></tr></table>")
+        h += _html_foot()
+        return h
+
+    # ── Generator 2: Top 10 Peluang ───────────────────────────────────────
+    def _gen_top10(_df):
+        h = _html_head("Top 10 Peluang Karir Terbaik — Pulau Jawa")
+        h += "<h1>Laporan Top 10 Peluang Karir Terbaik — Pulau Jawa</h1>"
+        h += "<p>Peringkat berdasarkan Indeks Peluang Karir (rasio lowongan / pengangguran terbuka BPS 2025).</p>"
+        _top = _df[_df['job_volume'] > 0].sort_values('opportunity_index', ascending=False).head(10).reset_index(drop=True)
+        h += ("<table><tr><th>#</th><th>Kabupaten/Kota</th><th>Provinsi</th>"
+              "<th>Klaster</th><th>Lowongan</th><th>Pengangguran</th><th>Indeks Peluang</th></tr>")
+        for _i, _row in _top.iterrows():
+            _cdisp = str(_row.get('cluster_display', ''))
+            _bcls = 'b0' if 'Cluster 0' in _cdisp else ('b1' if 'Cluster 1' in _cdisp else 'bn')
+            h += (f"<tr><td>{_i+1}</td><td><strong>{_row['matched_regency']}</strong></td>"
+                  f"<td>{_row['Provinsi']}</td>"
+                  f"<td><span class='badge {_bcls}'>{_cdisp[:22]}</span></td>"
+                  f"<td>{int(_row['job_volume'])}</td>"
+                  f"<td>{int(_row['unemployment_num']):,}</td>"
+                  f"<td>{_row['opportunity_index']:.5f}</td></tr>")
+        h += "</table>"
+        h += _html_foot()
+        return h
+
+    # ── Generator 3: Komparasi Klaster ────────────────────────────────────
+    def _gen_klaster(_df):
+        h = _html_head("Komparasi Klaster DBSCAN — Pulau Jawa")
+        h += "<h1>Laporan Komparasi Klaster DBSCAN — Pulau Jawa</h1>"
+        h += ('<div class="mg">'
+              '<div class="m"><div class="mv">0.4696</div><div class="ml">Silhouette Score</div></div>'
+              '<div class="m"><div class="mv">0.5243</div><div class="ml">Davies-Bouldin Index</div></div>'
+              '<div class="m"><div class="mv">0.08</div><div class="ml">eps (parameter DBSCAN)</div></div>'
+              '</div>')
+        for _cid, _label, _bcls in [
+            (0,  "Cluster 0 — Java Mainland Hub", "b0"),
+            (1,  "Cluster 1 — Jabodetabek & Koridor Barat", "b1"),
+            (-1, "Cluster -1 — Isolated Zone (Noise)", "bn"),
+        ]:
+            _grp = _df[_df['cluster_id'] == _cid]
+            h += (f"<h2><span class='badge {_bcls}'>{_label}</span></h2>"
+                  f"<p><strong>Jumlah Wilayah:</strong> {len(_grp)} &nbsp;|"
+                  f"&nbsp; <strong>Total Lowongan:</strong> {int(_grp['job_volume'].sum()):,} &nbsp;|"
+                  f"&nbsp; <strong>Rata-rata OI:</strong> {_grp['opportunity_index'].mean():.5f}</p>")
+            _sub = _grp[['matched_regency','Provinsi','job_volume','opportunity_index']].sort_values('job_volume', ascending=False).head(10)
+            h += "<table><tr><th>Kabupaten/Kota</th><th>Provinsi</th><th>Lowongan</th><th>OI</th></tr>"
+            for _, _r in _sub.iterrows():
+                h += f"<tr><td>{_r['matched_regency']}</td><td>{_r['Provinsi']}</td><td>{int(_r['job_volume'])}</td><td>{_r['opportunity_index']:.5f}</td></tr>"
+            h += "</table>"
+        h += _html_foot()
+        return h
+
+    # ── Generator 4: Zona Merah ───────────────────────────────────────────
+    def _gen_zonamerah(_df):
+        h = _html_head("Zona Merah & Defisit Lapangan Kerja — Pulau Jawa")
+        h += "<h1>Laporan Zona Merah & Defisit Lapangan Kerja — Pulau Jawa</h1>"
+        h += "<p>Wilayah dengan indeks peluang terendah dan/atau tanpa lowongan formal — kandidat prioritas intervensi kebijakan ketenagakerjaan.</p>"
+        _zero = _df[_df['job_volume'] == 0]
+        h += f"<h2>Wilayah Tanpa Lowongan Formal ({len(_zero)} wilayah)</h2>"
+        if len(_zero) > 0:
+            h += "<table><tr><th>Kabupaten/Kota</th><th>Provinsi</th><th>Pengangguran Terbuka</th><th>TPT (%)</th></tr>"
+            for _, _r in _zero.iterrows():
+                h += f"<tr><td>{_r['matched_regency']}</td><td>{_r['Provinsi']}</td><td>{int(_r['unemployment_num']):,}</td><td>{_r['tpt']:.2f}%</td></tr>"
+            h += "</table>"
+        _bot = _df[_df['job_volume'] > 0].sort_values('opportunity_index').head(15)
+        h += "<h2>Bottom 15 Wilayah Aktif — Indeks Peluang Terendah</h2>"
+        h += "<table><tr><th>Kabupaten/Kota</th><th>Provinsi</th><th>Lowongan</th><th>Pengangguran</th><th>OI</th><th>TPT%</th></tr>"
+        for _, _r in _bot.iterrows():
+            h += (f"<tr><td>{_r['matched_regency']}</td><td>{_r['Provinsi']}</td>"
+                  f"<td>{int(_r['job_volume'])}</td><td>{int(_r['unemployment_num']):,}</td>"
+                  f"<td>{_r['opportunity_index']:.5f}</td><td>{_r['tpt']:.2f}%</td></tr>")
+        h += "</table>"
+        h += _html_foot()
+        return h
+
+    # ── Generator 5: Ringkasan Pulau Jawa ─────────────────────────────────
+    def _gen_ringkasan(_df):
+        h = _html_head("Ringkasan Analisis Peluang Karir — Pulau Jawa")
+        h += "<h1>Laporan Ringkasan Analisis Peluang Karir — Pulau Jawa</h1>"
+        h += "<p>Dokumen ringkasan hasil analisis spasial DBSCAN dan Indeks Peluang Karir untuk seluruh kabupaten/kota di Pulau Jawa.</p>"
+        _act = _df[_df['job_volume'] > 0]
+        h += ('<div class="mg">'
+              f'<div class="m"><div class="mv">{len(_df)}</div><div class="ml">Total Wilayah</div></div>'
+              f'<div class="m"><div class="mv">{len(_act)}</div><div class="ml">Wilayah Aktif</div></div>'
+              f'<div class="m"><div class="mv">{int(_df["job_volume"].sum()):,}</div><div class="ml">Total Lowongan</div></div>'
+              f'<div class="m"><div class="mv">{int(_df["unemployment_num"].sum()):,}</div><div class="ml">Total Penganggur</div></div>'
+              '<div class="m"><div class="mv">0.4696</div><div class="ml">Silhouette Score</div></div>'
+              '<div class="m"><div class="mv">0.5243</div><div class="ml">Davies-Bouldin Index</div></div>'
+              '</div>')
+        h += "<h2>Komposisi Klaster</h2>"
+        h += "<table><tr><th>Klaster</th><th>Jumlah Wilayah</th><th>Total Lowongan</th><th>Rata-rata OI</th></tr>"
+        for _cid, _lbl in [(0,"Cluster 0: Java Mainland Hub"),(1,"Cluster 1: Jabodetabek & Koridor Barat"),(-1,"Cluster -1: Isolated Zone")]:
+            _g = _df[_df['cluster_id'] == _cid]
+            h += f"<tr><td>{_lbl}</td><td>{len(_g)}</td><td>{int(_g['job_volume'].sum()):,}</td><td>{_g['opportunity_index'].mean():.5f}</td></tr>"
+        h += "</table>"
+        h += "<h2>Top 5 Lautan Peluang</h2>"
+        h += "<table><tr><th>#</th><th>Kabupaten/Kota</th><th>Provinsi</th><th>OI</th><th>Lowongan</th></tr>"
+        for _i, (_, _r) in enumerate(_df[_df['job_volume']>0].sort_values('opportunity_index',ascending=False).head(5).iterrows(), 1):
+            h += f"<tr><td>{_i}</td><td>{_r['matched_regency']}</td><td>{_r['Provinsi']}</td><td>{_r['opportunity_index']:.5f}</td><td>{int(_r['job_volume'])}</td></tr>"
+        h += "</table>"
+        h += "<h2>Seluruh Data Wilayah</h2>"
+        _cols = ['matched_regency','Provinsi','cluster_display','job_volume','unemployment_num','opportunity_index','tpt']
+        _avail = [c for c in _cols if c in _df.columns]
+        h += "<table><tr>" + "".join(f"<th>{c}</th>" for c in _avail) + "</tr>"
+        for _, _r in _df[_avail].sort_values('opportunity_index', ascending=False).iterrows():
+            def _fmt(_c, _v):
+                if _c == 'job_volume': return str(int(_v))
+                if _c == 'unemployment_num': return f"{int(_v):,}"
+                if _c == 'opportunity_index': return f"{_v:.5f}"
+                if _c == 'tpt': return f"{_v:.2f}%"
+                return str(_v)
+            h += "<tr>" + "".join(f"<td>{_fmt(_c, _r[_c])}</td>" for _c in _avail) + "</tr>"
+        h += "</table>"
+        h += _html_foot()
+        return h
+
+    # ── Routing & Download Button ─────────────────────────────────────────
+    _fname_map = {
+        "wilayah":   f"Laporan-Wilayah-{st.session_state.applied_city.replace(' ', '-')}.html",
+        "top10":     "Laporan-Top10-Peluang-Karir.html",
+        "klaster":   "Laporan-Komparasi-Klaster-DBSCAN.html",
+        "zonamerah": "Laporan-Zona-Merah.html",
+        "ringkasan": "Laporan-Ringkasan-Pulau-Jawa.html",
+    }
+    if _rtype == "wilayah":
+        _html_out = _gen_wilayah(df, city_info, st.session_state.applied_city,
+                                  rank, total_active, conclusion, recom_val, comp_val)
+    elif _rtype == "top10":
+        _html_out = _gen_top10(df)
+    elif _rtype == "klaster":
+        _html_out = _gen_klaster(df)
+    elif _rtype == "zonamerah":
+        _html_out = _gen_zonamerah(df)
+    else:
+        _html_out = _gen_ringkasan(df)
+
+    st.download_button(
+        label=f"📥 Unduh {_sel_report}",
+        data=_html_out.encode('utf-8'),
+        file_name=_fname_map[_rtype],
+        mime="text/html",
+        use_container_width=True,
+    )
+    st.caption("ℹ️ Buka file HTML di browser → Ctrl+P → *Save as PDF* untuk mencetak / ekspor ke PDF.")
+
 # --- FOOTER ---
 st.divider()
 f_col1, f_col2 = st.columns([2,1])
