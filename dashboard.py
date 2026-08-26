@@ -473,18 +473,18 @@ with tab4:
     with m_col1:
         st.metric(
             label="Silhouette Score (Cohesion)", 
-            value="0.4649", 
+            value="0.4696", 
             help="Rentang -1 s/d +1. Mengukur seberapa dekat suatu objek dengan klasternya sendiri dibandingkan dengan klaster lain."
         )
-        st.caption("ℹ️ *Silhouette score 0.4649 (moderat-baik) mencerminkan bahwa aglomerasi spasial Pulau Jawa memanjang horizontal mengikuti koridor Trans-Jawa, bukan berbentuk spherical — DBSCAN lebih tepat untuk pola ini dibanding K-Means.*")
+        st.caption("ℹ️ *Silhouette score 0.4696 (moderat-baik) mencerminkan bahwa aglomerasi spasial Pulau Jawa memanjang horizontal mengikuti koridor Trans-Jawa, bukan berbentuk spherical — DBSCAN lebih tepat untuk pola ini dibanding K-Means.*")
         
     with m_col2:
         st.metric(
             label="Davies-Bouldin Index (DBI - Separasi)", 
-            value="0.5294", 
+            value="0.5243", 
             help="Nilai mendekati 0 semakin baik. Mengukur tingkat tumpang tindih (overlap) antar klaster."
         )
-        st.caption("ℹ️ *Nilai DBI 0.5294 (di bawah 1.0) menunjukkan pemisahan antar klaster yang baik — Cluster 0 (Mainland) dan Cluster 1 (Jabodetabek & Koridor) tidak saling tumpang tindih secara spasial.*")
+        st.caption("ℹ️ *Nilai DBI 0.5243 (di bawah 1.0) menunjukkan pemisahan antar klaster yang baik — Cluster 0 (Mainland) dan Cluster 1 (Jabodetabek & Koridor) tidak saling tumpang tindih secara spasial.*")
 
 # MODUL 5: LAPORAN EKSEKUTIF (SUMMARY) (UC5)
 with tab5:
