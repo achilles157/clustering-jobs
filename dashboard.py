@@ -570,14 +570,12 @@ with tab5:
         st.caption("ℹ️ *Wilayah dengan tingkat persaingan terpadat atau ketersediaan lapangan kerja terkecil.*")
 
     # ─────────────────────────────────────────────────────────────────────
-    # MODUL 5b: CETAK LAPORAN (5 JENIS)
-    # ─────────────────────────────────────────────────────────────────────
+    # ──────────────────────────────────────────────────────────────────────
+    # MODUL 5b: CETAK LAPORAN (5 JENIS) — PDF langsung
+    # ──────────────────────────────────────────────────────────────────────
     st.divider()
     st.subheader("🖨️ Cetak / Unduh Laporan")
-    st.markdown(
-        "Pilih jenis laporan lalu klik **Unduh** untuk mengunduh file HTML. "
-        "Buka di browser → **Ctrl+P** → *Save as PDF* untuk mencetak."
-    )
+    st.markdown("Pilih jenis laporan lalu klik **Unduh PDF** — file siap cetak tanpa langkah tambahan.")
 
     _REPORT_OPTIONS = {
         "📋 Laporan Profil Wilayah Terpilih": "wilayah",
@@ -589,205 +587,298 @@ with tab5:
     _sel_report = st.selectbox("Jenis Laporan", list(_REPORT_OPTIONS.keys()), key="report_type_select")
     _rtype = _REPORT_OPTIONS[_sel_report]
 
-    # ── Template helpers ──────────────────────────────────────────────────
-    def _html_head(title):
-        return f"""<!DOCTYPE html><html lang=\"id\"><head><meta charset=\"UTF-8\">
-<title>{title}</title>
-<style>
-body{{font-family:Arial,sans-serif;margin:36px;color:#212121;font-size:13px;}}
-h1{{color:#1565C0;font-size:1.35rem;border-bottom:3px solid #1565C0;padding-bottom:8px;margin-bottom:6px;}}
-h2{{color:#1976D2;font-size:1.05rem;margin:22px 0 8px;}}
-p{{line-height:1.65;margin:6px 0;}}
-table{{width:100%;border-collapse:collapse;margin:10px 0;font-size:0.86rem;}}
-th{{background:#1565C0;color:#fff;padding:7px 10px;text-align:left;}}
-td{{padding:6px 10px;border-bottom:1px solid #ddd;}}
-tr:nth-child(even){{background:#f4f6ff;}}
-.badge{{display:inline-block;padding:2px 9px;border-radius:12px;font-size:0.75rem;font-weight:600;}}
-.b0{{background:#E3F2FD;color:#1565C0;}} .b1{{background:#E8F5E9;color:#2E7D32;}}
-.bn{{background:#EEEEEE;color:#616161;}} .bred{{background:#FFEBEE;color:#C62828;}}
-.mg{{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:10px 0;}}
-.m{{background:#f4f6ff;border:1px solid #ddd;border-radius:7px;padding:11px;text-align:center;}}
-.mv{{font-size:1.45rem;font-weight:700;color:#1565C0;}}
-.ml{{font-size:0.75rem;color:#757575;margin-top:3px;}}
-.foot{{margin-top:36px;font-size:0.72rem;color:#9E9E9E;border-top:1px solid #eee;padding-top:10px;}}
-@media print{{body{{margin:14px;}}button{{display:none;}}}}
-</style></head><body>"""
+    # ── helpers ────────────────────────────────────────────────────────────
+    import datetime as _dt
+    from fpdf import FPDF as _FPDF
 
-    def _html_foot():
-        import datetime
-        now = datetime.datetime.now().strftime("%Y-%m-%d %H:%M")
-        return (f'<div class="foot">Laporan dibuat: {now} &nbsp;·&nbsp; '
-                'Proyek Skripsi Falah Fahrurozi &nbsp;·&nbsp; '
-                'Data: BPS Sosioekonomi 2025 + Jobstreet / Glints / Kalibrr &nbsp;·&nbsp; '
-                'Metode: DBSCAN Spasial 2D (Lat/Lon) · eps=0.08 · Sil=0.4696 · DBI=0.5243'
-                '</div></body></html>')
+    def _s(v):
+        return str(v).encode("latin-1", "replace").decode("latin-1")
 
-    # ── Generator 1: Profil Wilayah Terpilih ─────────────────────────────
-    def _gen_wilayah(_df, _ci, _city, _rank, _total_active, _concl, _recom, _comp):
-        h = _html_head(f"Laporan Profil Wilayah — {_city}")
-        h += f"<h1>Laporan Profil Wilayah: {_city}</h1>"
-        h += "<p>Analisis berbasis Machine Learning (DBSCAN Spasial) dan Indeks Peluang Karir.</p>"
-        h += (f'<div class="mg">'
-              f'<div class="m"><div class="mv">{int(_ci["job_volume"])}</div><div class="ml">Volume Lowongan</div></div>'
-              f'<div class="m"><div class="mv">{int(_ci["unemployment_num"]):,}</div><div class="ml">Pengangguran Terbuka</div></div>'
-              f'<div class="m"><div class="mv">{_ci["opportunity_index"]:.5f}</div><div class="ml">Indeks Peluang</div></div>'
-              f'<div class="m"><div class="mv">{_ci["tpt"]:.2f}%</div><div class="ml">TPT</div></div>'
-              f'<div class="m"><div class="mv">{"#"+str(_rank) if isinstance(_rank,int) else _rank}</div><div class="ml">Peringkat dari {_total_active} aktif</div></div>'
-              f'<div class="m"><div class="mv">{_recom}</div><div class="ml">Rekomendasi</div></div>'
-              f'</div>')
-        h += "<h2>Identifikasi Klaster DBSCAN</h2>"
-        h += (f"<p><strong>Klaster:</strong> {_ci['cluster_display']}<br>"
-              f"<strong>Status:</strong> {_ci['prosperity_status']}<br>"
-              f"<strong>Provinsi:</strong> {_ci['Provinsi']}</p>")
-        h += "<h2>Narasi Kesimpulan</h2>"
-        h += f"<p>{_concl}</p>"
-        h += ("<h2>Penilaian Kritis</h2>"
-              "<table><tr><th>Aspek</th><th>Nilai</th></tr>"
-              f"<tr><td>Rekomendasi</td><td>{_recom}</td></tr>"
-              f"<tr><td>Persaingan</td><td>{_comp}</td></tr></table>")
-        h += _html_foot()
-        return h
+    class _ReportPDF(_FPDF):
+        def __init__(self, report_title, report_no):
+            super().__init__("P", "mm", "A4")
+            self._rtitle = report_title
+            self._rno    = report_no
+            self._ts     = _dt.datetime.now().strftime("%d %B %Y")
+            self.set_auto_page_break(auto=True, margin=20)
+            self.set_margins(20, 20, 20)
 
-    # ── Generator 2: Top 10 Peluang ───────────────────────────────────────
-    def _gen_top10(_df):
-        h = _html_head("Top 10 Peluang Karir Terbaik — Pulau Jawa")
-        h += "<h1>Laporan Top 10 Peluang Karir Terbaik — Pulau Jawa</h1>"
-        h += "<p>Peringkat berdasarkan Indeks Peluang Karir (rasio lowongan / pengangguran terbuka BPS 2025).</p>"
-        _top = _df[_df['job_volume'] > 0].sort_values('opportunity_index', ascending=False).head(10).reset_index(drop=True)
-        h += ("<table><tr><th>#</th><th>Kabupaten/Kota</th><th>Provinsi</th>"
-              "<th>Klaster</th><th>Lowongan</th><th>Pengangguran</th><th>Indeks Peluang</th></tr>")
-        for _i, _row in _top.iterrows():
-            _cdisp = str(_row.get('cluster_display', ''))
-            _bcls = 'b0' if 'Cluster 0' in _cdisp else ('b1' if 'Cluster 1' in _cdisp else 'bn')
-            h += (f"<tr><td>{_i+1}</td><td><strong>{_row['matched_regency']}</strong></td>"
-                  f"<td>{_row['Provinsi']}</td>"
-                  f"<td><span class='badge {_bcls}'>{_cdisp[:22]}</span></td>"
-                  f"<td>{int(_row['job_volume'])}</td>"
-                  f"<td>{int(_row['unemployment_num']):,}</td>"
-                  f"<td>{_row['opportunity_index']:.5f}</td></tr>")
-        h += "</table>"
-        h += _html_foot()
-        return h
+        def header(self):
+            self.set_font("Helvetica", "B", 9)
+            self.set_text_color(21, 101, 192)
+            self.cell(0, 5, "ANALISIS SPASIAL PELUANG KARIR PULAU JAWA", ln=False, align="L")
+            self.set_font("Helvetica", "", 8)
+            self.set_text_color(120, 120, 120)
+            self.cell(0, 5, _s(f"No. Ref: {self._rno}  |  Tanggal: {self._ts}"), ln=True, align="R")
+            self.set_draw_color(21, 101, 192)
+            self.set_line_width(0.8)
+            self.line(20, self.get_y() + 1, 190, self.get_y() + 1)
+            self.ln(4)
+            self.set_font("Helvetica", "B", 14)
+            self.set_text_color(21, 101, 192)
+            self.cell(0, 8, _s(self._rtitle), ln=True)
+            self.set_font("Helvetica", "", 8)
+            self.set_text_color(100, 100, 100)
+            self.cell(0, 5,
+                "Proyek Skripsi: Analisis Spasial Peluang Karir | DBSCAN 2D Spasial | eps=0.08",
+                ln=True)
+            self.set_draw_color(200, 200, 200)
+            self.set_line_width(0.3)
+            self.line(20, self.get_y() + 1, 190, self.get_y() + 1)
+            self.ln(5)
+            self.set_text_color(30, 30, 30)
+
+        def footer(self):
+            self.set_y(-14)
+            self.set_font("Helvetica", "I", 7.5)
+            self.set_text_color(150, 150, 150)
+            self.cell(0, 5,
+                _s(f"Halaman {self.page_no()} | Sil=0.4696 | DBI=0.5243 | "
+                   "Data: BPS 2025 + Jobstreet / Glints / Kalibrr | "
+                   "(c) 2026 Falah Fahrurozi"),
+                align="C")
+
+        def section(self, title):
+            self.set_font("Helvetica", "B", 10)
+            self.set_text_color(21, 101, 192)
+            self.set_fill_color(227, 242, 253)
+            self.cell(0, 7, _s(title), ln=True, fill=True, border="B")
+            self.ln(2)
+            self.set_text_color(30, 30, 30)
+
+        def body(self, text):
+            self.set_font("Helvetica", "", 9.5)
+            self.set_text_color(50, 50, 50)
+            self.multi_cell(0, 5.5, _s(text))
+            self.ln(2)
+
+        def metric_row(self, items):
+            w = 170 / len(items)
+            self.set_font("Helvetica", "B", 12)
+            self.set_text_color(21, 101, 192)
+            self.set_fill_color(240, 246, 255)
+            for _, v in items:
+                self.cell(w, 10, _s(str(v)), border=1, align="C", fill=True)
+            self.ln()
+            self.set_font("Helvetica", "", 7.5)
+            self.set_text_color(100, 100, 100)
+            for lbl, _ in items:
+                self.cell(w, 5, _s(lbl), border="LRB", align="C")
+            self.ln(6)
+            self.set_text_color(30, 30, 30)
+
+        def table(self, headers, rows, col_widths=None):
+            if col_widths is None:
+                col_widths = [170 / len(headers)] * len(headers)
+            self.set_font("Helvetica", "B", 8.5)
+            self.set_fill_color(21, 101, 192)
+            self.set_text_color(255, 255, 255)
+            for h, w in zip(headers, col_widths):
+                self.cell(w, 7, _s(h), border=1, align="C", fill=True)
+            self.ln()
+            self.set_font("Helvetica", "", 8)
+            for ri, row in enumerate(rows):
+                if self.get_y() > 265:
+                    self.add_page()
+                self.set_fill_color(240, 246, 255) if ri % 2 == 0                     else self.set_fill_color(255, 255, 255)
+                self.set_text_color(30, 30, 30)
+                for val, w in zip(row, col_widths):
+                    self.cell(w, 6.5, _s(str(val)), border=1, fill=True)
+                self.ln()
+            self.ln(4)
+
+    # ── Generator 1: Profil Wilayah ───────────────────────────────────────
+    def _gen_pdf_wilayah(_ci, _city, _rank, _total_active, _concl, _recom, _comp):
+        p = _ReportPDF(f"Laporan Profil Wilayah: {_city}", "RPW-001")
+        p.add_page()
+        p.section("Identifikasi Wilayah")
+        p.metric_row([
+            ("Volume Lowongan",      int(_ci["job_volume"])),
+            ("Pengangguran Terbuka", f"{int(_ci['unemployment_num']):,}"),
+            ("Indeks Peluang",       f"{_ci['opportunity_index']:.5f}"),
+        ])
+        p.metric_row([
+            ("TPT (%)",    f"{_ci['tpt']:.2f}%"),
+            ("Peringkat",  f"#{_rank}" if isinstance(_rank, int) else str(_rank)),
+            ("Rekomendasi", _recom),
+        ])
+        p.section("Identifikasi Klaster DBSCAN")
+        p.body(
+            "Klaster  : " + str(_ci['cluster_display']) + "\n"
+            + "Status   : " + str(_ci['prosperity_status']) + "\n"
+            + "Provinsi : " + str(_ci['Provinsi'])
+        )
+        p.section("Narasi Kesimpulan")
+        p.body(_concl)
+        p.section("Penilaian Kritis")
+        p.table(["Aspek", "Nilai"],
+                [["Rekomendasi", _recom], ["Persaingan", _comp]],
+                [85, 85])
+        return bytes(p.output())
+
+    # ── Generator 2: Top 10 ───────────────────────────────────────────────
+    def _gen_pdf_top10(_df):
+        p = _ReportPDF("Laporan Top 10 Peluang Karir Terbaik - Pulau Jawa", "RPT-001")
+        p.add_page()
+        p.section("Peringkat Berdasarkan Indeks Peluang Karir")
+        p.body("Rasio lowongan / pengangguran terbuka BPS 2025. Hanya wilayah dengan job_volume > 0.")
+        _top = (_df[_df["job_volume"] > 0]
+                .sort_values("opportunity_index", ascending=False)
+                .head(10).reset_index(drop=True))
+        rows = [
+            [i + 1, r["matched_regency"], r["Provinsi"],
+             int(r["job_volume"]), f"{int(r['unemployment_num']):,}",
+             f"{r['opportunity_index']:.5f}"]
+            for i, (_, r) in enumerate(_top.iterrows())
+        ]
+        p.table(["#", "Kabupaten/Kota", "Provinsi", "Lowongan", "Pengangguran", "OI"],
+                rows, [10, 45, 40, 22, 28, 25])
+        return bytes(p.output())
 
     # ── Generator 3: Komparasi Klaster ────────────────────────────────────
-    def _gen_klaster(_df):
-        h = _html_head("Komparasi Klaster DBSCAN — Pulau Jawa")
-        h += "<h1>Laporan Komparasi Klaster DBSCAN — Pulau Jawa</h1>"
-        h += ('<div class="mg">'
-              '<div class="m"><div class="mv">0.4696</div><div class="ml">Silhouette Score</div></div>'
-              '<div class="m"><div class="mv">0.5243</div><div class="ml">Davies-Bouldin Index</div></div>'
-              '<div class="m"><div class="mv">0.08</div><div class="ml">eps (parameter DBSCAN)</div></div>'
-              '</div>')
-        for _cid, _label, _bcls in [
-            (0,  "Cluster 0 — Java Mainland Hub", "b0"),
-            (1,  "Cluster 1 — Jabodetabek & Koridor Barat", "b1"),
-            (-1, "Cluster -1 — Isolated Zone (Noise)", "bn"),
+    def _gen_pdf_klaster(_df):
+        p = _ReportPDF("Laporan Komparasi Klaster DBSCAN - Pulau Jawa", "RKK-001")
+        p.add_page()
+        p.section("Parameter & Metrik Evaluasi Model")
+        p.metric_row([("Silhouette Score", "0.4696"),
+                      ("Davies-Bouldin Index", "0.5243"),
+                      ("eps (DBSCAN)", "0.08")])
+        for _cid, _lbl in [
+            (0,  "Cluster 0: Java Mainland Hub"),
+            (1,  "Cluster 1: Jabodetabek & Koridor Barat"),
+            (-1, "Cluster -1: Isolated Zone (Noise)"),
         ]:
-            _grp = _df[_df['cluster_id'] == _cid]
-            h += (f"<h2><span class='badge {_bcls}'>{_label}</span></h2>"
-                  f"<p><strong>Jumlah Wilayah:</strong> {len(_grp)} &nbsp;|"
-                  f"&nbsp; <strong>Total Lowongan:</strong> {int(_grp['job_volume'].sum()):,} &nbsp;|"
-                  f"&nbsp; <strong>Rata-rata OI:</strong> {_grp['opportunity_index'].mean():.5f}</p>")
-            _sub = _grp[['matched_regency','Provinsi','job_volume','opportunity_index']].sort_values('job_volume', ascending=False).head(10)
-            h += "<table><tr><th>Kabupaten/Kota</th><th>Provinsi</th><th>Lowongan</th><th>OI</th></tr>"
-            for _, _r in _sub.iterrows():
-                h += f"<tr><td>{_r['matched_regency']}</td><td>{_r['Provinsi']}</td><td>{int(_r['job_volume'])}</td><td>{_r['opportunity_index']:.5f}</td></tr>"
-            h += "</table>"
-        h += _html_foot()
-        return h
+            _grp = _df[_df["cluster_id"] == _cid]
+            p.section(f"{_lbl}  ({len(_grp)} wilayah)")
+            p.body(
+                f"Total Lowongan : {int(_grp['job_volume'].sum()):,}  |  "
+                f"Rata-rata OI   : {_grp['opportunity_index'].mean():.5f}"
+            )
+            _sub = (_grp[["matched_regency", "Provinsi", "job_volume", "opportunity_index"]]
+                    .sort_values("job_volume", ascending=False).head(8))
+            rows = [
+                [r["matched_regency"], r["Provinsi"],
+                 int(r["job_volume"]), f"{r['opportunity_index']:.5f}"]
+                for _, r in _sub.iterrows()
+            ]
+            p.table(["Kabupaten/Kota", "Provinsi", "Lowongan", "OI"],
+                    rows, [58, 55, 27, 30])
+        return bytes(p.output())
 
     # ── Generator 4: Zona Merah ───────────────────────────────────────────
-    def _gen_zonamerah(_df):
-        h = _html_head("Zona Merah & Defisit Lapangan Kerja — Pulau Jawa")
-        h += "<h1>Laporan Zona Merah & Defisit Lapangan Kerja — Pulau Jawa</h1>"
-        h += "<p>Wilayah dengan indeks peluang terendah dan/atau tanpa lowongan formal — kandidat prioritas intervensi kebijakan ketenagakerjaan.</p>"
-        _zero = _df[_df['job_volume'] == 0]
-        h += f"<h2>Wilayah Tanpa Lowongan Formal ({len(_zero)} wilayah)</h2>"
+    def _gen_pdf_zonamerah(_df):
+        p = _ReportPDF("Laporan Zona Merah & Defisit Lapangan Kerja", "RZM-001")
+        p.add_page()
+        _zero = _df[_df["job_volume"] == 0]
+        p.section(f"Wilayah Tanpa Lowongan Formal  ({len(_zero)} wilayah)")
         if len(_zero) > 0:
-            h += "<table><tr><th>Kabupaten/Kota</th><th>Provinsi</th><th>Pengangguran Terbuka</th><th>TPT (%)</th></tr>"
-            for _, _r in _zero.iterrows():
-                h += f"<tr><td>{_r['matched_regency']}</td><td>{_r['Provinsi']}</td><td>{int(_r['unemployment_num']):,}</td><td>{_r['tpt']:.2f}%</td></tr>"
-            h += "</table>"
-        _bot = _df[_df['job_volume'] > 0].sort_values('opportunity_index').head(15)
-        h += "<h2>Bottom 15 Wilayah Aktif — Indeks Peluang Terendah</h2>"
-        h += "<table><tr><th>Kabupaten/Kota</th><th>Provinsi</th><th>Lowongan</th><th>Pengangguran</th><th>OI</th><th>TPT%</th></tr>"
-        for _, _r in _bot.iterrows():
-            h += (f"<tr><td>{_r['matched_regency']}</td><td>{_r['Provinsi']}</td>"
-                  f"<td>{int(_r['job_volume'])}</td><td>{int(_r['unemployment_num']):,}</td>"
-                  f"<td>{_r['opportunity_index']:.5f}</td><td>{_r['tpt']:.2f}%</td></tr>")
-        h += "</table>"
-        h += _html_foot()
-        return h
+            rows = [
+                [r["matched_regency"], r["Provinsi"],
+                 f"{int(r['unemployment_num']):,}", f"{r['tpt']:.2f}%"]
+                for _, r in _zero.iterrows()
+            ]
+            p.table(["Kabupaten/Kota", "Provinsi", "Pengangguran Terbuka", "TPT (%)"],
+                    rows, [55, 50, 42, 23])
+        else:
+            p.body("Tidak ada wilayah tanpa lowongan formal.")
+        _bot = _df[_df["job_volume"] > 0].sort_values("opportunity_index").head(15)
+        p.section("Bottom 15 Wilayah Aktif - Indeks Peluang Terendah")
+        rows = [
+            [r["matched_regency"], r["Provinsi"], int(r["job_volume"]),
+             f"{int(r['unemployment_num']):,}", f"{r['opportunity_index']:.5f}", f"{r['tpt']:.2f}%"]
+            for _, r in _bot.iterrows()
+        ]
+        p.table(["Kabupaten/Kota", "Provinsi", "Lowongan", "Pengangguran", "OI", "TPT%"],
+                rows, [44, 38, 20, 28, 25, 15])
+        return bytes(p.output())
 
-    # ── Generator 5: Ringkasan Pulau Jawa ─────────────────────────────────
-    def _gen_ringkasan(_df):
-        h = _html_head("Ringkasan Analisis Peluang Karir — Pulau Jawa")
-        h += "<h1>Laporan Ringkasan Analisis Peluang Karir — Pulau Jawa</h1>"
-        h += "<p>Dokumen ringkasan hasil analisis spasial DBSCAN dan Indeks Peluang Karir untuk seluruh kabupaten/kota di Pulau Jawa.</p>"
-        _act = _df[_df['job_volume'] > 0]
-        h += ('<div class="mg">'
-              f'<div class="m"><div class="mv">{len(_df)}</div><div class="ml">Total Wilayah</div></div>'
-              f'<div class="m"><div class="mv">{len(_act)}</div><div class="ml">Wilayah Aktif</div></div>'
-              f'<div class="m"><div class="mv">{int(_df["job_volume"].sum()):,}</div><div class="ml">Total Lowongan</div></div>'
-              f'<div class="m"><div class="mv">{int(_df["unemployment_num"].sum()):,}</div><div class="ml">Total Penganggur</div></div>'
-              '<div class="m"><div class="mv">0.4696</div><div class="ml">Silhouette Score</div></div>'
-              '<div class="m"><div class="mv">0.5243</div><div class="ml">Davies-Bouldin Index</div></div>'
-              '</div>')
-        h += "<h2>Komposisi Klaster</h2>"
-        h += "<table><tr><th>Klaster</th><th>Jumlah Wilayah</th><th>Total Lowongan</th><th>Rata-rata OI</th></tr>"
-        for _cid, _lbl in [(0,"Cluster 0: Java Mainland Hub"),(1,"Cluster 1: Jabodetabek & Koridor Barat"),(-1,"Cluster -1: Isolated Zone")]:
-            _g = _df[_df['cluster_id'] == _cid]
-            h += f"<tr><td>{_lbl}</td><td>{len(_g)}</td><td>{int(_g['job_volume'].sum()):,}</td><td>{_g['opportunity_index'].mean():.5f}</td></tr>"
-        h += "</table>"
-        h += "<h2>Top 5 Lautan Peluang</h2>"
-        h += "<table><tr><th>#</th><th>Kabupaten/Kota</th><th>Provinsi</th><th>OI</th><th>Lowongan</th></tr>"
-        for _i, (_, _r) in enumerate(_df[_df['job_volume']>0].sort_values('opportunity_index',ascending=False).head(5).iterrows(), 1):
-            h += f"<tr><td>{_i}</td><td>{_r['matched_regency']}</td><td>{_r['Provinsi']}</td><td>{_r['opportunity_index']:.5f}</td><td>{int(_r['job_volume'])}</td></tr>"
-        h += "</table>"
-        h += "<h2>Seluruh Data Wilayah</h2>"
-        _cols = ['matched_regency','Provinsi','cluster_display','job_volume','unemployment_num','opportunity_index','tpt']
+    # ── Generator 5: Ringkasan ────────────────────────────────────────────
+    def _gen_pdf_ringkasan(_df):
+        p = _ReportPDF("Laporan Ringkasan Analisis Peluang Karir - Pulau Jawa", "RRS-001")
+        p.add_page()
+        _act = _df[_df["job_volume"] > 0]
+        p.section("Statistik Agregat")
+        p.metric_row([("Total Wilayah",  len(_df)),
+                      ("Wilayah Aktif",  len(_act)),
+                      ("Total Lowongan", f"{int(_df['job_volume'].sum()):,}")])
+        p.metric_row([("Total Penganggur",    f"{int(_df['unemployment_num'].sum()):,}"),
+                      ("Silhouette Score",    "0.4696"),
+                      ("Davies-Bouldin Idx",  "0.5243")])
+        p.section("Komposisi Klaster")
+        rows = []
+        for _cid, _lbl in [
+            (0,  "Cluster 0: Java Mainland"),
+            (1,  "Cluster 1: Jabodetabek"),
+            (-1, "Cluster -1: Isolated"),
+        ]:
+            _g = _df[_df["cluster_id"] == _cid]
+            rows.append([_lbl, len(_g),
+                         f"{int(_g['job_volume'].sum()):,}",
+                         f"{_g['opportunity_index'].mean():.5f}"])
+        p.table(["Klaster", "Wilayah", "Total Lowongan", "Rata-rata OI"],
+                rows, [72, 22, 38, 38])
+        p.section("Top 5 Lautan Peluang")
+        rows = [
+            [i, r["matched_regency"], r["Provinsi"],
+             f"{r['opportunity_index']:.5f}", int(r["job_volume"])]
+            for i, (_, r) in enumerate(
+                _df[_df["job_volume"] > 0]
+                .sort_values("opportunity_index", ascending=False)
+                .head(5).iterrows(), 1)
+        ]
+        p.table(["#", "Kabupaten/Kota", "Provinsi", "OI", "Lowongan"],
+                rows, [10, 55, 45, 35, 25])
+        p.section("Seluruh Data Wilayah (diurutkan OI tertinggi)")
+        _cols  = ["matched_regency", "Provinsi", "job_volume",
+                  "unemployment_num", "opportunity_index", "tpt"]
         _avail = [c for c in _cols if c in _df.columns]
-        h += "<table><tr>" + "".join(f"<th>{c}</th>" for c in _avail) + "</tr>"
-        for _, _r in _df[_avail].sort_values('opportunity_index', ascending=False).iterrows():
-            def _fmt(_c, _v):
-                if _c == 'job_volume': return str(int(_v))
-                if _c == 'unemployment_num': return f"{int(_v):,}"
-                if _c == 'opportunity_index': return f"{_v:.5f}"
-                if _c == 'tpt': return f"{_v:.2f}%"
-                return str(_v)
-            h += "<tr>" + "".join(f"<td>{_fmt(_c, _r[_c])}</td>" for _c in _avail) + "</tr>"
-        h += "</table>"
-        h += _html_foot()
-        return h
+        _hdrs  = {"matched_regency": "Kab/Kota", "Provinsi": "Provinsi",
+                  "job_volume": "Lowongan", "unemployment_num": "Penganggur",
+                  "opportunity_index": "OI", "tpt": "TPT%"}
+        _wds   = {"matched_regency": 44, "Provinsi": 36, "job_volume": 20,
+                  "unemployment_num": 26, "opportunity_index": 27, "tpt": 17}
+        def _fv(c, v):
+            if c == "job_volume":        return str(int(v))
+            if c == "unemployment_num":  return f"{int(v):,}"
+            if c == "opportunity_index": return f"{v:.5f}"
+            if c == "tpt":               return f"{v:.2f}%"
+            return str(v)
+        rows2 = [
+            [_fv(c, r[c]) for c in _avail]
+            for _, r in _df[_avail].sort_values("opportunity_index", ascending=False).iterrows()
+        ]
+        p.table([_hdrs[c] for c in _avail], rows2, [_wds[c] for c in _avail])
+        return bytes(p.output())
 
-    # ── Routing & Download Button ─────────────────────────────────────────
+    # ── Routing & download button ─────────────────────────────────────────
     _fname_map = {
-        "wilayah":   f"Laporan-Wilayah-{st.session_state.applied_city.replace(' ', '-')}.html",
-        "top10":     "Laporan-Top10-Peluang-Karir.html",
-        "klaster":   "Laporan-Komparasi-Klaster-DBSCAN.html",
-        "zonamerah": "Laporan-Zona-Merah.html",
-        "ringkasan": "Laporan-Ringkasan-Pulau-Jawa.html",
+        "wilayah":   f"Laporan-Wilayah-{st.session_state.applied_city.replace(' ', '-')}.pdf",
+        "top10":     "Laporan-Top10-Peluang-Karir.pdf",
+        "klaster":   "Laporan-Komparasi-Klaster-DBSCAN.pdf",
+        "zonamerah": "Laporan-Zona-Merah.pdf",
+        "ringkasan": "Laporan-Ringkasan-Pulau-Jawa.pdf",
     }
     if _rtype == "wilayah":
-        _html_out = _gen_wilayah(df, city_info, st.session_state.applied_city,
-                                  rank, total_active, conclusion, recom_val, comp_val)
+        _pdf_out = _gen_pdf_wilayah(city_info, st.session_state.applied_city,
+                                     rank, total_active, conclusion, recom_val, comp_val)
     elif _rtype == "top10":
-        _html_out = _gen_top10(df)
+        _pdf_out = _gen_pdf_top10(df)
     elif _rtype == "klaster":
-        _html_out = _gen_klaster(df)
+        _pdf_out = _gen_pdf_klaster(df)
     elif _rtype == "zonamerah":
-        _html_out = _gen_zonamerah(df)
+        _pdf_out = _gen_pdf_zonamerah(df)
     else:
-        _html_out = _gen_ringkasan(df)
+        _pdf_out = _gen_pdf_ringkasan(df)
 
     st.download_button(
-        label=f"📥 Unduh {_sel_report}",
-        data=_html_out.encode('utf-8'),
+        label=f"📥 Unduh PDF — {_sel_report}",
+        data=_pdf_out,
         file_name=_fname_map[_rtype],
-        mime="text/html",
+        mime="application/pdf",
         use_container_width=True,
     )
-    st.caption("ℹ️ Buka file HTML di browser → Ctrl+P → *Save as PDF* untuk mencetak / ekspor ke PDF.")
+    st.caption("ℹ️ File PDF siap cetak — buka di PDF viewer lalu print langsung.")
+
 
 # --- FOOTER ---
 st.divider()
