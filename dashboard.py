@@ -241,6 +241,25 @@ class _ReportPDF(_FPDF):
             self.ln()
         self.ln(4)
 
+    def legend(self, items):
+        if self.get_y() > 240:
+            self.add_page()
+        self.ln(3)
+        self.set_font("Helvetica", "B", 9)
+        self.set_fill_color(232, 240, 254)
+        self.set_text_color(21, 101, 192)
+        self.cell(0, 6, "Keterangan & Penjelasan Laporan",
+                  new_x="LMARGIN", new_y="NEXT", fill=True, border="TB")
+        self.ln(1)
+        for term, definition in items:
+            self.set_font("Helvetica", "B", 8)
+            self.set_text_color(30, 30, 30)
+            self.cell(50, 5.5, _s(term + " :"), border=0)
+            self.set_font("Helvetica", "", 8)
+            self.set_text_color(70, 70, 70)
+            self.multi_cell(0, 5.5, _s(definition))
+        self.ln(2)
+
 
 def _gen_pdf_wilayah(_ci, _city, _rank, _total_active, _concl, _recom, _comp):
     p = _ReportPDF(f"Laporan Profil Wilayah: {_city}", "RPW-001")
@@ -268,6 +287,24 @@ def _gen_pdf_wilayah(_ci, _city, _rank, _total_active, _concl, _recom, _comp):
     p.table(["Aspek", "Nilai"],
             [["Rekomendasi", _recom], ["Persaingan", _comp]],
             [85, 85])
+    p.legend([
+        ("Indeks Peluang (OI)",
+         "Rasio jumlah lowongan dibagi pengangguran terbuka BPS. Semakin tinggi = semakin banyak "
+         "peluang per penganggur. Contoh: nilai 0.05 berarti 1 lowongan per 20 penganggur."),
+        ("TPT (%)",
+         "Tingkat Pengangguran Terbuka, persentase penganggur dari angkatan kerja. "
+         "Sumber: BPS Sakernas 2025. Nilai rendah = kondisi ketenagakerjaan lebih sehat."),
+        ("Klaster DBSCAN",
+         "Cluster 0 (Java Mainland Hub): 93 wilayah daratan Jawa. "
+         "Cluster 1 (Jabodetabek & Koridor Barat): 22 wilayah metropolitan. "
+         "Cluster -1 (Isolated Zone): noise spasial atau tanpa lowongan formal."),
+        ("Rekomendasi",
+         "Sangat Layak = Top 10 OI, tujuan karir utama. Netral = pasar kerja stabil. "
+         "Berisiko = defisit lapangan kerja, persaingan sangat ketat."),
+        ("Persaingan",
+         "Longgar = peluang lebih banyak dari pencari kerja. "
+         "Seimbang = kondisi normal. Sengit/Sangat Sengit = banyak pencari berebut sedikit lowongan."),
+    ])
     return bytes(p.output())
 
 
@@ -287,6 +324,16 @@ def _gen_pdf_top10(_df):
     ]
     p.table(["#", "Kabupaten/Kota", "Provinsi", "Lowongan", "Pengangguran", "OI"],
             rows, [10, 45, 40, 22, 28, 25])
+    p.legend([
+        ("Indeks Peluang (OI)",
+         "Rasio lowongan / pengangguran terbuka BPS. Contoh: nilai 0.00500 berarti "
+         "1 lowongan tersedia per 200 penganggur. Semakin besar nilainya, semakin baik."),
+        ("Pengangguran",
+         "Jumlah pengangguran terbuka BPS Sakernas 2025 di wilayah tersebut. "
+         "Digunakan sebagai denominator OI, bukan total angkatan kerja."),
+        ("Peringkat (#)",
+         "Urutan berdasarkan OI tertinggi. Hanya wilayah dengan minimal 1 lowongan yang masuk peringkat."),
+    ])
     return bytes(p.output())
 
 
@@ -317,6 +364,20 @@ def _gen_pdf_klaster(_df):
         ]
         p.table(["Kabupaten/Kota", "Provinsi", "Lowongan", "OI"],
                 rows, [58, 55, 27, 30])
+    p.legend([
+        ("Silhouette Score",
+         "Mengukur kemiripan anggota dalam satu klaster vs klaster lain. Rentang -1 sd 1. "
+         "Nilai 0.4696 = moderat-baik; wajar untuk pola koridor linier Pulau Jawa."),
+        ("Davies-Bouldin Index",
+         "Mengukur rasio jarak dalam-klaster terhadap antar-klaster. Semakin kecil semakin baik. "
+         "Nilai 0.5243 berarti klaster cukup kompak dan terpisah."),
+        ("eps (epsilon)",
+         "Jarak maksimum (derajat koordinat) agar dua titik dianggap bertetangga. "
+         "eps=0.08 setara sekitar 8-9 km. Dipilih berdasarkan Elbow Method kurva k-NN."),
+        ("OI rata-rata per klaster",
+         "Rata-rata indeks peluang seluruh wilayah dalam klaster. "
+         "Digunakan untuk membandingkan daya serap tenaga kerja antar klaster."),
+    ])
     return bytes(p.output())
 
 
@@ -344,6 +405,20 @@ def _gen_pdf_zonamerah(_df):
     ]
     p.table(["Kabupaten/Kota", "Provinsi", "Lowongan", "Pengangguran", "OI", "TPT%"],
             rows, [44, 38, 20, 28, 25, 15])
+    p.legend([
+        ("Zona Merah",
+         "Wilayah dengan OI terendah: volume lowongan sangat sedikit relatif terhadap "
+         "jumlah penganggur terbuka. Memerlukan intervensi kebijakan ketenagakerjaan."),
+        ("Tanpa Lowongan (0)",
+         "Wilayah yang tidak terdeteksi memiliki lowongan di Jobstreet, Glints, maupun Kalibrr. "
+         "Bukan berarti tidak ada pekerjaan informal, namun pasar kerja formal sangat terbatas."),
+        ("OI (Indeks Peluang)",
+         "Nilai mendekati 0 berarti hampir tidak ada lowongan per penganggur. "
+         "Semakin kecil OI, semakin ketat persaingan di wilayah tersebut."),
+        ("TPT (%)",
+         "Tingkat Pengangguran Terbuka. Wilayah dengan TPT tinggi sekaligus OI rendah "
+         "adalah prioritas intervensi tertinggi bagi pembuat kebijakan."),
+    ])
     return bytes(p.output())
 
 
@@ -402,6 +477,26 @@ def _gen_pdf_ringkasan(_df):
         for _, r in _df[_avail].sort_values("opportunity_index", ascending=False).iterrows()
     ]
     p.table([_hdrs[c] for c in _avail], rows2, [_wds[c] for c in _avail])
+    p.legend([
+        ("OI (Indeks Peluang)",
+         "Formula: OI = Volume_Lowongan / Pengangguran_Terbuka_BPS. "
+         "Nilai tinggi = peluang besar per penganggur. Nilai rendah = persaingan ketat."),
+        ("Silhouette Score",
+         "Kualitas klasterisasi DBSCAN. Nilai 0.4696 = moderat-baik. "
+         "Skala: 1.0 = sempurna, 0 = overlap, negatif = salah pengelompokan."),
+        ("Davies-Bouldin Idx",
+         "Kualitas pemisahan klaster. Nilai 0.5243 = klaster cukup kompak. "
+         "Semakin kecil nilainya semakin baik."),
+        ("Klaster 0",
+         "93 wilayah daratan Jawa membentuk koridor spasial dari Banten hingga Banyuwangi."),
+        ("Klaster 1",
+         "22 wilayah Jabodetabek, Banten, dan koridor utara Jawa Barat, episentrum ekonomi digital."),
+        ("Klaster -1",
+         "Noise spasial (Kep. Seribu) dan wilayah tanpa lowongan (Banjar, Pekalongan, Sumenep). "
+         "Tidak masuk analisis klaster utama."),
+        ("TPT (%)",
+         "Tingkat Pengangguran Terbuka per wilayah. Sumber: BPS Sakernas 2025."),
+    ])
     return bytes(p.output())
 
 
