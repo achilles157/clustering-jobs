@@ -1,28 +1,27 @@
-ISI FOLDER INI — WAJIB DIISI SENDIRI (INSTALLER TIDAK BISA DIBUATKAN OTOMATIS)
-==================================================================
+BACA DULU — FOLDER 03 SOFTWARE PENDUKUNG
+=========================================
+Sesuai kebutuhan TA (Python + Streamlit), software pendukung yang
+relevan untuk TA ini hanya 2:
 
-FOLDER 03 — SOFTWARE PENDUKUNG
-Berisi program/aplikasi pendukung yang digunakan: browser, XAMPP, NetBeans, emulator, dsb.
-(Pengumuman: "BERISIKAN PROGRAM ATAU APLIKASI PENDUKUNG YANG DIGUNAKAN, BROWSER, XAMPP, NETBEANS, EMULATOR, DSB")
+1) VISUAL STUDIO CODE (editor kode)
+   - Unduh installer resmi dari: https://code.visualstudio.com/download
+     (pilih "Windows User Installer x64")
+   - (opsional) pasang ekstensi: Python, Pylance, Jupyter
+   - Shortcut ke halaman unduhan resmi sudah disertakan di folder ini.
 
-Aplikasi yang dipakai pada TA ini (sesuai proyek):
-- Python 3.13 (runtime utama aplikasi dashboard)
-  https://www.python.org/downloads/
-- Streamlit (framework dashboard) — diinstall via pip, bukan installer mandiri
-- Browser (Chrome / Edge / Firefox) untuk membuka dashboard
-  https://www.google.com/chrome/ | https://www.microsoft.com/edge | https://www.mozilla.org/firefox/
-- XAMPP (jika memakai MySQL/phpMyAdmin untuk penyimpanan data)
-  https://www.apachefriends.org/
-- NetBeans (jika memakai Java — pada TA ini tidak wajib, program berbasis Python)
-  https://netbeans.apache.org/
-- Emulator Android (jika ada bagian aplikasi mobile) — Android Studio
-  https://developer.android.com/studio
+2) GOOGLE COLAB (notebook cloud)
+   - Tidak butuh installer — cukup pakai shortcut/link:
+     https://colab.research.google.com
+   - Shortcut .url sudah disertakan di folder ini.
 
-Cara mengisi:
-1. Unduh installer dari situs resmi di atas (versi terbaru yang stabil).
-2. Simpan file installer (.exe / .msi / .dmg / .zip) di folder ini.
-3. Sesuaikan dengan aplikasi yang BENAR-BENAR digunakan pada TA Anda —
-   daftar di atas hanya rekomendasi minimal.
+CATATAN:
+- XAMPP, NetBeans, dan emulator yang disebut di pengumuman ditujukan
+  untuk TA berbasis web PHP / Java / mobile — TIDAK diperlukan untuk
+  TA ini.
+- Browser (Chrome/Edge/Firefox) tidak perlu disertakan instalernya;
+  komputer yang menjalankan aplikasi sudah punya browser untuk
+  membuka http://localhost:8501.
 
-Catatan: jika dosen/panitia hanya meminta aplikasi yang relevan, cukup sertakan
-runtime + browser + XAMPP (bila data pakai MySQL). Jangan membebani DVD dengan installer besar yang tidak dipakai.
+TUGAS ANDA:
+[ ] unduh installer VS Code -> simpan di folder ini
+[ ] shortcut Google Colab sudah ada (.url) — siap di-burn

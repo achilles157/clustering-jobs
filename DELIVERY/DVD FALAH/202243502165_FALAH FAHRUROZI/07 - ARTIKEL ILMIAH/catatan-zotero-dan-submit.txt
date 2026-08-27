@@ -1,0 +1,28 @@
+CATATAN — FOLDER 07 ARTIKEL ILMIAH
+===================================
+(File ini bisa dihapus sebelum DVD diserahkan)
+
+ISI YANG SUDAH ADA:
+- Artikel final: "Jurnal Ilmiah - Falah Fahrurozi (DBSCAN Peluang
+  Karir) - Template Penelitian - FINAL.docx" + .pdf
+- Daftar Pustaka Zotero - ref-falah.bib (format BibTeX)
+- Template Artikel JRAMI (referensi format jurnal sasaran)
+- Referensi Literatur (PDF): 16 file pendukung
+
+DAFTAR PUSTAKA — KEPUTUSAN: TETAP ZOTERO
+=========================================
+Zotero setara dengan Mendeley (sama-sama reference manager),
+dan dokumen artikel memang sudah memakai field codes Zotero —
+tidak perlu konversi ke Mendeley. Yang wajib Anda lakukan:
+
+1. Buka aplikasi Zotero desktop.
+2. Buka library/collection "ref-falah" (berisi seluruh referensi TA).
+3. Screenshot tampilan library tersebut (usahakan daftar referensi
+   dan jumlah item terlihat) -> simpan ke folder ini dengan nama:
+   BUKTI_LIBRARY_ZOTERO.jpg
+
+BUKTI SUBMIT ARTIKEL (wajib):
+4. Setelah artikel di-submit ke sistem jurnal (halaman OJS
+   "Submitted" / email konfirmasi), ambil screenshot dan simpan ke
+   folder ini dengan nama:
+   BUKTI_SUBMIT_ARTIKEL.jpg

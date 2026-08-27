@@ -25,9 +25,11 @@ DAFTAR ISI 7 FOLDER + STATUS (terakhir diperbarui 27-08-2026)
      [ ] (opsional) konversi lampiran .md -> .docx
 
 [03] SOFTWARE PENDUKUNG
-     -> BELUM DIISI: installer browser, XAMPP, NetBeans, emulator
-        (lihat BACA-DULU di folder 03 untuk daftar + link resmi)
-     [ ] unduh installer dari situs resmi
+     -> SETENGAH ISI [27-08]: shortcut VS Code (.url ke halaman unduhan
+        resmi) + shortcut Google Colab (.url) + BACA-DULU.
+        Catatan: XAMPP/NetBeans/emulator TIDAK relevan untuk TA Python.
+     [ ] unduh installer VS Code dari link resmi -> simpan di folder ini
+     [ ] shortcut Colab sudah ada (.url) — siap di-burn
 
 [04] SOFTWARE PROGRAM   (.EXE/.JAR/.APP atau project lengkap)
      -> SUDAH DIISI [27-08]: dashboard.py + requirements.txt + src/ (12 file)
@@ -37,22 +39,28 @@ DAFTAR ISI 7 FOLDER + STATUS (terakhir diperbarui 27-08-2026)
          di README-FOLDER-04.txt)
 
 [05] MANUAL BOOK   (.DOC/.DOCX)
-     -> SUDAH DIISI [27-08]: MANUAL BOOK - Dashboard Persebaran Peluang
-        Kerja (DBSCAN).docx (8 bab)
+     -> SUDAH DIISI [27-08]: MANUAL BOOK .docx (8 bab) + MANUAL BOOK .txt
+        (versi teks sesuai permintaan)
      [ ] verifikasi isi sesuai aplikasi yang dijalankan
 
 [06] USERNAME DAN PASSWORD   (.DOC/.DOCX)
-     -> TEMPLATE SUDAH ADA, NILAI KOSONG: isi sendiri kredensial
-        aplikasi yang benar-benar dipakai
-     [ ] isi nilai asli
+     -> SUDAH DIISI [27-08]: CATATAN "tidak ada fitur login" (.txt)
+        + template .docx kosong (sesuai format pengumuman)
+        Aplikasi dashboard TIDAK punya autentikasi — tidak ada
+        kredensial yang wajib diisi.
+     [ ] (opsional) isi akun pendukung (Google/Colab, GitHub) bila
+         dosen menanyakan
 
 [07] ARTIKEL ILMIAH   (.DOC/.DOCX)
      -> SUDAH DIISI [27-08]: artikel final (Template Penelitian .docx + .pdf)
-        + Daftar Pustaka Mendeley (.bib) + Template JRAMI + 16 PDF literatur
-        + CATATAN-MENDELEY-dan-SUBMIT.txt
-        BELUM: screenshot bukti submit artikel + refresh sitasi ke Mendeley
-     [ ] impor .bib ke Mendeley & ganti sitasi Zotero (lihat catatan)
-     [ ] screenshot bukti submit artikel
+        + Daftar Pustaka Zotero (.bib) + Template JRAMI + 16 PDF literatur
+        + CATATAN-ZOTERO-dan-SUBMIT.txt
+        Keputusan: TETAP ZOTERO (setara Mendeley, artikel sudah pakai
+        field codes Zotero — tidak perlu konversi).
+        BELUM: screenshot library Zotero + screenshot bukti submit
+     [ ] screenshot library Zotero (collection "ref-falah")
+         -> BUKTI_LIBRARY_ZOTERO.jpg
+     [ ] screenshot bukti submit artikel -> BUKTI_SUBMIT_ARTIKEL.jpg
 
 ----------------------------------------------------------------------
 LANGKAH BURN DVD
@@ -71,9 +79,9 @@ LANGKAH BURN DVD
 SISA PEKERJAAN YANG WAJIB ANDA LAKUKAN (tidak bisa otomatis)
 ----------------------------------------------------------------------
 1. Scan lembar pengesahan & persetujuan bertanda tangan -> folder 01
-2. Unduh installer software pendukung -> folder 03
-3. Isi nilai Username & Password -> folder 06
-4. Screenshot bukti submit artikel -> folder 07
-5. Sinkronkan daftar pustaka jurnal ke Mendeley -> folder 07
+2. Unduh installer VS Code (shortcut Colab sudah ada) -> folder 03
+3. (Opsional) isi akun pendukung di catatan folder 06
+4. Screenshot library Zotero -> folder 07
+5. Screenshot bukti submit artikel -> folder 07
 6. Konfirmasi versi TA FINAL-2D disetujui dosen -> folder 02
 7. Burn + verifikasi DVD
