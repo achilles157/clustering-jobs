@@ -1,0 +1,16 @@
+ISI FOLDER INI — WAJIB DIISI SENDIRI (TIDAK BISA DIBUATKAN OTOMATIS)
+==================================================================
+
+FOLDER 01 — SCAN LEMBAR PENGESAHAN DAN PERSETUJUAN
+Format wajib: .JPG atau .PDF
+
+Cara mengisi:
+1. Ambil lembar LEMBAR PENGESAHAN yang SUDAH ditandatangani dosen pembimbing & penguji (fisik).
+2. Ambil lembar LEMBAR PERSETUJUAN PEMBIMBING yang sudah ditandatangani.
+3. Scan dengan scanner atau kamera ponsel (minimal 200 dpi, pastikan teks terbaca jelas).
+4. Simpan sebagai .jpg atau .pdf dengan nama jelas, misalnya:
+   - PENGESAHAN.jpg (atau .pdf)
+   - PERSETUJUAN_PEMBIMBING.jpg (atau .pdf)
+5. Letakkan kedua file di folder ini.
+
+Catatan: jangan gunakan screenshot chat / foto buram — panitia memeriksa keaslian tanda tangan.

@@ -1,0 +1,79 @@
+CHECKLIST & PANDUAN DVD TUGAS AKHIR
+====================================
+NPM: 202243502165 — Falah Fahrurozi
+Program Studi: Teknik Informatika — Universitas Indraprasta PGRI
+Judul TA: Persebaran Peluang Karir Berdasarkan Jumlah Angkatan Kerja
+          menggunakan Density Based Clustering (DBSCAN)
+
+Sesuai pengumuman "ISI FOLDER DVD TUGAS AKHIR":
+- DVD yang dibawa: DVDRW berlabel & berlogo UNINDRA, ditulis nama + NPM
+- PENAMAAN FOLDER PADA DVD: NPM_NAMA  ->  202243502165_FALAH FAHRUROZI
+  (folder ini sudah diberi nama sesuai aturan)
+
+----------------------------------------------------------------------
+DAFTAR ISI 7 FOLDER + STATUS (terakhir diperbarui 27-08-2026)
+----------------------------------------------------------------------
+[01] SCAN LEMBAR PENGESAHAN DAN PERSETUJUAN   (.JPG/.PDF)
+     -> BELUM DIISI: scan lembar pengesahan & persetujuan pembimbing
+        yang sudah ditandatangani dosen (lihat BACA-DULU di folder 01)
+     [ ] scan pengesahan   [ ] scan persetujuan
+
+[02] TUGAS AKHIR   (.DOC/.DOCX)
+     -> SUDAH DIISI [27-08]: TA FINAL-2D (.docx) + TA FALAH FINAL(real).pdf
+        + folder Lampiran (referensi) [markdown]
+     [ ] cek versi sesuai yang disetujui dosen
+     [ ] (opsional) konversi lampiran .md -> .docx
+
+[03] SOFTWARE PENDUKUNG
+     -> BELUM DIISI: installer browser, XAMPP, NetBeans, emulator
+        (lihat BACA-DULU di folder 03 untuk daftar + link resmi)
+     [ ] unduh installer dari situs resmi
+
+[04] SOFTWARE PROGRAM   (.EXE/.JAR/.APP atau project lengkap)
+     -> SUDAH DIISI [27-08]: dashboard.py + requirements.txt + src/ (12 file)
+        + data/ + data-bps/ + notebook + launcher JALANKAN_DASHBOARD.bat
+        + README-FOLDER-04.txt
+     [ ] jika dosen minta file .exe, konversi via PyInstaller (panduan
+         di README-FOLDER-04.txt)
+
+[05] MANUAL BOOK   (.DOC/.DOCX)
+     -> SUDAH DIISI [27-08]: MANUAL BOOK - Dashboard Persebaran Peluang
+        Kerja (DBSCAN).docx (8 bab)
+     [ ] verifikasi isi sesuai aplikasi yang dijalankan
+
+[06] USERNAME DAN PASSWORD   (.DOC/.DOCX)
+     -> TEMPLATE SUDAH ADA, NILAI KOSONG: isi sendiri kredensial
+        aplikasi yang benar-benar dipakai
+     [ ] isi nilai asli
+
+[07] ARTIKEL ILMIAH   (.DOC/.DOCX)
+     -> SUDAH DIISI [27-08]: artikel final (Template Penelitian .docx + .pdf)
+        + Daftar Pustaka Mendeley (.bib) + Template JRAMI + 16 PDF literatur
+        + CATATAN-MENDELEY-dan-SUBMIT.txt
+        BELUM: screenshot bukti submit artikel + refresh sitasi ke Mendeley
+     [ ] impor .bib ke Mendeley & ganti sitasi Zotero (lihat catatan)
+     [ ] screenshot bukti submit artikel
+
+----------------------------------------------------------------------
+LANGKAH BURN DVD
+----------------------------------------------------------------------
+1. Lengkapi dulu semua folder sesuai checklist di atas.
+2. Burn isi folder "202243502165_FALAH FAHRUROZI" ke DVDRW
+   (mode Data DVD, bukan audio/video).
+3. Tulis label di badan DVD: 202243502165_FALAH FAHRUROZI
+   (spidol CD/DVD), sertakan logo UNINDRA sesuai ketentuan.
+4. Setelah burn: verifikasi baca-ulang — buka DVD di komputer lain,
+   pastikan 7 folder terbuka dan file tidak korup.
+5. Simpan salinan cadangan folder DVD di flashdisk/Drive sebelum
+   menyerahkan.
+
+----------------------------------------------------------------------
+SISA PEKERJAAN YANG WAJIB ANDA LAKUKAN (tidak bisa otomatis)
+----------------------------------------------------------------------
+1. Scan lembar pengesahan & persetujuan bertanda tangan -> folder 01
+2. Unduh installer software pendukung -> folder 03
+3. Isi nilai Username & Password -> folder 06
+4. Screenshot bukti submit artikel -> folder 07
+5. Sinkronkan daftar pustaka jurnal ke Mendeley -> folder 07
+6. Konfirmasi versi TA FINAL-2D disetujui dosen -> folder 02
+7. Burn + verifikasi DVD

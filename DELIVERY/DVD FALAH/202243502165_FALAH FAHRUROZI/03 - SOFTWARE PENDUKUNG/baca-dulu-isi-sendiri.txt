@@ -1,0 +1,28 @@
+ISI FOLDER INI — WAJIB DIISI SENDIRI (INSTALLER TIDAK BISA DIBUATKAN OTOMATIS)
+==================================================================
+
+FOLDER 03 — SOFTWARE PENDUKUNG
+Berisi program/aplikasi pendukung yang digunakan: browser, XAMPP, NetBeans, emulator, dsb.
+(Pengumuman: "BERISIKAN PROGRAM ATAU APLIKASI PENDUKUNG YANG DIGUNAKAN, BROWSER, XAMPP, NETBEANS, EMULATOR, DSB")
+
+Aplikasi yang dipakai pada TA ini (sesuai proyek):
+- Python 3.13 (runtime utama aplikasi dashboard)
+  https://www.python.org/downloads/
+- Streamlit (framework dashboard) — diinstall via pip, bukan installer mandiri
+- Browser (Chrome / Edge / Firefox) untuk membuka dashboard
+  https://www.google.com/chrome/ | https://www.microsoft.com/edge | https://www.mozilla.org/firefox/
+- XAMPP (jika memakai MySQL/phpMyAdmin untuk penyimpanan data)
+  https://www.apachefriends.org/
+- NetBeans (jika memakai Java — pada TA ini tidak wajib, program berbasis Python)
+  https://netbeans.apache.org/
+- Emulator Android (jika ada bagian aplikasi mobile) — Android Studio
+  https://developer.android.com/studio
+
+Cara mengisi:
+1. Unduh installer dari situs resmi di atas (versi terbaru yang stabil).
+2. Simpan file installer (.exe / .msi / .dmg / .zip) di folder ini.
+3. Sesuaikan dengan aplikasi yang BENAR-BENAR digunakan pada TA Anda —
+   daftar di atas hanya rekomendasi minimal.
+
+Catatan: jika dosen/panitia hanya meminta aplikasi yang relevan, cukup sertakan
+runtime + browser + XAMPP (bila data pakai MySQL). Jangan membebani DVD dengan installer besar yang tidak dipakai.
