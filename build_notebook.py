@@ -285,7 +285,7 @@ metrics = [
     ('Total Cluster',       '2',      'Mainland Java + Jabodetabek',         '#2196F3'),
     ('Total Wilayah',       '119',    'Kabupaten/Kota Pulau Jawa',           '#2196F3'),
     ('Noise / Isolated',    '4',     'job_volume = 0 atau outlier geografis','#888888'),
-    ('eps  (DBSCAN)',        '0.40',   'scaled Euclidean distance',           '#FF9800'),
+    ('eps  (DBSCAN)',        '0.08',   'scaled Euclidean distance',           '#FF9800'),
     ('min_samples',         '3',      'minimum tetangga inti',               '#FF9800'),
 ]
 ax4.text(0.5, 1.03, 'Parameter & Evaluasi Model DBSCAN',

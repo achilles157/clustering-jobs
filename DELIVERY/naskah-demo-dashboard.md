@@ -16,7 +16,7 @@
   (jalankan dari folder proyek, setelah `pip install -r requirements.txt`).
 - **Butuh internet saat load**: logo sidebar (icons8), font Plus Jakarta Sans (Google Fonts), tile peta carto-darkmatter. Siapkan koneksi/hotspot.
 - **Legenda Tab 2 sudah diperbaiki** menjadi pill navy + teks putih — jangan lupa bisa disebut sebagai salah satu bugfix kualitas kode.
-- Angka metrik model (Silhouette 0.4774, DBI 0.5227) memang **hardcoded** di kode, tapi sudah **terverifikasi benar** hasil reproduksi ulang — aman dikutip, tapi jangan diklaim "berubah live".
+- Angka metrik model (Silhouette 0.4649, DBI 0.5294) memang **hardcoded** di kode, tapi sudah **terverifikasi benar** hasil reproduksi ulang — aman dikutip, tapi jangan diklaim "berubah live".
 - Penanda waktu `[mm:ss]` = perkiraan posisi durasi bicara.
 
 ---
@@ -41,7 +41,7 @@ Data lowongan kerja diperoleh dari **tiga platform — Jobstreet, Glints, dan Ka
 
 *Pipeline* penelitian terdiri dari **enam tahap**: akuisisi data dari tiga platform lowongan kerja; konsolidasi data BPS dan *geocoding* titik pusat wilayah; integrasi spasial dengan *fuzzy matching*; penghitungan indeks peluang; klastering spasial DBSCAN; dan terakhir visualisasi melalui *dashboard* yang akan kita lihat sebentar lagi.
 
-Untuk klastering, saya menggunakan **DBSCAN dengan eps 0,40 dan min_samples 3**, pada fitur latitude dan longitude yang telah distandarisasi dengan *StandardScaler*. Kenapa DBSCAN, bukan K-Means? Karena pola aglomerasi di Pulau Jawa itu **memanjang horizontal mengikuti koridor Trans-Jawa** — bentuknya tidak *spherical*. K-Means mengasumsikan klaster berbentuk bola dan memaksa seluruh wilayah masuk ke salah satu klaster. DBSCAN berbasis kepadatan: tidak perlu menentukan jumlah klaster di awal, dan secara alami mengeluarkan wilayah-wilayah terpencil sebagai *noise*. Hasilnya terbentuk **dua klaster riil plus zona terisolasi** — dan ini yang akan kita lihat langsung di *dashboard*-nya."
+Untuk klastering, saya menggunakan **DBSCAN dengan eps 0,08 dan min_samples 3**, pada fitur latitude dan longitude yang telah distandarisasi dengan *StandardScaler*. Kenapa DBSCAN, bukan K-Means? Karena pola aglomerasi di Pulau Jawa itu **memanjang horizontal mengikuti koridor Trans-Jawa** — bentuknya tidak *spherical*. K-Means mengasumsikan klaster berbentuk bola dan memaksa seluruh wilayah masuk ke salah satu klaster. DBSCAN berbasis kepadatan: tidak perlu menentukan jumlah klaster di awal, dan secara alami mengeluarkan wilayah-wilayah terpencil sebagai *noise*. Hasilnya terbentuk **dua klaster riil plus zona terisolasi** — dan ini yang akan kita lihat langsung di *dashboard*-nya."
 
 ---
 
@@ -113,7 +113,7 @@ Dua hal teknis yang saya ingin sampaikan: **pertama**, rentang warna sengaja dip
 
 ### 4.5 Tab 4 — "📈 Statistik Efisiensi" — [06:15] · ± 1 menit
 
-**APA yang ditampilkan:** scatter pengangguran terbuka vs volume lowongan + trendline OLS (`#00A6FB`), bar Top-15 Indeks Kompetitif, lalu metrik evaluasi model (Silhouette 0.4774, DBI 0.5227) + caption interpretasi.
+**APA yang ditampilkan:** scatter pengangguran terbuka vs volume lowongan + trendline OLS (`#00A6FB`), bar Top-15 Indeks Kompetitif, lalu metrik evaluasi model (Silhouette 0.4649, DBI 0.5294) + caption interpretasi.
 
 **POIN BICARA:** wilayah di atas trendline = penciptaan kerja abnormal positif; skala kompetitif ≥2,5 manajerial vs 1,0–1,5 kerah biru; makna kedua metrik + justifikasi DBSCAN vs K-Means.
 
@@ -121,7 +121,7 @@ Dua hal teknis yang saya ingin sampaikan: **pertama**, rentang warna sengaja dip
 
 "Tab keempat, **'Statistik Efisiensi'**. Di sebelah kiri ada *scatter plot* antara **pengangguran terbuka** dan **volume lowongan**, dengan garis tren OLS berwarna biru. Wilayah yang berada **di atas garis tren** menciptakan lapangan kerja lebih banyak dari yang diprediksikan beban penganggurnya — ini performa penciptaan kerja yang abnormal secara positif. Di kanan, *bar chart* 15 wilayah dengan indeks kompetitif tertinggi: skor di atas 2,5 didominasi posisi manajerial elit, sementara skor sekitar 1,0 hingga 1,5 mengindikasikan pasar kerja kerah biru dan peranan operasional.
 
-Di bagian bawah ada **metrik evaluasi model spasial**: *Silhouette Score* **0,4774** dan *Davies-Bouldin Index* **0,5227**. Silhouette 0,4774 berada pada kategori moderat-baik — dan ini konsisten dengan karakter aglomerasi Jawa yang memanjang horizontal mengikuti koridor Trans-Jawa, bukan berbentuk *spherical*; justru pada pola seperti inilah DBSCAN lebih tepat dibandingkan K-Means. DBI 0,5227, yang berada di bawah 1,0, menunjukkan pemisahan antar klaster yang baik — artinya Cluster 0 dan Cluster 1 tidak saling tumpang tindih secara spasial."
+Di bagian bawah ada **metrik evaluasi model spasial**: *Silhouette Score* **0,4649** dan *Davies-Bouldin Index* **0,5294**. Silhouette 0,4649 berada pada kategori moderat-baik — dan ini konsisten dengan karakter aglomerasi Jawa yang memanjang horizontal mengikuti koridor Trans-Jawa, bukan berbentuk *spherical*; justru pada pola seperti inilah DBSCAN lebih tepat dibandingkan K-Means. DBI 0,5294, yang berada di bawah 1,0, menunjukkan pemisahan antar klaster yang baik — artinya Cluster 0 dan Cluster 1 tidak saling tumpang tindih secara spasial."
 
 ### 4.6 Tab 5 — "📝 Laporan Eksekutif" — [07:15] · ± 1 menit
 
@@ -169,8 +169,8 @@ Demikian presentasi saya. Saya persilakan Bapak/Ibu penguji untuk memberikan per
 | Sumber lowongan | **3 platform**: Jobstreet, Glints, Kalibrr | setelah dedup: Jobstreet 33.865; Glints 1.508; Kalibrr 685 |
 | Dataset BPS | **6 dataset 2025** (Banten, DIY, DKI, Jabar, Jateng, Jatim) | footer dashboard: "BPS Sosioekonomi 2025" |
 | Parameter DBSCAN | **eps=0.08, min_samples=3**, fitur Latitude/Longitude di-*StandardScaler* | label sidebar: "DBSCAN Pure Spatial" |
-| Silhouette Score | **0,4774** (moderat-baik; -1 s/d +1) | hasil reproduksi ulang persis |
-| Davies-Bouldin Index | **0,5227** (mendekati 0 = baik; <1 = tidak overlap) | hasil reproduksi ulang persis |
+| Silhouette Score | **0,4649** (moderat-baik; -1 s/d +1) | hasil reproduksi ulang persis |
+| Davies-Bouldin Index | **0,5294** (mendekati 0 = baik; <1 = tidak overlap) | hasil reproduksi ulang persis |
 | Komposisi klaster | Cluster 0: **93 wilayah / 11.978 lowongan**; Cluster 1: **22 wilayah / 24.078 lowongan**; Terisolasi: **4 wilayah / 2 lowongan** | jumlah = 2 klaster + zona terisolasi |
 | Formula indeks | Indeks Peluang = Volume Lowongan / Pengangguran Terbuka (Opsi C) | sama di kode, pipeline, & METODOLOGI |
 | Contoh Cluster 0 | Surabaya, Bandung, Semarang, Yogyakarta (+ Sidoarjo, Sleman) | "GKS" ambigu → hindari |
@@ -183,7 +183,7 @@ Demikian presentasi saya. Saya persilakan Bapak/Ibu penguji untuk memberikan per
 
 1. ❌ **"eps=0.45"** / **"radius ±50 km"** → salah; yang benar eps=0.08 pada koordinat ter-*standardisasi* (eps bukan satuan kilometer).
 2. ❌ **"fuzzy match 88,8%"** → tidak relevan lagi (multi-platform); cukup katakan "threshold kecocokan ≥ 80".
-3. ❌ **Silhouette 0,4722 / DBI 0,5136** (versi narasi TA & jurnal lama) → gunakan **0,4774 / 0,5227** (terbukti benar, data 3 platform).
+3. ❌ **Silhouette 0,4722 / DBI 0,5136** (versi narasi TA & jurnal lama) → gunakan **0,4649 / 0,5294** (terbukti benar, data 3 platform).
 4. ❌ **"koridor Surabaya–Malang"** → Kota Malang sekarang **masuk Cluster 0** (465 lowongan); koridor yang tepat: Surabaya–Sidoarjo–Malang Raya.
 5. ❌ **"Madura seluruhnya isolated"** → Bangkalan, Sampang, Pamekasan masuk Cluster 0; hanya **Sumenep** yang terisolasi (0 lowongan).
 6. ❌ **"17 wilayah noise"** → aktual **4 wilayah terisolasi** (Kep. Seribu + Banjar + Pekalongan + Sumenep).
@@ -197,8 +197,8 @@ Demikian presentasi saya. Saya persilakan Bapak/Ibu penguji untuk memberikan per
 **1. Mengapa memilih DBSCAN, bukan K-Means?**
 > "Pola aglomerasi pasar kerja di Jawa memanjang horizontal mengikuti koridor Trans-Jawa — bentuknya tidak spherical. K-Means mengasumsikan klaster berbentuk bola dan mewajibkan penentuan jumlah k di awal, serta memaksa semua titik masuk klaster. DBSCAN berbasis kepadatan: tidak perlu menentukan jumlah klaster, menemukan klaster bentuk bebas, dan secara natural mengeluarkan wilayah-wilayah terpencil sebagai zona terisolasi. Hasil klaster yang terbentuk pun terverifikasi masuk akal secara geografis — Jabodetabek dan koridor barat menjadi satu kesatuan."
 
-**2. Apa arti Silhouette 0,4774 dan DBI 0,5227?**
-> "Silhouette berkisar -1 sampai +1; 0,4774 berarti objek lebih dekat ke klasternya sendiri daripada klaster lain — kategori moderat-baik. Nilai ini moderat karena memang aglomerasi Jawa memanjang (elongated), bukan gugus bulat — justru alasan DBSCAN lebih tepat. DBI dihitung dengan eksklusi noise agar tidak bias; 0,5227 di bawah 1,0 menunjukkan antar-klaster tidak saling tumpang tindih. Kedua angka dihitung pada pipeline dan saya reproduksi ulang persis dari data."
+**2. Apa arti Silhouette 0,4649 dan DBI 0,5294?**
+> "Silhouette berkisar -1 sampai +1; 0,4649 berarti objek lebih dekat ke klasternya sendiri daripada klaster lain — kategori moderat-baik. Nilai ini moderat karena memang aglomerasi Jawa memanjang (elongated), bukan gugus bulat — justru alasan DBSCAN lebih tepat. DBI dihitung dengan eksklusi noise agar tidak bias; 0,5294 di bawah 1,0 menunjukkan antar-klaster tidak saling tumpang tindih. Kedua angka dihitung pada pipeline dan saya reproduksi ulang persis dari data."
 
 **3. Bagaimana data diperoleh, dan apakah legal/etis?**
 > "Lowongan diambil dari tiga platform — Jobstreet (GraphQL `JobSearchV6`, endpoint publik), Glints (GraphQL `searchJobsV3`), dan Kalibrr (API `/kjs/job_board/search` dengan cookie sesi) — melalui `curl_cffi`. Yang diambil hanya data publik lowongan (judul, perusahaan, lokasi), bukan data pribadi pengguna. Total 52.450 lowongan mentah; setelah integrasi, fuzzy matching `rapidfuzz` (threshold ≥ 80) ke wilayah BPS, deduplikasi lintas platform, dan filter ke Pulau Jawa, tersisa 36.058 lowongan terintegrasi. Penyebut indeks adalah pengangguran terbuka dari enam dataset BPS 2025. Geocoding memakai centroid kabupaten/kota via Nominatim (OpenStreetMap)."
